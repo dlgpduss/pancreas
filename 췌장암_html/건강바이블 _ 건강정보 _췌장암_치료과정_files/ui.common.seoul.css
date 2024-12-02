@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/*
+#header_wrap .logo {top:8px;}
+#header_wrap_sub .logo a:after {margin-top:6px;height:50px;}
+*/
+
+/* 준비중 */
+.wait_bax{padding-top: 70px; text-align: center;}
+.wait_bax .wait_tit {margin-top: 28px; font-size: 24px; font-weight: bold;}
+.wait_bax .wait_txt {margin-top: 25px; font-size: 16px; line-height: 26px;}
+
+/* 20190125 */
+.point_r {color: #ff0000;}
+.point_bl {color: #005db4;}
+.point_bl2 {color: #0072d2;}
+.point_bl3 {color: #0079ab;}
+.fw_b {font-weight: bold;}
+.fz_sr {font-size:16px;}
+
+/* 2019-04-24 */
+.appointment.seoul .cont_box-date_select .cal_disc ul li em:before {content:'';display:inline-block;margin-top: 1px;margin-right:7px;width: 25px;height: 25px;border-radius:50%;vertical-align:top;}
+.appointment.seoul .cont_box-date_select .cal_disc ul li.disc_today em:before {border:1px solid #1f4bb4;box-sizing:border-box;}
+.appointment.seoul .cont_box-date_select .cal_disc ul li.disc_pos em:before {background-color:#c8cfe5;}
+.appointment.seoul .cont_box-date_select .cal_disc ul li.disc_select em:before {background-color:#204bb4;}
+.appointment.seoul .cont_box-date_select .cal_disc ul li.disc_cen em:before {background:url('/ui_common/images/appointment/cen.png') no-repeat center;background-size: 100%;}
+.appointment.seoul .cont_box-date_select .cal_disc ul li.disc_pos_cen em:before {background:url('/ui_common/images/appointment/pos_cen.png') no-repeat center;background-size: 100%;}
+
+.appointment.seoul .cont_box-date_select .date_board .list_date table tbody td.deac em:first-child {color:#999;}
+.appointment.seoul .cont_box-date_select .date_board .list_date table tbody td.today em:first-child {border:2px solid #1f4bb4;line-height:35px;}
+.appointment.seoul .cont_box-date_select .date_board .list_date table tbody td.pos em:first-child {background-color:#c8cfe5;cursor:pointer;}
+.appointment.seoul .cont_box-date_select .date_board .list_date table tbody td.cen em:first-child {background:url('/ui_common/images/appointment/cen.png') no-repeat center top;cursor:pointer;}
+.appointment.seoul .cont_box-date_select .date_board .list_date table tbody td.pos_cen em:first-child {background:url('/ui_common/images/appointment/pos_cen.png') no-repeat center top;cursor:pointer;}
+.appointment.seoul .cont_box-date_select .date_board .list_date table tbody td.select em:first-child {color:#fff;background-color:#204bb4;cursor:pointer;}
+
+/*진료과 진료일정*/
+.ico_type {margin-bottom:10px;margin-left:0px}
+.ico_type .ico_pos_dept {display:inline-block;position:relative;width:auto;height:auto;margin-right:10px;vertical-align: top;}
+.ico_type .ico_pos_dept:before{display:inline-block;position: relative;margin-right:5px;}
+.ico_type .ico_cen_dept {display:inline-block;position:relative;width:auto;height:auto;vertical-align: top;margin-right: 10px;}
+.ico_type .ico_cen_dept:before{display:inline-block;position: relative;margin-right:5px;}
+/* 20230410 */
+.ico_type .ico_star_dept {width:auto;height:auto;}
+.ico_type .ico_star_dept:before{content:'\2605';display:inline-block;color: #ff7e00;margin-right: 5px;}
+
+.ico_pos_dept {display:inline-block;position:relative;top:0;left:0;width:13px;height:10px;margin-top:-4px;margin-left:0;vertical-align:middle;color:#555}
+.ico_pos_dept:before{content:'';display:block;position:absolute;top:0;left:0;width:0;height:0;border:5px solid #A6CE35;border-radius:100%;}
+.ico_pos_dept i{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px;}
+.ico_cen_dept {display:inline-block;position:relative;top:0;left:0;width:10px;height:10px;margin-top:-4px;margin-left:0;vertical-align:middle;color:#555}
+.ico_cen_dept:before{content:'';display:block;position:absolute;top:0;left:0;width:0;height:0;border:5px solid #00BBF3;border-radius:100%;}
+.ico_cen_dept i{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+/* 20230410 */
+.ico_star_dept {display:inline-block;position:relative;top:0;left:0;width:13px;height:10px;margin-top:-16px;margin-left:0;vertical-align:middle;color:#555}
+.ico_star_dept:before{content:'\2605';display:inline-block;color: #ff7e00;}
+.ico_star_dept i{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+
+/*의료진 프로필*/
+.examination_doc_profile .ico_type {display:inline-block;margin-bottom:0px;margin-left:20px;}
+.examination_doc_profile .ico_type .ico_pos_dept {display:inline-block;position:relative;width:auto;height: auto;margin-top:0px;margin-right:10px;vertical-align: top;color: #fff;}
+.examination_doc_profile .ico_type .ico_pos_dept:before{display:inline-block;position: relative;margin-right:5px;}
+.examination_doc_profile .ico_type .ico_cen_dept {display:inline-block;position:relative;width:auto;height:auto;margin-top:0px;margin-right:10px;vertical-align: top; color: #fff;}
+.examination_doc_profile .ico_type .ico_cen_dept:before{display:inline-block;position: relative;margin-right:5px;}
+.examination_doc_profile .ico_type .star {display:inline-block;position:relative;width:auto;height:auto;margin-top:0px;vertical-align: top; color: #fff;}
+.examination_doc_profile .ico_type .star:before{display:inline-block;position: relative;margin-right:5px;content: "\2605";display: inline-block;color: #ff7e00;}
+.examination_doc_profile .cont_main .cont_main_int .treat_time table tbody tr td.pos span{display:inline-block;}
+/* .examination_doc_profile .cont_main .cont_main_int .treat_time table tbody tr td.pos span:after{
+    content: '';
+    display: inline-block;
+    width: 0px !important;
+    height: 0px !important;
+    border-radius: inherit !important;
+    border-bottom: 10px solid #A6CE35;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    background: none!important;
+    } */
+.examination_doc_profile .cont_main .cont_main_int .treat_time table tbody tr td.cen span{display:inline-block;}
+.examination_doc_profile .cont_main .cont_main_int .treat_time table tbody tr td.cen span:after{
+   content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color:#00bbf3 !important;
+    border-radius: 100%;
+    }
+.examination .cont_main .cont_main_int .treat_time table tbody tr td.star span{display:inline-block;}
+.examination .cont_main .cont_main_int .treat_time table tbody tr td.star span:after{content: "\2605";display:inline-block;color: #ff7e00;}
+

@@ -1,0 +1,82 @@
+.cont_none, .cont_hide, .hide-cont, .none-cont { display: none !important; opacity: 0; text-indent: -9999999999px; color: transparent; position: absolute; top: -9999999999px; left: -9999999999px;  }
+.notice-container {
+	display:none;
+}
+.bbs-search-box {
+	z-index: 100;
+}
+
+#skip li {
+  list-style: none;
+}
+#skip a {
+  display: block;
+  position: absolute;
+  top: 0;
+  margin-bottom: -1px;
+  width: 100%;
+  height: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  overflow: hidden;
+  z-index: 600;
+}
+#skip a:focus, #skip a:active {
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: #666;
+}
+
+.cms-iframe-manage body {
+	background:none !important;
+}
+.cms-iframe-manage .co-board .container {
+	width:auto;
+}
+
+/* 게시판 공통 클래스 중 퍼블리싱팀 작업 시 사용된 클래스와 중복되는 클래스 초기화 */
+.list.co-board {
+	margin: 0;
+}
+
+.article-body > .movie-script > .custom-scroll, .article-body > .movie-script > .custom-scroll > .mCustomScrollBox {
+	max-height: none !important;	
+}
+
+/* 2021.06.16 탭연계 게시판 url 꼬임으로 인해 공통처리 */
+.affixation-img-area {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.affixation-img-area > .img-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+	margin: 0 -15px;
+}
+
+.affixation-img-area > .img-list li {
+  margin: 0 15px;
+  width: calc(20% - 30px);
+  float: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.affixation-img-area > .img-list li > img {
+  vertical-align: top;
+}
+
+.affixation-img-area > .img-list li .img + .img-subject {
+  margin-top: 17px;
+  text-align: center;
+}

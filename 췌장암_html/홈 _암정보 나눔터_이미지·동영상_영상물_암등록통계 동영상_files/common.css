@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+
+html {
+    font-size: 14px;
+    line-height: normal;
+    /*word-break: keep-all;*/
+    background-color: white;
+    overflow: auto;
+}
+html, button, input, optgroup, select, textarea {
+    font-family: 'Nanum Gothic', 'Malgun Gothic', Dotum, Helvetica, Arial, sans-serif;
+}
+/* Mobile */
+@media screen and (max-width: 720px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+* {
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    padding: 0;
+    color: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.left {float: left;}
+.right {float: right;}
+.center {text-align: center;}
+.clear {clear: both;}
+
+.focus{position:relative;}
+.focus:focus:after{
+	content:'';
+	position:absolute;
+	top:0;right:0;bottom:0;left:0;
+    border:2px solid #000;
+    border-radius:4px;
+    box-sizing:border-box;
+}
+
+.blind,
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.hide-for-pc {
+	display: none;
+}
+.show-for-mobile,
+.show-for-tablet {
+    display: none;
+}
+/* Mobile */
+@media screen and (max-width: 720px) {
+	.hide-for-mobile {
+		display: none;
+	}
+    .show-for-mobile {
+        display: block;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+	.hide-for-tablet {
+		display: none;
+	}
+    .show-for-tablet {
+        display: block;
+    }
+}
+/* Mobile & Tablet */
+@media screen and (max-width: 1200px) {
+	.hide-for-pc {
+		display: block;
+	}
+    .show-for-pc {
+        display: none;
+    }
+}
+
+ul.menu {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+ul.menu > li {
+    float: left;
+    display: block;
+    cursor: pointer;
+}
+ul.menu > li:hover {
+    color: #107de4;
+}
+
+.more {
+	display:block;
+    
+}
+.more:hover {
+   
+}
+
+.vertical-middle {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}

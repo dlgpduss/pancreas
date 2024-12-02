@@ -1,0 +1,187 @@
+@charset "utf-8"; 
+.storyWrap h4.dep2Title { margin-bottom:15px;}
+
+/* 후원 */
+.storyWrap .donationSec { padding-bottom:50px;}
+.storyWrap .donationSec .dep1Title {padding-bottom:15px;}
+.storyWrap .donationSec .donationMoneyKindUl { width:100%; padding:180px 0 35px; background:url('/asan/images/webservice/bgDonationMoneyKind.gif') no-repeat; overflow:hidden;}
+.storyWrap .donationSec .donationMoneyKindUl li { float:left; padding-left:68px; width:174px; text-align:center;}
+.storyWrap .donationSec .donationMoneyKindUl li:first-child { padding-left:0;}
+.storyWrap .donationSec .donationMoneyKindUl li strong { color:#111; font-size:18px;}
+.storyWrap .counselSeqList { padding-bottom:20px;}
+.storyWrap .counselSeqList .desc { text-align:center;}
+.storyWrap .counselSeqList .descBtnSec { text-align:center; padding-top:15px;}
+.storyWrap .counselSec { padding:25px; border:1px solid #ddd;}
+.storyWrap .counselSec ul {overflow:hidden;width:100%;}
+.storyWrap .counselSec li {float:left;padding-left:8px;background: url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat 0 8px;line-height:24px;}
+.storyWrap .counselSec li strong {color:#111;}
+.storyWrap .counselSec li.l {clear:both;width:282px;} 
+.storyWrap .myCounselBtnWrap { width:100%; text-align:center;}
+.storyWrap .myCounselBtnDesc { padding-top:5px; width:100%; text-align:center; font-size:13px;}
+.storyWrap .sponsorlist {overflow:hidden;width:100%;margin-bottom:40px;}
+.storyWrap .sponsorlist li {float:left;width:50%;}
+.storyWrap .sponsorlist li .listtit {height:66px;margin-bottom:16px;padding-top:21px;border-top:2px solid #5d5d5d;border-left:1px solid #ddd;border-bottom:1px solid #ddd;color:#111;line-height:22px;vertical-align:top;}
+.storyWrap .sponsorlist li:first-child .listtit {background:#f5f5f5 url('/asan/images/story/bg_step01.gif') no-repeat 177px 15px;}
+.storyWrap .sponsorlist li:first-child .listtit strong {display:inline-block;margin-left:226px;}
+
+.storyWrap .sponsorlist li .seconbg { border-left:0;border-right:1px solid #ddd;background:#f5f5f5 url('/asan/images/story/bg_step02.gif') no-repeat 0 0;}
+.storyWrap .sponsorlist li .seconbg strong {display:inline-block;margin-left:160px;}
+.storyWrap .sponsorlist li .desc {margin-bottom:18px;line-height:24px;}
+
+/* 안내 */
+.storyWrap .infoSec { padding-bottom:50px;}
+.storyWrap .infoSec .dep1Title { padding-bottom:25px;}
+.storyWrap .infoSec .serviceKindUl { width:100%; padding:180px 0 35px; background:url('/asan/images/webservice/bgServiceKind.gif') no-repeat; overflow:hidden;}
+.storyWrap .infoSec .serviceKindUl li { float:left; padding-left:68px; width:242px; text-align:center;}
+.storyWrap .infoSec .serviceKindUl li:first-child { padding-left:0;}
+.storyWrap .infoSec .serviceKindUl li strong { color:#111; font-size:18px;}
+.storyWrap .infoSec .pnt { color:#111;}
+
+/* 신청 */
+.storyWrap .applySec { padding-bottom:40px;}
+.storyWrap .applySec .applyProcessOl { position:relative; width:900px; height:154px; background:url('/asan/images/story/bgApplyProcessOl.gif') no-repeat;}
+.storyWrap .applySec .applyProcessOl li { position:absolute; top:54px; left:0; width:127px; text-align:center; line-height:1.2;}
+.storyWrap .applySec .applyProcessOl li span { font-size:24px;}
+.storyWrap .applySec .applyProcessOl li strong { font-size:18px; color:#111;}
+.storyWrap .applySec .applyProcessOl li.s1 { left:57px;}
+.storyWrap .applySec .applyProcessOl li.s2 { left:216px;}
+.storyWrap .applySec .applyProcessOl li.s3 { left:375px;}
+.storyWrap .applySec .applyProcessOl li.s4 { left:534px;}
+.storyWrap .applySec .applyProcessOl li.s5 { left:693px;}
+.storyWrap .btn_type {margin-left:10px;}
+
+/*후원소개*/
+.storyWrap .donationCon { pading-bottom:40px;}
+.storyWrap .donationCon .grayBox { width:900px; height:180px; background:url('/asan/images/story/donation/bg_donation.jpg') no-repeat left top; border:0 !important;}
+.storyWrap .donationCon .grayBox .donationText {padding:0 0 0 320px;}
+.storyWrap .donationCon .greenBorBox { margin:40px 0 38px;}
+.storyWrap .donationCon .greenBorBox ul { border:2px solid #0e787c; overflow:hidden; padding:29px 0 29px 29px}
+.storyWrap .donationCon .greenBorBox ul li { float:left; padding-left:55px;}
+.storyWrap .donationCon .greenBorBox  .dep2Title { line-height:1;}
+.storyWrap .donationCon .greenBorBox p { margin-top:11px;}
+.storyWrap .donationCon .greenBorBox ul li.leftbox { width:335px; padding-right:28px; border-right:1px solid #ddd; background:url('/asan/images/story/donation_icon01.png') no-repeat left 5px;}
+.storyWrap .donationCon .greenBorBox ul li.rightbox { width:308px; margin-left:27px; background:url('/asan/images/story/donation_icon02.png') no-repeat left 5px;}
+.storyWrap .donationCon .doTextBox p { margin:10px 0 29px 0;}
+.storyWrap .donationCon .doTextBox2Depth .dep2Title { padding-bottom:9px;}
+.storyWrap .donationCon .doTextBox2Depth p { margin:7px 0 11px;}
+
+/* 후원현황 */
+.situationSecBox { overflow:hidden;}
+.situationSecBox > div { float:left;}
+.situationSecBox .leftArea { width:335px; margin-right:72px;}
+.situationSecBox .leftArea h4 { letter-spacing:-1px; word-spacing:2px;}
+.situationSecBox .leftArea p { margin-bottom:36px; padding:19px 0 19px 0; background:#f5f5f5; text-align:center; font-size:13px;}
+.situationSecBox .leftArea p strong { font-size:30px; font-weight:600; line-height:1;}
+.situationSec {background: url('/asan/images/story/donation/img_situation_graph02.jpg') no-repeat 135px 45px;}
+.situationSec dt { margin-bottom:10px; font-size:20px; font-weight:600;}
+.situationSec dd { overflow:hidden; margin-bottom:5px; padding-left:8px; background:url('/asan/images/ico/icoGreenSmBox.gif') no-repeat left 12px;}
+.situationSec dd span { float:right; font-size:18px; font-weight:600; color:#0e787c;}
+
+/* 후원 참여안내 */
+.participateNumLi { overflow:hidden; margin-top:13px;}
+.participateNumLi li { float:left; margin-right:11px; padding-left:11px; background:url('/asan/images/common/bg_bar03.gif') no-repeat left 8px !important;}
+.participateNumLi li:first-child { font-size:24px; font-weight:600; color:#0e787c; background:none !important;}
+.mailscrollBox { padding:14px 30px; background:#f5f5f5; border:1px solid #ddd;}
+.mailscrollBox .scroll { overflow-y:scroll; margin:11px 0 5px 0; padding:16px 20px; height:98px; background:#fff; border:1px solid #ddd; font-size:15px;}
+.mailscrollBox p input { vertical-align:middle;}
+
+/*신청서작성*/
+.storyWrap .writeBoardSec.writeOrder  .tableLayoutSec th.thType { padding-left:29px;}
+.storyWrap .writeBoardSec.writeOrder  .tableLayoutSec input[type="radio"] { position:relative; top:-1px;}
+.storyWrap .writeBoardSec.writeOrder  .tableLayoutSec input[type="checkbox"] { position:relative; top:-1px;}
+.storyWrap .writeBoardSec.writeOrder .tableLayoutSec .tableLayout tbody td { padding:9px 15px 9px 17px;}
+
+/* 핵*/
+@-moz-document url-prefix(){
+	.storyWrap .writeBoardSec.writeOrder  .tableLayoutSec input[type="radio"] { top:-3px;}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.storyWrap .writeBoardSec.writeOrder  .tableLayoutSec input[type="radio"] { top:-2px;}
+}
+
+/* 메인페이지 */
+.storyMainWrap{}
+.storyMainWrap *{margin:0;padding:0;list-style:none;}
+.storyMainWrap .storyMainMidWrap{padding-top:39px;width:1200px;overflow:hidden;}
+.storyMainWrap .storyMainBotWrap{padding-top:44px;width:1200px;overflow:hidden;}
+.storyMainWrap .socialCaseWrap{position:relative;float:left;width:580px;overflow:hidden;}
+.storyMainWrap .socialCaseWrap h2{padding:0 0 11px 4px;font-size:24px;color:#111;}
+.storyMainWrap .socialCaseWrap .more{position:absolute;top:5px;right:0;color:#db330c;font-size:13px;line-height:1;}
+.storyMainWrap .socialArticle{padding:20px 0 0 44px;width:534px;height:249px;border:1px solid #ddd;overflow:hidden;}
+.storyMainWrap .socialArticle h3{position:absolute; top:151px; width:200px; padding:0 0 6px 0;font-size:15px;font-weight:600;color:#0e787c;}
+.storyMainWrap .socialArticle .img{position:absolute; top:0; left:0; overflow:hidden;width:200px;height:134px;}
+.storyMainWrap .socialArticle .img img{width:200px;height:auto;}
+.storyMainWrap .socialArticle dl dt{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 200px;}
+.storyMainWrap .socialArticle dl dt a{font-weight:600;color:#333;}
+.storyMainWrap .socialArticle dl dd{padding-top:7px;font-size:13px;color:#333;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 200px;}
+.storyMainWrap .socialArticle .overseasArticle{position:relative; float:left;width:200px; padding-top:183px;}
+.storyMainWrap .socialArticle .gap {float:left; overflow:hidden; width:1px; height:208px; margin:10px 45px; background:#ddd;}
+.storyMainWrap .socialArticle .internalArticle{position:relative; float:left;width:200px; padding-top:183px;}
+.storyMainWrap .donationCaseWrap{position:relative;float:left;margin-left:40px;width:265px;overflow:hidden;}
+.storyMainWrap .donationCaseWrap h2{padding:0 0 11px 0;font-size:24px;color:#111;}
+.storyMainWrap .donationCaseWrap .more{position:absolute;top:5px;right:0;color:#db330c;font-size:13px;line-height:1;}
+.storyMainWrap .donationArticle{width:263px;height:269px;border:1px solid #ddd;}
+.storyMainWrap .donationArticle dl{padding-top:10px;margin:0 auto;width:230px;}
+.storyMainWrap .donationArticle dt a{font-weight:600;color:#333;}
+.storyMainWrap .donationArticle dd{padding-top:8px; font-size:13px; line-height:20px;} 
+.storyMainWrap .donationInfoCaseWrap{position:relative;float:left;margin-left:45px;width:270px;overflow:hidden;}
+.storyMainWrap .donationInfoCaseWrap h2{padding:0 0 11px 0;font-size:24px;color:#111;}
+.storyMainWrap .donationInfoArticle{width:268px;height:269px;border:1px solid #ddd;background:url('/asan/images/story/bgDonationInfo.jpg') no-repeat left bottom;}
+.storyMainWrap .donationInfoArticle p{padding:19px 0 0 19px;font-size:18px;color:#333;font-weight:600;}
+.storyMainWrap .donationInfoArticle ul{padding:37px 0 0 19px;}
+.storyMainWrap .donationInfoArticle li{padding-bottom:10px;}
+.storyMainWrap .donationInfoArticle li .gBtn{display:inline-block;width:128px;height:25px;text-align:center;background:#0e787c;line-height:25px;font-size:12px;font-weight:600;color:#fff;}
+.storyMainWrap .donationInfoArticle li .dBtn{display:inline-block;width:128px;height:25px;text-align:center;background:#555;line-height:25px;font-size:12px;font-weight:600;color:#fff;}
+.storyMainWrap .donationInfoArticle li a span{font-size:12px;font-weight:600;color:#fff;}
+.storyMainWrap .serviceCaseWrap{position:relative;float:left;width:580px;overflow:hidden;}
+.storyMainWrap .serviceCaseWrap h2{padding:0 0 11px 0;font-size:24px;color:#111;}
+.storyMainWrap .serviceCaseWrap .more{position:absolute;top:10px;right:0;color:#db330c;font-size:13px;line-height:1;}
+.storyMainWrap .serviceArticle{padding-top:5px;width:580px;overflow:hidden;}
+.storyMainWrap .serviceArticle .thumBox { position:relative;float:left;width:191px;height:107px;}
+.storyMainWrap .serviceArticle .thumBox span.playBtn { position:absolute; width:36px; height:36px; top:50%; left:50%; margin-top:-18px; margin-left:-18px;}
+.storyMainWrap .serviceArticle .thumBox img{width:191px;height:107px;}
+.storyMainWrap .serviceArticle .thumBox span.playBtn img{width:36px; height:36px;}
+.storyMainWrap .serviceArticle .thumBox .timer { position:absolute; bottom:0; right:0; padding:2px 5px 0px 5px; font-size:10px; color:#fff; background:url('/asan/images/healthinfo/bg_opcBlack.png') 0 0 repeat;}
+.storyMainWrap .serviceArticle .serviceTextDiv{float:left;padding-left:20px;width:360px;overflow:hidden;}
+.storyMainWrap .serviceArticle .serviceTextDiv h3{font-size:18px;color:#333;font-weight:600;line-height:1;}
+.storyMainWrap .serviceArticle .serviceTextDiv p{font-size:15px;color:#333;font-weight:600;}
+.storyMainWrap .serviceArticle .serviceTextDiv dl{padding-top:10px;width:100%;overflow:hidden;}
+.storyMainWrap .serviceArticle .serviceTextDiv dt{float:left;clear:both;width:84px;color:#0e787c;font-weight:600;}
+.storyMainWrap .serviceArticle .serviceTextDiv dd{float:left;width:270px;}
+.storyMainWrap .serviceApplyCaseWrap{float:left;margin:2px 0 0 40px;width:270px;height:149px;overflow:hidden;background:url('/asan/images/story/bgServiceApply.jpg') no-repeat;}
+.storyMainWrap .serviceApplyCaseWrap .aBtnDiv{padding:25px 0 0 25px;}
+.storyMainWrap .serviceApplyCaseWrap .aBtnDiv a{font-size:30px;font-weight:600;color:#fff;}
+.storyMainWrap .serviceViewCaseWrap{float:left;margin:2px 0 0 40px;width:270px;height:149px;overflow:hidden;background:url('/asan/images/story/bgServiceView.jpg') no-repeat;}
+.storyMainWrap .serviceViewCaseWrap .aBtnDiv{padding:25px 0 0 25px;}
+.storyMainWrap .serviceViewCaseWrap .aBtnDiv a{font-size:30px;font-weight:600;color:#fff;}
+.storyMainWrap .storyMainVisual{width:1200px;height:439px;overflow:hidden;}
+.storyMainWrap .storyMainVisual *{margin:0;padding:0;border:0;}
+.storyMainWrap .storyMainVisual a{display:inline-block;padding-right:10px;color:#fff;}
+.storyMainWrap .storyMainVisual .storyMainVisualText{position:absolute;bottom:0;right:0;width:245px;height:220px;background:#0e787c url('/asan/images/story/bgStoryIndexLine.gif') no-repeat 21px 30px;}
+.storyMainWrap .storyMainVisual .storyMainVisualText h2{padding:47px 0 0 23px;height:auto;font-size:28px;color:#fff;line-height:36px;}
+.storyMainWrap .storyMainVisual .storyMainVisualText dl{padding:10px 0 0 20px;color:#fff;}
+.storyMainWrap .storyMainVisual .storyMainVisualText dt{font-size:18px;}
+.storyMainWrap .storyMainVisual .storyMainVisualText dt strong{font-size:13px;}
+.storyMainWrap .storyMainVisual .storyMainVisualText dd{padding-top:3px;font-size:15px;}
+.storyMainWrap .realstoryVisual{position:relative;float:left;width:600px;height:439px;overflow:hidden;}
+.storyMainWrap .amcinsightVisual{position:relative;float:left;width:600px;height:439px;overflow:hidden;}
+.storyMainWrap .amcinsightVisual dt{padding-top:8px;}
+.storyMainWrap .amcinsightVisual dd{padding-top:7px;}
+
+
+/* 리얼스토리,amcinsight,해외,국내의료봉사,직원봉사활동,불우환자진료비지원, 게시판 등 상단 비쥬얼 영역 공통 */
+.svisualsec_wrap {padding-top:50px;min-height:250px;}
+.svisualsec_wrap dt {margin-bottom:20px;color:#0e787c;font-size:32px;font-weight:600;line-height:36px;}
+.svisualsec_wrap dt.font_ty01 {font-size:36px;}
+.svisualsec_wrap dt.font_ty02 {font-size:46px;}
+.svisualsec_wrap dd {color:#333;font-size:15px;line-height:24px;}
+.svisualsec_wrap dd.sub {margin-bottom:5px;font-size:18px;font-weight:600;}
+.svisualsec_wrap dd.sub strong {font-size:22px;}
+.svisualsec_wrap dd.sub02 {color:#666;font-weight:600;}
+.bgtype01 {background: url('/asan/images/story/bg_storys01.jpg') no-repeat 0 0 !important;}
+.bgtype03 {background: url('/asan/images/story/bg_storys03.jpg') no-repeat 0 0;}
+.bgtype04 {background: url('/asan/images/story/bg_storys04.jpg') no-repeat 0 0;}
+.bgtype05 {background: url('/asan/images/story/bg_storys05.jpg') no-repeat 0 0;}
+.bgtype06 {background: url('/asan/images/story/bg_storys06.jpg') no-repeat 0 0;}
+.bgtype07 {background: url('/asan/images/story/bg_storys07.jpg') no-repeat 0 0;}

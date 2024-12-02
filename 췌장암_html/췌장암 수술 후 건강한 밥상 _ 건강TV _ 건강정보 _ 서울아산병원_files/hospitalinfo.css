@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+/* 이사장, 병원장 인사말 */
+.greetingWrap {position: relative;width: 100%;overflow: hidden;}
+.greetingWrap .hosGreeBox.founder {position: relative;height: 450px;overflow: hidden;background: url('/asan/images/hospitalinfo/founder_01.png') no-repeat 0 102px;}
+.greetingWrap .hosGreeBox.founding {position: relative;height: 450px;overflow: hidden;background: url('/asan/images/hospitalinfo/founder_03.png') no-repeat 0 102px;}
+.greetingWrap .hosGreeBox.purpose	{position: relative;height: 450px;overflow: hidden;background: url('/asan/images/hospitalinfo/founder_04.png') no-repeat 0 0;}
+.greetingWrap .hosGreeBox.message {position: relative;height: 496px;overflow: hidden;background: url('/asan/images/hospitalinfo/founder_02_psi.png') no-repeat 9px 95px;}
+.greetingWrap .hosGreeBox .hoTextLeft {float: left;width: 290px;margin-right: 21px;font-size: 24px;font-weight: normal;line-height: 30px;}
+.greetingWrap .hosGreeBox.message .hoTextLeft {width: 280px;margin-right: 32px;}
+.greetingWrap .hosGreeBox .hoTextCenter {float: left;width: 270px;margin-right: 40px;line-height: 24px;text-align: justify;}
+.greetingWrap .hosGreeBox .hoTextCenter .hoTextCenter2dep {margin-top: 23px;}
+.greetingWrap .hosGreeBox .hoTextRight {float: left;width: 270px;line-height: 24px;text-align: justify;}
+.greetingWrap .hosGreeBox.message .hoTextCenter {width: 280px;margin-right: 30px;text-align: justify;}
+.greetingWrap .hosGreeBox.message .hoTextRight {float: left;width: 275px;line-height: 24px;text-align: justify;}
+.greetingWrap .hosGreeBox .hoTextRight .hoTextCenter2dep {margin-top: 46px;}
+.greetingWrap .hosGreeBox.message .hoTextRight .hoTextCenter2dep {margin-top: 23px;}
+.greetingWrap .hosGreeBox.founder .hosNameBox {position: absolute;left: 95px;top: 387px;font-size: 15px;font-weight: 600;line-height: 1;}
+.greetingWrap .hosGreeBox.founder .hosNameBox span {display: block;margin-top: 8px;font-size: 30px;font-weight: 600;text-align: right;}
+.greetingWrap .hosGreeBox.founding .hosNameBox {position: absolute;left: 0;top: 387px;font-size: 26px;font-weight: 600;line-height: 1;}
+.greetingWrap .hosGreeBox.founding .hosNameBox span {display: block;margin-top: 8px;font-size: 28px;font-weight: 600;text-align: right;}
+.greetingWrap .hosGreeBox.message .hosNameBox {position: absolute;left: 146px;top: 389px;font-size: 15px;font-weight: 600;line-height: 1;}
+.greetingWrap .hosGreeBox.message .hosNameBox span {display: block;margin-top: 8px;font-size: 30px;font-weight: 600;text-align: right;}
+.greetingWrap .hosTextBox {margin-top: 27px;}
+.greetingWrap .hosTextBox>div {width: 260px;float: left;margin-right: 30px;}
+.greetingWrap .hosTextBox>div.last {margin-right: 0px;}
+
+.rtexttotal_wrap {float:right;width:585px;}
+.rtexttotal_wrap p {margin-bottom:20px;color:#333;font-size:15px;line-height:21px;}
+
+/* 병원안내 */
+.introduceWrap {position: relative;width: 100%;overflow: hidden;}
+.introduceWrap .introSec {overflow: hidden;}
+.introduceWrap .brBox {border-top: 1px solid #ccc;padding: 10px 0 40px 0;}
+.introduceWrap .introSec .leftArea {float: left;width: 456px;}
+.introduceWrap .introSec .leftArea span.topTxt {display: block;margin-bottom: 36px;font-size: 24px;line-height: 30px;}
+.introduceWrap .introSec .leftArea h4 {font-size: 72px;color: #666;font-weight: 600;line-height: 1;}
+.introduceWrap .introSec .leftArea h4 span {display: block;margin-top: 5px;line-height:30px;}
+.introduceWrap .introSec .rightArea {float: left;width: 444px;line-height: 24px;}
+.introduceWrap .introSec .rightArea img {display: block;margin-top: 16px;}
+.introduceWrap .introSec .rightArea .firTxt {margin-top: 5px;}
+.introduceWrap .introSec .rightArea .seconTxt {margin-top: 10px;}
+.introduceWrap .introSec .listWrap {overflow: hidden;margin-top: 58px;padding-bottom: 25px;}
+.introduceWrap .introSec .listWrap .txtUl {float: left;width: 294px;height: 386px;margin-top: 37px;background: url('/asan/images/hospitalinfo/bg_medicalComplex_2024.jpg') no-repeat 130px 0;}
+.introduceWrap .introSec .listWrap .txtUl li {margin: 22px 0 98px 0;font-weight: 600;}
+.introduceWrap .introSec .listWrap .ulolLayoutSec {float: left;width: 605px;}
+.introduceWrap .introSec .listWrap .ulolLayoutSec li {margin-bottom: 7px;font-size: 13px;}
+.introduceWrap .introSec .introRollingBox {position: relative;height: 428px !important;}
+.introduceWrap .introSec .introRollingBox .btn_ctrl {position: absolute;top: 0;right: 0;}
+.introduceWrap .introSec .introRollingBox ul {height: 392px;margin-top: 36px;}
+.introduceWrap .introSec .introRollingBox ul li img {width: 900px;height: 392px;}
+
+/* 한눈에보는 20년사 */
+.history20yearWrap {position: relative;min-height: 1100px;background: url('/asan/images/hospitalinfo/30th.jpg') no-repeat 0 0;}
+.history20yearWrap .topBox {position: absolute;top: 430px;left: 100px;width: 296px;}
+.history20yearWrap .topBox .years {display: block;margin: 4px 0 7px 0;font-size: 18px;font-weight: 600;}
+.history20yearWrap .topBox .smtxt {display: block;margin: 16px 0 31px 0;font-size: 13px;}
+.history20yearWrap .hisCol {width: 222px;}
+.history20yearWrap .hisCol h4 {color: #0e787c;font-size: 26px;letter-spacing: -1px;line-height: 32px;}
+.history20yearWrap .hisCol h4 span {display: block;color: #111;font-size: 30px;}
+.history20yearWrap .hisCol p {margin-top: 13px;line-height: 24px;}
+.history20yearWrap .history01 {position: absolute;top: 407px;left: 65px;}
+.history20yearWrap .history02 {position: absolute;top: 479px;left: 340px;}
+.history20yearWrap .history03 {position: absolute;top: 431px;left: 617px;}
+.history20yearWrap .history04 {position: absolute;top: 729px;left: 65px;}
+.history20yearWrap .history05 {position: absolute;top: 802px;left: 340px;}
+.history20yearWrap .history06 {position: absolute;top: 731px;left: 617px;}
+.history20yearWrap .history07 {position: absolute;top: 1119px;left: 65px;}
+.history20yearWrap .history08 {position: absolute;top: 1100px;left: 340px;}
+.history20yearWrap .history09 {position: absolute;top: 1085px;left: 617px;}
+.history20yearWrap .history10 {position: absolute;top: 1465px;left: 65px;}
+.history20yearWrap .history11 {position: absolute;top: 1369px;left: 617px;}
+
+/* 병원소개 */
+.hospitalColumm {margin-bottom: 42px;}
+.hospitalColumm h4 {margin-bottom: 9px;}
+.hosList01 {margin-top: 6px;}
+.hosList01 dt {color: #0e787c;margin-bottom: 4px;font-weight: 600;font-size: 18px !important;}
+.hosList01>dd {padding-left: 8px;background: url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat left 11px;line-height: 28px;}
+
+/* 병원신문 */
+.hospitalNewsBox {overflow: hidden;height: 1316px;}
+.hospitalNewsBox .newsTit {width: 100%;padding: 56px 0 50px;text-align: center;height: 79px;background: url('/asan/images/hospitalinfo/bg_hosNews.png') no-repeat 0 0;}
+.hospitalNewsBox .newsTit span {display: block;margin-top: 25px;color: #666;font-size: 15px;font-weight: 600;}
+.hospitalNewsList {overflow: hidden;margin-top: -2px;padding: 0 0 30px 35px;background: url('/asan/images/hospitalinfo/bg_paperNewsBtm.png') no-repeat left bottom;}
+.hospitalNewsList li {float: left;margin: 0 11px 0 0;padding: 18px 12px 0 0;width: 190px;height: 150px;font-weight: 600;border-right: 1px solid #ccc;background: url('/asan/images/hospitalinfo/bg_hosNewsbar.gif') no-repeat 0 0;}
+.hospitalNewsList li.firLine {border-top: none;padding-top: 0;}
+.hospitalNewsList li.last {margin-right: 0;border-right: none;}
+.hospitalNewsList li span {display: block;margin-left: 10px;font-size: 13px;color: #666;}
+.hospitalNewsList li span a {color: #666;}
+.hospitalNewsList li strong a {display: block;overflow: hidden;width: 180px; white-space : nowrap; text-overflow : ellipsis;margin-bottom: 6px;padding: 7px 0 6px 10px;background: #666;color: #fff;font-size: 18px;line-height: 1;white-space: nowrap;text-overflow: ellipsis;}
+.hospitalNewsList li span.date {height: 80px;}
+
+/* 미션/비전 */
+.missionWrap {}
+.missionWrap h4 {margin-bottom: 12px;font-size: 30px;color: #111;font-weight: 600;line-height: 1;}
+.missionWrap .missionCont {margin-bottom: 19px;}
+.missionWrap .missionCont img {margin:30px 0 30px;}
+.missionWrap .CoreValue {padding-top: 40px;background: url('/asan/images/hospitalinfo/img_vision03.jpg') no-repeat 0 85px;}
+.missionWrap .CoreValue .contBox {overflow: hidden;margin-top: 540px;}
+.missionWrap .CoreValue .contBox dl {float: left;min-height: 76px;margin-bottom: 58px;padding-left: 94px;}
+.missionWrap .CoreValue .contBox dl dt {margin-bottom: 2px;color: #0e787c;font-size: 18px;font-weight: 600;}
+.missionWrap .CoreValue .contBox dl dd {font-size: 15px;}
+.missionWrap .CoreValue .contBox .cont01 {width: 390px;background: url('/asan/images/hospitalinfo/ico_CoreValues_01.gif') no-repeat 0 0;}
+.missionWrap .CoreValue .contBox .cont02 {background: url('/asan/images/hospitalinfo/ico_CoreValues_02.gif') no-repeat 0 0;}
+.missionWrap .CoreValue .contBox .cont03 {width: 390px;background: url('/asan/images/hospitalinfo/ico_CoreValues_03.gif') no-repeat 0 0;}
+.missionWrap .CoreValue .contBox .cont04 {background: url('/asan/images/hospitalinfo/ico_CoreValues_04.gif') no-repeat 0 0;}
+.missionWrap .CoreValue .contBox .cont05 {background: url('/asan/images/hospitalinfo/ico_CoreValues_05.gif') no-repeat 0 0;}
+
+/* 연혁/의료성과 */
+.historyWrap {}
+.historyWrap .depth {padding-bottom: 10px;border-bottom: 1px solid #ccc;}
+.historyWrap .depth ul {min-width: 1px;}
+.historyWrap .depth ul:after {content: "";clear: both;display: block;}
+.historyWrap .depth ul li {float: left;}
+.historyWrap .depth ul li a {font-weight: 600;}
+.historyWrap .tab2 ul {margin: 20px 0 0 -10px;}
+.historyWrap .tab2 li {padding: 0 21px 0 18px;background: url('/asan/images/hospitalinfo/bg_history2depth.gif') no-repeat right 5px;}
+.historyWrap .tab2 li a {display: block;padding-top: 3px; font-size:15px;color: #666;}
+.historyWrap .tab2 li.on {padding: 0 11px 0 18px;}
+.historyWrap .tab2 li.on a {padding: 2px 10px 3px 9px;color: #fff;background: #555;border: 1px solid #4b4b4b;}
+.historyWrap .tab3 {margin-top: 10px;}
+.historyWrap .tab3 ul {margin: 0 0 3px 10px;}
+.historyWrap .tab3 li {margin-right: 10px;}
+.historyWrap .tab3 li a {padding: 4px 19px 5px 19px;border: 1px solid #ccc;font-size: 12px;}
+.historyWrap .tab3 li.on a {background: #0e787c;border: 1px solid #0e787c;color: #fff;}
+.historyWrap .historySec {margin: 34px 0 0 3px;}
+.historyWrap .historySec .titBox {position: relative;height: 71px;background: url('/asan/images/hospitalinfo/bg_historyH5.gif') no-repeat 0 0;}
+.historyWrap .historySec .titBox h5 {position: absolute;top: 18px;left: 12px;color: #fff;font-size: 15px;}
+.historyWrap .historySec .hisCont {background: url('/asan/images/hospitalinfo/bg_historyCont.gif') repeat-y 29px 0;}
+.historyWrap .historySec .hisCont>ul {margin-left: 29px;}
+.historyWrap .historySec .hisCont>ul>li {overflow: hidden;width: 863px;margin-bottom: 13px;background: url('/asan/images/hospitalinfo/bg_historybox_mid.gif') repeat-y 0 0;}
+.historyWrap .historySec .hisCont>ul>li .topArea {overflow: hidden;padding-bottom: 10px;background: url('/asan/images/hospitalinfo/bg_historybox_btm.gif') no-repeat 0 bottom;}
+.historyWrap .historySec .hisCont>ul>li .btmArea {position: relative;padding: 5px 0 0 60px;background: url('/asan/images/hospitalinfo/bg_historybox_top.gif') no-repeat 0 0;}
+.historyWrap .historySec .hisCont>ul>li .btnClose {position: absolute;top: 14px;right: 33px;}
+.historyWrap .historySec .hisCont>ul>li dl {position: relative;margin-left: 29px;padding-left: 72px;}
+.historyWrap .historySec .hisCont>ul>li dl dt {position: absolute;top: 0;left: 0;font-weight: 600;}
+.historyWrap .historySec .hisCont>ul>li dl dd {width: 656px;margin-top: 2px;}
+.historyWrap .historySec .hisCont>ul>li dl dd>span {display: block;margin-bottom: 7px;}
+.historyWrap .historySec .hisCont>ul>li dl dd a {text-decoration: underline;color: #0e787c;}
+.historyWrap .historySec .hisCont>ul>li.last {background: url('/asan/images/hospitalinfo/bg_historybox_mid02.gif') repeat-y 0 0;}
+.historyWrap .historySec .hisCont>ul>li.last .topArea {background: url('/asan/images/hospitalinfo/bg_historybox_btm02.gif') no-repeat 0 bottom;}
+.historyWrap .historySec .hisCont>ul>li.last .btmArea {background: url('/asan/images/hospitalinfo/bg_historybox_top.gif') no-repeat 0 0;}
+
+/*현황 */
+.statusWrap {position: relative;width: 100%;overflow: hidden;}
+.statusWrap h4 {margin-bottom: 20px;font-size: 30px;color: #111;font-weight: 600;line-height: 1;}
+.statusWrap h4 .txtTop {float: right;margin-top: 10px;font-size: 13px;color: #333;font-weight: normal;}
+.statusWrap .statusCont {}
+.statusWrap .infoText {margin: 5px 0 75px 0;text-align: right;}
+.statusWrap .asanStatus2003 {min-width: 1px;}
+.statusWrap .asanStatus2003:after {clear: both;content: "";display: block;}
+.statusWrap .asanStatus2003 li {float: left;margin-left: 24px;text-align: center;}
+.statusWrap .asanStatus2003 li:first-child {margin-left: 0;}
+.statusWrap .asanStatus2003 li>div {margin-bottom: 19px;}
+.statusWrap .asanStatus2003 li dl dt {color: #0e787c;font-weight: 600;line-height: 1;}
+.statusWrap .asanStatus2003 li dl dd {font-size: 18px;}
+.statusWrap .asanStatus2003 li dl dd span {font-size: 28px;font-weight: 600;}
+.statusWrap .asanStatus2004 li {padding: 30px 0;border-bottom: 1px solid #ccc;}
+.statusWrap .asanStatus2004 li:first-child {border-top: 1px solid #ccc;}
+.statusWrap .asanStatus2004 li dl dt {float: left;width: 196px;margin-top: 20px;}
+.statusWrap .asanStatus2004 li dl dt.bg01 {padding-top: 180px;background: url('/asan/images/hospitalinfo/bg_status2004_01.gif') no-repeat 0 83px;}
+.statusWrap .asanStatus2004 li dl dt.bg02 {margin-top: 33px;padding-top: 165px;background: url('/asan/images/hospitalinfo/bg_status2004_02.gif') no-repeat 29px 79px;}
+.statusWrap .asanStatus2004 li dl dt.bg03 {margin-top: 41px;padding-top: 166px;background: url('/asan/images/hospitalinfo/bg_status2004_03.gif') no-repeat 18px 83px;}
+.statusWrap .asanStatus2004 li dl dt.bg04 {margin-top: 35px;padding-top: 167px;background: url('/asan/images/hospitalinfo/bg_status2004_04.gif') no-repeat 18px 66px;}
+.statusWrap .asanStatus2004 li dl dt.bg05 {margin-top: 32px;padding-top: 177px;background: url('/asan/images/hospitalinfo/bg_status2004_05.gif') no-repeat 49px 64px;}
+.statusWrap .asanStatus2004 li dl dt.bg01 span {margin-left: 17px;}
+.statusWrap .asanStatus2004 li dl dt.bg03 span {margin-left: 32px;}
+.statusWrap .asanStatus2004 li dl dt.bg04 span {margin-left: 35px;}
+.statusWrap .asanStatus2004 li dl dt.bg05 span {margin-left: 56px;}
+.statusWrap .asanStatus2004 li dl dt span {font-size: 18px;font-weight: 600;}
+
+/* 협력기관 */
+.cooperationWrap { /*  position:relative;  */margin-top: 50px;width: 100%;overflow: hidden;}
+.cooperationWrap h4 {margin-bottom: 19px;font-size: 24px;color: #0e787c;font-weight: 600;line-height: 1;}
+.cooperationWrap .cooperCont {overflow: hidden;margin-bottom: 39px;}
+.cooperationWrap .cooperCont .imgBox {float: left;margin-right: 30px;width: 350px;}
+.cooperationWrap .cooperCont .descBox {float: left;width: 505px;line-height: 25px;}
+.cooperationWrap .cooperCont .descBox strong {display: block;margin-bottom: 15px;font-size: 18px;color: #111;line-height: 1;}
+.cooperationWrap .cooperCont .descBox .btnWrap {margin-top: 13px;}
+.cooperationWrap .cooperCont .descBox .btnWrap a {font-weight: 600;}
+.cooperationWrap .cooperCont .descBox .btnWRe {margin-top: 22px;margin-bottom: 20px;}
+.cooperationWrap .cooperCont .descBox .btnWRe .graySmBtn {width: 105px;padding: 7px 0;text-align: center;border: 0px;}
+/* 협력기관 - 탭 */
+.cooperationWrap .cooperCont.tab {position:relative; min-height:256px;}
+.cooperationWrap .cooperCont.tab .btnWRe {position:absolute; bottom:0; right:0; width:506px; padding-top:5px; border-top: 1px solid #ddd;}
+.cooperationWrap .cooperCont.tab .btnWRe .graySmBtn {width:105px; margin-top:10px; padding-left:0; padding-right:0; text-align:center;}
+.cooperationWrap .cooperCont.tab .imgBox {padding:6px; border:1px solid #e7e7e7; text-align:center;}
+.cooperationWrap .cooperCont.tab .descBox {}
+.cooperationWrap .cooperCont.tab .descBox .tit {margin:9px 0 14px; font-weight:600; font-size: 18px; line-height: 1; color: #111; }
+.cooperationWrap .cooperCont.tab .descBox .txt {margin-bottom:6px; line-height:24px;}
+.cooperationWrap .cooperCont.tab .descBox .address {}
+.cooperationWrap .cooperCont.tab .descBox .phone {font-weight:600; color:#111;}
+.cooperationWrap .cooperCont.tab .descBox .url a {color:#0e787c; text-decoration:underline;;}
+
+/* 상표사용정책 */
+.hospitalinfoWrap .selectText, .hospitalinfoWrap .inputText {font-size:12px !important;}
+.ciRegBox {width:838px; border:1px solid #ddd; padding:40px 30px; text-align: center;}
+.ciRegBox .title {font-size:18px; color:#111; padding-bottom:30px; border-bottom:1px solid #ddd; font-weight: 600;}
+.ciRegBox .regOk {padding:25px 0;}
+.ciRegBox .docuBox {background:#f5f5f5; padding:20px 30px; text-align: left;}
+.ciRegBox .docuBox dt {color:#0e787c; padding-bottom:5px; font-weight: 600;}
+
+/* table layout */
+.tableLayoutSec {}
+.tableLayoutSec .tableLayoutCI { border-top:2px solid #267376;}
+.tableLayoutSec .tableLayoutCI th, .tableLayoutSec .tableLayoutCI td { vertical-align:middle;}
+.tableLayoutSec .tableLayoutCI tbody th {padding:9px 0 9px 15px; border-bottom:1px solid #ccc; border-left:1px solid #ccc; background:#f5f5f5 url('/asan/images/common/bg_thline.gif') repeat-y right 0; color:#0e787c; text-align: left; font-size:13px;}
+.tableLayoutSec .tableLayoutCI tbody th:first-child {border-left:none; background:#f5f5f5;}
+.tableLayoutSec .tableLayoutCI tbody td { padding:9px 15px;border-left:1px solid #ccc; border-bottom:1px solid #ccc !important; background:#fff; letter-spacing:-1px; text-align: left;}
+.tableLayoutSec .tableLayoutCI tbody td:first-child {border-left:none; background:#fff;}
+
+/* CI - 코퍼리트 심볼 Corporate Symbol 부분 */
+.hospitalinfoWrap .processWrap {margin-top: 30px;}
+.hospitalinfoWrap .processWrap .dep1Title {margin-bottom: 28px;line-height: 1;}
+.hospitalinfoWrap .processWrap .desc {line-height: 24px;}
+.hospitalinfoWrap .cslist {margin: 8px auto 35px; text-align: center; overflow: hidden; width: 100%; margin-bottom: 35px;}
+.hospitalinfoWrap .cslist dt {margin-bottom: 20px;color: #111;font-size: 18px;font-weight: 600;}
+.hospitalinfoWrap .cslist dd {margin-bottom: 15px;}
+
+/* CI - 코퍼리트 컬러 Corporate Color  부분 */
+.hospitalinfoWrap .corcolor_wrap {position: relative;overflow: hidden;width: 100%;height: 593px;background: url('/asan/images/hospitalinfo/bg_cslist.gif') no-repeat 0 0;}
+.hospitalinfoWrap .corcolor_wrap .c_main {position: absolute;top: 25px;left: 48px;}
+.hospitalinfoWrap .corcolor_wrap .c_main dt {margin-bottom: 136px;color: #111;font-size: 18px;font-weight: 600;}
+.hospitalinfoWrap .corcolor_wrap .c_main dd ul {padding-left: 28px;}
+.hospitalinfoWrap .corcolor_wrap .c_main dd li {margin-bottom: 20px;font-size: 0;line-height: 0;}
+.hospitalinfoWrap .corcolor_wrap .sub_main {position: absolute;top: 25px;left: 493px;}
+.hospitalinfoWrap .corcolor_wrap .sub_main dt {margin-bottom: 40px;color: #111;font-size: 18px;font-weight: 600;}
+.hospitalinfoWrap .corcolor_wrap .sub_main dd li {float: left;margin-bottom: 34px;font-size: 0;line-height: 0;}
+
+/* linetab */
+.hospitalinfoWrap .linetab { position:relative; min-width:1px; height:24px; padding:14px 10px 10px 0; font-weight:600; border-top:1px solid #ccc; border-bottom:1px solid #ccc; margin-top:30px;}
+.hospitalinfoWrap .linetab > li { float:left; padding:0 20px; border-left:1px solid #ccc;}
+.hospitalinfoWrap .linetab > li:after { display:block; content:" "; clear:both;}
+.hospitalinfoWrap .linetab > li:first-child { border-left:0;}
+.hospitalinfoWrap .linetab > li.on { padding:0 10px;}
+.hospitalinfoWrap .linetab > li.on > a { padding:7px 10px; color:#fff; background:#666;}
+
+.hospitalinfoWrap .agreeWrap { padding:15px 25px; border:1px solid #ddd; background:#f5f5f5; font-size:13px; margin-top:20px;}
+.hospitalinfoWrap .agreeWrap strong { display:block; margin-bottom:5px; font-size:18px !important; font-weight:600; color:#111;}
+.hospitalinfoWrap .agreeWrap .agreeCont { margin-bottom:5px; padding:10px 15px; height:60px; overflow-y:scroll; border:1px solid #ddd; background:#fff;}
+.hospitalinfoWrap .agreeWrap .agreeCont ul { margin:7px 0;}
+.hospitalinfoWrap .agreeWrap .agreeCont ul li { padding-left:13px; background:url('/asan/images/common/bul_softgrayDot2x2.jpg') 6px center no-repeat;}
+
+/* 홍보책자 */
+.prBox {position: relative;margin: 5px 0 0 14px;width: 873px;height: 662px;background: url('/asan/images/hospitalinfo/bg_prList.jpg') no-repeat 0 0;}
+.prBox .leftCont {position: absolute;top: 83px;left: 57px;}
+.prBox .rightCont {position: absolute;top: 384px;right: 52px;width: 348px;text-align: center;}
+.prBox .rightCont p {margin: 2px 0 24px 0;color: #666;font-weight: 600;}
+.prBox .rightCont div {padding-left: 4px;}
+.prBox .rightCont div a {display: inline-block;margin: 0 5px 10px 5px;}
+
+/* 연보 */
+.yearPaperBox {overflow: hidden;margin-top: 22px;border-bottom: 1px solid #ccc;}
+.yearPaperBox .leftArea {overflow: hidden;float: left;width: 472px;margin-right: 138px;padding-bottom: 20px;}
+.yearPaperBox .leftArea .listColumm {overflow: hidden;padding: 0 0 14px 0;}
+.yearPaperBox .leftArea .listColumm h4 {margin-bottom: 7px;}
+.yearPaperBox .leftArea .listColumm>div {float: left;}
+.yearPaperBox .leftArea .listColumm>div ul li {margin-bottom: 3px;}
+.yearPaperBox .leftArea .listColumm>div ul li.on a {color: #0e787c;text-decoration: underline;}
+.yearPaperBox .rightArea {overflow: hidden;float: left;margin-top: 17px;width: 287px;}
+.yearPaperBox .rightArea ul {overflow: hidden;}
+.yearPaperBox .rightArea ul li {float: left;margin: 0 13px 12px 0;}
+.yearPaperBox .rightArea ul li.marNone {margin-right: 0;}
+
+/* 시설안내 */
+.grayBox {overflow: hidden;padding: 24px 27px;background: #f5f5f5;border: 1px solid #ddd;}
+.infoDl {overflow: hidden;}
+.infoDl dt {float: left;width: 157px;height: 62px;}
+.tabInfoCont {overflow: hidden;position: relative;}
+.tabInfoCont .leftArea {float: left;}
+.tabInfoCont .rightArea {position: relative;float: left;width: 297px;height: 406px;background: #0e787c;color: #fff;}
+.tabInfoCont .rightArea .gpsViewbtn {position: absolute;top: 47px;;right: 20px;}
+.tabInfoCont .rightArea dl {margin: 22px 20px 30px 20px;}
+.tabInfoCont .rightArea dl dt {font-size: 18px;font-weight: 600;}
+.tabInfoCont .rightArea dl dd {margin-bottom: 20px;}
+.tabInfoCont .somBox {z-index: 1;overflow: hidden;position: absolute;bottom: 0;left: 0;width: 100%;height: 65px;background: url('/asan/images/hospitalinfo/bg_info_some.png') repeat-x 0 0;}
+
+.tabInfoCont .somBox ul {overflow: hidden;margin: 7px 0 0 7px;}
+.tabInfoCont .somBox ul li {position: relative;float: left;margin-right: 5px;}
+.tabInfoCont .somBox ul li.on .somBorBox {width: 66px;height: 51px;position: absolute;left: 0;top: 0;background: url("/asan/images/hospitalinfo/placeBorBox.png") no-repeat 0 0;}
+
+/* 정기간행물 */
+.healthListMailSome {overflow: hidden;}
+.healthListMailSome li {float: left;margin: 0 15px 15px 0;width: 212px;height: 401px;background: url('/asan/images/hospitalinfo/bg_healthList.jpg') no-repeat 0 0;}
+.healthListMailSome li.last {margin-right: 0;}
+.healthListMailSome li .img {margin: 4px 0 0 11px;}
+.healthListMailSome li .img img {border: 1px solid #ddd;width: 187px;height: 250px;}
+.healthListMailSome li p {margin: 8px 0 0 14px;font-size: 13px;font-weight: 600;color: #666;}
+.healthListMailSome li p>span>a {color: #666;}
+.healthListMailSome li p>span {display: block;height: 60px;}
+.healthListMailSome li p>span.date {display: block;height:auto;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width:184px;}
+.healthListMailSome li>span {display: block;margin: 14px 0 0 10px;font-size: 18px;font-weight: 600;color: #111;overflow: hidden;width: 180px;white-space: nowrap;text-overflow: ellipsis;}
+
+.hospitalinfoWrap .corcolor_wrap {position: relative;overflow: hidden;width: 100%;height: 599px;background: url('/asan/images/hospitalinfo/bg_cslist.gif') no-repeat 0 0;}
+.hospitalinfoWrap .corcolor_wrap .c_main {position: absolute;top: 25px;left: 48px;}
+.hospitalinfoWrap .corcolor_wrap .c_main dt {margin-bottom: 136px;color: #111;font-size: 18px;font-weight: 600;}
+.hospitalinfoWrap .corcolor_wrap .c_main dd ul {padding-left: 28px;}
+.hospitalinfoWrap .corcolor_wrap .c_main dd li {margin-bottom: 20px;font-size: 0;line-height: 0;}
+.hospitalinfoWrap .corcolor_wrap .sub_main {position: absolute;top: 25px;left: 493px;}
+.hospitalinfoWrap .corcolor_wrap .sub_main dt {margin-bottom: 40px;color: #111;font-size: 18px;font-weight: 600;}
+.hospitalinfoWrap .corcolor_wrap .sub_main dd li {float: left;margin-bottom: 34px;font-size: 0;line-height: 0;}
+
+/* CI - 로고/지정서체  부분 */
+.hospitalinfoWrap .stitwrap_desc {margin-top: 30px;overflow: hidden;}
+.hospitalinfoWrap .stitwrap_desc dt {width: 308px;float: left;margin-top: -3px;}
+.hospitalinfoWrap .stitwrap_desc dt span {margin-top: -6px;}
+.hospitalinfoWrap .stitwrap_desc dd {width: 592px;float: left;}
+.hospitalinfoWrap .cilogo_type {overflow: hidden;margin-top: 44px;}
+.hospitalinfoWrap .cilogo_type dt {clear: both;float: left;width: 309px;height: 140px;font-size: 18px;line-height: 1;margin-top: 30px;font-weight: 600;}
+.hospitalinfoWrap .cilogo_type dd {float: left;width: 591px;}
+.hospitalinfoWrap .cilogo_type dt:first-child {margin-top: 0px;}
+
+/* CI - 슬로건 */
+
+/* CI - 금지규정  부분 */
+.hospitalinfoWrap .prohibition {margin: 33px 0 36px 0;}
+.hospitalinfoWrap .prohibitionList>ul>li {padding-bottom: 1px;}
+.hospitalinfoWrap .prohibitionList .proLeft {overflow: hidden;float: left;width: 484px;}
+.hospitalinfoWrap .prohibitionList .proRight {overflow: hidden;float: left;width: 416px;}
+
+/* 크롬, 사파리 핵 2014.05.23 */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.hosList01 dt.firemt {margin-top: 27px;}
+	.crSfari {margin-bottom: 8px;}
+	.historyWrap .historySec .hisCont>ul>li.long .btmArea {padding-bottom: 32px;}
+}
+
+/* 익스10 핵 2014.05.23 */
+.ie10 .historyWrap .tab3 ul {margin: 0 0 6px 10px;}
+/* 익스8, 9 핵 2014.05.23 */
+html>body .historyWrap .tab3 ul {margin: 0 0 6px 10px;}
+/* index */
+.hospitalinfoMain {padding: 50px 0 52px;}
+.hospitalinfoMain h2 {height: auto;margin: 0;padding: 0;font-size: 0;line-height: 0;}
+.hospitalinfoMain ul.navHospitalinfo {overflow: hidden;margin: 0 0 40px;padding-left: 1px;}
+.hospitalinfoMain ul.navHospitalinfo li {float: left;width: 189px;height: 189px;margin: 0 -1px;padding: 25px;font-size: 15px;line-height: 1.35em;letter-spacing: -0.05em;border: 1px solid #ddd;background-position: -1px;background-repeat: no-repeat;background-color: #fff;}
+.hospitalinfoMain ul.navHospitalinfo li.active {position:relative; padding:22px;border-width: 4px; border-color:#499c9f;background-position: -4px;}
+.hospitalinfoMain ul.navHospitalinfo li.menu01 {background-image: url('/asan/images/hospitalinfo/bg_menu_01.png');}
+.hospitalinfoMain ul.navHospitalinfo li.menu02 {background-image: url('/asan/images/hospitalinfo/bg_menu_02.png');}
+.hospitalinfoMain ul.navHospitalinfo li.menu03 {background-image: url('/asan/images/hospitalinfo/bg_menu_03.png');}
+.hospitalinfoMain ul.navHospitalinfo li.menu04 {background-image: url('/asan/images/hospitalinfo/bg_menu_04.png');}
+.hospitalinfoMain ul.navHospitalinfo li.menu05 {width:192px !important;background-image: url('/asan/images/hospitalinfo/bg_menu_05.png');}
+.hospitalinfoMain ul.navHospitalinfo li a {display: block;margin-bottom: 10px;font-weight: 600;font-size: 20px;color: #111;line-height: 1.2em;}
+.hospitalinfoMain .mainboards {float: left;position: relative;width: 662px;padding: 39px 0 0;}
+.hospitalinfoMain .mainboards h3 {position: absolute;left: 0;top: 0;width: 113px;height: 38px;font-weight: 600;font-size: 15px;color: #666;text-align: center;line-height: 2.5em;border: 1px solid #ccc;cursor: pointer;}
+.hospitalinfoMain .mainboards h3.mainboards02 {left: 114px;}
+.hospitalinfoMain .mainboards h3.mainboards03 {left: 228px;}
+.hospitalinfoMain .mainboards h3.active {color: #fff;background-color: #0e787c;}
+.hospitalinfoMain .mainboards ul {width: 100%;margin-bottom: 30px;}
+.hospitalinfoMain .mainboards li:first-child {border-top: 1px solid #ccc;}
+.hospitalinfoMain .mainboards li {overflow: hidden;height: 45px;border-top: 1px solid #dddddd;background: url('/asan/images/common/bul_grayDot2x2.jpg') no-repeat 0 50%;}
+.hospitalinfoMain .mainboards li a {display: inline-block;float: left;width: 550px;margin-left: 10px;line-height: 3em;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.hospitalinfoMain .mainboards li span {float: right;font-size: 13px;line-height: 3.5em;}
+.hospitalinfoMain .mainboards a.viewMore {display: inline-block;position: absolute;right: 0;top: 12px;font-size: 13px;color: #db330c;line-height: 1em;}
+.hospitalinfoMain .mainboards .contBoard {display: none;}
+.hospitalinfoMain .wrapGallery {position:relative;float: right;width: 506px;height: 298px;}
+.hospitalinfoMain .wrapGallery h3 {height: 37px;margin-left: 40px;font-weight: 600;font-size: 24px;color: #111;line-height: 1em;}
+.hospitalinfoMain .wrapGallery ul {width: 506px;height: 230px;padding-left: 15px;background: url('/asan/images/hospitalinfo/bg_gallery.gif') no-repeat 0 0;}
+.hospitalinfoMain .wrapGallery li {float: left;width: 159px;text-align: center;}
+.hospitalinfoMain .wrapGallery li img {width: 106px;height: 142px;margin-bottom: 30px;border: 1px solid #ddd;}
+.hospitalinfoMain .wrapGallery li strong {display: block;font-weight: 600;font-size: 18px;color: #111;text-align: center;}
+.hospitalinfoMain .wrapGallery li span {display: block;font-weight: 600;font-size: 13px;color: #666;text-align: center;}
+.hospitalinfoMain .wrapGallery a.viewMore {display: inline-block;position: absolute;right: 2px;top: 12px;font-size: 13px;color: #db330c;line-height: 1em;}
+.hospitalinfoMain .wrapPeriodical {clear: both;position: relative;height: 109px;padding: 50px 50px;font-weight: 600;font-size: 15px;line-height: 1.3em;border: 1px solid #ddd;background: url('/asan/images/hospitalinfo/bg_periodical.jpg') no-repeat 0 0;}
+.hospitalinfoMain .wrapPeriodical h3 {margin: 0 0 13px;font-weight: 600;font-size: 24px;color: #111;line-height: 1.25em;}
+.hospitalinfoMain .wrapPeriodical ul.banners {position: absolute;left: 724px;top: 21px;width: 482px;}
+.hospitalinfoMain .wrapPeriodical ul.banners li {float: left;width: 208px;height: 48px;margin: 0 30px 10px 0;line-height: 3em;text-indent: 60px;border: 1px solid #ddd;background-position: 0 0;background-repeat: no-repeat;}
+.hospitalinfoMain .wrapPeriodical ul.banners li.banner01 {background-image: url('/asan/images/hospitalinfo/bg_periodical_01.gif');}
+.hospitalinfoMain .wrapPeriodical ul.banners li.banner02 {background-image: url('/asan/images/hospitalinfo/bg_periodical_02.gif');}
+.hospitalinfoMain .wrapPeriodical ul.banners li.banner03 {background-image: url('/asan/images/hospitalinfo/bg_periodical_03.gif');}
+.hospitalinfoMain .wrapPeriodical ul.banners li.banner04 {background-image: url('/asan/images/hospitalinfo/bg_periodical_04.gif');}
+.hospitalinfoMain .wrapPeriodical ul.banners li.banner05 {background-image: url('/asan/images/hospitalinfo/bg_periodical_05.gif');}
+.hospitalinfoMain .wrapPeriodical ul.banners li.banner06 {background-image: url('/asan/images/hospitalinfo/bg_periodical_06.gif');}
+.hospitalinfoMain .wrapPeriodical ul.banners li a {display: block;font-weight: 600;font-size: 15px;}
+.hospitalinfoMain .wrapPeriodical ul.banners li a:hover {color: #111;}
+
+/* 병원소개::소식:: 강좌안내 ::   리스트부분  */
+.course_guidance_wrap {oveflow:hidden;width:100%;}
+.course_guidance_wrap .list {margin-left:-52px;}
+.course_guidance_wrap .list li { position:relative; width:265px; height:131px; float:left; margin:28px 0 25px 52px; background:url('/asan/images/common/bg_crossline.gif') 0 bottom repeat-x;}
+.course_guidance_wrap .list li strong { display:block; height:18px; font-size:18px; color:#111;}
+.course_guidance_wrap .list li .more { position:absolute; right:0; top:5px;}
+.course_guidance_wrap .list li dl dt.title { margin-bottom:15px; height:45px; font-size:18px; font-weight:600; line-height:24px;}
+.course_guidance_wrap .list li dl dt a { color:#111;}
+.course_guidance_wrap .list li dl dd { line-height:22px;}
+.course_guidance_wrap .list li dl dd.department { display:block; overflow:hidden; width:265px; text-overflow:ellipsis; white-space:nowrap;}

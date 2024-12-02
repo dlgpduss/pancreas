@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+@import "normalize.css";
+@import "../js/lib/jquery-ui-1.11.2/jquery-ui.css"; /* jquery-ui */
+@import "../js/lib/jquery.mCustomScrollbar-3.0.6/jquery.mCustomScrollbar.css"; /* mCustomScrollbar */
+@import "idangerous.swiper.css"; /* idangerous.swiper */
+@import "content.css";
+@import "style.css";
+
+
+/* 본원과 부서 나 독립사이트 같은데에서 공통으로 있는 페이지 같은 경우 여기에 한번에 작성한다. ★대신 여긴 제일먼저 로드하므로 우선순위를 높여서 작업해야한다. 
+	이유는 서버 반영시 CSS파일을 여러개올리지 않고 하나만 올릴 수 있게 하기위함.   예_ 찾아가는길 같은경우 인재채용 암병원, 본원에도 동시에 있다.
+	★ 다만 암병원은 가로 사이즈가 큰것으로 한개, 본원은 큰거 작은거 두개. 인재는 작은거 하나, 그래서 미디어쿼리와 페이지별 클래스를 필요하다면 각각세팅하고 코딩한다.
+*/
+/* 예_ 찾아가는길 같은경우 인재채용 암병원, 본원에도 동시에 있다. css 한번만 쓰도록 여기에 작성한다. jsp에서 해당페이지 별로 필요하다면 각각 다양하게 클래스 넣고 수정 
+ 아래는 작은 사이즈를 공통으로 놓고 코딩후, 큰것을 대응하고 , 암병원은 다시 작은사이즈로 다시 세팅했음. 미디어쿼리의 순서를 절대 바꾸면 안됨.
+*/
+
+/* 찾아가는길 셔틀버스 수정 2016-12-07 먼저 작은사이즈 맞추고 하단에 큰거 다시 작성 */
+.location-SMC.shuttle.shuttle_rounded > ul {overflow:auto;}
+.location-SMC.shuttle.shuttle_rounded > ul:after {left:0; width:100%;}
+.location-SMC.shuttle.shuttle_rounded:before,
+.location-SMC.shuttle.shuttle_rounded:after {display:block; position:absolute; content:""; width:80px; height:156px;}
+.location-SMC.shuttle.shuttle_rounded:before {top:30px;left:0; background:url(/_newhome/ui/home/static/img/hospital/bg_rounded_suttle_left.gif) no-repeat 0 0;}
+.location-SMC.shuttle.shuttle_rounded:after {top:30px;right:0; background:url(/_newhome/ui/home/static/img/hospital/bg_rounded_suttle_right.gif) no-repeat 0 0;}
+.location-SMC.shuttle.shuttle_rounded .img-shuttle li.first div {margin-left:0px;}
+.location-SMC.shuttle.shuttle_rounded [class*=location],
+.location-SMC.shuttle.shuttle_rounded .img-shuttle li.first > i {margin-bottom:18px;}
+
+.location-SMC.shuttle.shuttle_rounded .img-shuttle {margin-left:80px; margin-right:80px;}
+.location-SMC.shuttle.shuttle_rounded .img-shuttle li.first {text-align:center;}
+.location-SMC.shuttle.shuttle_rounded .img-shuttle li {width:25%; line-height:20px;}
+.location-SMC.shuttle.shuttle_rounded .img-shuttle02 li {float:right;}
+.location-SMC.shuttle.shuttle_rounded .img-shuttle02 li:after {background-image:url(/_newhome/ui/home/static/img/hospital/location-arrow02.gif); top:14px}
+
+.location-SMC.shuttle.shuttle_rounded .img-shuttle li.first > i,
+.location-SMC.shuttle.shuttle_rounded .img-shuttle02 li.first > i {margin-left:70px;}
+.location-SMC.location-SMC.shuttle.shuttle_rounded .img-shuttle02 li:first-child:after {display:block;}
+
+.location-SMC.shuttle.shuttle_rounded .img-shuttle02 {margin-top:54px;}
+.location-SMC.shuttle.shuttle_rounded .img-shuttle02 li:first-child {text-align:center;}
+.location-SMC.shuttle.shuttle_rounded .img-shuttle02 li.first:after {background-image:none;}
+.location-SMC.shuttle.shuttle_rounded .img-shuttle02 li:first-child > i {margin-left:75px;}
+
+.location-SMC.shuttle.shuttle_rounded .list-default {margin-left:22px;}
+.location-SMC.shuttle.shuttle_rounded .txt-shuttle {margin-top:60px;}
+@media all and (min-width: 1360px) {
+	/* 넓은 화면으로 코딩이 필요한경우 암병원, 본원 using_wide_width 다만 암병원은 사이즈가 큰것으로 한개, 본원은 큰거 작은거 두개 */
+	.using_wide_width .location-SMC.shuttle.shuttle_rounded .img-shuttle li.first > i,
+	.using_wide_width .location-SMC.shuttle.shuttle_rounded .img-shuttle02 li.first > i {margin-left:108px;}
+	.using_wide_width .location-SMC.shuttle.shuttle_rounded .img-shuttle02 li:first-child > i {margin-left:109px;}
+}
+@media all and (max-width: 1359px) {/* 암병원은 큰것만 코딩하기에 미디어 쿼리 다시 설정 */
+	body.cancer_locationmap .location-SMC.shuttle.shuttle_rounded .img-shuttle li.first > i,
+	body.cancer_locationmap .location-SMC.shuttle.shuttle_rounded .img-shuttle02 li.first > i {margin-left:108px;}
+	body.cancer_locationmap .location-SMC.shuttle.shuttle_rounded .img-shuttle02 li:first-child > i {margin-left:109px;}
+}
+/* 2017-05-02 자동차 추가 */
+.location-SMC.location-SMCtp02  li {width:14.25%;}
+/* 본원과 부서 나 독립사이트 같은데에서 공통으로 있는 페이지 같은 경우 여기에 한번에 작성한다. ★대신 여긴 제일먼저 로드하므로 우선순위를 높여서 작업해야한다. 
+	이유는 서버 반영시 CSS파일을 여러개올리지 않고 하나만 올릴 수 있게 하기위함.   예_ 찾아가는길 같은경우 인재채용, 암병원, 본원에도 동시에 있다.
+	★ 다만 암병원은 가로 사이즈가 큰것으로 한개, 본원은 큰거 작은거 두개. 그래서 미디어쿼리와 페이지별 클래스를 필요하다면 각각세팅하고 코딩한다.
+*/
+/* 예_ 찾아가는길 같은경우 인재채용 암병원, 본원에도 동시에 있다. css 한번만 쓰도록 여기에 작성한다. jsp에서 해당페이지 별로 필요하다면 각각 다양하게 클래스 넣고 수정 */
+
+
+
+
+/* 헤더 로그인 개인정보 수정 부분 */
+body .header-utility-area .header-search{float:right;}
+body .header-search .button-header-search {background-image:none}
+body .wrapper_member_login {float:right; margin-top:-4px;}
+body .wrapper_member_login li,
+body .wrapper_member_login li a {float:left; font-size:13px; color:#999; vertical-align:top; line-height:15px;}
+body .wrapper_member_login li {border-left:1px solid #e5e5e7; border-top:1px solid #e5e5e7; border-bottom:1px solid #e5e5e7;}
+body .wrapper_member_login li:last-child{border-right:1px solid #e5e5e7;}
+body .wrapper_member_login li a {padding:7px 15px 7px 15px;}
+
+/* 푸터개선 2017-06-05 -new 붙은 클래스는 새로만든것 */
+#footer .canexpanded .inner-wrap {padding-top:0 !important; line-height:22px;}
+#footer .expand-link-new {float:right; margin-top:-18px; line-height:16px; }
+#footer .expand-link-new .btn-expand-outer {display:inline-block; padding:19px 42px 19px 42px; font-size:15px; line-height:16px; color: #FFF; background:url(http://www.samsunghospital.com/_newhome/ui/home/static/img/main/main_sprite.png) 30px -1271px no-repeat; border: none; outline-color:transparent; text-align:left;}
+#footer .expand-link-new .btn-expand-outer.on,
+#footer .expand-link-new .btn-expand-outer:hover {background-color:#464c58;}
+
+#footer .outer-link-new {display:none; position:relative; box-sizing:border-box;}
+#footer .outer-link-new.on {display:block;}
+#footer .dept-link.dept-link-new,
+#footer .family-link.family-link-new {display:none !important}
+
+#footer .dept-link.dept-link-new.on,
+#footer .family-link.family-link-new.on {display:block !important; position:absolute  !important;  z-index:999;  border:1px solid #595f6a; border-bottom:0 none; box-sizing:border-box; background-color:#ffffff;}
+#footer .dept-link.dept-link-new.on {left:-14px; right:0;}
+
+
+.ver_ie.smc-main #footer .dept-link.dept-link-new.on,
+.ver_ie.smc-main #footer .family-link.family-link-new.on, /* ie 메인만 */
+#footer .dept-link.dept-link-new.on,
+#footer .family-link.family-link-new.on {bottom:56px} /* 다른 브라우저 */
+.ver_ie #footer .dept-link.dept-link-new.on,
+.ver_ie #footer .family-link.family-link-new.on {bottom:57px} /* 그외 ie 서브 적용됨 */
+
+
+#footer .family-link.family-link-new.on {/*height:220px;*/ right:0; padding:12px 10px 25px 10px;}
+#footer .family-link.family-link-new.on ul {margin-left:8px;}
+
+#footer .dept-link.dept-link-new {width:auto; padding:9px 16px 0 16px;}
+#footer .dept-link.dept-link-new:after{display:block; content:""; clear:both;}
+#footer .dept-link.dept-link-new .wrap_center_column {display:table-cell; width:261px; margin-left:0px; padding-left:2px; padding-right:2px; border-left:1px solid #e6e6e6; box-sizing:border-box;}
+#footer .dept-link.dept-link-new .wrap_center_column:last-child {padding-right:0;}
+#footer .dept-link.dept-link-new .wrap_center_column01  {border-left:0 none; padding-left:0px;}
+
+
+#footer .outer-link-new h3 {width:100%; margin:0 auto 20px auto; font-size: 20px; line-height:52px; height:52px; color: #fff; background-color:#0079bf; box-sizing:border-box; text-align:center; font-weight:normal}
+#footer .outer-link-new li {padding:0px 0px 0px 9px;  
+background:url(../img/ico/bul_footer_newone.gif) 0 9px no-repeat; line-height:21px;}
+#footer .outer-link-new li a {padding:2px 2px 2px 0px; font-size:14px; color: #0d0d0d; letter-spacing:0px; word-break:break-all;}
+#footer .outer-link-new li a:hover {text-decoration: underline; color: #7498dc;}
+#footer .dept-link.dept-link-new .wrap_center_column h4 {padding-left:20px; background-color:#cce4f2; box-sizing:border-box; letter-spacing:0px;}
+#footer .dept-link.dept-link-new .wrap_center_column h4,
+#footer .dept-link.dept-link-new .wrap_center_column h4 a {display:block; font-size:14px; color:#00456c; height:30px; line-height:30px;}
+#footer .dept-link.dept-link-new .wrap_center_column h4 {margin-bottom:10px;}
+#footer .dept-link.dept-link-new ul {float:none; margin-left:21px;}
+#footer .dept-link.dept-link-new .wrap_center_column01 ul {padding-bottom:62px;}
+#footer .inner_center_columnpart:first-child {height:292px}
+
+#footer .btn_cls_layerlink {display:block; position:absolute;top:23px;right:-33px; width:20px; height:20px; background:url(../img/ico/btn_cls_footernewone.png) no-repeat 0 0;}
+/* 2024-06-27 */
+#footer {padding-top:80px !important;}
+#footer .foot-link  a.link-protect:before {width:0px !important; visibility:hidden}
+#footer .foot-link a {padding-top:2px !important;line-height:20px;}
+#footer .foot-link a.link-protect {margin-right:-2px; background-color:#fff; border-radius:5px; color:#306ad7 !important;}
+.body_proton_page  .mobile-footer-top .link a:first-child,
+.body_proton_page  .mobile-footer-top .link  a:first-child:hover {padding-left:8px; background-color:#fff; color:#0058fd !important; font-weight:bold; border-radius:4px;}
+
+
+@media (max-width: 1359px) {/* 줄어드는 양성자와 본원만 해당. 주의 줄어드는 해피카페는 따로 css가 있음 *//* quick-navi-used는 본원만 붙음 */
+	.ver_ie.quick-navi-used.smc-main #footer .dept-link.dept-link-new.on,
+	.ver_ie.quick-navi-used.smc-main #footer .family-link.family-link-new.on {bottom:57px} /* ie 본원 메인만 */
+	.quick-navi-used #footer .expand-link-new .btn-expand-outer, /* quick-navi-used는 본원만 붙음 */
+	.body_proton_page #footer .expand-link-new .btn-expand-outer {padding-right:22px; padding-left:22px; background-position:10px -1271px}
+
+	.quick-navi-used #footer .family-link.family-link-new,
+	.body_proton_page #footer .family-link.family-link-new {width:212px;margin-bottom:0px;}
+
+	#footer .dept-link.dept-link-new ul {margin-left:15px;}
+}
+
+/* 2020-04-02 메인 팝업 - 본원, 양성자, 암병원, 심장뇌혈관, 건강의학센터 공통 , 양성자는 미디어쿼리 필요 줄어듬. */
+/* layer-popup-main */
+.smc-main-renew {}
+.main-popup20 .main-pop-header .tit,
+.main-popup20 .nano > .nano-content {padding-left:36px;}
+.main-popup-hide {display: none;} 
+.main-popup-wrapper { position: absolute; top: 0; left: 0; width: 100%; padding-top: 111px; }
+.main-popup-wrapper-inner { position: relative; min-width:1000px; max-width:1280px; margin: 0 auto; padding-top: 10px; box-sizing:border-box; }
+.main-popup20 {float:right; margin-top:13px; width:600px; z-index: 300; clear: both; overflow: hidden; position:relative; background:#fff url(/_newhome/ui/_component/static/img/main_popup/bg_tit_new.gif) no-repeat 0 0;}
+.main-popup20 .main-pop-header {margin-bottom:29px; margin-top:74px;}
+.main-popup20 .main-pop-header .tit {font-size:23px; line-height:30px; color:#333; font-weight:bold; letter-spacing:-1px; word-break: break-all;text-overflow: ellipsis;white-space: nowrap;overflow: hidden; width:562px; text-indent:0;}
+.main-popup20 .main-popup-close {display:block; width:21px; height:20px; position:absolute; top:12px;right:14px; background:url(/_newhome/ui/_component/static/img/main_popup/btn_cls.png) no-repeat 0 0;}
+.main-popup20 .main-popup-content {word-break:break-all; z-index:300; background-color:#fff;}/* 24 팝업 디자인 주석 .main-popup20 .main-popup-content {position:relative; padding-bottom:33px;  word-break:break-all; z-index:300; background-color:#fff;}*/
+/* 24 팝업 디자인 주석 .main-popup20 .main-popup-content:after{position:absolute; z-index:-1; bottom:0;left:0; right:0; width:100%; height:106px; background:url(http://www.samsunghospital.com/upload/editor/images/bg_main_lpop24.gif) no-repeat 0 0; display:block; content:""; clear:both; opacity:0.6}*/
+/* 스크롤 디자인 */
+/* .main-popup20 .main-popup-content .nano {position:relative; height:396px; overflow:hidden;} */
+/* .main-popup20.item2 .main-popup-content .nano {height:184px;} */
+.main-popup20 .main-popup-content .nano {position:relative; width:97%; height:178px; overflow:hidden; margin-bottom:33px;}
+.main-popup20 .nano > .nano-content {position:absolute;overflow:scroll;overflow-x:hidden;top:0;right:0;bottom:0;left:0; padding-right:18px;}
+.main-popup20 .nano > .nano-content::-webkit-scrollbar {display:none;}
+.main-popup20 .has-scrollbar > .nano-content::-webkit-scrollbar{display:block;}
+.main-popup20 .nano > .nano-pane {background-color:#d7d7d7;position:absolute;width:3px;right:4px; top:1px; bottom:0; border-radius:0;}
+.main-popup20 .nano > .nano-pane > .nano-slider {position: relative;margin: 0 1px;border-radius:8px;}
+.main-popup20 .nano:hover > .nano-pane, .main-popup20 .nano-pane.active, .nano-pane.flashed {/*visibility : visible\9;*/ /* Target only IE7 and IE8 with this hack */opacity:0.99;}
+.main-popup20 .nano > .nano-pane > .nano-slider {background:#697282 !important; position:relative; margin:0; border-radius:0}
+.main-popup20 .main-popup-content .desc {color:#6e6e6e; font-size:14px; line-height:22px;}
+.main-popup20 .main-popup-content .desc a, 
+.main-popup20 .main-popup-content .desc a:hover,
+.main-popup20 .main-popup-content .desc a:visited,
+.main-popup20 .main-popup-content .desc a:focus {color:#6e6e6e;}
+.main-popup20 .main-popup-content .desc .only_enter {display:block; height:13px; line-height:1px;}
+.main-popup20 .main-popup-content .desc br {}
+.main-popup20 .main-popup-content ol,
+.main-popup20 .main-popup-content ul {margin:0;padding:0;}
+.main-popup20 .main-popup-content ul li {position:relative; padding-left:10px;}
+.main-popup20 .main-popup-content ul li:before {position:absolute;top:2px;left:0; display:block; content:"·"; clear:both;}
+
+.main-popup20 .main-popup-content ol li {position:relative; padding-left:18px;}
+.main-popup20 .main-popup-content ol li:before {position:absolute;top:0px;left:0; display:block; content:"1."; clear:both;}
+.main-popup20 .main-popup-content ol li:nth-of-type(2):before {content:"2.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(3):before {content:"3.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(4):before {content:"4.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(5):before {content:"5.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(6):before {content:"6.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(7):before {content:"7.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(8):before {content:"8.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(9):before {content:"9.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(10):before {content:"10.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(11):before {content:"11.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(12):before {content:"12.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(13):before {content:"13.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(14):before {content:"14.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(15):before {content:"15.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(16):before {content:"16.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(17):before {content:"17.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(18):before {content:"18.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(19):before {content:"19.";}
+.main-popup20 .main-popup-content ol li:nth-of-type(20):before {content:"20.";}
+
+.main-popup20 .main-popup-footer {/*height:30px; background:url(/_newhome/ui/_component/static/img/main_popup/bg_bottom.gif) no-repeat 0 0;*/}
+/* .main-popup20.item2 .main-popup-footer {margin-top:20px;} */
+.main-popup20 .main-popup-footer {/*margin-top:20px;*/}
+/* .main-popup20 .main-popup-todaycheck .input-checkbox  {float:right; margin-right:15px; padding-top:8px; vertical-align:top; line-height:15px; }*/
+.main-popup20 .main-popup-todaycheck .input-checkbox {position:absolute;top:14px;left:14px;}
+.main-popup20 .main-popup-footer .main-popup-todaycheck i {width:19px; height:19px; background:url(/_newhome/ui/_component/static/img/main_popup/bg_chk_new.png) no-repeat 0 0; border:0 none;}
+/*.main-popup20 .main-popup-footer .main-popup-todaycheck .checked  i{background:url(/_newhome/ui/_component/static/img/main_popup/bg_chk_on.gif) no-repeat 0 0;}*/
+.main-popup20 .main-popup-footer .input-checkbox .label-text {color:#fff; font-size:14px;}
+.proton-main .box-layer-protontype {display:none}
+@media all and (max-width:1359px){
+}
+
+@media all and (max-width:768px){
+	/* 양성자는 반응형이라 pc랑 html같아서 여기에 따로 */
+	.proton_main_popwrap.outer_ban_temp2019,
+	.proton_main_popwrap .main-popup-wrapper-inner {width:100%; max-width:100%; min-width:100%; padding-top:0;}
+	.proton_main_popwrap .main-popup-wrapper {width:89%; position:fixed;top:50px; box-sizing:border-box;  z-index:3020;}
+	.proton_main_popwrap .main-popup20 {margin-bottom:10px; width:100%;float:none; box-sizing:border-box; margin-top:0px;}
+	.proton_main_popwrap .main-popup20 * {box-sizing:border-box;}
+	.proton_main_popwrap .main-popup20 .main-pop-header {height:auto;min-height:34px; max-height:63px;}
+	.proton_main_popwrap .main-popup20 .main-pop-header .tit {overflow: hidden; width:82%; padding-top:12px; padding-bottom:12px; font-size:18px; line-height:22px; letter-spacing:-1px;}
+	/* .proton_main_popwrap .main-popup20 .main-popup-content .nano {max-height:430px; height:430px;} */
+	/* .proton_main_popwrap .main-popup20.item2 .main-popup-content .nano {max-height:150px;height:240px;} */
+	.proton_main_popwrap .main-popup20 .main-popup-content .nano {max-height:150px;height:240px;}
+	.proton_main_popwrap .main-popup20 .main-popup-content .desc {font-size:16px; line-height:21px;}
+	.proton_main_popwrap .main-popup20 .main-popup-content .only_enter {display:block; height:15px; line-height:1px;}
+	.proton_main_popwrap .main-popup20 .main-popup-close {width:16px; height:16px; top:13px; background-size:16px 16px;}
+	.proton_main_popwrap .main-popup20 .main-popup-close i {display:none}
+	.proton_main_popwrap .main-popup20 .main-popup-content .nano ol li:before {top:0;}
+}
+@media all and (max-width:715px){
+	.proton_main_popwrap .main-popup-wrapper {width:100%; padding:0 20px;}
+	.proton-main.mobile .box-layer-protontype {display:block; position:fixed;top:0;left:0; z-index:3010; width:100%; height:100%; background:rgba(0,0,0,0.5)}
+}

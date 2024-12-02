@@ -1,0 +1,1109 @@
+@charset "utf-8";
+
+/* 레이어팝업_공통 - 진료예약 레이어팝업 */
+.layerpopup_wrap {display:none; overflow:hidden;width:900px; margin:40px auto;padding-top:5px;background: url('/asan/images/reservation/bg_layertotal_top.gif') no-repeat 0 0;z-index:1040;}
+.layerpopup_wrap2 {overflow:hidden;width:900px; margin:40px auto;padding-top:5px;background: url('/asan/images/reservation/bg_layertotal_top.gif') no-repeat 0 0;z-index:1040;}
+.layerpopup_btm {padding-bottom:5px;background: url('/asan/images/reservation/bg_layertotal_btm.gif') no-repeat 0 bottom;}
+.layerpopup_mid {height:100%;padding:22px 30px 36px;background: url('/asan/images/reservation/bg_layertotal_mid.gif') repeat-y 0 0;}
+
+/* 레이어팝업_공통 - 진료예약 레이어팝업 - 타이틀영역[닫기버튼포함] */
+.layerpopup_mid .poptit_wrap {padding-bottom:19px;border-bottom:1px solid #ddd;}
+.layerpopup_mid .poptit_wrap.type01 {border-bottom:0;margin-bottom:-10px;}
+.layerpopup_mid .poptit_wrap:after { content:""; display:block; clear:both;}
+.layerpopup_mid .poptit_wrap .ptit {float:left;color:#111;font-size:22px;font-weight:600;line-height:24px;}
+.layerpopup_mid .poptit_wrap .close {position:relative;float:right;margin-top:-14px;padding-right:33px;color:#111;}
+.layerpopup_mid .poptit_wrap .close span {color:#0e787c;}
+.layerpopup_mid .poptit_wrap .close a {position:absolute;top:2px;right:-15px;}
+
+/* 레이어팝업_공통 - table view */
+.layerpopup_mid .ptbl_view_wrap {width:100%;margin-top:30px;border-top:2px solid #0e787c;}
+.layerpopup_mid .ptbl_view {width:100%;}
+.layerpopup_mid .ptbl_view th {border-right:1px solid #fff;border-bottom:1px solid #ccc;background:#f5f5f5;color:#0e787c;font-size:13px;text-align:center;}
+.layerpopup_mid .ptbl_view th.checkup {border-right:1px solid #ccc; padding:7px 0;}
+.layerpopup_mid .ptbl_view td {padding:4px 0 4px 15px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;text-align:left;}
+.layerpopup_mid .ptbl_view02_wrap {width:100%;margin-top:7px;border-top:2px solid #0e787c;}
+.layerpopup_mid .ptbl_view02 {width:100%;}
+.layerpopup_mid .ptbl_view02 th {padding-left:64px;border-right:1px solid #fff;border-bottom:1px solid #ccc;background:#f5f5f5;color:#0e787c;font-size:13px;text-align:left;vertical-align:middle;}
+.layerpopup_mid .ptbl_view02 th .star {display:inline-block;margin-left:-14px;padding-left:14px;background: url('/asan/images/reservation/bg_check02.gif') no-repeat 0 6px;font-size:13px;}
+.layerpopup_mid .ptbl_view02 td {padding:4px 0 4px 15px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;text-align:left;}
+.layerpopup_mid .ptbl_view02 td select {position:relative;}
+.layerpopup_mid .ptbl_view02 td textarea {width:620px;height:107px;border:1px solid #ddd;}
+
+/* 레이어팝업_공통 버튼 */
+.layerpopup_mid .pbtn_wrap {margin-top:40px;text-align:center;}
+
+/* 레이어팝업_공통 텍스트 서브 타이틀 */
+.layerpopup_mid .pstit_wrap {margin-top:23px;color:#111;font-size:22px;text-align:center;font-weight:600;}
+.layerpopup_mid .pstit_wrap span {color:#0e787c;}
+.layerpopup_mid .pcont_tit01 {margin-top:16px;color:#111;font-weight:600;}
+.layerpopup_mid .pcont_tit02 {margin-top:16px;color:#333;font-size:13px;line-height:20px;}
+
+
+/* 첫방문고객예약하기_주민등록번호 확인 */
+.layerpopup_mid .pscroll_desc01 {height:95px;margin-top:11px;padding:15px 20px 20px;background:#f5f5f5;}
+.layerpopup_mid .pscroll_desc01 p {color:#111;font-size:13px;line-height:21px;}
+.layerpopup_mid .pscroll_desc01 li {padding-left:7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 10px;color:#333;font-size:13px;line-height:20px;}
+.layerpopup_mid .pscroll_subtxt {margin-top:4px;text-align:right;}
+.layerpopup_mid .pscroll_subtxt label {font-size:13px;color:#333;}
+
+.layerpopup_mid .rsvInfo { width:808px; height:78px; font-size:13px; border:1px solid #ddd; background:#f5f5f5; margin:10px 0 0 0; padding:10px 15px;}
+.layerpopup_mid .rsvInfo dl { margin-top:10px;}
+.layerpopup_mid .rsvInfo dt {float:left; width:170px; font-weight:600; color:#0e787c;}
+.layerpopup_mid .rsvInfo dd {float:left; margin-right:30px;}
+.layerpopup_mid .rsvInfo dd strong {display:inline-block; padding:0 0 0 9px; background:url('/asan/images/common/bul_grayDot2x2.jpg') no-repeat 0 50%;}
+.layerpopup_mid .rsvInfo p {line-height:24px; margin-top:4px;}
+
+/* 첫방문고객예약하기 -  진료내역이 없을 경우01 첫방문고객간편진료예약서비스 */
+.layerpopup_mid .timetext_wrap {margin-top:6px;padding:15px 20px 17px 20px;background:#f5f5f5;color:#333;font-size:13px;line-height:22px;}
+.layerpopup_mid .timetext_wrap span {display:inline-block;color:#0e787c;}
+.layerpopup_mid .timetext_wrap.gap01 {margin-top:24px;}
+.layerpopup_mid .required_input {margin-top:29px;color:#333;font-size:13px;text-align:right;}
+.layerpopup_mid .required_input span {padding-left:15px;background: url('/asan/images/reservation/bg_check01.gif') no-repeat 0 5px;}
+
+/* 진료예약 -첫방문고객예약하기- 진료내역이 있을 경우 - 진료예약하기 */
+.layerpopup_mid .mereserve_txt {margin:9px 0 -5px;color:#333;line-height:24px;text-align:center;}
+.layerpopup_mid .mereserve_txt.gap01 {margin-top:15px;}
+
+/*  진료예약-회원예약하기-대리예약-병원등록번호가 없을경우-주민등록번호 확인 // 진료예약-비회원예약하기-비회원예약서비스 */
+.reserve_wrap {overflow:hidden;width:100%;margin-top:7px;}
+.reserve_wrap .resident {float:left;}
+.reserve_wrap .hospital {float:right;}
+.reserve_wrap div {overflow:hidden;width:413px;min-height:147px;border:1px solid #ddd;border-top:2px solid #0e787c;background:#f5f5f5;}
+.reserve_wrap .sre_txt {margin-top:15px;color:#0e787c;text-align:center;}
+.reserve_wrap .sre_desc {overflow:hidden;width:373px;margin-left:20px;padding-top:10px;}
+.reserve_wrap .sre_desc dt {clear:both;float:left;width:113px;padding-top:13px;color:#333;font-size:13px;}
+.reserve_wrap .sre_desc dd {float:left;width:260px;padding-top:10px;}
+.reservenum_wrap {margin:5px 0 25px;padding:5px 0 5px 14px;border-top:2px solid #0e787c;border-bottom:1px solid #ddd;}
+.reservenum_wrap input,
+.reservenum_wrap a {vertical-align:middle;}
+.reservenum_wrap .gap {margin-left:40px;}
+.resertime_inqc {margin-top:23px;padding-bottom:4px;color:#111;font-size:22px;font-weight:600;text-align:center;}
+.resertime_inqc .name {color:#0e787c;}
+.typagingrig_btn {right:26px !important;}
+
+
+/* 레이아웃-공통(진료예약관련) */
+.modal-layout .totalreserve_wrap {position:static;}
+.totalreserve_wrap .errorWrap {padding-left:0; padding-right:0; background:white;}
+.totalreserve_wrap .errorWrap .headerWrap {height:45px;}
+
+.totalreserve_wrap {position:absolute; overflow:hidden; width:1199px; margin:53px auto; background: url('/asan/images/reservation/bg_leftwrap.gif') no-repeat 0 141px;z-index:1040;}
+.totalreserve_wrap .phead_wrap {position:relative;overflow:hidden;width:1159px;height:112px;margin-left:20px;background: url('/asan/images/reservation/bg_toptab.png') no-repeat 0 0;font-size:0;line-height:0;}
+.totalreserve_wrap .phead_wrap .steplist {float:left;overflow:hidden;width:1090px;padding:25px 0; height: 65px;}
+.totalreserve_wrap .phead_wrap .steplist li {float:left;}
+.totalreserve_wrap .phead_wrap .steplist li.ty01 {padding-left:93px;}
+.totalreserve_wrap .phead_wrap .steplist li.ty02 {padding-left:112px;}
+.totalreserve_wrap .phead_wrap .steplist li.ty03 {padding-left:111px;}
+.totalreserve_wrap .phead_wrap .steplist li.ty04 {padding-left:100px;}
+.totalreserve_wrap .phead_wrap .pclose_wrap {float:right;padding:14px 13px 0 0;}
+.totalreserve_wrap .rtInfo_wrap { width: 1159px; margin-left: 20px; text-align: center;}
+.totalreserve_wrap .rtInfo_name {color: #333; clear: both; background: #f5f5f5; height: 50px; width: 100%; font-size: 15px; text-align: center; line-height: 50px;}
+.totalreserve_wrap .rtInfo_name .name {font-size: 18px; font-weight: 600; color: #0e787c;}
+.totalreserve_wrap .rtInfo_name .text {font-size: 18px; font-weight: 600; color: #db330c;}
+.totalreserve_wrap .rtInfo_cont {color: #fff; clear: both; background: #0e787c; height: 40px; width: 100%; font-size: 15px; text-align: center; line-height: 40px;}
+.totalreserve_wrap .rtInfo_cont .warn {font-weight: 600; color: #fff600;}
+.totalreserve_top {overflow:hidden;width:100%;padding-top:5px;background: url('/asan/images/reservation/bg_boxtreatres_top.png') no-repeat 0 0;}
+.totalreserve_btm {padding-bottom:6px;background: url('/asan/images/reservation/bg_boxtreatres_btm.png') no-repeat 0 bottom;}
+.totalreserve_mid {overflow:hidden;height:725px;padding:25px 10px 26px 30px;background: url('/asan/images/reservation/bg_boxtreatres_mid.png') repeat-y 0 0;}
+.totalreserve_mid .inwrap_box {overflow:auto;height:100%;padding-right:20px;}
+.totalreserve_mid .player_tit {color:#111;font-size:22px;font-weight:600;line-height:25px;}
+.totalreserve_mid .pbtn_wrap {margin-top:25px;text-align:center; padding-bottom:2px;}
+.totalreserve_mid .pbtn_wrap a {width:50px;min-width:50px;margin:0 4px;}
+.contitbtn_wrap:after {content:""; display:block; clear:both;}
+.contitbtn_wrap .txt {float:left;padding-top:5px;color:#111;}
+.contitbtn_wrap .btn {float:right;}
+
+.contitbtn_wrap02 {text-align:right;font-size:0;line-height:0;}
+.contitbtn_wrap02 .tit {display:inline-block;margin:0 20px 0 0;color:#111;font-size:15px;line-height:15px;vertical-align:middle;}
+.contitbtn_wrap02 .serchbox_win {display:inline-block;height:41px;background:#0e787c;vertical-align:middle;}
+.contitbtn_wrap02 .serchbox_win input {width:360px;height:23px;margin:4px 0 4px 4px;padding:5px 0 5px 10px;border:none;line-height:20px;}
+.contitbtn_wrap02 .greenMdBtn {padding:13px 27px 12px;vertical-align:middle;}
+.contitbtn_wrap02 .grayMdBtn2 {margin-left:17px;vertical-align:-5px;}
+.matit_listview {margin-top:26px;color:#111;font-size:15px;font-weight:600;}
+.malist_listview {margin-top:15px;padding:15px 0;border:1px solid #0e787c;}
+.malist_listview a {display:inline-block;padding:0 26px;font-size:13px;font-weight:600;}
+.malist_listview a.current {color:#0e787c;text-decoration:underline;}
+
+
+/* 공통(진료예약관련) - 진료예약확인 - 선택박스(진료과,의료진,일료일/시)*/
+.totalreserve_mid .infodesc_wrap {margin-top:18px;padding:20px 0;border:1px solid #ddd;background:#f5f5f5;}
+.totalreserve_mid .infodesc_wrap .infolist {overflow:hidden;width:601px;margin:0 auto;}
+.totalreserve_mid .infodesc_wrap .infolist > li {position:relative;float:left;width:185px;height:185px;margin-left:20px;border:1px solid #ffa03a;background:#fff;text-align:center;}
+.totalreserve_mid .infodesc_wrap .infolist > li:first-child {margin-left:0;}
+.totalreserve_mid .infodesc_wrap .infolist > li .infostit {padding-top:19px;color:#111;font-size:18px;font-weight:600;line-height:20px;}
+.totalreserve_mid .infodesc_wrap .infolist > li .medical_wrap {overflow:hidden;position:relative;margin:10px auto 0;width:56px;height:56px;}
+.totalreserve_mid .infodesc_wrap .infolist > li .medical_wrap img {width:56px;height:56px;}
+.totalreserve_mid .infodesc_wrap .infolist > li .medical_wrap span {display:block;position:absolute;width:56px;height:56px;background: url('/asan/images/reservation/bg_photo_wrap02.gif') no-repeat 0 0;}
+.totalreserve_mid .infodesc_wrap .infolist > li .photo_wrap {overflow:hidden;position:relative;margin:10px auto 0;width:57px;height:57px;}
+.totalreserve_mid .infodesc_wrap .infolist > li .photo_wrap img {width:90px;height:90px;margin:0 0 0 -15px}
+.totalreserve_mid .infodesc_wrap .infolist > li .photo_wrap span {display:block;position:absolute;width:90px;height:90px;margin-left:-15px;background: url('/asan/images/reservation/bg_photo_wrap.png') no-repeat 0 0;}
+.totalreserve_mid .infodesc_wrap .infolist > li .photo_wrap .photo_wrap{margin-top:0;} 
+.totalreserve_mid .infodesc_wrap .infolist > li .text_info {margin-top:5px;color:#333;font-weight:600;}
+.totalreserve_mid .infodesc_wrap .infolist > li .text_info a {color:#0e787c;font-size:15px;text-decoration:underline;}
+.totalreserve_mid .infodesc_wrap .infolist > li .btn_wrap {position:absolute;bottom:18px;width:100%;}
+.totalreserve_mid .infodesc_wrap .infolist > li .btn_wrap a {margin-right:0;}
+.totalreserve_mid .infodesc_wrap .infolist > li .day {margin-top:20px;color:#333;}
+.totalreserve_mid .infodesc_wrap .infolist > li .time span {display:inline-block;margin-top:5px;padding-left:33px;background: url('/asan/images/reservation/bg_time.gif') no-repeat 0 4px;color:#058e8f;font-size:28px;font-weight:600;line-height:30px;}
+
+/* 공통(진료예약관련) - 진료예약확인 - 테이블 */
+.totalreserve_mid .tbl_reserve01_wrap {overflow:hidden;width:100%;margin-top:6px;border-top:2px solid #0e787c;}
+.totalreserve_mid .tbl_reserve01_wrap.gap01 {margin-top:18px;}
+.totalreserve_mid .tbl_reserve01 {width:100%;}
+.totalreserve_mid .tbl_reserve01 th {border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ccc;background:#f5f5f5;color:#333;font-size:13px;text-align:center;vertical-align:middle;font-weight: 600;}
+.totalreserve_mid .tbl_reserve01 th:first-child {border-left:none;}
+.totalreserve_mid .tbl_reserve01 td {height:26px;min-height:26px;padding:4px 0 4px 15px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;font-size:13px;text-align:left;vertical-align:middle;}
+.totalreserve_mid .tbl_reserve01 td a,
+.totalreserve_mid .tbl_reserve01 td input {vertical-align:middle;}
+.totalreserve_mid .tbl_reserve01 td a.type01 {color:#0e787c;text-decoration:underline;}
+.totalreserve_mid .tbl_reserve01 td .gap {margin-top:5px;}
+.totalreserve_mid .tbl_resertxt {margin-top:25px;padding-left:12px;text-indent:-12px;color:#111;font-size:13px;line-height:21px;}
+
+/* 공통(진료예약관련) - 진료예약확인 - 안내문 */
+.brochure_wrap {margin-top:30px; padding:20px;background:#f5f5f5;}
+.brochure_wrap .br_titi {color:#111;font-weight:600;}
+.brochure_wrap .list_type01 {margin-top:15px;padding:20px;background:#fff;}
+.brochure_wrap .list_type01 li {margin-top:5px;padding-left:7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 10px;font-size:13px;line-height:15px;}
+.brochure_wrap .list_type01 li:first-child {margin-top:0;}
+.brochure_wrap .list_type02 {position:relative;width:1084px;margin:24px 0 0 20px;}
+.brochure_wrap .list_type02 li {padding-left:7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 7px;color:#333;font-size:13px;line-height:20px;}
+.brochure_wrap .list_type02 li strong {color:#111;}
+.brochure_wrap .list_type02 li span {color:#0e787c;}
+.brochure_wrap .list_type02 li.ty01 {position:absolute;top:0;left:625px;}
+.brochure_wrap .list_type02 li.ty02 {position:absolute;top:20px;left:625px;}
+.brochure_wrap .list_type02 li.ty03 {position:absolute;top:40px;left:625px;}
+.brochure_wrap .list_type02 li.ty05 {position:absolute;top:130px;left:625px;}
+.brochure_wrap .list_type02 li.ty04 {position:absolute;top:180px;left:625px;font-size:15px;}
+
+/* 공통(진료예약관련) - 진료예약확인 - 위치(찾아오는길) */
+.mapsdet_wrap {overflow:hidden;width:100%;margin-top:30px;border-bottom:1px solid #ddd;}
+.mapsdet_wrap li {float:right;width:516px;}
+.mapsdet_wrap li:first-child {float:left;}
+.mapsdet_wrap li .tit {margin-bottom:17px;color:#111;font-weight:600;line-height:20px;}
+.mapsdet_wrap li .map {width:499px;height:499px;border:1px solid #ddd;}
+.mapsdet_wrap li .desc {min-height:72px;margin-top:7px;color:111;font-size:13px;line-height:19px;}
+
+
+/* 레이아웃-공통 [직접예약][과거진료이력] */
+.total_stepbox_wrap {position:relative;overflow:hidden;width:1179px;padding-left:20px;z-index:1043;}
+.total_stepbox_wrap .info_menu_wrap {float:left;width:187px;}
+.total_stepbox_wrap .info_menu li {height:187px;background:#ebebeb;}
+.total_stepbox_wrap .info_menu li .gap {border-top:1px solid #bababa;}
+.total_stepbox_wrap .info_menu li .type_txt {padding-top:14px;color:#111;font-size:18px;font-weight:600;text-align:center;}
+.total_stepbox_wrap .info_menu li .photo_wrap {overflow:hidden;position:relative;width:56px;height:56px;margin:9px auto 0;}
+.total_stepbox_wrap .info_menu li .photo_wrap.type01 img {margin-left:-16px;}
+.total_stepbox_wrap .info_menu li .photo_wrap span {position:absolute;width:56px;height:56px;background: url('/asan/images/reservation/bg_photo_wrap_gray.png') no-repeat 0 0;}
+.total_stepbox_wrap .info_menu li .text_info {margin-top:2px;color:#333;font-weight:600;text-align:center;}
+.total_stepbox_wrap .info_menu li .text_info a {color:#0e787c;font-size:15px;text-decoration:underline;}
+.total_stepbox_wrap .info_menu li .btn_wrap {margin-top:10px;text-align:center;}
+.total_stepbox_wrap .contbox_wrap {float:right;width:992px;height:687px;background: url('/asan/images/reservation/bg_layertotal_wrap.png') no-repeat 0 0;}
+.total_stepbox_wrap .contbox_wrap .scroll_wrap {overflow:auto;width:932px;height:625px;margin:30px 0 0 30px;padding-right:20px;}
+/* 레이아웃-공통 레이어안에 레이어뜨는 부분(관련의료진) */
+.layerinlayer {display:none; position: absolute; top: 0px; left: 0px; width: 1279px; height:687px; background:black;filter:alpha(opacity=50); opacity: 0.5; z-index: 1113;}
+.inlayer_boxty {display:none;position:absolute;top:30%;left:50%;width:491px;margin-left:-245px;background:#0e787c;z-index: 1114;}
+.inlayer_boxty .title_wrap {overflow:hidden;width:100%;height:50px;}
+.inlayer_boxty .title_wrap .tit {float:left;margin:10px 0 0 20px;color:#fff;font-size:18px;font-weight:600;}
+.inlayer_boxty .title_wrap .close {float:right;padding:16px 11px 0 0;}
+.inlayer_boxty .inwrap_box {margin:0 4px 4px 4px;padding:20px 19px;background:#fff;}
+.inlayer_boxty .inwrap_box .tiptxt {margin-top:3px;padding-left:17px;background: url('/asan/images/reservation/bg_tip.gif') no-repeat 0 5px;color:#333;font-size:13px;line-height:22px;}
+.tbl_sche {width:100%;margin-top:5px;border-top:2px solid #0e787c;}
+.tbl_sche thead th {padding:8px 0 8px;border-bottom:1px solid #ccc;background:#F5F5F5 url("/asan/images/common/bgTableCellRight.gif") repeat-y 0 0;color:#333;font-size:13px;text-align:center;vertical-align:middle;}
+.tbl_sche thead th.fir {background:#F5F5F5;}
+.tbl_sche thead tr.sub th {padding:6px 0 6px;background:#EBEBEB url("/asan/images/common/bgTableCellRight.gif") repeat-y 0 0;}
+.tbl_sche tbody td {height:25px;min-height:25px;padding:10px 0 8px;border-bottom:1px solid #ccc;background:#fff url("/asan/images/common/bgTableCellRight.gif") repeat-y 0 0;color:#333;font-size:13px;text-align:center;line-height:15px;vertical-align:middle;}
+.tbl_sche tbody td .reserve {display:inline-block;padding:6px 10px 4px;background:#ffa03a;color:#fff;font-size:12px;text-align:center;}
+.tbl_sche tbody td.al_l {padding-left:10px;background:#fff;text-align:left;}
+.tbl_sche tbody td.type01 {padding-left:0;background:#fff;text-align:center;}
+.sche_guidewrap {margin-top:20px;padding-left:17px;color:#333;font-size:13px;line-height:19px;}
+.sche_guidewrap .guide {display:block;margin-left:-17px;padding:0 0 5px 17px;background: url('/asan/images/common/bg_str.gif') no-repeat 0 4px;color:#db330c;}
+
+/* 레이아웃 - [직접예약][과거진료이력] */
+.serch_medicalteam {position:relative;padding:16px 0 16px 201px;border:1px solid #e5e5e5;background:#f1f1f1;color:#111;font-weight:600;}
+.serch_medicalteam .input_wrap {display:inline-block;width:353px;height:37px;margin-left:10px;padding:0 0 0 9px;border:3px solid #0e787c;background:#fff;vertical-align:top;}
+.serch_medicalteam .input_wrap input {width:100%;height:20px;margin-top:5px;border:none;background:none;}
+.serch_medicalteam a.serch {display:inline-block;width:75px;height:31px;padding-top:12px;background:#0e787c;color:#fff;font-size:18px;line-height:20px;text-align:center;vertical-align:middle;}
+.serch_medicalteam .serchlist_wrap {position:absolute;top:59px;left:352px;width:364px;border:1px solid #cccece;background:#fff;color:#111;font-size:13px;line-height:22px;}
+.serch_medicalteam .serchlist_wrap .list {padding:6px 4px;}
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 의료진 리스트*/
+.doctorinfo_list > li {padding:32px 0 30px;border-bottom:1px solid #d1d1d1;}
+.doctorinfo_list > li:after {content:""; display:block; clear:both;}
+.doctorinfo_list li .doctor_desc {float:left;width:461px;}
+.doctorinfo_list li .doctor_desc:after {content:""; display:block; clear:both;}
+.doctorinfo_list li .doctor_desc .photo_wrap {float:left;width:154px;}
+.doctorinfo_list li .doctor_desc .desc {float:right;width:281px;}
+.doctorinfo_list li .doctor_desc .desc .name {padding-bottom:13px;border-bottom:1px solid #ddd;color:#111;font-size:20px;font-weight:600;line-height:24px;}
+.doctorinfo_list li .doctor_desc .desc .name span {display:inline-block;margin-left:40px;padding-left:16px;background: url('/asan/images/reservation/bg_check03.gif') no-repeat 0 2px;color:#111;font-size:15px;line-height:16px;}
+.doctorinfo_list li .doctor_desc .desc .specialization {margin-top:9px;}
+.doctorinfo_list li .doctor_desc .desc .specialization th {padding-top:4px;color:#111;text-align:left;vertical-align:top;}
+.doctorinfo_list li .doctor_desc .desc .specialization td {padding-top:4px;color:#333;font-size:13px;line-height:20px;vertical-align:top;}
+.doctorinfo_list li .doctor_desc .desc .specialization td a {color:#0e787c;text-decoration:underline;}
+.doctorinfo_list li .doctor_desc .desc .btn_wrap {margin-top:13px;padding-top:14px;border-top:1px solid #ddd;}
+.doctorinfo_list li .doctor_desc .desc .btn_wrap .btnwrap_layer {display:inline-block;position:relative;top:0;left:0;}
+.doctorinfo_list li .doctor_desc .desc .btn_wrap .btnwrap_layer .whiteSmBtn {padding:6px 9px !important;}
+.doctorinfo_list li .doctor_desc .desc .btn_wrap .btnwrap_layer .list_wrap {display:none;position:absolute;top:25px;right:0px;width:170px;padding:6px 10px 6px;border:1px solid #ccc;background:#fff;z-index:10;}
+.doctorinfo_list li .doctor_desc .desc .btn_wrap .btnwrap_layer .list_wrap li {padding-left:7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 10px;}
+.doctorinfo_list li .doctor_desc .desc .btn_wrap .btnwrap_layer .list_wrap li a {color:#333;font-size:13px;line-height:20px;}
+.doctorinfo_list li .doctor_desc .desc .btn_wrap .btnwrap_layer .list_wrap li:first-child {margin-top:0;}
+.doctorinfo_list li .schedule {float:right;width:438px;}
+.doctorinfo_list li .schedule .shetit {color:#111;font-weight:600;}
+.doctorinfo_list li .schedule .tbl_sche {width:100%;margin-top:5px;border-top:2px solid #0e787c;}
+.doctorinfo_list li .schedule .tbl_sche thead th {padding:8px 0 8px;border-bottom:1px solid #ccc;background:#F5F5F5 url("/asan/images/common/bgTableCellRight.gif") repeat-y 0 0;color:#333;font-size:13px;text-align:center;vertical-align:middle;}
+.doctorinfo_list li .schedule .tbl_sche thead th.fir {background:#F5F5F5;}
+.doctorinfo_list li .schedule .tbl_sche thead tr.sub th {padding:6px 0 6px;background:#EBEBEB url("/asan/images/common/bgTableCellRight.gif") repeat-y 0 0;}
+.doctorinfo_list li .schedule .tbl_sche tbody td {height:25px;min-height:25px;padding:10px 0 8px;border-bottom:1px solid #ccc;background:#fff url("/asan/images/common/bgTableCellRight.gif") repeat-y 0 0;color:#333;font-size:13px;text-align:center;line-height:15px;vertical-align:middle;}
+.doctorinfo_list li .schedule .tbl_sche tbody td .reserve {display:inline-block;padding:6px 10px 4px;background:#ffa03a;color:#fff;font-size:12px;text-align:center;}
+.doctorinfo_list li .schedule .tbl_sche tbody td.al_l {padding:10px 10px 8px;text-align:left;}
+.doctorinfo_list li .schedule .tbl_sche tbody td.type01 {padding-left:0;background:#fff;text-align:center;}
+.doctorinfo_list li .schedule .tbl_sche tbody td.fir {border-left:none;background:#fff;}
+.doctorinfo_list li .schedule .tiptxt {margin-top:3px;padding-left:17px;background: url('/asan/images/reservation/bg_tip.gif') no-repeat 0 5px;color:#333;font-size:13px;line-height:22px;}
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 타이틀 */
+.guidewrap_title:after {content:""; display:block; clear:both;}
+.guidewrap_title .guide_tit {float:left;color:#111;font-size:22px;font-weight:600;}
+.guidewrap_title .guide_tit .sub {color:#058e8f;font-size:15px;}
+.guidewrap_title .guide_tit .sub02 {font-size:15px;}
+.guidewrap_title .btn_layerbox {float:right;margin-top:5px;}
+.guidewrap_title .btn_layerbox .txt_wrap {display:inline-block;margin-right:10px;font-size:13px;}
+.guidewrap_title .btn_layerbox .tiplayer_wrap {display:inline-block;position:relative;top:0;left:0;z-index:1010;}
+.guidewrap_title .btn_layerbox .tiplayer_wrap .active .whiteSmBtn {border:1px solid #047f80;background:#058e8f;color:#fff;}
+.guidewrap_title .btn_layerbox .tiplayer_wrap .openlayer_wrap {display:none;position:absolute;top:25px;right:0;width:683px;padding:14px 18px 10px  20px;background:#058e8f;z-index:1011;}
+.guidewrap_title .btn_layerbox .tiplayer_wrap .openlayer_wrap .select_desc {color:#fff;font-size:13px;line-height:20px;}
+.guidewrap_title .btn_layerbox .tiplayer_wrap .openlayer_wrap .desc dt {padding-bottom:10px;color:#fff;font-size:18px;}
+.guidewrap_title .btn_layerbox .tiplayer_wrap .openlayer_wrap .desc dd {color:#fff;font-size:13px;line-height:20px;}
+.guidewrap_title .btn_layerbox .tiplayer_wrap .openlayer_wrap .close_wrap {text-align:right;}
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 롤링 - 의료진 */
+.rotation_wrap {position:relative;overflow:hidden;width:100%;margin-top:10px;background:#0e787c;}
+.rotation_wrap.type01 {margin-top:20px;}
+.rotation_wrap .prev {float:left;}
+.rotation_wrap .list_wrap {position:relative;overflow:hidden;float:left;width:840px;}
+.rotation_wrap .list_wrap .list {position:relative; width:9999px; top:0; left:0;}
+.rotation_wrap .list_wrap .list li {float:left;width:200px;height:40px;margin-right:10px;text-align:center;}
+.rotation_wrap .list_wrap .list li a {display:block;height:30px;padding-top:10px;color:#fff;font-weight:600;}
+.rotation_wrap .list_wrap .list li.current {padding-left:9px;background: url('/asan/images/reservation/bg_openl.gif') no-repeat 0 0;}
+.rotation_wrap .list_wrap .list li.current a {padding-right:9px;background: url('/asan/images/reservation/bg_openr.gif') no-repeat right 0;color:#0e787c;}
+.rotation_wrap .next {float:right;}
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 진료일자선택  */
+.medicalday_wrap {overflow:hidden;width:100%;padding-top:20px;border-top:1px solid #d1d1d1;}
+.medicalday_wrap .ctit {float:left;color:#111;font-weight:600;}
+.daylist {float:right;margin-right:-10px;}
+.daylist li {float:left;margin-right:10px;font-size:13px;}
+.daylist li img {margin-bottom:2px;vertical-align:middle;}
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 빠른진료일자  */
+.daytypebox_wrap {overflow:hidden;width:911px;height:30px;margin-top:10px;padding:9px 0 0 20px;background: url('/asan/images/reservation/bg_daytypebox.gif') no-repeat 0 0;color:#fff;}
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 달력 */
+.calendar_wrap {overflow:hidden;width:100%;margin-top:20px;font-size:0;line-height:0;}
+.calendar_wrap .prev {float:left;margin-top:98px;}
+.calendar_wrap .calendar {overflow:hidden;position:relative;float:left;width:838px;height:271px;margin-left:25px;}
+.calendar_wrap .calendar .callist {position:absolute;top:0;left:0;}
+.calendar_wrap .calendar .callist > li {float:left;width:266px;height:271px;margin-left:20px;background: url('/asan/images/reservation/bg_calendar.gif') no-repeat 0 0;}
+.calendar_wrap .calendar .callist > li:first-child {margin-left:0;}
+.calendar_wrap .calendar .callist  li .day {padding-top:8px;color:#feffff;font-size:15px;text-align:center;line-height:20px;}
+.calendar_wrap .calendar .callist  li .calendar_list {margin:22px 0 0 10px;}
+.calendar_wrap .calendar .callist  li .calendar_list thead th {padding-bottom:10px;color:#111;font-size:12px;line-height:14px;}
+.calendar_wrap .calendar .callist  li .calendar_list tbody td {height:31px;color:#111;font-size:11px;line-height:13px;text-align:center;vertical-align:middle;}
+.calendar_wrap .calendar .callist  li .calendar_list tbody td.noday {color:#999;}
+.calendar_wrap .calendar .callist  li .calendar_list tbody td.today {background: url('/asan/images/reservation/bg_today.gif') no-repeat 50% 3px;}
+.calendar_wrap .calendar .callist  li .calendar_list tbody td.notday {background: url('/asan/images/reservation/bg_notday.gif') no-repeat 50% 3px;color:#fff;}
+.calendar_wrap .calendar .callist  li .calendar_list tbody td.reserveday a {display:block;width:22px;height:18px;margin:0 auto;padding-top:4px;background: url('/asan/images/reservation/bg_reserveday.gif') no-repeat 50% 0;}
+.calendar_wrap .calendar .callist  li .calendar_list tbody td.reserveday a:hover {background: url('/asan/images/reservation/bg_hover.gif') no-repeat 50% 0;color:#fff;text-decoration:none;}
+.calendar_wrap .calendar .callist  li .calendar_list tbody td.selet a {background: url('/asan/images/reservation/bg_hover.gif') no-repeat 50% 0;color:#fff;text-decoration:none;}
+.calendar_wrap .next {float:right;margin-top:98px;}
+
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 진료시간 선택  */
+.times_wrap {overflow:hidden;width:100%;margin-top:20px;}
+.times_wrap .ctit {float:left;margin-top:6px;width:138px;color:#111;font-weight:600;}
+.times_wrap .descinfo_wrap {overflow:hidden;float:right;width:794px;}
+.times_wrap .descinfo_wrap .txt {padding:6px 0 6px 20px;border:1px solid #ddd;color:#333;font-size:13px;}
+.times_wrap .descinfo_wrap .timelist {overflow:hidden;padding:3px 0 3px 5px;border:1px solid #ddd;color:#333;font-size:13px;}
+.times_wrap .descinfo_wrap .timelist li {float:left;margin-left:23px;}
+.times_wrap .descinfo_wrap .timelist li a {display: inline-block; padding:2px 5px; border:1px solid transparent; text-decoration:none; -ms-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+.times_wrap .descinfo_wrap .timelist li a:hover {border-color:#ffa03a;}
+.times_wrap .descinfo_wrap .timelist li a.on {color: white; background: #ffa03a;text-decoration:none;}
+.times_wrap .descinfo_wrap .time_reserve {overflow:hidden;width:100%;margin-top:10px;}
+.times_wrap .descinfo_wrap .time_reserve .tip {float:left;padding-left:17px;background: url('/asan/images/reservation/bg_tip.gif') no-repeat 0 5px;color:#333;font-size:13px;}
+.times_wrap .descinfo_wrap .reserve_confirm {float:left;width:500px;margin-left:20px;}
+.times_wrap .descinfo_wrap .reserve_confirm th,
+.times_wrap .descinfo_wrap .reserve_confirm td {color:#111;font-size:13px;line-height:20px;text-align:left;}
+.coptit {margin-top:20px;color:#111;font-weight:600;}
+.coptit_wrap {overflow:hidden;width:100%;margin-top:20px;}
+.coptit_wrap .tit {float:left;margin-top:18px;color:#111;font-weight:600;}
+.coptit_wrap .btn {float:right;}
+.coptit_wrap .btn a { display:inline-block;padding:10px;background:#ffa03a; font-size:15px; line-height:1; color:#fff;}
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 의료진 리스트  */
+.doctorlist_wrap {width:931px;margin-top:30px;}
+.doctorlist_wrap:after {content:""; display:block; clear:both;}
+.doctorlist_wrap .doctorlist {width:971px;margin-left:-40px;}
+.doctorlist_wrap .doctorlist:after {content:""; display:block; clear:both;}
+.doctorlist_wrap .doctorlist > li {display:inline;float:left;width:154px;margin-left:40px;padding-bottom:40px; min-height: 310px}
+.doctorlist_wrap .doctorlist li .photo {font-size:0;line-height:0;}
+.doctorlist_wrap .doctorlist li .photo img {width:154px;height:191px;}
+.doctorlist_wrap .doctorlist li .name {overflow:hidden;width:100%;margin-top:10px;color:#111;font-size:20px;line-height:23px;}
+.doctorlist_wrap .doctorlist li .name strong {float:left;}
+.doctorlist_wrap .doctorlist li .name .check {float:right;margin-top:5px;padding-left:15px;background: url('/asan/images/reservation/bg_check03.gif') no-repeat 0 0;font-size:13px;line-height:15px;}
+.doctorlist_wrap .doctorlist li .btn {margin-top:15px;}
+.doctorlist_wrap .doctorlist li .btn > a {display:block;margin-bottom:5px;padding:6px 0;text-align:center;}
+.doctorlist_wrap .doctorlist li .btn > a.reserve {padding:4px 0;background:#ffa03a;color:#fff;font-size:12px;}
+.doctorlist_wrap .doctorlist li .btn .doctor_layer {display:block;position:relative;top:0;left:0;}
+.doctorlist_wrap .doctorlist li .btn .doctor_layer > a {display:block;margin-bottom:5px;padding:6px 0;text-align:center;}
+.doctorlist_wrap .doctorlist li .btn .doctor_layer .list_wrap {display:none;position:absolute;top:25px;left:0;width:170px;padding:6px 10px 6px;border:1px solid #ccc;background:#fff;z-index:10;}
+.doctorlist_wrap .doctorlist li .btn .doctor_layer .list_wrap.type01 {left:auto;right:0;}
+.doctorlist_wrap .doctorlist li .btn .doctor_layer .list_wrap li {padding-left:7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 10px;}
+.doctorlist_wrap .doctorlist li .btn .doctor_layer .list_wrap li a {color:#333;font-size:13px;line-height:20px;text-align:left;}
+.doctorlist_wrap .doctorlist li .btn .doctor_layer .list_wrap li:first-child {margin-top:0;}
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 진료과 선택후 */
+.tab_medoffice {margin-top:15px;}
+.tab_medoffice:after {content:""; display:block; clear:both;}
+.tab_medoffice li {float:left;height:38px;text-align:center;}
+.tab_medoffice li a {display:block;width:154px;height:29px;padding-top:7px; margin-right:-1px; border:1px solid #ccc;font-size:15px;}
+.tab_medoffice li.ty01 a {height:32px;padding-top:4px;font-size:18px;}
+.tab_medoffice li.last a {width:156px;}
+.tab_medoffice li.on a {position:relative; height:30px;padding-top:8px;border-top:0;border-bottom:0;background:#0e787c url("/asan/images/popup/icon_white_arrow.png") no-repeat 50% bottom;color:#fff;}
+.tab_medoffice li.ty01.on a {height:32px;padding-top:6px;}
+.medoffice_list_wrap {overflow:hidden;width:932px;margin-top:30px;}
+.medoffice_list_wrap .medoffice_list {overflow:hidden;width:959px;margin-left:-23px;}
+.medoffice_list_wrap .medoffice_list li {float:left;width:112px;height:174px;margin-left:24px;font-size:0;line-height:0;}
+.medoffice_list_wrap .medoffice_list li .photo {border:1px solid #ddd;}
+.medoffice_list_wrap .medoffice_list li .photo img {border:1px solid #fff;width:108px;height:108px;}
+.medoffice_list_wrap .medoffice_list li .photo.on {border:1px solid #ffa03a;}
+.medoffice_list_wrap .medoffice_list li .photo.on img {border:1px solid #ffa03a;}
+.medoffice_list_wrap .medoffice_list li .text {margin-top:10px;color:#333;font-size:15px;line-height:20px;text-align:center;}
+.seletype_wrap {padding-top:30px;border-top:1px solid #d1d1d1;color:#111;}
+.schedulebox_prea {margin-top:3px;padding:17px 0;border:3px solid #ccc;text-align:center;}
+.schedulebox_prea a {display:inline-block;padding:4px 10px;background:#ffa03a;color:#fff;font-size:12px;}
+.different_invalid {margin-top:20px;padding-left:17px;background: url('/asan/images/reservation/bg_tip.gif') no-repeat 0 4px;color:#333;font-size:13px;}
+.notschedule_wrap {margin-top:20px; padding:20px 0;border:3px solid #058e8f;color:#111;font-size:18px;text-align:center;}
+.day_serchre {color:#111;font-weight:600;}
+.day_serchre strong {font-size:22px;}
+.speed_serchbox {margin-top:13px;padding:20px 0;background:#f5f5f5;font-weight:600;text-align:center;}
+
+/* 레이아웃 - [직접예약][과거진료이력] :::: 빠른진료일정으로 예약하기  */
+.patient_txt {padding-top:70px;color:#111;font-size:30px;text-align:center;line-height:40px;}
+.patient_step {overflow:hidden;width:510px;margin:35px auto 0;}
+.patient_step li {float:left;}
+.patient_list {width:615px;margin:30px auto 0;padding-top:20px;border-top:1px solid #ddd;}
+.patient_list li {margin-top:5px;font-size:13px;}
+.patient_list li img {margin-right:10px;vertical-align:middle;}
+.patient_list li:first-child {margin-top:0;}
+.patient_btn {margin-top:40px;text-align:center;}
+.patient_btn a {display:inline-block;padding:10px 15px;background:#ffa03a;color:#fff;text-align:center;}
+
+/* 의료진 검색 리스트 디폴트 */
+.total_stepbox_wrap .contbox_wrap .serchdefault_txt {margin-top:213px;font-size:30px;color:#0e787c;font-weight:600;line-height:30px;text-align:center;}
+.total_stepbox_wrap .contbox_wrap .serchfrom_wrap {position:relative;width:642px;height:58px;margin:17px auto 0 ;font-size:0;line-height:0;}
+.total_stepbox_wrap .contbox_wrap .serchfrom_wrap:after { content:""; display:block; clear:both;}
+.total_stepbox_wrap .contbox_wrap .serchfrom_wrap .input_wrap {float:left;width:500px;height:50px;padding-left:18px;border:4px solid #0e787c;background:#fff;vertical-align:middle;}
+.total_stepbox_wrap .contbox_wrap .serchfrom_wrap .input_wrap input {width:450px;margin-top:15px;border:none;line-height:15px;}
+.total_stepbox_wrap .contbox_wrap .serchfrom_wrap .serchbox_btn {display:block;float:left;width:115px;height:38px;padding-top:20px;background:#0e787c;color:#fff;font-size:18px;line-height:20px;text-align:center;}
+.total_stepbox_wrap .contbox_wrap .serchfrom_wrap .serchbox_btn  input {vertical-align:middle;}
+.total_stepbox_wrap .contbox_wrap .serchfrom_wrap .serchlisttext_wrap {position:absolute;top:58px;left:0;width:521px;border:1px solid #cccece;background:#fff;color:#666;font-size:15px;line-height:24px;}
+.total_stepbox_wrap .contbox_wrap .serchfrom_wrap .serchlisttext_wrap .list {padding:17px 22px;}
+.total_stepbox_wrap .contbox_wrap .serchtip_desc {overflow:hidden;width:643px;margin:30px auto 0;}
+.total_stepbox_wrap .contbox_wrap .serchtip_desc li.ty01 {float:left;width:264px;padding-left:49px;background: url('/asan/images/reservation/bg_steptip01.gif') no-repeat 6px 0;}
+.total_stepbox_wrap .contbox_wrap .serchtip_desc li.ty02 {float:left;width:247px;padding-left:83px;background: url('/asan/images/reservation/bg_steptip02.gif') no-repeat 0 0;}
+.layerin_layer_wrap {position:relative;}
+.serchdowntxt_wrap {margin:10px 0 0 175px;color:#111;font-size:13px;}
+.serchdowntxt_wrap02 {margin:10px 0 0 0;color:#111;font-size:13px; text-align:right;}
+
+/* 공통:::::나의차트 레이아웃 */
+.bodybg_type {height:100%;background:#3399ff;}
+.chartwrap_top {width:1160px;margin:20px auto;padding-top:6px;background: url('/asan/images/reservation/chartwrap_top.png') no-repeat 0 0;}
+.chartwrap_btm {padding-bottom:4px;background: url('/asan/images/reservation/chartwrap_btm.png') no-repeat 0 bottom;}
+.chartwrap_mid {width:1160px;padding-bottom:30px;background: url('/asan/images/reservation/chartwrap_mid.png') repeat-y 0 0;}
+.chartwrap_mid:after {content:""; display:block; clear:both;}
+.chartlnb_wrap {float:left;width:220px;}
+.chartlnb_wrap .name_hospitalnum {height:126px;background:#0e787c url('/asan/images/reservation/bg_hospitalnum.gif') no-repeat right bottom;text-align:center;}
+.chartlnb_wrap .name_hospitalnum .name {padding-top:34px;color:#fff;font-size:18px;font-weight:600;line-height:20px;}
+.chartlnb_wrap .name_hospitalnum .hospitalnum {margin-top:17px;color:#fff;}
+.chartlnb_wrap .name_hospitalnum .hospitalnum .num {display:inline-block;width:85px;}
+.chartlnb_wrap .lnblist_wrap {font-size:0;line-height:0;}
+.chartlnb_wrap .lnblist_wrap dd {border-top:1px solid #ccc;}
+.chartlnb_wrap .lnblist_wrap dd > a {display:block;padding:11px 5px 11px 30px;color:#333;font-size:15px;line-height:17px;}
+.chartlnb_wrap .lnblist_wrap dd.current > a {background:#777;color:#fff;}
+.chartlnb_wrap .lnblist_wrap dd .inlist_wrap {display:none;padding:13px 0 11px 0;background:#777;}
+.chartlnb_wrap .lnblist_wrap dd .inlist_wrap li > a {display:block;padding:5px 5px 5px 41px;color:#fff;font-size:13px;line-height:15px;}
+.chartlnb_wrap .lnblist_wrap dd.current .inlist_wrap {display:block;}
+.chartlnb_wrap .lnblist_wrap dd:first-child {border-top:0;}
+.chartcont_wrap {position:relative;float:left;width:860px;padding:14px 0 0 40px;}
+.chartcont_wrap .charttitbtn_wrap:after {content:""; display:block; clear:both;}
+.chartcont_wrap .charttitbtn_wrap .tit {float:left;margin-top:22px;color:#111;font-size:22px;font-weight:600;line-height:24px;}
+.chartcont_wrap .charttitbtn_wrap .close {float:right;margin-right:-20px;}
+
+/*  공통:::::나의차트::::: 테이블 */
+.chartcont_wrap .tbl_chart_wrap {overflow:hidden;width:100%;margin-top:20px;border-top:2px solid #0e787c;}
+.chartcont_wrap .tbl_chart_wrap.gap01 {margin-top:3px;}
+.chartcont_wrap .tbl_chart {width:100%;}
+.chartcont_wrap .tbl_chart th {border-bottom:1px solid #ccc;background:#f5f5f5;color:#0e787c;font-size:13px;text-align:center;vertical-align:middle;}
+.chartcont_wrap .tbl_chart th.depth2 {border-left:1px solid #ccc; background:#ebebeb;color:#111;font-size:13px;text-align:center;vertical-align:middle;} /*20140507추가_후원내영조회하기 팝업테이블*/
+.chartcont_wrap .tbl_chart td {height:26px;min-height:26px;padding:4px 0 4px 15px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;color:#111;font-size:13px;text-align:left;vertical-align:middle;}
+.chartcont_wrap .tbl_chart td textarea {width:690px;height:107px;border:1px solid #ddd;}
+.chartcont_wrap .tbl_chart td a,
+.chartcont_wrap .tbl_chart td input {vertical-align:middle;}
+.chartcont_wrap .tbl_chart td input.ty01 {border:1px solid #ffa03a;}
+.chartcont_wrap .tbl_chart td label {vertical-align:middle;margin-bottom:3px;}
+.chartcont_wrap .tbl_chart td .txt {padding:5px 0 2px;}
+.chartcont_wrap .tbl_chart td .box {padding:0 0 6px;}
+.chartcont_wrap .tbl_chart td .box01 {padding:6px 0 6px;}
+.chartcont_wrap .tbl_chart td.noneliner {border-left:0;text-align:right;}
+.chartcont_wrap .tbl_chart td .tbl_chartview_wrap {width:370px;margin-bottom:20px;}
+.chartcont_wrap .tbl_chart td .tbl_chartview_wrap .tbl_chartview {width:370px;}
+.chartcont_wrap .tbl_chart td .tbl_chartview_wrap.type01 {width:633px;margin:5px 0;}
+.chartcont_wrap .tbl_chart td .tbl_chartview_wrap.type01 thead th {padding-left:0;text-align:center;}
+.chartcont_wrap .tbl_chart td .tbl_chartview_wrap.type01 tbody td.al_l {padding-left:0;text-align:left;}
+.chartcont_wrap .tbl_chart td .tbl_chartview_wrap.type01 tbody td.al_l02 {padding-left:10px;border-left:none;text-align:left;}
+.chartcont_wrap .tbl_chart td .tbl_chartview_wrap.type01 .tbl_chartview {width:640px;}
+.chartcont_wrap .tbl_chart td .tbl_chartview td {padding:4px 0;text-align:center;}
+.chartcont_wrap .tbl_chart td .timelist_wrap {overflow:hidden;width:510px;}
+.chartcont_wrap .tbl_chart td .timelist_wrap .list {overflow:hidden;width:525px;margin-left:-15px;padding:3px 0 4px;}
+.chartcont_wrap .tbl_chart td .timelist_wrap .list li {float:left;width:175px;padding:5px 0 4px;background: url('/asan/images/reservation/img_line.gif') no-repeat 0 46%;color:#333;font-size:13px;text-align:center;line-height:15px;}
+.chartcont_wrap .tbl_chart td .indesc_tbl th {padding-left:0!important;border:none;background:none;color:#333;font-size:13px;text-align:left;}
+.chartcont_wrap .tbl_chart td .indesc_tbl td {border:none;background:none;text-align:left;}
+.chartcont_wrap .tbl_chart td .passlayer_boxwrap {display:none;position:relative;top:0;left:0;}
+.chartcont_wrap .tbl_chart td .passlayer_boxwrap .passsafety_box {position:absolute;top:-24px;left:400px;width:224px;height:43px;padding:9px 0 0 14px;background: url('/asan/images/reservation/bg_box.png') no-repeat 0 0;color:#333;font-size:12px;}
+.chartcont_wrap .tbl_chart td .passlayer_boxwrap .passsafety_box strong {color:#111;}
+
+.chartcont_wrap .type01 th {padding-left:64px;text-align:left;}
+.chartcont_wrap .type01 th.al_t {padding-top:10px;vertical-align:top;}
+.chartcont_wrap .type01 th .chk {display:inline-block;margin-left:-15px;padding-left:15px;background: url('/asan/images/reservation/bg_check04.gif') no-repeat 0 5px;}
+.chartcont_wrap .type01 td textarea {width:99%;height:155px;margin-bottom:8px;}
+.chartcont_wrap .type01 td.desc_txt {min-height:140px;padding-top:20px;vertical-align:top;}
+.chartcont_wrap .type01 td .ridgap01 {margin-right:20px;}
+.chartcont_wrap .type01 td .ridgap02 {margin-right:10px;}
+
+
+/*  공통:::::나의차트::::: 테이블 list */
+.tbl_chartlist {width:100%;margin-top:20px;border-top:2px solid #5d5d5d;}
+.tbl_chartlist thead th {padding:8px 0 7px;border-bottom:1px solid #ccc;background:#f5f5f5 url('/asan/images/reservation/bg_tblline.gif') no-repeat 0 10px;color:#111;font-size:13px;text-align:center;}
+.tbl_chartlist thead th.fir {background:#f5f5f5;}
+.tbl_chartlist tbody td {padding:7px 0 7px;border-bottom:1px solid #ccc;color:#333;font-size:13px;text-align:center;}
+.tbl_chartlist tbody td.al_l {padding-left:20px;text-align:left;}
+
+/*  공통:::::나의차트::::: 테이블 view */
+.tbl_chartview_wrap {overflow:hidden;border-top:2px solid #0e787c;}
+.tbl_chartview_wrap.gap01 {margin-top:7px;}
+.tbl_chartview_wrap.gap02 {margin-top:0;}
+.tbl_chartview_wrap.gap03 {margin-top:30px;}
+.tbl_chartview {width:862px;}
+.tbl_chartview th:first-child {border-left: 0px !important;}
+.tbl_chartview th {padding:7px 0 7px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;background:#f5f5f5;color:#0e787c;font-size:13px;text-align:center;vertical-align:middle;}
+.tbl_chartview th.al_l {padding-left:30px;text-align:left;}
+.tbl_chartview th.sub {color:#111;font-size:13px;}
+.tbl_chartview td {min-height:24px;padding:4px 0 4px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;color:#333;font-size:13px;text-align:center;vertical-align:middle;}
+.tbl_chartview td.al_l {padding-left:10px;text-align:left;}
+.tbl_chartview td.firsttd {border-left:none;}
+.tbl_chartview_wrap.type01 {width:100%;}
+.tbl_chartview_wrap.type01 .tbl_chartview {width:100%;}
+.tbl_chartview_wrap.type01 .tbl_chartview  th {vertical-align:middle;}
+.tbl_chartview_wrap.type01 .tbl_chartview  td {padding-left:20px;text-align:left;}
+.tbl_chartview_wrap.type01 .tbl_chartview td.depth2 {padding-left:0;background:#ebebeb;color:#111;font-weight:600;text-align:center;}
+.tbl_chartview_wrap.type02 .tbl_chartview td {padding:10px 0 7px 25px;color:#333;vertical-align:top;text-align:left;}
+.tbl_chartview_wrap.type02 .tbl_chartview td.name_photo {padding:5px 15px 0 15px;}
+.tbl_chartview_wrap.type02 .tbl_chartview td.name_photo .mtit {margin-bottom:10px;font-weight:600;line-height:22px;}
+.tbl_chartview_wrap.type02 .tbl_chartview td.name_photo .stit {margin-top:10px;font-weight:600;line-height:22px;}
+.tbl_chartview_wrap.type02 .tbl_chartview td .effect {margin-left:-9px;padding-left:9px;background: url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat 0 4px;color:#0e787c;}
+.tbl_chartview_wrap.type02 .tbl_chartview td .list li {padding-left:16px;text-indent:-16px;}
+.tabltye_btm {margin-top:10px;color:#333;font-size:13px;}
+
+/*  공통:::::나의차트::::: 버튼 */
+.chartbtn_wrap {margin-top:15px;text-align:center;}
+.chartbtn_wrap a {margin:0 4px;}
+.chart_tit {margin-top:18px;color:#111;font-weight:600;}
+.chart_tit.gap01 {margin-top:26px;}
+.chart_desc {margin-top:6px;color:#333;font-size:13px;line-height:18px;}
+.chart_desc.gap01 {margin-top:20px;}
+
+.add_info {position:relative;}
+.add_info .caption2 { position:absolute; left:70px; top:2px; font-size:12px; color:#db330c;}
+
+/* 나의차트:::::예약현황 */
+.treatment_type {margin-top:19px;padding-bottom:37px;border:1px solid #ddd;background:#f5f5f5;text-align:center;}
+.treatment_type .tit {padding-top:37px;color:#111;font-size:24px;font-weight:600;line-height:28px;}
+.treatment_type .btn {margin-top:17px;}
+.treatment_type .btn a {display:inline-block;padding:6px 10px;background:#0e787c;color:#fff;}
+.treatment_type .desc {margin-top:15px;color:#333;line-height:24px;}
+.treatment_type .num {color:#333;font-weight:600;}
+.treatment_type .num span {color:#0e787c;}
+.treatment_tip {position:relative;overflow:hidden;width:100%;margin-top:26px;}
+.treatment_tip dt.ty01 {position:absolute;top:0;left:70px;font-weight:600;}
+.treatment_tip dt.ty02 {position:absolute;top:0;left:521px;font-weight:600;}
+.treatment_tip dd {float:left;color:#333;font-size:13px;line-height:23px;}
+.treatment_tip dd.ty01 {width:359px;padding:22px 0 0 70px;background: url('/asan/images/reservation/bg_condition01.gif') no-repeat 0 4px;}
+.treatment_tip dd.ty02 {width:339px;padding:22px 0 0 91px;background: url('/asan/images/reservation/bg_condition02.gif') no-repeat 0 4px;}
+
+/* 나의차트::::: 나의 중간 진료비 결제 - 탭  */
+.tab_medium_payment {overflow:hidden;width:100%;height:31px;margin-top:20px;background:#fff url('/asan/images/reservation/bg_tab.gif') no-repeat 0 0;}
+.tab_medium_payment li {float:left;width:157px;}
+.tab_medium_payment li a {display:block;height:26px;padding-top:5px;color:#333;font-size:13px;text-align:center;}
+.tab_medium_payment li.current a {background: url('/asan/images/reservation/bg_tabon.gif') no-repeat 1px 0;color:#fff;text-decoration:none;}
+
+/* 나의차트::::: 내역 관련 박스 */
+.moneytype_box {overflow:hidden;margin-top:20px;padding:19px 0 18px;border:2px solid #0e787c;color:#111;font-size:18px;font-weight:600;text-align:center;}
+.moneytype_box .line {color:#0e787c;text-decoration:underline;}
+.moneytype_box a {margin:-5px 0 -2px 20px;vertical-align:3px;}
+.notelist_wrap {margin-top:5px;padding:16px 20px;border:1px solid #ddd;}
+.notelist_wrap .notelist_wrap {margin-top:0; border:0; padding:0;}
+.notelist_wrap li {padding-left:7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 10px;color:#333;font-size:13px;line-height:20px;}
+.medium_cancle_box {margin-top:6px;padding:18px 0 22px 180px;border:1px solid #ddd;background:#f5f5f5 url('/asan/images/reservation/bg_medium.gif') no-repeat 121px 17px;color:#333;font-size:13px;line-height:20px;}
+
+/* 나의차트::::: 개인정보수집.이용동의 */
+.rersonal_information {margin-top:18px;padding:16px 20px 13px;border:1px solid #ddd;background:#f5f5f5;}
+.rersonal_information .chart_tit {margin-top:0;}
+.rersonal_information .inbox_wrap {overflow-y:scroll;height:97px;margin-top:7px;padding:18px 20px 16px;border:1px solid #ddd;background:#fff;font-size:13px;line-height:25px;}
+.rersonal_information .inbox_wrap li {padding-left:7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 10px;}
+.rersonal_information .okcheck_txt {margin-top:6px;color:#111;font-size:13px;}
+.rersonal_information .okcheck_txt input {margin-bottom:2px;vertical-align:middle;}
+.tblt_checktxt {margin:27px 0 -15px;color:#333;font-size:13px;text-align:right;}
+.tblt_checktxt img {margin-bottom:2px;vertical-align:middle;}
+.tblt_checktxt.gap01 {margin-top:20px;}
+
+/* 나의차트::::: 결제내역 */
+.lookup_payments {margin-top:6px;padding:12px 0 12px 92px;border:1px solid #ddd;background:#f5f5f5;}
+.lookup_payments:after {content:""; display:block; clear:both;}
+.lookup_payments .list {float:left;}
+.lookup_payments .list dt {float:left;width:44px;margin-top:4px;color:#111;font-size:13px;font-weight:600;}
+.lookup_payments .list dd {float:left;width:291px;}
+.lookup_payments .list dd.ty01 {width:252px;}
+.lookup_payments .btn {float:left;}
+
+/* 나의차트::::: 출력가능한증명서 */
+.chart_step {margin-top:20px;font-size:0;line-height:0;text-align:center;}
+.certification_list {margin-top:17px;}
+.certification_list li {padding:3px 0 0 7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 15px;}
+.certification_list span {display:inline-block;width:552px;color:#333;font-size:13px;vertical-align:middle;}
+.certification_list a {min-width:97px;vertical-align:middle;}
+.notelist_wrap {margin-top:30px;padding:20px;border:1px solid #ddd;}
+.notelist_wrap li {padding-left:6px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 8px;font-size:13px;line-height:20px;}
+
+/* 나의차트::::: 영상사본발급 */
+.tab_videocopy {overflow:hidden;width:100%;height:31px;margin-top:20px;background:#fff url('/asan/images/reservation/bg_tab02.gif') no-repeat 0 0;}
+.tab_videocopy li {float:left;width:61px;}
+.tab_videocopy li a {display:block;width:100%;height:26px;padding-top:5px;color:#333;font-size:13px;text-align:center;}
+.tab_videocopy li.current a {background: url('/asan/images/reservation/bg_tabon02.gif') no-repeat 1px 0;color:#fff;text-decoration:none;}
+.txt_videocopy {margin-top:20px;color:#333;line-height:24px;}
+/* 나의차트::::: 영상사본발급 - 기간 달력선택박스 */
+.chart_calendar {margin-top:20px;padding:16px 0 16px;border:1px solid #ddd;background:#f5f5f5;font-weight:600;text-align:center;}
+.chart_calendar .calendar_box {overflow:hidden; display:inline-block;position:relative;width:218px;height:25px; vertical-align:middle; line-height:25px; background: url('/asan/images/reservation/bg_calendar02.gif') no-repeat 0 0;text-align:left;}
+.chart_calendar .calendar_box .txt {display:block;margin-left:10px; margin-top:2px; padding-top:3px; width:175px;border:none;font-size:13px; line-height:17px;}
+.chart_calendar .calendar_box .calendarbox_wrap {position:absolute;right:0;top:0;}
+.calendarbox {position:absolute;top:0;left:-241px;overflow:hidden;width:275px;background: url('/asan/images/common/calendarbox.png') no-repeat 0 0;}
+.chart_calendar .graySmBtn {margin-left:10px;}
+.chart_calendar .stit {margin:3px 20px 0 0;vertical-align:-2px;}
+
+/* 나의차트::::: 영상사본발급 - 내발급 가능한 영상사본 목록 - 수령 희망일부분 */
+.videocoissued_day {margin-top:26px;padding-bottom:25px;color:#333;font-size:13px;text-align:center;}
+.videocoissued_day strong {display:inline-block;margin-right:10px;color:#111;}
+.videocoissued_day span {display:inline-block;margin-left:20px;color:#0e787c;font-size:13px;}
+/* 나의차트::::: 영상사본발급 - 조회 */
+.can_appday {margin:14px 0 -13px;color:#0e787c;font-size:13px;}
+.medication_coun {overflow:hidden;margin-top:20px;padding:14px 0 16px 170px;background: url('/asan/images/reservation/bg_medication_coun.gif') no-repeat 0 0;color:#333;}
+.medication_coun strong {display:block;font-size:18px;}
+.medication_coun .num {display:block;margin-top:12px;color:#0e787c;}
+.medication_coun .num span {color:#333;font-weight:600;}
+/* 나의차트::::: 고객의소리 */
+.medication_coun.type01 {background: url('/asan/images/reservation/bg_send.gif') no-repeat 0 0;}
+.medication_coun.type02 {padding:0 0 0 170px;background: url('/asan/images/reservation/bg_serv.gif') no-repeat 0 0;}
+.medication_coun.type03 {padding:0 0 0 141px;background: url('/asan/images/hospitalinfo/icon_mail.gif') no-repeat 0 0;}
+/* 나의차트::::: 복약상담 */
+.pagingdown_wrap {margin-top:30px;padding:20px 0 20px;border:1px solid #ddd;background:#f5f5f5;text-align:center;}
+/* 나의차트 ::::::의료상담 */
+.tblview_wrap {margin-top:20px;padding:14px 30px 17px;border-top:2px solid #5d5d5d;border-bottom:1px solid #ddd;}
+.tblview_wrap .view_tit {color:#111;font-weight:600;}
+.tblview_wrap .view_desc {width:100%;margin-top:11px;}
+.tblview_wrap .view_desc th {color:#333;font-size:13px;font-weight:600;text-align:left;}
+.tblview_wrap .view_desc td {color:#333;font-size:13px;text-align:left;}
+.tblview_wrap .view_desc td a {color:#0e787c;text-decoration:underline;}
+.viewdesc_wrapbox {padding:27px 31px;color:#333;font-size:13px;line-height:20px;}
+.chart_reply {padding:16px 27px;border:1px solid #ddd;background:#f5f5f5;}
+.chart_reply .tbl_reply {width:100%;}
+.chart_reply .tbl_reply th {color:#0e787c;vertical-align:top;text-align:left;}
+.chart_reply .tbl_reply td {color:#333;font-size:13px;line-height:20px;vertical-align:top;text-align:left;}
+.chart_reply .text_replys {color:#333;font-size:13px;}
+.chart_reply .text_replys a {color:#0e787c;text-decoration:underline;}
+.chart_reply .date_file {margin:12px 0 0 50px;font-size:13px;}
+.chart_reply .date_file .line {margin:0 10px 2px;vertical-align:middle;}
+.chart_reply .date_file a {color:#0e787c;text-decoration:underline;}
+
+/* 나의차트::::: 학술행사신청 list */
+.inquiry_period {margin:20px 0 -10px;text-align:right;}
+/* 나의차트::::: 후원 */
+.support_wrap {margin-top:20px;padding:20px 0 30px 250px;background: url('/asan/images/reservation/bg_support.gif') no-repeat 0 -24px;color:#333;}
+.support_wrap strong {display:block;color:#0e787c;font-size:18px;}
+.tbl_tsupport {margin:15px 0 0;color:#333;font-size:13px;}
+.tbl_tsupport.gap01 {margin-bottom:20px;}
+.contribution_wrap {position:relative;padding:18px 27px 30px 260px;border:1px solid #ddd;background:#f5f5f5;}
+.contribution_wrap dt {position:absolute;top:30px;left:28px;font-weight:600;}
+.contribution_wrap dt strong {text-decoration:underline;}
+.contribution_wrap dd {margin-top:16px;line-height:16px;}
+.contribution_wrap dd .name {display:inline-block;width:200px;}
+
+/* 나의차트::::: 칭찬코너 리스트 */
+.compliment_wrap {overflow:hidden;width:100%;margin-top:35px;border-top:2px solid #5d5d5d;border-bottom:1px solid #5d5d5d;}
+.compliment_wrap .list {overflow:hidden;width:100%;margin-top:-1px;}
+.compliment_wrap .list li {padding:20px 20px;border-top:1px solid #ddd;}
+.compliment_wrap .list li .stit {color:#111;font-weight:600;}
+.compliment_wrap .list li .desc {margin-top:15px;color:#333;font-size:13px;line-height:22px;}
+.compliment_wrap .list li .tip_info {margin-top:15px;color:#333;font-size:13px;}
+.compliment_wrap .list li .tip_info img {margin:0 10px;}
+.writing_tip {margin-top:40px;padding:22px 30px 28px 30px;border:1px solid #ddd;}
+.writing_tip li {padding:3px 0 0 7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 13px;color:#333;font-size:13px;}
+.writing_tip li a {color:#0e787c;text-decoration:underline;}
+/* 나의차트::::: 칭찬코너 뷰 */
+.compliment_viewwrap {margin-top:40px;padding-bottom:30px;border-bottom:1px solid #5d5d5d;}
+.compliment_viewwrap:after { content:""; display:block; clear:both;}
+.compliment_viewwrap .doctor_photo {float:left;width:180px;margin-right:40px;}
+.compliment_viewwrap .doctor_info {position:relative;margin-left:220px;padding-top:12px;}
+.compliment_viewwrap .doctor_info .doctor_name {padding-bottom:20px;border-bottom:1px solid #ccc;color:#111;font-size:24px;font-weight:600;line-height:24px;}
+.compliment_viewwrap .doctor_info .doctor_name .choice {display: inline-block;margin-left:30px;padding-left:16px;background: url("/asan/images/docinfo/bul_check.png") no-repeat 0 0;font-size: 15px;font-weight: 600;line-height:15px;}
+.compliment_viewwrap .doctor_info .professionally_wrap {padding:20px 0;border-bottom:1px solid #ccc;}
+.compliment_viewwrap .doctor_info .professionally_info th {color:#111;font-weight:600;text-align:left;}
+.compliment_viewwrap .doctor_info .btn_wrap {margin-top:20px;text-align:right;}
+.compliment_viewwrap .doctor_info .btn_wrap li {text-align:left;}
+.compliment_viewwrap .doctor_info .btn_wrap div {display:inline-block;}
+.compliment_viewwrap .doctor_info .btn_wrap .btnwrap_layer {position:relative;top:0;left:0;}
+.compliment_viewwrap .doctor_info .btn_wrap .btnwrap_layer .list_wrap {display:none;position:absolute;top:33px;right:3px;width:196px;padding:15px 15px 12px;border:1px solid #ccc;background:#fff;z-index:10;}
+.compliment_viewwrap .doctor_info .btn_wrap .btnwrap_layer .list_wrap li {margin-top:14px;padding-left:7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 8px;line-height:16px;}
+.compliment_viewwrap .doctor_info .btn_wrap .btnwrap_layer .list_wrap li:first-child {margin-top:0;}
+.compliment_viewwrap .doctor_info .sns_wrap {position:absolute;right:0;top:12px;}
+/* 나의차트::::: 칭찬코너 글이없을경우 */
+.compliment_not{margin-top:20px;}
+.compliment_not .text {margin-top:20px;color:#333;text-align:center;}
+/* 나의차트::::: 가입하기 */
+.chartjoin_wrap {}
+.chartjoin_wrap .tit {margin-top:20px; color:#111;font-size:18px;font-weight:600;line-height:28px;}
+.chartjoin_wrap .chartImg {margin:20px 0;}
+.chartjoin_wrap .txt {color:#333;font-size:15px;line-height:24px;}
+/* 나의차트::::: 비밀번호확인 */
+.password_wrap {overflow:hidden;width:537px;margin:243px auto 0;}
+.password_wrap .tit {padding-bottom:15px;color:#111;font-size:25px;font-weight:600;line-height:34px;text-align:center;}
+/* 나의차트::::: 비밀번호변경 */
+.password_change {margin-top:20px;padding:38px 0 40px 0;border:1px solid #ddd;background:#f5f5f5;text-align:center;}
+.password_change .tit {color:#111;font-size:24px;font-weight:600;line-height:27px;}
+.password_change .desc {margin-top:11px;color:#333;line-height:22px;}
+.password_change .btn {margin-top:16px;}
+/* 나의차트::::: 회원탈퇴 */
+.secede_info {margin-top:5px;padding:20px;border:1px solid #ddd;background:#f5f5f5;font-size:13px;}
+.secede_info .list > li {margin-top:12px;font-weight:600;}
+.secede_info .list > li:first-child {margin-top:0;}
+.secede_info .list > li .subtxt {margin-top:5px;font-weight:normal;}
+.secede_info .list > li .inlist {font-weight:normal;}
+.secede_info .list > li .inlist li,
+.secede_info .list > li .inlist dt,
+.secede_info .list > li .inlist dd {margin-top:5px;}
+.secede_info .list > li .inlist dd a {color:#0e787c;text-decoration:underline;}
+.guide_oktxt {margin-top:20px;color:#333;font-size:13px;text-align:right;}
+/* 나의차트::::: 트리구조[main,] - 탭부분관련 */
+.reservewrap_typebox {margin-top:20px;}
+.reservewrap_typebox:after { content:""; display:block; clear:both;}
+.reservewrap_typebox .ltabbox_wrap {overflow:hidden;float:left;width:401px;height:31px;background: url('/asan/images/reservation/bg_ltabbox.gif') no-repeat right 0;}
+.reservewrap_typebox .ltabbox_wrap:after { content:""; display:block; clear:both;}
+.reservewrap_typebox .ltabbox_wrap .stit {float:left;margin-top:5px;color:#111;font-weight:600;}
+.reservewrap_typebox .ltabbox_wrap .list {float:right;width:325px;}
+.reservewrap_typebox .ltabbox_wrap .list li {float:left;width:56px;}
+.reservewrap_typebox .ltabbox_wrap .list li a {display:block;width:55px;margin-left:1px;padding:6px 0 6px;color:#333;font-size:13px;font-weight:600;text-align:center;}
+.reservewrap_typebox .ltabbox_wrap .list li.current a {background: url('/asan/images/reservation/bg_ltabboxon.gif') no-repeat center 0;color:#fff;}
+.reservewrap_typebox .ltabbox_wrap .list li.ty01 {width:77px;}
+.reservewrap_typebox .ltabbox_wrap .list li.ty01 a {width:77px;}
+.reservewrap_typebox .ltabbox_wrap .list li.ty02 {width:78px;}
+.reservewrap_typebox .ltabbox_wrap .list li.ty02 a {width:78px;}
+.reservewrap_typebox .rguide_wrap {float:right;width:396px;height:28px;border-bottom:1px solid #ccc;vertical-align:top;}
+.reservewrap_typebox .rguide_wrap:after { content:""; display:block; clear:both;}
+.reservewrap_typebox .rguide_wrap .stit {float:left;color:#111;font-weight:600;}
+.reservewrap_typebox .rguide_wrap .btn {float:right;}
+/* 나의차트::::: 트리구조[main,] */
+.wrap_treeline_box {position:relative;margin-top:20px;padding-bottom:1px;background: url('/asan/images/reservation/bg_dotline.gif') repeat-x 0 bottom;}
+.wrap_treeline_box .view {display:none;position:absolute;bottom:4px;left:50%;margin-left:-44px;}
+.wrap_treeline_box .view02 {position:absolute;bottom:0;left:3px;margin-left:0;}
+.wrap_treeline_box.type01 {margin-bottom:-30px;background:none;}
+.wrap_treeline_box.type01 .view {display:block;}
+.wrap_treeline_box.type02 {margin-bottom:-8px;background:none;}
+.wrap_treeline_box.type02 .view {display:block;}
+.wrap_treeline_box.type02 .wrap_treeline {margin-bottom:8px;}
+.wrap_treeline_box.type03 {background:none;}
+.wrap_treeline_box.type03 .view02 {display:block;margin-bottom:-4px;}
+.wrap_treeline_box.type03 .wrap_treeline {margin-bottom:4px;}
+.wrap_treeline_box.contheight {min-height:900px;}
+.wrap_treeline {padding-bottom:140px;background: url('/asan/images/reservation/bg_tree.gif') repeat-y 428px 0;}
+.wrap_treeline .year {height:28px;margin-top:-16px;padding-top:4px;background: url('/asan/images/reservation/bg_treeyear.gif') no-repeat center 0;color:#333;text-align:center;}
+.wrap_treeline .year:first-child {margin-top:0;}
+.wrap_treeline .today {height:20px;margin-bottom:40px;padding:2px 0 0 5px;background: url('/asan/images/reservation/bg_todays.gif') no-repeat center 0;color:#fff;font-size:13px;line-height:15px;font-weight:600;text-align:center;vertical-align:top;}
+.wrap_treeline .present_hour {margin:0 0 1px 16px;color:#333;font-size:13px;}
+.wrap_treeline .tree_list td {padding-bottom:20px;vertical-align:middle;}
+.wrap_treeline .tree_list td .text_not {padding-top:40px;color:#333;font-size:13px;font-weight:600;text-align:center;}
+.wrap_treeline .tree_list td .btn_not {margin-top:5px;font-weight:600;text-align:center;}
+.wrap_treeline .present_hour.type01 {margin-left:100px;}
+.wrap_treeline .present_hour span {display:inline-block;padding-left:10px;}
+.wrap_treeline .tree_list {width:100%;}
+.wrap_treeline .tree_list .boxmid {position:relative;width:100%;height:100%;background: url('/asan/images/reservation/bg_boxmid.gif') repeat-y 0 0;text-align:left;}
+.wrap_treeline .tree_list .boxmid.type01 {margin-left:84px;}
+.wrap_treeline .tree_list .boxmid .line {position:absolute;top:50%;left:352px;width:76px;height:19px;margin-top:-9px;background: url('/asan/images/reservation/bg_boxline.gif') no-repeat 0 0;}
+.wrap_treeline .tree_list .boxmid .line02 {position:absolute;top:50%;left:-82px;width:83px;height:18px;margin-top:-8px;background: url('/asan/images/reservation/bg_boxline02.gif') no-repeat 0 0;}
+.wrap_treeline .tree_list .boxbtm {padding-bottom:13px;background: url('/asan/images/reservation/bg_boxbtm.gif') no-repeat 0 bottom;}
+.wrap_treeline .tree_list .boxtop {padding-top:11px;background: url('/asan/images/reservation/bg_boxtop.gif') no-repeat 0 0;}
+.wrap_treeline .tree_list .boxtop .inbox {padding:0 15px;}
+.wrap_treeline .tree_list .boxtop .inbox .personally_type {padding:1px 0 0 45px;background: url('/asan/images/reservation/bg_ty01.gif') no-repeat 0 5px;}
+.wrap_treeline .tree_list .boxtop .inbox .deputy_type {padding:1px 0 0 45px;background: url('/asan/images/reservation/bg_ty02.gif') no-repeat 0 5px;}
+.wrap_treeline .tree_list .boxtop .inbox .tit {color:#111;}
+.wrap_treeline .tree_list .boxtop .inbox .stxt {width:280px; color:#333;font-size:15px;}
+.wrap_treeline .tree_list .boxtop .inbox .stxt a.ty01 {display:inline-block;color:#333;font-size:15px;text-decoration:underline; white-space:nowrap;}
+.wrap_treeline .tree_list .boxtop .inbox .stxt a.ty02 {display:inline-block;color:#0e787c;font-size:15px;text-decoration:underline; white-space:nowrap;}
+.wrap_treeline .tree_list .boxtop .inbox .stxt img {vertical-align:middle;}
+.wrap_treeline .tree_list .boxtop .inbox .stxt .gap {display:inline-block;padding-left:10px;font-size:13px; white-space:nowrap;}
+.wrap_treeline .tree_list .boxtop .inbox .stxt02 {padding-top:3px;}
+.wrap_treeline .tree_list .boxtop .inbox .stxt02 a.ty01 {color:#0e787c;font-size:13px;text-decoration:underline;}
+.wrap_treeline .tree_list .boxtop .inbox .stxt02 img {margin-bottom:1px;vertical-align:middle;}
+.wrap_treeline .tree_list .boxtop .inbox .stxt02 .gap {display:inline-block;padding-left:10px;}
+.wrap_treeline .tree_list .boxtop .inbox .btn {margin-top:3px;}
+.wrap_treeline02 {margin-top:30px;padding-bottom:140px;background: url('/asan/images/reservation/bg_tree.gif') repeat-y 44px 0;}
+.wrap_treeline02 .year {height:28px;padding:4px 0 0 27px;background: url('/asan/images/reservation/bg_treeyear.gif') no-repeat 0 0;color:#333;}
+.wrap_treeline02 .datedesc_wrap {overflow:hidden;width:720px;margin-left:140px;}
+.wrap_treeline02 .datedesc_wrap .date_type {float:left;margin-top:9px;color:#111;font-size:13px;}
+.wrap_treeline02 .datedesc_wrap .date_type .date {display:inline-block;margin-right:30px;color:#333;}
+.wrap_treeline02 .datedesc_wrap .btn {float:right;}
+.wrap_treeline02 .medicine_btm {padding-bottom:20px;background: url('/asan/images/reservation/bg_medicine_btm.gif') no-repeat 0 bottom;}
+.wrap_treeline02 .medicine_top {padding-top:20px;background: url('/asan/images/reservation/bg_medicine_top.gif') no-repeat 0 0;}
+.wrap_treeline02 .medicine_mid {position:relative;width:737px;margin:7px 0 20px 123px;background: url('/asan/images/reservation/bg_medicine_mid.gif') repeat-y 0 0;}
+.wrap_treeline02 .medicine_mid .line {position:absolute;top:50%;left:-75px;width:76px;height:15px;margin-top:-8px;background: url('/asan/images/reservation/bg_boxline03.gif') no-repeat 0 0;}
+.wrap_treeline02 .medicine_mid .inbox {padding:0 25px 0 30px;}
+.wrap_treeline02 .medicine_mid .inbox li {overflow:hidden;width:100%;margin-top:10px;color:#333;font-size:13px;}
+.wrap_treeline02 .medicine_mid .inbox li:first-child {margin-top:0;}
+.wrap_treeline02 .medicine_mid .inbox li .sort {float:left;width:258px;margin-right:10px;color:#333;font-size:13px;}
+.wrap_treeline02 .medicine_mid .inbox li .sort img {margin-bottom:2px;vertical-align:middle;}
+.wrap_treeline02 .medicine_mid .inbox li .sort a {color:#0e787c;font-size:15px;text-decoration:underline;}
+.wrap_treeline02 .medicine_mid .inbox li .num {float:left;width:63px;margin-right:5px;}
+.wrap_treeline02 .medicine_mid .inbox li .desc {overflow:hidden;float:left;width:345px;text-overflow:ellipsis;white-space:nowrap;}
+.wrap_treeline02 .medicine_mid .inbox li .text_wrap {overflow:hidden;width:100%;}
+.wrap_treeline02 .medicine_mid .inbox li .tbl_descinfo {clear:both;overflow:hidden;width:100%;margin-top:15px;border-top:2px solid #0e787c;}
+.wrap_treeline02 .medicine_mid .inbox li .tbl_descinfo .tbl_dinfo {width:100%;margin-left:-1px;}
+.wrap_treeline02 .medicine_mid .inbox li .tbl_descinfo .tbl_dinfo thead th {padding:8px 0 8px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;color:#0e787c;font-size:13px;text-align:center;}
+.wrap_treeline02 .medicine_mid .inbox li .tbl_descinfo .tbl_dinfo tbody td {padding:8px 0 8px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;background:#fff;color:#333;font-size:13px;text-align:center;}
+.wrap_treeline02 .medicine_mid .inbox li .tbl_descinfo .tbl_dinfo tbody td.al_l {padding:8px 20px;text-align:left;}
+.wrap_treeline02 .lbox_wrap {overflow:hidden;height:49px;margin-bottom:15px;padding:0 0 0 140px;background: url('/asan/images/reservation/bg_lbox.gif') no-repeat 48px 0;font-size:0;line-height:0;}
+.wrap_treeline02 .lbox_wrap .rbox_wrap {display:inline-block;height:35px;padding:14px 50px 0 0;background: url('/asan/images/reservation/bg_rbox.gif') no-repeat right 0;color:#333;font-size:13px;line-height:15px;}
+.wrap_treeline02 .lbox_wrap .rbox_wrap strong {display:inline-block;margin-left:30px;color:#111;}
+.wrap_treeline02 .resultwrap_list {padding-left:140px;}
+.wrap_treeline02 .resultwrap_list li {margin-top:15px;}
+.wrap_treeline02 .resultwrap_list li:first-child {margin-top:0;}
+.wrap_treeline02 .resultwrap_list li > a {padding-left:10px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 8px;color:#0e787c;font-size:15px;text-decoration:underline;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap {width:720px;margin-top:8px;border-top:2px solid #0e787c;vertical-align:top;background:#F5F5F5;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap:after { content:""; display:block; clear:both;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview {width:720px;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview th.ty01 {border-left:0;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview th {padding-left:0 !important;text-align:center !important;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview th.al {}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview td {background:#fff;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview td.al_l02 {padding-left:15px;border-left:0;text-align:left;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview td.al_l02 a {color:#333;font-size:13px;font-weight:600;text-decoration:underline;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview td.result_type01 {color:#ff8010;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview td.result_type02 {color:#0e787c;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview td .textballoon_layer {position:relative;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview td .textballoon_layer .textballoon_top {display:none;position:absolute;top:10px;left:-10px;overflow:hidden;width:431px;padding-top:11px;background: url('/asan/images/reservation/bg_textballoon_top.gif') no-repeat 0 0;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview td .textballoon_layer .textballoon_btm {padding-bottom:4px;background: url('/asan/images/reservation/bg_textballoon_btm.gif') no-repeat 0 bottom;}
+.wrap_treeline02 .resultwrap_list .tbl_resultwrap .tbl_chartview td .textballoon_layer .textballoon_mid {overflow:hidden;width:391px;padding:15px 20px 15px 20px;background: url('/asan/images/reservation/bg_textballoon_mid.gif') repeat-y 0 0;color:#fff;font-size:13px;line-height:22px;}
+
+
+
+
+.wrap_treeline02 .today {height:20px;margin-bottom:40px;padding:2px 0 0 5px;background: url('/asan/images/reservation/bg_todays.gif') no-repeat center 0;color:#fff;font-size:13px;line-height:15px;font-weight:600;text-align:center;vertical-align:top;}
+.wrap_treeline02 .present_hour {margin:0 0 1px 140px;color:#333;font-size:13px;}
+.wrap_treeline02 .present_hour span {display:inline-block;padding-left:10px;}
+.wrap_treeline02  .boxmid {position:relative;padding-left:130px;width:100%;height:100%;background: url('/asan/images/reservation/bg_boxmid.gif') repeat-y 130px 0;text-align:left;}
+.wrap_treeline02  .boxmid .line02 {position:absolute;top:50%;left:48px;width:83px;height:18px;margin-top:-8px;background: url('/asan/images/reservation/bg_boxline02.gif') no-repeat 0 0;}
+.wrap_treeline02  .boxbtm {padding-bottom:13px;background: url('/asan/images/reservation/bg_boxbtm.gif') no-repeat 0 bottom;}
+.wrap_treeline02  .boxtop {padding-top:11px;background: url('/asan/images/reservation/bg_boxtop.gif') no-repeat 0 0;}
+.wrap_treeline02  .boxtop .inbox {padding:0 15px}
+.wrap_treeline02  .boxtop .inbox .deputy_type {padding:1px 0 0 45px;background: url('/asan/images/reservation/bg_ty02.gif') no-repeat 0 5px;}
+.wrap_treeline02  .boxtop .inbox .tit {color:#111;}
+.wrap_treeline02  .boxtop .inbox .stxt {width:280px; color:#333;font-size:15px;}
+.wrap_treeline02  .boxtop .inbox .stxt a.ty01 {display:inline-block;color:#333;font-size:15px;text-decoration:underline; white-space:nowrap;}
+.wrap_treeline02  .boxtop .inbox .stxt a.ty02 {display:inline-block;color:#0e787c;font-size:15px;text-decoration:underline; white-space:nowrap;}
+.wrap_treeline02  .boxtop .inbox .stxt img {vertical-align:middle;}
+.wrap_treeline02  .boxtop .inbox .stxt .gap {display:inline-block;padding-left:10px;font-size:13px; white-space:nowrap;}
+.wrap_treeline02  .boxtop .inbox .stxt02 {padding-top:3px;}
+.wrap_treeline02  .boxtop .inbox .stxt02 a.ty01 {color:#0e787c;font-size:13px;text-decoration:underline;}
+.wrap_treeline02  .boxtop .inbox .stxt02 img {margin-bottom:1px;vertical-align:middle;}
+.wrap_treeline02  .boxtop .inbox .stxt02 .gap {display:inline-block;padding-left:10px;}
+.wrap_treeline02  .boxtop .inbox .btn {margin-top:3px;}
+
+
+.tinfobox_top {overflow:hidden;width:869px;padding-top:31px;background: url('/asan/images/reservation/bg_boxtop02.gif') no-repeat 0 0;}
+.tinfobox_btm {padding-bottom:33px;background: url('/asan/images/reservation/bg_boxbtm02.gif') no-repeat 0 bottom;}
+.tinfobox_mid {overflow:hidden;width:869px;margin:26px auto 20px;background: url('/asan/images/reservation/bg_boxmid02.gif') repeat-y 0 0;}
+.tinfobox_mid .stxt {color:#111;font-weight:600;text-align:center;}
+.tinfobox_mid .step {overflow:hidden;width:790px;margin:30px auto 0;}
+.tinfobox_mid .step li {float:left;margin-left:40px;font-size:0;line-height:0;}
+.tinfobox_mid .step li.first {margin-left:0;}
+.tinfobox_mid .password_box {width:787px;margin:40px auto 0;padding:26px 0 31px;background:#f5f5f5;color:#333;font-size:13px;text-align:center;}
+.tinfobox_mid .password_box .btn {margin-top:17px;}
+.tinfobox_mid .stit_wrap {margin:30px 0 0 40px;color:#111;font-weight:600;}
+.tinfobox_mid .mywriting_list {overflow:hidden;width:785px;height:155px;margin:10px auto 0;border:1px solid #ddd;border-left:0;}
+.tinfobox_mid .mywriting_list li {position:relative;float:left;width:111px;height:115px;padding:20px 9px 20px 9px;border-left:1px solid #ddd;}
+.tinfobox_mid .mywriting_list li .stit {overflow:hidden;width:100%;vertical-align:top;}
+.tinfobox_mid .mywriting_list li .stit .txt {float:left;color:#111;font-size:15px;line-height:18px;font-weight:600;vertical-align:top;}
+.tinfobox_mid .mywriting_list li .stit a {float:right;margin-top:3px;font-size:0;line-height:0;}
+.tinfobox_mid .mywriting_list li .desc {overflow:hidden;margin-top:15px;height:40px;color:#333;font-size:13px;line-height:20px;}
+.tinfobox_mid .mywriting_list li .desc img {display:block;margin-top:5px;}
+.tinfobox_mid .mywriting_list li .therest_txt {position:absolute;bottom:10px;width:111px;text-align:right;font-weight:600;font-size:13px;}
+/* 나의차트::::: 나의할일 */
+.mustbox_top {overflow:hidden;width:860px;padding-top:19px;background: url('/asan/images/reservation/bg_mustbox_top.gif') no-repeat 0 0;}
+.mustbox_btm {padding-bottom:19px;background: url('/asan/images/reservation/bg_mustbox_btm.gif') no-repeat 0 bottom;}
+.mustbox_mid {overflow:hidden;width:860px;margin:10px auto 0;background: url('/asan/images/reservation/bg_mustbox_mid.gif') repeat-y 0 0;}
+.mustbox_mid .tit {float:left;margin:4px 0 0 25px;}
+.mustbox_mid .list {float:left;margin-left:10px;}
+.mustbox_mid .list li {margin-top:10px;}
+.mustbox_mid .list li:first-child {margin-top:0;}
+.mustbox_mid .list .txt {display:inline-block;width:450px;height:25px;padding:3px 10px 0 10px;background: url('/asan/images/reservation/bg_musttext.gif') no-repeat 0 0;color:#fff;vertical-align:middle;}
+.mustbox_mid .list a {display:inline-block;margin-left:10px;padding:4px 9px 3px;background:#fff;color:#333;font-size:12px;vertical-align:middle;}
+.mustbox_mid .except_txt {float:right;margin:3px 30px 0 0;color:#fff;font-weight:600;}
+.box_onoff {font-size:0;text-align:center;line-height:0;}
+.chdesc_tit {margin-top:20px;color:#0e787c;font-size:18px;font-weight:600;}
+.chdesc_stxt {margin-top:8px;color:#333;}
+.chdescbox_wrap {overflow:hidden;width:100%;margin-top:30px;}
+.chdescbox_wrap .img {float:left;}
+.chdescbox_wrap .descinfo {float:right;width:400px;}
+.chdescbox_wrap .descinfo .desc dt {margin-top:30px;color:#0e787c;font-size:18px;font-weight:600;}
+.chdescbox_wrap .descinfo .desc dt:first-child {margin-top:0;}
+.chdescbox_wrap .descinfo .desc dd {margin-top:5px;color:#333;line-height:24px;}
+.chdescbox_wrap .descinfo .tipsite_txt {margin-top:30px;color:#333;line-height:24px;}
+.chdescbox_wrap .descinfo .tipsite_txt a {color:#0e787c;text-decoration:underline;}
+.homepage_wrap {width:858px;margin:50px 0 0 7px;padding:15px 0;border:1px solid #ddd;background:#f7f7f7;color:#111;font-size:18px;font-weight:600;text-align:center;}
+.homepage_wrap .greenMdBtn {margin-left:30px;}
+/* 나의차트::::: 투약내역 */
+.breakdown_desc {margin-top:7px;padding:12px 30px;border:1px solid #ddd;background:#f5f5f5;}
+.breakdown_desc.type01 {margin-top:15px;padding:23px 0;text-align:center;}
+.breakdown_desc.type01 input {margin-left:10px;}
+.breakdown_desc .info {width:100%;}
+.breakdown_desc .info:after { content:""; display:block; clear:both;}
+.breakdown_desc .info dt {clear:both;float:left;width:51px;padding-top:2px;color:#333;font-weight:600;}
+.breakdown_desc .info dt.ty01 {margin-top:15px;}
+.breakdown_desc .info dd {float:left;width:740px;}
+.breakdown_desc .info dd.ty01 {margin-top:15px;}
+.breakdown_desc .info dd .calendar {display:inline-block;position:relative;width:134px;height:25px;background: url('/asan/images/reservation/bg_calendar03.gif') no-repeat 0 0;text-align:left;}
+.breakdown_desc .info dd .calendar .txt {display:inline-block;margin:2px 0 0 10px;font-size:13px;}
+.breakdown_desc .info dd .calendar img.chk {position:absolute;right:0;top:0;}
+.breakdown_desc .info dd .calendar .calenlayer_box {display:none;position:absolute;right:-125px;top:25px;width:276px;height:272px;background: url('/asan/images/chart/bg_calendar.png') no-repeat 0 0;z-index:1003;}
+.breakdown_desc .info dd .calendar .calenlayer_box .date {padding:9px 0 0 51px;font-size:0;line-height:0;}
+.breakdown_desc .info dd .calendar .calenlayer_box .date img {vertical-align:middle;}
+.breakdown_desc .info dd .calendar .calenlayer_box .date span {display:inline-block;margin-top:-1px;padding:0 7px;vertical-align:middle;color:#fff;font-size:15px;line-height:20px;}
+.breakdown_desc .info dd .calendar .calenlayer_box .caleny {width:242px;margin:20px 0 0 11px;}
+.breakdown_desc .info dd .calendar .calenlayer_box .caleny thead th {padding-bottom:10px;color:#111;font-size:12px;text-align:center;}
+.breakdown_desc .info dd .calendar .calenlayer_box .caleny tbody td {padding:8px 0 7px;color:#111;font-size:11px;text-align:center;}
+.breakdown_desc .info dd .calendar .calenlayer_box .caleny tbody td.today {background: url('/asan/images/chart/bg_today.gif') no-repeat 50% 50%;color:#fff;font-weight:600;}
+.breakdown_desc .info dd .calendar .calenlayer_box .caleny tbody td.not {color:#999;}
+.breakdown_desc .info dd select {vertical-align:middle;}
+.breakdown_desc .info dd .txt {display:inline-block;margin-left:10px;color:#333;font-size:13px;vertical-align:-1px;}
+.breakdown_desc .info dd .txt.type01 {margin-left:30px;}
+.mybreakdown_wrap {overflow:hidden;width:100%;margin-top:15px;}
+.mybreakdown_wrap .txt {float:left;color:#333;font-size:13px;line-height:19px;}
+.mybreakdown_wrap .btn {float:right;margin-top:2px;}
+.mybreakdown_wrap .btn.gap01 {margin-top:32px;}
+.mybreakdown_wrap .btn .orangeSmBtn {border:1px solid #ffa039;background:#ffa039;}
+.result_tiptxt {margin:5px 0 -10px;text-align:left;color:#0e787c;font-size:13px;}
+
+/* 나의차트::::: 레이어팝업 */
+.layerPopNewBox .layerTit2 { padding:17px 0 16px 29px; font-size:24px; font-weight:600; line-height:1; overflow:hidden; background:#0e787c;}
+.layerPopNewBox .layerConBox { background:#0e787c; }
+.layerPopNewBox .layerWhiteBox { text-align:center; padding:35px 20px; margin:4px; background:#fff; }
+.layerPopNewBox .layerWhiteBox2 { padding:35px 20px; background:#fff;}
+.layerPopNewBox .layerWhiteBox3 { padding:20px; margin:4px; background:#fff;}
+.layerPopNewBox .layerWhiteBox3 .chart_tit { margin-top:0px;}
+.layerPopNewBox .layerMap {width:753px; height:550px; margin:0 auto; background:#4e4e4e;}
+.layerPopNewBox .btnLine { margin:20px 20px 0 20px; padding-top:20px;  border-top:1px solid #ddd;}
+.layerPopNewBox .closeLayer { position:absolute; top:19px; right:20px;}
+.layerPopNewBox .tit2 { font-size:18px; font-weight:600; color:#0e787c; margin-bottom:16px;}
+.layerPopNewBox .tbl_chartview { width:100%; }
+.layerPopNewBox .textLine { border-bottom:1px solid #ddd; padding-bottom:30px;}
+.layerPopNewBox  .layerStepConfirm { text-align:center;}
+.layerPopNewBox  .layerStepConfirm > ul { overflow:hidden;}
+.layerPopNewBox  .layerStepConfirm > ul > li {display:inline-block; margin-left:20px; }
+.layerPopNewBox  .layerStepConfirm > ul > li:first-child {margin-left:0px; }
+
+.mapview_wrap {display:none;width:800px; margin:100px auto !important; z-index:1040;}
+.mapview_wrap.type01 {width:860px;margin-left:-430px;}
+.mapview_wrap .layerWrap {background:#0e787c;}
+.mapview_wrap .layerHeader {position:relative;}
+.mapview_wrap .layerHeader a {position:absolute;right:20px;top:16px;}
+.mapview_wrap .layerTit3 {color:#fff; padding:12px 0 7px 19px;}
+.mapview_wrap .layerConBox {padding:1px 0;background:#0e787c; }
+.mapview_wrap .layerConBox .tit { color:#333;font-size:13px;line-height:21px;text-align:left; }
+.mapview_wrap .layerWhiteBox { text-align:center; padding:20px 20px 40px; margin:4px; background:#fff; }
+.mapview_wrap .layerMap {width:753px; height:550px; margin:0 auto; background:#4e4e4e;}
+.mapview_wrap .btnLine { margin:20px 20px 0 20px; padding-top:20px;  border-top:1px solid #ddd;}
+
+.layerconfirm {display:none;width:650px; margin:100px auto !important; z-index:1040;}
+.layerconfirm .layerWrap {background:#0e787c;}
+.layerconfirm .layerHeader {position:relative;}
+.layerconfirm .layerHeader a {position:absolute;right:20px;top:16px;}
+.layerconfirm .layerTit3 {color:#fff; padding:12px 0 7px 19px;}
+.layerconfirm .layerWhiteBox3 {margin:4px;padding:20px 20px 41px;background:#fff; position: relative;}
+.layerconfirm .layerWhiteBox3 .tit {margin:3px 0 0 9px;color:#333;font-weight:600;}
+.layerconfirm .layerConBox {padding:1px 0;background:#0e787c; }
+.layerconfirm .confirmlist_wrap {overflow:hidden;width:580px;margin:27px auto 20px;padding-bottom:20px;border-bottom:1px solid #ddd;}
+.layerconfirm .confirmlist_wrap li {float:left;margin-left:20px;}
+.layerconfirm .confirmlist_wrap li:first-child {margin-left:0;}
+
+/* 나의차트::::그래프팝업 */
+.examination_wrap {display:none;width:690px; margin:100px auto !important;z-index:1040;}
+.examination_wrap .layerWrap {background:#0e787c;}
+.examination_wrap .layerHeader {position:relative;}
+.examination_wrap .layerHeader a {position:absolute;right:20px;top:16px;}
+.examination_wrap .layerTit3 {color:#fff; padding:12px 0 7px 19px;}
+.examination_wrap .layerWhiteBox {margin:4px;padding:20px 20px 31px;background:#fff;}
+.examination_wrap .layerWhiteBox .tit {margin:3px 0 0 9px;color:#333;font-weight:600;}
+.examination_wrap .layerConBox {padding:1px 0;background:#0e787c; }
+.examination_wrap .examination_box {width:615px;margin:0 auto;}
+.examination_wrap .btnLine { margin:20px 20px 0 20px; padding-top:20px; text-align:center;}
+
+
+/* 이전글 다음글  */
+.chartpageNavi {overflow:hidden;margin-top:40px;border-top:1px solid #ddd;}
+.chartpageNavi dt,
+.chartpageNavi dd {float:left; height:27px; padding-top:8px; border-bottom:1px solid #ddd;font-size:13px;}
+.chartpageNavi dt {width:86px; text-align:center; color:#111;  font-weight:600; background:url('/asan/images/common/bg_bar02.gif') right center no-repeat;}
+.chartpageNavi dd {padding-left:19px; width:754px;}
+.chartpageNavi dd a {display:block; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; color:#333;}
+
+/* 나의차트::::: 예약증보기팝업 */
+.yeyakjeung_guide {margin-top:30px;padding:20px;background:#f5f5f5;text-align:left;}
+.yeyakjeung_guide .stit {color:#111;font-size:15px;font-weight:600;}
+.yeyakjeung_guide .tiplist {margin-top:20px;padding:20px;background:#fff;}
+.yeyakjeung_guide .tiplist li {padding-left:6px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 8px;color:#666;font-size:13px;line-height:20px;}
+.yeyakjeung_guide .yeyakjeung_tip {margin-top:20px;}
+.yeyakjeung_guide .yeyakjeung_tip li {padding-left:6px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 8px;color:#333;font-size:13px;text-align:left;line-height:20px;}
+.yeyakjeung_stit {margin-top:30px;color:#111;font-size:15px;font-weight:600;text-align:left;}
+.yeyakjeung_stit .ystxt {margin-left:20px;color:#333;font-size:13px;font-weight:normal;}
+.yeyakjeung_stxt {margin-top:10px;color:#333;font-size:13px;text-align:left;}
+.yeyakjeung_map {margin-top:10px;padding:16px 0;border:1px solid #ddd;font-size:0;line-height:0;text-align:center;}
+.yeyakjeung_map img {width:395px;height:395px;}
+
+/* 나의차트::::: 투약내역 */
+.sign_box {overflow-y:scroll;height:473px;text-align:left;margin:20px -10px 30px -20px;padding:0 10px 0 20px;}
+.sign_box .tbl_chartview_wrap {width:795px;}
+.sign_box .tbl_chartview {width:795px;}
+.sign_box .tbl_chartview td {padding:10px 0 7px 25px;color:#333;vertical-align:top;text-align:left;}
+.sign_box .tbl_chartview td.name_photo {padding:15px 15px 0 15px;}
+.sign_box .tbl_chartview td.name_photo .stit {margin-top:10px;font-weight:600;line-height:22px;}
+.sign_box .tbl_chartview td .effect {margin-left:-9px;padding-left:9px;background: url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat 0 4px;color:#0e787c;}
+.sign_box .tbl_chartview td .list li {padding-left:16px;text-indent:-16px;}
+
+/* 나의차트::::: 비밀번호변경하기 */
+.passchange_wrap {display:none;width:300px; margin:100px auto !important;z-index:1040;}
+.passchange_wrap .layerWrap {background:#0e787c;}
+.passchange_wrap .layerHeader {position:relative;}
+.passchange_wrap .layerHeader a {position:absolute;right:20px;top:16px;}
+.passchange_wrap .layerTit3 {color:#fff; padding:12px 0 7px 19px;}
+.passchange_wrap .layerConBox {padding:1px 0;background:#0e787c; }
+.passchange_wrap .layerWhiteBox { text-align:center; padding:13px 20px 19px; margin:4px; min-height:140px;background:#fff; }
+.passchange_wrap .btnLine { margin:20px 20px 0 20px; padding-top:20px;  border-top:1px solid #ddd;}
+.passchange_wrap .newpass_wr {color:#333;font-size:13px;line-height:22px;}
+
+/* 나의차트::::: 내손안의차트 */
+.handout_wrap {display:none;width:650px; margin:100px auto !important;z-index:1040;}
+.handout_wrap .layerWrap {background:#0e787c;}
+.handout_wrap .layerHeader {position:relative;}
+.handout_wrap .layerHeader a {position:absolute;right:20px;top:16px;}
+.handout_wrap .layerTit3 {color:#fff; padding:12px 0 7px 19px;}
+.handout_wrap .layerConBox {padding:1px 0;background:#0e787c; }
+.handout_wrap .layerWhiteBox { text-align:center; padding:35px 20px 14px; margin:4px; min-height:140px;background:#fff; }
+
+.handout_wrap .txt01 {margin-bottom:35px;color:#111;line-height:24px;}
+.handout_wrap .txt01 a {color:#0e787c;text-decoration:underline;}
+.handout_wrap .txt02 {margin:20px 0 35px;color:#111;line-height:24px;}
+
+/* 증명서 출력 테스트 및 공유프린트 체크 */
+.printcoutpu_popup {display:none;width:700px; margin:100px auto !important;z-index:1040;}
+.printcoutpu_popup .tbl_chartview_wrap {width:100%;}
+.printcoutpu_popup .tbl_chartview {width:100%;}
+.printcoutpu_popup .layerWrap {background:#0e787c;}
+.printcoutpu_popup .layerHeader {position:relative;}
+.printcoutpu_popup .layerHeader a {position:absolute;right:20px;top:16px;}
+.printcoutpu_popup .layerTit3 {color:#fff; padding:12px 0 7px 19px;}
+.printcoutpu_popup .layerConBox {padding:1px 0;background:#0e787c; }
+.printcoutpu_popup .layerWhiteBox { text-align:center; padding:30px 20px 49px; margin:4px; min-height:140px;background:#fff; }
+.printcoutpu_popup .list {margin-top:10px;}
+.printcoutpu_popup .list li {padding-left:8px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 8px;color:#333;font-size:13px;text-align:left;line-height:20px;}
+.printcoutpu_popup .btn {margin-top:25px;}
+
+/* 퇴원간호계획 , 퇴원수속안내문 , 퇴원후치료내용 */
+.leavehospital {display:none;width:700px; margin:100px auto !important;z-index:1040;}
+.leavehospital .layerWrap {background:#0e787c;}
+.leavehospital .layerHeader {position:relative;}
+.leavehospital .layerHeader a {position:absolute;right:20px;top:16px;}
+.leavehospital .layerTit3 {color:#fff; padding:12px 0 7px 19px;}
+.leavehospital .layerConBox {padding:1px 0;background:#0e787c; }
+.leavehospital .layerWhiteBox { text-align:center; padding:30px 0 37px 16px ; margin:4px; background:#fff; }
+.leavehospital .scroll_wrap {overflow-y:scroll;height:440px;margin-bottom:20px;padding-right:16px;text-align:left;}
+.leavehospital .scroll_wrap .tbl_chartview_wrap {width:100%;}
+.leavehospital .scroll_wrap .tbl_chartview {width:100%;}
+.leavehospital .scroll_wrap .tbl_chartview th .texttype01 {display:inline-block;padding-bottom:5px;font-size:13px;line-height:18px;}
+.leavehospital .scroll_wrap .tbl_chartview th .texttype02 {display:inline-block;padding-top:5px;font-size:13px;line-height:29px;}
+.leavehospital .scroll_wrap .tbl_chartview.type01 td {padding-left:15px;text-align:left;}
+.leavehospital .scroll_wrap .tbl_chartview.type02 td {vertical-align:top;}
+.leavehospital .scroll_wrap .tbl_chartview.type02 td .textbox01 {min-height:40px;}
+.leavehospital .scroll_wrap .tbl_chartview.type02 td .textbox02 {margin-top:15px;}
+.leavehospital .scroll_wrap .tbl_chartview.type02 td .text_list dt {color:#333;font-size:13px;line-height:20px;}
+.leavehospital .scroll_wrap .tbl_chartview.type02 td .text_list dd {margin-bottom:10px;}
+.leavehospital .scroll_wrap .leavehospital_tit {margin-top:15px;color:#0e787c;font-size:18px;font-weight:600;line-height:20px;}
+.leavehospital .scroll_wrap .leavehospital_tit.gap01 {margin-top:35px;}
+.leavehospital .scroll_wrap .leavehospital_tit.gap02 {margin-top:0;}
+.leavehospital .scroll_wrap .leavehospital_tit02 {margin-top:30px;color:#111;font-weight:600;}
+.leavehospital .scroll_wrap .leavehospital_tit02.gap01 {margin-top:15px;}
+.leavehospital .scroll_wrap .leavehospital_txt {margin-top:10px;color:#333;font-size:13px;}
+.leavehospital .scroll_wrap .leavehospital_list {margin-top:7px;}
+.leavehospital .scroll_wrap .leavehospital_list li {padding-left:7px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 10px;color:#333;font-size:13px;text-align:left;line-height:23px;}
+.leavehospital .scroll_wrap .leavehospital_list02 {margin-top:10px;color:#333;font-size:13px;line-height:19px;}
+.leavehospital .scroll_wrap .leavehospital_list02 dd {padding-left:12px;text-indent:-12px;}
+.leavehospital .scroll_wrap .sign_wrap {overflow:hidden;width:100%;margin-top:40px;color:#111;}
+.leavehospital .scroll_wrap .sign_wrap .line {display:inline-block;width:196px;border-bottom:1px solid #111;vertical-align:-3px;}
+.leavehospital .scroll_wrap .sign_wrap .ty01 {float:left;}
+.leavehospital .scroll_wrap .sign_wrap .ty02 {float:right;}
+.leavehospital .scroll_wrap .sign_wrap .ty02 .line {width:210px;}
+.leavehospital .scroll_wrap .tbl_btxtright {margin-top:5px;color:#333;text-align:right;font-size:13px;}
+.leavehospital .scroll_wrap .imgboxtype {position:relative;top:0;left:0;margin-top:5px;}
+.leavehospital .scroll_wrap .imgboxtype .num {position:absolute;top:4px;left:170px;color:#666;}
+.leavehospital .btn {margin-top:40px;}
+.notscroll_wrap {width:932px;height:625px;margin:30px 0 0 30px;padding-right:20px;text-align:center;}
+.notscroll_wrap .past_tit {padding-top:149px;color:#111;font-size:25px;font-weight:600;line-height:34px;}
+.notscroll_wrap .pastbox_wrap {margin-top:16px;padding:21px 0 21px;background:#f5f5f5;color:#666;font-size:13px;line-height:19px;}
+.notscroll_wrap .past_txt {margin-top:16px;padding-bottom:40px;border-bottom:1px solid #ddd;color:#666;font-size:13px;}
+.notscroll_wrap .past_txt strong {display:block;padding-bottom:2px;color:#111;font-size:15px;}
+.notscroll_wrap .pbtn_wrap {margin-top:20px;}
+
+/* 로딩바 */
+.loading_wrap {display:none;position:absolute;top:275px;left:50%;width:540px;height:290px;margin:0 0 0 -250px;background: url('/asan/images/etc/bg_loading.gif') no-repeat 0 0;text-align:center;z-index:9999999999;}
+.loading_wrap .loading {margin-top:65px;}
+.loading_wrap .handling_txt {margin-top:27px;color:#111;font-size:30px;line-height:30px;}
+.loading_wrap .stop_txt {margin-top:9px;color:#333;font-size:18px;}
+
+/* 의료진 안내문구 */
+.guiderela_txt {margin:15px 0 40px;color:#333;font-size:15px;line-height:20px;}
+.guiderela_txt strong {display:inline-block;padding:0 15px 0 17px;background: url('/asan/images/common/bg_str.gif') no-repeat 0 4px;color:#db330c;}
+
+/* 공통 레이어팝업[2014.06.17추가] */
+.layer_modulewrap {position:absolute;left:50%;background:#0e787c;z-index:1005;}
+.layer_modulewrap .layer_header {position:relative;overflow:hidden;width:100%;}
+.layer_modulewrap .layer_header .layer_tit3 {padding:12px 0 10px 19px;color:#fff;}
+.layer_modulewrap .layer_header a {position:absolute;top:16px;right:20px;}
+.layer_modulewrap .layer_conbox {height:100%;margin:0 4px 4px;padding:20px 25px 20px;background:#fff;}
+
+/* 공통 - textarea 글자 체크하는부분 */
+.textbite_wrap {margin-top:10px;color:#666;font-size:13px;text-align:right;}
+
+/* 증명서출력 안내문구 */
+.certificateInfoTxt {background: #f5f5f5; border: 1px solid #ddd; padding: 25px 35px; margin: 20px 0;}
+.certificateInfoTxt dt{font-size: 15px; color: #333; font-weight: 600; margin-bottom: 5px;}
+.certificateInfoTxt dd{font-size:13px;}
+
+a.infoBtn {display: inline-block; width: 18px; height: 18px; border-radius: 9px; background: #0e787c; color: #fff; position: relative; text-decoration: none;    margin-top: 5px;}
+a.infoBtn .infoBox {display: none; background: #fff; color: #333; width: 220px; border: 2px solid #0e787c; text-align: left;}
+a:hover.infoBtn .infoBox {position: absolute; top: 23px; left: 50%; margin: 0 0 0 -2px;padding: 8px 0 8px 20px; border-radius: 0px 8px 8px 8px; font-weight: normal; line-height: 18px; pointer-events: none; display: inline-block;}
+
+a.infoBtn .infoBox2 {display: none; background: #fff; color: #333; width: 230px; border: 2px solid #0e787c; text-align: left;}
+a:hover.infoBtn .infoBox2 {position: absolute; top: -120px; left: -242px; margin: 0 0 0 -2px;padding: 8px 0 8px 20px; border-radius: 8px 8px 0 8px; font-weight: normal; line-height: 18px; pointer-events: none; display: inline-block;}
+
+.chatCerIco {position: absolute; display: inline-block; top: 100px; right: 32px;}

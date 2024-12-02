@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/* 의료진검색 */
+.secondTitle .titleLine { position:relative; top:-4px; line-height:1; padding-left:15px !important; margin-left:5px !important; background:url('/asan/images/docinfo/bg_grayHLine2.jpg') no-repeat left 3px;}
+
+.docInfoWrap .docInfoSearch { margin-bottom:35px; padding:30px 140px 30px 127px; border:1px solid #ddd; overflow:hidden; background:#f7f7f7;}
+.docInfoWrap .docInfoSearch .docSearchdl { position:relative;}
+.docInfoWrap .docInfoSearch .docSearchdl dt { float:left; margin-right:20px; padding-top:14px; font-size:18px; line-height:18px; font-weight:600; color:#111;}
+.docInfoWrap .docInfoSearch .docSearchdl dd { float:left;}
+.docInfoWrap .docInfoSearch .docSearchdl:after { content:""; display:block; clear:both;}
+.docInfoWrap .docInfoSearch .SearchBox { width:445px; height:28px; padding:8px 0; overflow:hidden; border:3px solid #0e787c; background:#fff;}
+.docInfoWrap .docInfoSearch .SearchBox li { float:left;}
+.docInfoWrap .docInfoSearch .SearchBox li input { z-index:1; height:26px; border:0; margin-left:15px; font-size:15px; line-height:21px; vertical-align:middle;}
+.docInfoWrap .docInfoSearch .searchIcon { height:25px; margin:0px 0 0 18px; padding-right:14px; border-right:1px solid #dadada;}
+.docInfoWrap .docInfoSearch .searchIcon span { position:relative; top:3px; width:23px; height:22px; display:inline-block; background:url('/asan/images/ico/ico_search.png') no-repeat left center;}
+.docInfoWrap .docInfoSearch .searchBtn { position:absolute; right:0; top:0; padding:17px 22px 16px 23px !important; line-height:15px; border:1px solid #0f7a7e; background:#0e787c;}
+.docInfoWrap .docInfoSearch .searchBtn a { color:#fff; font-weight:600;}
+.docInfoWrap .tabWRe > li { width:81px}
+.docInfoWrap .tabWRe > li.textLong { width:101px;padding:12px 5px 0 5px}
+.docInfoWrap h4 { margin-bottom:16px; font-size:24px; color:#0e787c;}
+.docInfoWrap h4 .h4title { margin-left:20px; font-size:15px; color:#001111;}
+.docInfoWrap .tabSearchList { border-left:1px solid #ccc; border-bottom:1px solid #ccc; border-right:1px solid #ccc;}
+.docInfoWrap .tabSearchList .tabSearchListUl { padding:27px 0 30px 0; overflow:hidden;}
+.docInfoWrap .tabSearchList .tabSearchListUl > li { min-height:39px;}
+.docInfoWrap .tabSearchList .tabSearchListUl > li.firstChild { width:193px; padding-left:30px; background:none;}
+.docInfoWrap .tabSearchList .tabSearchListUl .listConNone { float:left; width:200px; padding-left:24px; background:url('/asan/images/docinfo/bg_grayHLine.jpg') no-repeat left top;}
+.docInfoWrap .tabSearchList .tabSearchListUl .listConNone a { line-height:1.2 \0/;}
+.docInfoWrap .tabSearchList .tabSearchListUl .listCon { clear:both; padding:25px 0;}
+.docInfoWrap .tabSearchList .tabSearchListUl .listCon div { padding:25px 30px; background:#f6f6f6;}
+.docInfoWrap .tabSlistTitle { font-size:18px; line-height:18px; font-weight:600; color:#111;}
+.docInfoWrap .listCon2Depth { overflow:hidden;}
+.docInfoWrap .listCon2Depth li { float:left; width:30%; margin:30px 0 2px 10px; padding-left:8px; line-height:15px; background:url('/asan/images/docinfo/bg_greenIcon.jpg') no-repeat left 7px;}
+.docInfoWrap .listCon2Depth li .on { color:#0e787c; text-decoration:underline;}
+.docInfoWrap .docinfoSearchSec { padding-top:20px;}/* 소개 > 의료진검색 */
+
+
+/* 의료진리스트 */
+.docInfoWrap .searchList { margin-top:30px; border-top:2px solid #5d5d5d;}
+.docInfoWrap .searchListBox { padding:18px 0 21px 0; border-bottom:1px solid #5d5d5d;}
+.docInfoWrap .searchListBox:after { content:""; display:block; clear:both;}
+.docInfoWrap .metierImg { float:left; width:180px; margin-right:40px;}
+.docInfoWrap .metierList { float:left; width:680px; margin-top:12px; position:relative;}
+.docInfoWrap .metierList > li { border-bottom:1px solid #ccc;}
+.docInfoWrap .metierList > li.lineLast { border-bottom:0;}
+.docInfoWrap .metierList > li.lineLast a{font-weight:600;}
+.docInfoWrap .metierList > li.lineLast div{float:left;position:relative;padding-left:2px;}
+.docInfoWrap .metierList > li.lineLast .list_wrap {display:none;position:absolute;top:32px;right:3px;width:205px;padding:10px 10px 6px;border:1px solid #ccc;background:#fff;z-index:10;}
+.docInfoWrap .metierList > li.lineLast .list_wrap li {padding-left:13px;margin-top:7px;background: url('/asan/images/ico/icoDocList.gif') no-repeat 4px 10px;}
+.docInfoWrap .metierList > li.lineLast .list_wrap li a {color:#333;font-size:15px;line-height:20px;font-weight:600;}
+.docInfoWrap .metierList > li.lineLast .list_wrap li:first-child {margin-top:0;}
+
+.docInfoWrap .metierList > li:after { content:""; display:block; clear:both;}
+.docInfoWrap .lastBtn { float:right; margin-top:20px;}
+.docInfoWrap .metierTitle { padding-bottom:18px; font-size:24px; line-height:24px; font-weight:600; color:#111;}
+.docInfoWrap .metierCon { min-height:73px; padding:16px 0 18px 0;}
+.docInfoWrap .metierCon .mconT { width:57px; float:left; padding-right:33px; font-size:15px; color:#111; font-weight:600;}
+.docInfoWrap .metierCon > ul { float:left; width:590px;}
+.docInfoWrap .snsBox { position:absolute; right:-2px; top:-4px;}
+.docInfoWrap .choiceDoctor { display:inline-block; padding-left:16px; margin-left:30px; font-size:15px; line-height:15px; font-weight:600; background:url('/asan/images/docinfo/bul_check.png') no-repeat left top;}
+
+/* 의료진소개 */
+.docInfoWrap .docInfoTitle { font-size:18px; color:#333;}
+.docInfoWrap .greenTab { width:899px; overflow:hidden; position:relative; border-left:1px solid #ccc;}
+.docInfoWrap .greenTab > li { float:left; width:300px; height:28px; padding-top:12px; text-align:center; line-height:100%; font-weight:600; background:url('/asan/images/common/tab_graybg.png') no-repeat right top;}
+.docInfoWrap .greenTab > li:first-child { width:299px;}
+.docInfoWrap .greenTab > li.on { height:28px; border:none; background:#0e787c url('/asan/images/popup/icon_white_arrow.png') no-repeat 50% bottom;}
+.docInfoWrap .greenTab > li.on > a { color:#fff;}
+
+.docInfoWrap .photoWrap { position:relative;padding-bottom:40px;}
+.docInfoWrap .list_banner { margin:20px 0 40px;}
+.docInfoWrap .area_con { position:relative; width:450px; overflow:hidden;}
+.docInfoWrap .area_con ul { overflow:hidden; width:1800px; height:450px;}
+.docInfoWrap .area_con ul li { float:left;}
+.docInfoWrap .area_con ul li .img_bg{width:450px;height:450px;}
+.docInfoWrap .ban_ctrl { position:absolute; right:25px; bottom:24px;}
+.docInfoWrap .ban_ctrl button { display:inline-block; margin:0; padding:0; border:0;background:none;}
+.docInfoWrap .ban_ctrl span { /* margin-right:10px; */}
+.docInfoWrap .ban_ctrl span button{padding-right:3px;}
+.docInfoWrap .photoList { position:absolute; right:0; top:0; width:450px; font-weight:600;}
+.docInfoWrap .photoList li { width:225px; float:left;}
+.docInfoWrap .photoList .photoh5 { margin-top:50px; font-size:40px; line-height:40px; color:#111;}
+.docInfoWrap .photoList .snsBox2 { width:200px; margin:25px 0 0 25px; padding-top:22px; background:url('/asan/images/common/bg_conSnsBar.gif') no-repeat left top;}
+.docInfoWrap .photoList .snsBox2 .choiceDoctor2 { padding-left:16px; margin-top:15px; font-size:15px; line-height:15px; color:#111; background:url('/asan/images/docinfo/bul_check.png') no-repeat left top;}
+.docInfoWrap .photoList .snsBox2 img {width:36px; height:36px;}
+.docInfoWrap .photoList .img_bg{width:225px;height:225px;}
+
+.docInfoWrap .photoDetail { border:1px solid #ccc; padding:25px 0 28px 0;}
+.docInfoWrap .photoDetailBox { overflow:hidden; font-weight:600; line-height:1;}
+.docInfoWrap .photoDetailBox li { float:left; width:400px; border-left:1px solid #ccc; line-height:21px; padding:0 24px;}
+.docInfoWrap .photoDetailBox .detaliTitle { font-size:18px; line-height:18px; color:#0e787c; padding:18px 0 12px; background:url('/asan/images/common/bg_conSnsBar.gif') no-repeat left top;}
+.docInfoWrap .photoDetailBox .detailText { line-height:24px;}
+.docInfoWrap .photoDetailBox li:first-child { border-left:none;}
+
+/* linetab */
+.docInfoWrap .linetab { position:relative; min-width:1px; height:24px; padding:14px 10px 10px 0; font-weight:600; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.docInfoWrap .linetab > li { float:left; padding:0 15px; border-left:1px solid #ccc;}
+.docInfoWrap .linetab > li:after { display:block; content:" "; clear:both;}
+.docInfoWrap .linetab > li:first-child { border-left:0;}
+.docInfoWrap .linetab > li.on { padding:0 10px;}
+.docInfoWrap .linetab > li.on > a { padding:7px 10px; color:#fff; background:#666;}
+
+.docInfoWrap .line2Depth { position:absolute; left:0; top:49px; width:100%;}
+.docInfoWrap .line2Depth ul { height:28px; padding:15px 0 0 290px; border-bottom:1px solid #ccc; font-size:15px; line-height:15px; background:url('/asan/images/docinfo/bg_line2Depth.jpg') repeat-x left top}
+.docInfoWrap .line2Depth ul li { float:left;}
+.docInfoWrap .line2Depth ul li a { padding:0 10px; background:url('/asan/images/docinfo/bg_line2Depth_line.jpg') no-repeat left 5px;}
+.docInfoWrap .line2Depth ul li:first-child a { background:none;}
+.docInfoWrap .line2Depth ul li.on > a { color:#347c7e; text-decoration:underline;}
+
+/* movieArea */
+.docInfoWrap .movieArea { margin:30px 0 0; overflow:hidden;}
+.docInfoWrap .movieBox { float:left;}
+.docInfoWrap .movieText { float:right; width:197px; height:313px; overflow-y:scroll; border:1px solid #ccc; padding:32px 19px 32px 30px; background:#fbfbfb;}
+.docInfoWrap .tableList {margin-top:30px;}
+.docInfoWrap .h5tit_font {font-size:24px;}
+
+.docDep5Title { font-size:18px; font-weight:600;}
+.docDep5Title span {margin-right:5px;}
+
+/* .tableList */
+.docInfoWrap .tableList .tableLayoutSec { margin-bottom:40px;}
+.docInfoWrap .tableList .tableLayoutSec.type01 {margin-bottom:0;}
+.docInfoWrap .tableList .tableLayoutSec .tableLayout thead th { border-bottom:1px solid #ccc;}/* 추가 */
+.docInfoWrap .tableList .tableLayoutSec .tableLayout .differTh th { background:#ebebeb url('/asan/images/common/bg_thline.gif') repeat-y right 0;}
+.docInfoWrap .tableList .tableLayoutSec .tableLayout .differTh th span { color:#111 !important;}
+.docInfoWrap .tableList .dep2Title { color:#111 !important;}
+.docInfoWrap .tableList.tableTop { margin-top:30px;}
+.docInfoWrap .tableListText { position:relative; margin:0px 0 20px}
+.docInfoWrap .tableListText .orangeMdBtn2 { position:absolute; top:-21px; right:0;}
+.docInfoWrap .textList { margin-top:30px; overflow:hidden;}
+.docInfoWrap .textList:after { content:""; display:block; clear:both;}
+.docInfoWrap .textList dt { float:left; width:175px; font-size:24px; line-height:24px; font-weight:600; color:#111;}
+.docInfoWrap .textList dd { overflow:hidden; float:left; width:725px; line-height:15px;}
+.docInfoWrap .textList dd.bnrBox > div { position:relative; width:725px; height:79px;}
+.docInfoWrap .textList dd.bnrBox > div > span { position:absolute; top:30px; left:289px; display:inline-block; overflow:hidden; width:400px; height:20px; font-size:15px; color:#fff; font-weight:600; text-overflow:ellipsis; white-space:nowrap;}
+.docInfoWrap .textList dd.bnrBox > div > span a { color:#fff; }
+.docInfoWrap .textList dd .praiseBnr { background:url('/asan/images/docinfo/bg_praiseBnr.jpg') no-repeat left top;}
+.docInfoWrap .textList dd .amcBnr { background:url('/asan/images/docinfo/bg_amcBnr.jpg') no-repeat left top;}
+.docInfoWrap .textList dd p { overflow:hidden; margin-bottom:13px;line-height:26px;}
+.docInfoWrap .textList dd p span.tit { display:inline-block; float:left; overflow:hidden; max-width:591px; text-overflow:ellipsis; white-space:nowrap;}
+.docInfoWrap .textList dd p span.txt { display:inline-block; float:left;}
+.docInfoWrap .moreBtn { display:block; font-weight:600; font-size:13px; color:#111;}
+.docInfoWrap .moreBtn span { color:#0e787c; }
+.docInfoWrap .moreBtn2 { float:left; margin-left:20px; font-weight:600; font-size:13px; color:#db330c;}
+.docInfoWrap .greenText { font-weight:600; color:#1d8084 !important;}
+.docInfoWrap .movieDataArea { float:left; margin-bottom:39px;}
+.docInfoWrap .movieDataArea.mdCenter { margin:0 76px;}
+.docInfoWrap .movieDataArea .thumbTime { position:absolute; right:0; bottom:0; padding:2px 5px; font-size:10px; color:#fff; background:#000;}
+.docInfoWrap .mdMovie { position:relative;}
+.docInfoWrap .mdMovie .movImg img { width:191px; height:107px;}
+.docInfoWrap .mdMovie .playBtn { position:absolute; left:78px; top:36px;}
+.docInfoWrap .mdValue { margin:9px 0 10px;}
+.docInfoWrap .mdconText { font-weight:600;}
+.docInfoWrap .textList dt .textListgreenT { color:#267376;}
+
+/*학력/경력*/
+.docInfoWrap .textList2 { margin-top:30px;}
+.docInfoWrap .textList2:after { content:""; display:block; clear:both;}
+.docInfoWrap .textList2 dt { float:left; width:170px; font-size:24px; line-height:24px; font-weight:600; color:#111;}
+.docInfoWrap .textList2 dd { float:left; width:725px; line-height:15px; margin-bottom:24px;}
+.docInfoWrap .textList2 dd p { margin-bottom:5px;}
+.docInfoWrap .textList2 .textListCon { overflow:hidden;}
+.docInfoWrap .textList2 .textListCon li { margin-bottom:10px;}
+.docInfoWrap .textList2 .textListCon li span { width:149px; float:left; font-size:13px; line-height:1; display:inline-block; vertical-align:top; padding-left:8px; background:url('/asan/images/common/bul_grayDot2x2.jpg') no-repeat left 6px;}
+.docInfoWrap .textList2.new .textListCon li span { background-position:left 12px; line-height:24px;}
+.docInfoWrap .textList2 .textListCon li p { width:564px; float:left; line-height:24px;}
+
+/*언론보도*/
+.docInfoWrap .textList3 { margin-top:27px; overflow:hidden; border-bottom:1px solid #ccc;}
+.docInfoWrap .textList3 .textListCon { width:730px;}
+.docInfoWrap .textList3:after { content:""; display:block; clear:both;}
+.docInfoWrap .textList3 dt { float:left; width:170px; margin-bottom:15px; font-size:24px; line-height:24px; font-weight:600; color:#111;}
+.docInfoWrap .textList3 dt .textListAll { display:block; font-size:15px;}
+.docInfoWrap .textList3 dt .textListgreenT { color:#267376; margin-left:4px;}
+.docInfoWrap .textList3 dd { float:left; width:730px; line-height:15px;}
+.docInfoWrap .textList3 .textListCon li:first-child .t1 { border-top:0; padding:0 0 10px 8px; background:url('/asan/images/common/bul_grayDot2x2.jpg') no-repeat left 6px;}
+.docInfoWrap .textList3 .textListCon li:first-child .tData { border-top:0; padding:0 0 0 0; font-size:13px;}
+.docInfoWrap .textList3 .textListCon .t1 { float:left; width:622px; border-top:1px solid #ccc; padding:17px 0 10px 8px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; background:url('/asan/images/common/bul_grayDot2x2.jpg') no-repeat left 24px;}
+.docInfoWrap .textList3 .textListCon li.t2 { clear:both; padding:0 0 21px 10px; margin:0 0 0px 8px; background:url(/asan/images/common/bul_docinfo_line.jpg) no-repeat left 8px; font-size:13px; line-height: 1.5em;}
+.docInfoWrap .textList3 .textListCon .tData { width:100px; float:left; padding:20px 0 0 0; border-top:1px solid #ccc; display:inline-block; text-align:right; font-size:13px;}
+
+.docInfoWrap .textList3.type1 { margin-top:73px; overflow:hidden; border-bottom:1px solid #ccc;}
+.docInfoWrap .textList3.type1 dd { margin-bottom:0px;}
+.docInfoWrap .textList3.type1 .textListCon { overflow:hidden;}
+.docInfoWrap .textList3.type1 .textListCon li { width:730px; border-top:1px solid #ccc; padding:18px 0 18px 8px; line-height:18px; background:url('/asan/images/common/bul_grayDot2x2.jpg') no-repeat left 28px;}
+.docInfoWrap .textList3.type1 .textListCon li:first-child { border-top:0; padding:0px 0 15px 8px; background-position:left 8px;}
+.docInfoWrap .textList3.type1 .textListCon .tLi { width:650px; display:inline-block; }
+
+
+
+/* 진료과 리스트 */
+.docInfoWrap {}
+.docInfoWrap .deptMenuCaption { border-bottom:2px solid #ccc; width:100%; text-align:right;}
+.docInfoWrap .deptMenuCaption span { display:inline-block; padding:0 0 9px 25px; font-weight:500; line-height:21px;}
+.docInfoWrap .deptMenuCaption span:first-child {}
+.docInfoWrap .deptMenuCaption .deptMenuHome { background:url('/asan/images/docinfo/icoDeptMenu0.gif') no-repeat;}
+.docInfoWrap .deptMenuCaption .deptMenuStaff { margin-left:10px; background:url('/asan/images/docinfo/icoDeptMenu1.gif') no-repeat;}
+.docInfoWrap .deptMenuCaption .deptMenuReser {margin-left:10px; padding-right:0; background:url('/asan/images/docinfo/icoDeptMenu2.gif') no-repeat;}
+.docInfoWrap .deptListArticle { position:relative; width:110px; height:165px; overflow:hidden;}
+.docInfoWrap .deptListUl .clinic .deptListArticle { position:relative; width:210px; height:80px; overflow:hidden;}
+.docInfoWrap .deptListUl .clinic .deptListArticle .icoDept { padding-top:27px; width:208px; height:51px; overflow:hidden; border:1px solid #ccc; text-align:center;}
+.docInfoWrap .deptListUl .deptListArticle .icoDept { width:108px; height:108px; overflow:hidden; border:1px solid #ccc;}
+.docInfoWrap .deptListUl .deptListArticle .deptLink { padding-top:5px; text-align:center; letter-spacing:-1px;}
+.docInfoWrap .deptListUl .clinic .deptListArticle .shereDept { display:none; position:absolute; top:0; left:0; padding-top:26px; width:210px; height:52px; overflow:hidden; border:1px solid #333; text-align:center;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9F000000, endColorstr=#9F000000); /* IE5.5 ~ IE7 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#9F000000, endColorstr=#9F000000)"; /* IE8 */
+	background:rgba(0,0,0,.7); /* IE9 , morden browser */
+}
+.docInfoWrap .deptListUl .deptListArticle .shereDept { display:none; position:absolute; top:0; left:0; padding-top:41px; width:108px; height:67px; overflow:hidden; border:1px solid #333; text-align:center;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9F000000, endColorstr=#9F000000); /* IE5.5 ~ IE7 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#9F000000, endColorstr=#9F000000)"; /* IE8 */
+	background:rgba(0,0,0,.7); /* IE9 , morden browser */
+}
+.docInfoWrap .deptListUl { width:100%; overflow:hidden; margin-top:31px;}
+.docInfoWrap .deptListUl .clinic { float:left; width:210px; height:80px; margin:0 20px 20px 0;}
+.docInfoWrap .deptListUl .last { margin-right:0;}
+.docInfoWrap .deptListUl .childNone { padding-top:19px; float:left; width:158px; height:185px;}
+.docInfoWrap .deptListUl .childNoneRight { padding-top:19px; float:left; width:110px; height:185px;}
+.docInfoWrap .deptListUl .childUse { clear:both; width:100%; overflow:hidden;}
+.docInfoWrap .deptListUl .childUse > .leftPlane { float:left; padding-top:30px; width:140px;}
+.docInfoWrap .deptListUl .childUse > .deptChildList { float:left; margin-bottom:30px; padding:30px 0 0 30px; width:700px; background:#f5f5f5; overflow:hidden;}
+.docInfoWrap .deptListUl .childUse > .deptChildList li { float:left;}
+
+/* 진료과 상세 */
+.docInfoWrap .otherDeptGoto { margin:-54px 0 20px 0; text-align:right;}
+.docInfoWrap .deptContentWrap { width:100%; overflow:hidden; padding-top:15px;}
+.medicalViewBox { margin-top:28px;}
+.medicalViewBox .txtBox {margin-bottom:20px;}
+.medicalListTp ul li { overflow:hidden; margin-top:30px;}
+.medicalListTp ul li > div { float:left; margin-right:30px;}
+.medicalListTp ul li dl { float:left; width:574px;}
+.medicalListTp ul li dl dt { margin:1px 0 11px 0; font-size:20px; font-weight:600;}
+.bulDirect { padding:6px 22px 6px 12px; background:#0e787c url(/asan/images/common/bul_grayDotDirect.png) no-repeat 98% 9px;}
+
+
+/* 칭찬코너 */
+.docInfoWrap .viewTypeSec1 .dep2Title,
+.docInfoWrap .listTypeSec2 .dep2Title { margin:30px 0 15px 0; color:#111 !important; font-weight:600; font-size:24px !important; line-height:24px;}
+.docInfoWrap .viewTypeSec1 .dep2Title .textListAll,
+.docInfoWrap .listTypeSec2 .dep2Title .textListAll { font-size:15px;}
+.docInfoWrap .viewTypeSec1 .dep2Title .textListAll .textListorangeT,
+.docInfoWrap .listTypeSec2 .dep2Title .textListAll .textListorangeT { display:inline-block; margin-left:4px; color:#0e787c;}
+
+/* 의료진 리스트 추가 텍스트 간격- 탭 아래부분 / 동영상 윗부분 */
+.movtitgap_wrap {margin-top:30px;}
+.movtitgap_wrap .dep2Title {margin-bottom:15px;}
+
+
+
+/* 핵 20140515 */
+@media screen and (-webkit-min-device-pixel-ratio:0){.h4MtHec { padding-top:4px;}}
+
+
+/* 진료과소개  edit 20140516*/
+.docInfoWrap .docDepartBox { }
+.docInfoWrap .docDepartBox .deparTitle { padding-top:23px; margin-bottom:8px;}
+.docInfoWrap .docDepartBox .topImg { padding-bottom:20px; text-align:center;}
+.docInfoWrap .docDepartBox .centerImg { padding:7px 0 15px; text-align:center;}
+.docInfoWrap .docDepartBox .deparTextBox { line-height:24px; padding:0 0 10px 0; }
+.docInfoWrap .docDepartBox .textTop { padding-top:23px;}
+.docInfoWrap .docDepartBox .deparBtnBox { margin-top:4px;}
+.docInfoWrap .docDepartBox .deparH5Box {}
+.docInfoWrap .docDepartBox .organCart{ width:693px; height:516px; margin:2px auto 0; background:url("/asan/images/docinfo/depart/img_depart35_01.png") no-repeat left top; }
+.docInfoWrap .docDepartBox .deparTh5 { color:#111; font-size:20px; font-weight:600; padding-bottom:13px; }
+.docInfoWrap .docDepartBox .deparTh7 { color:#111; font-size:20px; font-weight:600; padding:10px 0 9px 0;}
+
+.docInfoWrap .docDepartBox .basicTh5 { color:#111; font-size:20px; font-weight:600; padding:10px 0 10px 0; }
+
+.docInfoWrap .docDepartBox .deparTh6 { color:#0e787c; font-size:18px; font-weight:600; padding-bottom:1px;}
+.docInfoWrap .docDepartBox .deparName { color:#111; padding-bottom:30px;}
+.docInfoWrap .docDepartBox .grBtn { display:inline-block; padding:7px 25px 7px 10px; font-size:12px; font-weight:600; line-height:1; color:#fff; background:#0e787c url("/asan/images/docinfo/depart/grBtnBg.jpg") no-repeat right center;}
+
+.docInfoWrap .docDepartBox .medicalListTp ul li { margin-top:20px;}
+.docInfoWrap .docDepartBox .medicalListTp ul li:first-child { margin-top:0px;}
+.docInfoWrap .docDepartBox .medicalListTp ul li dl dt { font-size:18px; color:#0e787c; margin:1px 0;}
+.docInfoWrap .docDepartBox .medicalListTp ul li dl dd { padding-bottom:10px; line-height:24px;}
+.docInfoWrap .docDepartBox .medicalListTp ul li dl dd.last { padding:1px 0 0;}
+.docInfoWrap .docDepartBox .medicalListTp ul li > div { margin-right:29px;}
+.docInfoWrap .docDepartBox .medicalViewBox { margin-top:23px;}
+
+.docInfoWrap .docDepartBox .metierList { position:relative; width:679px; float:left; margin-top:9px;}
+.docInfoWrap .docDepartBox .defaultCont h3{padding:48px 0 26px 0; font-size:30px; color:#111; line-height:1;}
+.docInfoWrap .docDepartBox .defaultCont { position:relative; float:right; padding-left:81px; width:900px; background:url(/asan/images/common/bg_content.gif) 0 0 repeat-y;}
+.docInfoWrap .docDepartBox .searchList { margin-top:0px; border-top:2px solid #5d5d5d;}
+.docInfoWrap .docDepartBox .metierList > li { border-bottom:0px;}
+.docInfoWrap .docDepartBox .metierList > li:first-child { border-bottom:1px solid #ddd;}
+.docInfoWrap .docDepartBox .searchListBox { padding:20px 0; border-bottom:1px solid #5d5d5d;}
+.docInfoWrap .docDepartBox .metierImg { float:left; width:181px; margin-right:40px;}
+.docInfoWrap .docDepartBox .metierCon2 { min-height:73px; padding:16px 0 18px;}
+.docInfoWrap .docDepartBox .metierTitle { padding-bottom:19px; font-size:24px; line-height:24px; font-weight:600; color:#111;}
+.docInfoWrap .docDepartBox .metierCon2 > ul > li { padding-bottom:2px;}
+.docInfoWrap .docDepartBox .metierCon2 > ul .mLeft { float:left; width:166px; padding-right:0px; color:#0e787c;}
+.docInfoWrap .docDepartBox .metierCon2 > ul .mRight { float:left; width:513px;}
+
+
+/* 연혁의료성과 */
+.docInfoWrap .textList4 { margin-top:30px;}
+.docInfoWrap .textList4:after { content:""; display:block; clear:both;}
+.docInfoWrap .textList4 dt { float:left; width:170px; font-size:24px; line-height:24px; font-weight:600; color:#111;}
+.docInfoWrap .textList4 dd { float:left; width:725px; line-height:15px; margin-bottom:24px;}
+.docInfoWrap .textList4 dd p { margin-bottom:5px;}
+.docInfoWrap .textList4 .textListCon { overflow:hidden;}
+.docInfoWrap .textList4 .textListCon li {margin-bottom: 10px; border: 1px solid #ccc; padding: 10px 0 5px 0; border-radius: 6px;}
+.docInfoWrap .textList4 .textListCon li span { width:149px; float:left; font-size:15px; font-weight:600; line-height:1; display:inline-block; vertical-align:top; padding-left:8px;}
+.docInfoWrap .textList4.new .textListCon li span { background-position:left 12px; line-height:24px;}
+.docInfoWrap .textList4 .textListCon li p { width:600px; line-height:24px;}
+.docInfoWrap .textList4 .textListCon li p.open { width:600px; line-height:24px; padding:0 0 10px 108px;}
+.docInfoWrap .textList4 .textListCon li p a {color:#0e787c; text-decoration: underline; }
+
+.dropList .day {width: 90px;display: inline-block;font-weight: 600;}
+.dropList .open {padding: 0 0 0 95px;}
+
+/* 뉴스룸 연동 */
+.listTypeSec22.photoType .listCont > ul > li {padding:20px 0;}
+.listTypeSec22.photoType .listCont > ul > li .photo {padding-left:0; width:200px;}
+.listTypeSec22.photoType .listCont > ul > li .photo img{width:180px;height:120px; border:1px solid #ddd;}
+.listTypeSec22.photoType .listCont > ul > li > dl {float:left; width:690px;}

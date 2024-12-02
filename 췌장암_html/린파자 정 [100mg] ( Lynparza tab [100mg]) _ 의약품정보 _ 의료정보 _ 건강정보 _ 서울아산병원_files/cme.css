@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/* 행사일정검색 */
+.cmeWrap .cmeSearch { overflow:hidden;}
+.cmeWrap .cmeSearchLeft { float:left; margin-left:58px; line-height:10px; vertical-align:top;}
+.cmeWrap .cmeSearchRight { float:left;}
+.cmeWrap .cmeSearch select { margin:0 0 0 20px; height:26px;}
+.cmeWrap .cmeSearch .inputText { margin-left:20px;}
+.cmeWrap .cmeSearch label { color:#333; font-weight:600; line-height:25px; vertical-align:middle;display:inline-block;}
+.cmeWrap .cmeSearch .boardSearchSec fieldset a.graySmBtn { *position:relative; *top:5px; *left:-3px;}
+
+/* 진료과찾기탭 */
+.cmeWrap h4 { margin-bottom:16px; font-size:30px; color:#111;}
+.cmeWrap h4 .h4title { margin-left:20px; font-size:15px; color:#333;}
+.cmeWrap h4.dep1Title{padding-bottom:15px;line-height:1;margin-bottom:0;}
+.cmeWrap .tabSearchList { border-left:1px solid #ccc; border-bottom:1px solid #ccc; border-right:1px solid #ccc;}
+.cmeWrap .tabSearchList .tabSearchListUl { padding:27px 0 40px 0; overflow:hidden;}
+.cmeWrap .tabSearchList .tabSearchListUl > li { min-height:57px;}
+.cmeWrap .tabSearchList .tabSearchListUl > li.firstChild { width:193px; padding-left:30px; background:none;}
+.cmeWrap .tabSearchList .tabSearchListUl .listConNone { float:left; width:200px; padding-left:24px; background:url('/asan/images/docinfo/bg_grayHLine.jpg') repeat-y left top;}
+.cmeWrap .tabSearchList .tabSearchListUl .listConNone a { line-height:1.2 \0/;}
+.cmeWrap .tabSearchList .tabSearchListUl .listCon { clear:both; padding:25px 0 30px 0;}
+.cmeWrap .tabSearchList .tabSearchListUl .listCon div { padding:25px 30px; background:#f6f6f6;}
+.cmeWrap .tabSlistTitle { font-size:18px; line-height:24px; font-weight:600; color:#111;}
+.cmeWrap .listCon2Depth { min-width:1px;}
+.cmeWrap .listCon2Depth:after { display:block; clear:both; content:" ";}
+.cmeWrap .listCon2Depth li { float:left; width:262px; margin:30px 0 1px 9px; padding-left:8px; line-height:15px; background:url('/asan/images/docinfo/bg_greenIcon.jpg') no-repeat left 7px;}
+.cmeWrap .listCon2Depth li:first-child { width:263px; margin:25px 0 0 9px;}
+.cmeWrap .listCon2Depth li .on { color:#0e787c; text-decoration:underline;}
+
+/*게시판형리스트*/
+.cmeWrap .searchResult { margin-top:40px; margin-bottom:19px;}
+.cmeWrap .searchResult > a { padding-left:30px; height:22px; display:inline-block; line-height:21px;}
+.cmeWrap .searchResult > a.on { color:#0e787c; text-decoration:underline;}
+.cmeWrap .searchResult .dayList { margin-right:10px; background:url('/asan/images/ico/ico_dayList.png') no-repeat left 1px;}
+.cmeWrap .searchResult .dayList.on { background:url('/asan/images/ico/ico_dayList_on.png') no-repeat left 1px !important;}
+.cmeWrap .searchResult .calendarList { background:url('/asan/images/ico/ico_calendar.png') no-repeat left 1px;}
+.cmeWrap .searchResult .calendarList.on { background:url('/asan/images/ico/ico_calendar_on.png') no-repeat left 1px !important;}
+
+.cmeWrap .dayListWrap { border-top:2px solid #5d5d5d; border-bottom:2px solid #5d5d5d;}
+.cmeWrap .dayListWrap .dayListBox > li { border-top:1px solid #ddd; padding:18px 0 21px 0;}
+.cmeWrap .dayListWrap .dayListBox > li:first-child { border-top:0;}
+.cmeWrap .dayListBox .dayListBoxLeft {float:left; width:743px; border-right:1px solid #ddd;}
+.cmeWrap .dayListBox .dayListBoxRight { float:left; width:155px; text-align:center; padding:9px 0 0; position:relative;}
+.cmeWrap .dayListBox:after { content:""; display:block; clear:both;}
+.cmeWrap .dayListBox > li > ul { overflow:hidden}
+.cmeWrap .dayListTitle { font-size:18px; line-height:18px; color:#111; padding-bottom:15px; font-weight:600;}
+.cmeWrap .dayListTitle2 { font-size:15px; line-height:15px; color:#333;}
+.cmeWrap .bgrightLine { width:1px; padding-right:10px; margin-right:10px; background:url('/asan/images/cme/cme_bgLine.jpg') no-repeat right 3px;}
+.cmeWrap .dayListBoxRight .whiteSmBtn { padding:6px 5px}
+.cmeWrap .orderEnd { vertical-align:middle; display:inline-block; position:relative; top:1px; text-align:center; width:100px;}
+
+/* 달력형 리스트 */
+.cmeWrap .calendarListWrap{}
+.cmeWrap .calendarLeft{float:left;width:539px;overflow:hidden;}
+.cmeWrap .calTopDay{position:relative;width:100%;height:55px;padding-bottom:3px;background:#5d5d5d url('/asan/images/cme/bgDateBot.gif') repeat-x left bottom;}
+.cmeWrap .calTopDay .calDayText{padding-top:5px;width:100%;text-align:center;font-size:28px;color:#fff;font-weight:600;}
+.cmeWrap .calTopDay .calDayText .monthText{font-weight:normal;font-size:15px;}
+.cmeWrap .calTopDay .calPrev{display:block;position:absolute;top:15px;left:155px;}
+.cmeWrap .calTopDay .calNext{display:block;position:absolute;top:15px;right:155px;}
+.cmeWrap .calTopDay .colToday{display:block;position:absolute;top:13px;right:20px;}
+.cmeWrap .calendarLeft table{width:100%;}
+.cmeWrap .calendarLeft table thead th{padding:9px 0 9px;font-size:13px;color:#111;border-bottom:2px solid #ccc;line-height:1;background:url('/asan/images/cme/bgDayLine.gif') no-repeat left 12px;}
+.cmeWrap .calendarLeft table thead th.sun{color:#db330c;}
+.cmeWrap .calendarLeft table thead th:first-child{background:none;}
+.cmeWrap .calendarLeft table tbody td{vertical-align:top;border-left:1px solid #ccc;border-bottom:1px solid #ccc;font-size:13px;font-weight:600;}
+.cmeWrap .calendarLeft table tbody td:first-child{border-left:0;color:#0e787c;}
+.cmeWrap .calendarLeft table tbody td>div.case{padding:9px 9px 10px 10px;border-top:2px solid #f5f5f5;height:44px;text-align:right;line-height:1;}
+.cmeWrap .calendarLeft table tbody td>div.case.on{color:#fff;background:url('/asan/images/cme/bgCalDate.png') no-repeat right top;}
+.cmeWrap .calendarLeft table tbody td.today {background:#f5f5f5;}
+.cmeWrap .calendarLeft table tbody td .redBg{padding-top:12px;}
+.cmeWrap .calendarLeft table tbody td .redBg a{color:#db330c;}
+.cmeWrap .calendarRight{float:right;padding-right:9px;width:323px;height:487px;background:url('/asan/images/cme/bgCalendarRight.gif') no-repeat;}
+.cmeWrap .calendarRight .claRTop{position:relative;width:323px;height:91px;display:table; overflow:hidden;}
+.cmeWrap .calendarRight .claRTop .calRCenter{padding:0 50px 0;text-align:center;color:#111;#position: absolute; #top: 50%; display:table-cell; width:223px; text-align:center; vertical-align:middle;}
+.cmeWrap .calendarRight .claRTop .calRCenter strong{#position: relative; #top: -50%;}
+.cmeWrap .calendarRight .claRTop .calRLeft{position:absolute;top:29px;left:1px;}
+.cmeWrap .calendarRight .claRTop .calRRight{position:absolute;top:29px;right:5px;}
+.cmeWrap .calendarRight .calRCont{width:100%;height:319px;}
+.cmeWrap .calRList { overflow:hidden; clear:both; padding:29px 0 0 33px;}
+.cmeWrap .calRList > li { margin-top:15px; line-height:15px;}
+.cmeWrap .calRList > li:first-child { margin-top:0px;}
+.cmeWrap .leftArrowbul { padding:0 0 0 10px; color:#0e787c; background:url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat left 7px;}
+.cmeWrap .calRbottom {padding-top:20px;text-align:center;}
+
+/*학술행사일정_ view*/
+.cmeWrap .cmeTextTArea { border:1px solid #ccc;}
+.cmeWrap .cmeTextTitle { padding:23px 30px 24px; text-align:center; border-bottom:1px solid #ccc; background:#f5f5f5;font-weight:600;font-size:18px;color:#111;}
+.cmeWrap .cmeTextTitle *{vertical-align:middle;}
+.cmeWrap .cmeTextTBox { padding:30px 30px 9px 30px; overflow:hidden;}
+.cmeWrap .cmeTextTBox > li { float:left;  width:377px; margin-bottom:15px; line-height:15px;}
+.cmeWrap .cmeTextTBox > li.datePoint{color:#0e787c;}
+
+.cmeWrap .linetab { position:relative; height:24px; padding:13px 0px 11px; font-weight:600; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+.cmeWrap .linetab > li { float:left; padding:0 20px 0 19px; border-left:1px solid #ccc;}
+.cmeWrap .linetab > li:first-child { border-left:0;}
+.cmeWrap .linetab > li.on { padding:0 10px}
+.cmeWrap .linetab > li.on > a { padding:6px 10px 6px 11px; color:#fff; background:#666;}
+
+.cmeWrap .textList { padding:39px 0; overflow:hidden;border-bottom:1px solid #ccc;}
+.cmeWrap .textList:after { content:""; display:block; clear:both;}
+.cmeWrap .textList dt { float:left; width:157px; font-size:24px; line-height:24px; font-weight:600; color:#111;}
+.cmeWrap .textList dd { float:left; width:743px; line-height:15px;}
+.cmeWrap .textList dd p { margin-bottom:13px;}
+.cmeWrap .textList dd > div { line-height:24px; margin-top:-3px;}
+.cmeWrap .moreBtn { display:block; font-weight:600; font-size:13px; color:#ffa039;}
+.cmeWrap .cmeTextTBox2 { overflow:hidden;}
+.cmeWrap .cmeTextTBox2 > li { margin-top:15px; line-height:21px;}
+.cmeWrap .cmeTextTBox2 > li.txt02 {padding-left: 50px;text-indent: -50px;}
+.cmeWrap .cmeTextTBox2 > li.txt03 {padding-left: 66px;text-indent: -66px;}
+.cmeWrap .cmeTextTBox2 > li.txt04 {padding-left: 80px;text-indent: -80px;}
+.cmeWrap .cmeTextTBox2 > li:first-child { margin-top:0;}
+.cmeWrap .textListImg{position:relative; padding:39px 0 0;}
+.cmeWrap .textListImg dt { font-size:24px; line-height:24px; margin-bottom:19px; font-weight:600; color:#111;}
+.cmeWrap .textListImg dd { line-height:15px;}
+.cmeWrap .textListImg dd .secTitle {display:block;padding-bottom:10px;}
+.cmeWrap .btnArea { margin-top:20px; text-align:center;}
+.cmeWrap .tableList {position:relative; padding:40px 0;border-bottom:1px solid #ccc;}
+.cmeWrap .tableList .dep2Title { color:#111 !important;font-size:24px !important;}
+
+.cmeWrap .tableListText .whiteSmBtn { position:absolute; top:47px; right:0;}
+.cmeWrap .tableListText .whiteSmBtn.po { position:absolute; top:67px; right:0;}/* edit 20140519 */
+.cmeWrap .tableListText1 { padding-top:7px;}/* edit 20140519 */
+.cmeWrap .tableList.tableListNone{padding-bottom:0;border-bottom:0;}
+
+.cmeWrap .tableLayoutSec .tableLayout tbody td { padding:9px 15px 12px 15px; }
+
+
+/* 학술행사일정_참가신청_로그인*/
+.cmeWrap .initP{padding-bottom:15px;}
+.cmeWrap .cmeStepBox > ul { overflow:hidden;}
+.cmeWrap .cmeStepBox > ul > li { float:left; padding:0 20px 0 62px; font-size:24px; color:#111; background:url('/asan/images/cme/gray_arrow.png') no-repeat left center;}
+.cmeWrap .cmeStepBox > ul > li:first-child { background:none; padding:0 20px 0 77px;}
+.cmeWrap .cmeStepBox > ul > li > div { width:202px; height:149px; padding-top:52px; text-align:center;}
+.cmeWrap .cmeStepBox > ul > li > div > span { display:block; color:#333; font-size:18px;}
+.cmeWrap .cmeStep1 { background:url('/asan/images/cme/yellow_circle.png') no-repeat left top;}
+.cmeWrap .cmeStep2 { background:url('/asan/images/cme/green_circle.png') no-repeat left top;}
+.cmeWrap .cmeStep3 { background:url('/asan/images/cme/blue_circle.png') no-repeat left top;}
+
+.cmeWrap .cmeChart { margin-top:40px; border:1px solid #ccc; padding:23px 30px 30px 30px;}
+.cmeWrap .cmeChart .chartTitle { text-align:center;}
+.cmeWrap .cmeChart .chartTitle2 { text-align:center; font-size:15px; color:#333; padding-bottom:27px; border-bottom:1px solid #ddd;}
+.cmeWrap .cmeChart .chartTitle2 span { color:#111;}
+.cmeWrap .mychart { margin-top:31px; background:url('/asan/images/cme/bgLoginWrapMyChart.gif') no-repeat left 0;}
+.cmeWrap .mychart dl { padding-left:60px;}
+.cmeWrap .mychart dl dt { font-size:18px; color:#111;font-weight:600;}
+.cmeWrap .mychart dl dd .chartSubText { display:block; font-size:13px;}
+.cmeWrap .mychart .grayBox { margin-top:18px; padding:26px 30px 26px 30px; border:0px; background:#f5f5f5}
+.cmeWrap .mychart .chartList { overflow:hidden;}
+.cmeWrap .mychart .chartList > li { float:left; width:30%; padding:0 0 0 7px;  margin-top:6px; color:#0e787c; background:url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat left 8px;}
+.cmeWrap .mychart .chartList > li.on a { color:#0e787c; text-decoration:underline;}
+
+.cmeWrap .perInfo { border:1px solid #ddd; padding:20px 30px; background:#f5f5f5;}
+.cmeWrap .perInfo h4{font-size:20px;margin-bottom:0;padding-bottom:15px;line-height:1;}
+.cmeWrap .perInfo .whiteBox { border:1px solid #ddd; padding:16px 20px; background:#fff;height:98px;overflow:auto;}
+.cmeWrap .perInfo .pointIcon { display:block; padding-left:8px; background:url('/asan/images/ico/icoGreenSmBox.gif') no-repeat left 10px;}
+.cmeWrap .perInfo p *{vertical-align:middle;}
+.cmeWrap .perInfo input[type="checkbox"]{ margin:3px 3px 3px 0px;}
+.cmeWrap .perInfo .perInputBox { padding-top:4px; position:relative; left:-3px;}
+
+.cmeWrap .loginWrap { margin-top:40px; overflow:hidden; border-top:2px solid #0e787c; border-left:1px solid #ddd; border-right:1px solid #ddd; border-bottom:1px solid #ddd;}
+.cmeWrap .loginWrap .loginLeft{ width:449px; float:left; padding:29px 0 30px 0; text-align:center;}
+.cmeWrap .loginWrap h4.dep1Title{padding-bottom:19px;line-height:1;}
+.cmeWrap .loginWrap .loginLeft .greenMdBtn{padding-left:40px;padding-right:40px;}
+.cmeWrap .loginWrap .loginLeft p {padding:16px 0 16px 0; line-height:26px;}
+.cmeWrap .loginRight { width:349px; float:left; padding:30px 49px 30px 50px; text-align:center; border-left:1px solid #ddd;}
+.cmeWrap .loginRight input[type="text"] { height:18px;}
+.cmeWrap .loginRight select{ height:25px;}
+.cmeWrap .loginBtnBox { margin-top:20px;}
+.cmeWrap .whiteMdBtn{font-weight:600;}
+.cmeWrap .whiteMdBtn2{font-weight:600;}
+
+.cmeWrap .loginWrap .tableLayoutSec .tableLayout tbody td { padding:9px 15px 9px 15px; }
+
+/*사전등록신청*/
+.cmeWrap .smText { font-size:13px;}
+.cmeWrap .memberNum { color:#111; margin-bottom:15px; font-weight:600;}
+.cmeWrap .cmeComplete {padding:23px 0 30px; text-align:center;border:2px solid #0e787c;}
+.cmeWrap .writeBoardSec  .tableLayoutSec .tableLayout tbody th { text-align:left;padding-left:29px;}
+.cmeWrap .writeBoardSec  .tableLayoutSec .tableLayout tbody td { padding:9px 15px 10px 21px}
+.cmeWrap .writeBoardSec.writePadRE  .tableLayoutSec .tableLayout tbody td { padding:11px 15px 11px 21px}
+.cmeWrap .writeBoardSec .inPutLine { padding:0 5px; vertical-align:midde}
+.cmeWrap .writeBoardSec input[type="checkbox"]{ margin:3px 3px 3px -3px;}
+.cmeWrap .logTPre .tableLayoutSec .tableLayout tbody td { padding:10px 15px 10px 17px;}
+
+
+/* 사전등록조회 */
+.cmeWrap .askListP{padding-bottom:15px;}
+
+
+/* 학술영상다시보기 */
+.cmeWrap .docInfoSearch { margin-bottom:30px; padding:30px 151px 30px 150px; border:1px solid #ddd; overflow:hidden; background:#f7f7f7;}
+.cmeWrap .docInfoSearch .docSearchdl { position:relative;}
+.cmeWrap .docInfoSearch .docSearchdl dt { float:left; margin-right:20px; padding-top:14px; font-size:18px; line-height:18px; font-weight:600; color:#111;}
+.cmeWrap .docInfoSearch .docSearchdl dd {float:left;}
+.cmeWrap .docInfoSearch .docSearchdl:after { content:""; display:block; clear:both;}
+.cmeWrap .docInfoSearch .SearchBox { width:479px; height:28px; padding:8px 0; overflow:hidden; border:3px solid #0e787c; background:#fff;}
+.cmeWrap .docInfoSearch .SearchBox li { float:left;}
+.cmeWrap .docInfoSearch .SearchBox li input { height:26px; border:0; margin-left:15px; font-size:15px; line-height:21px; vertical-align:middle;}
+.cmeWrap .docInfoSearch .searchIcon { height:25px; margin:0px 0 0 18px; padding-right:14px; border-right:1px solid #dadada;}
+.cmeWrap .docInfoSearch .searchIcon span { position:relative; top:3px; width:23px; height:22px; display:inline-block; background:url('/asan/images/ico/ico_search.png') no-repeat left center;}
+.cmeWrap .docInfoSearch .searchBtn { position:absolute; right:0; top:0; padding:17px 22px 16px 23px !important; line-height:15px; border:1px solid #0f7a7e; background:#0e787c;}
+.cmeWrap .docInfoSearch .searchBtn a { color:#fff; font-weight:600;}
+
+.cmeWrap .cmeLock {min-height:140px;background:url('/asan/images/cme/bgReplayList1.jpg') no-repeat;}
+.cmeWrap .cmeLock .lockText {padding:49px 0 2px 141px;}
+
+
+/* 학술영상다시보기_썸네일리스트 */
+.cmeWrap .cmeListSec { position:relative; margin-top:30px; padding-bottom:25px; width:100%; overflow:hidden;}
+.cmeWrap .cmeListSec .dep2Title {padding-bottom:26px;margin-bottom:0;line-height:1;}
+.cmeWrap .cmeListSec .cmeTitle{font-weight:600;}
+.cmeWrap .cmeListSec .cmeTitle .dep2Title { font-weight:600;line-height:1;}
+.cmeWrap .cmeListSec .cmeTitle .dep2Title span { font-size:15px;}
+.cmeWrap .cmeListSec .cmeTitle .dep2Title span.point { color:#0e787c;}
+.cmeWrap .cmeListSec .cmeListUl { width:100%; overflow:hidden; padding-top:20px; border-bottom:1px solid #ddd;}
+.cmeWrap .cmeListSec .cmeListUl li { float:left; width:191px; padding-left:45px;}
+.cmeWrap .cmeListSec .cmeListUl li:first-child { padding-left:0px;}
+.cmeWrap .cmeListSec .cmeListUl.cmeLastUl { border-bottom:0px;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbom { padding-bottom:20px;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbTitle { padding-top:6px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 191px;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbTitle a { line-height:20px;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbName { /* padding-top:3px; */text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 191px;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbName span { font-size:13px;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbName2 { padding:0px 0 16px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 191px;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbName2 span { font-size:13px;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbImg { position:relative; overflow:hidden;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbTime { display:inline-block; position:absolute; bottom:0; right:0; padding:2px 5px; background:#000; font-size:10px; color:#fff; font-weight:normal;}
+.cmeWrap .cmeListSec .cmeListUl li .thumbPlayIco { position:absolute ; top:50%; left:0; width:100%; text-align:center; margin-top:-18px;}
+.cmeWrap .cmeListSec .cmeMore { position:absolute; top:3px; right:0;}
+.cmeWrap .cmeListSec .cmeMore a { color:#db330c; font-size:13px;}
+.cmeWrap .cmeListSec .cmeNoDB  {  font-size:15px;}
+.cmeWrap .cmeListSec .cmeNoDB strong { color:#0e787c;}
+
+/*3D자료*/
+.cmeWrap .cme3D {  padding-left:140px; min-height:140px;background:url('/asan/images/cme/bg3dList.jpg') no-repeat 2px 6px;}
+.cmeWrap .cme3D h4.dep2Title{display:block; font-size:18px !important; margin-bottom:5px; margin-top:-7px;}
+.cmeWrap .cme3D .ulolLayoutSec .icoGreenBox > li { padding:0 0 7px 8px;  background:url('/asan/images/ico/icoGreenSmBox.gif') no-repeat 2px 10px; }
+.cmeWrap .cme3D .btnSec{padding-top:10px;}
+.cmeWrap .browseList{padding-top:28px;}
+.cmeWrap .browseListBox { border:1px solid #ddd; padding:25px 30px 25px 28px; background:#f5f5f5;}
+.cmeWrap .browRadio{position:relative; min-height:211px;}
+.cmeWrap .browRadio > li { float:left; padding-left:30px;}
+.cmeWrap .browRadio > li:first-child{padding-left:0px;}
+.cmeWrap .brow2DepthBox{position:absolute; left:0; top:39px; width:100%; border-top:1px solid #ddd;}
+.cmeWrap .brow2Depth{ overflow:hidden; padding-top:7px;}
+.cmeWrap .brow2Depth > li { float:left; min-width:240px; margin-top:8px; padding:0 30px 0 8px; background:url('/asan/images/ico/icoGreenSmBox.gif') no-repeat left 12px;}
+.cmeWrap .brow2Depth > li.on a { color:#0e787c; text-decoration:underline;}
+.cmeWrap .d3TextArea { overflow-y:scroll; height:112px; padding:25px 30px; border:1px solid #ddd; background:#fbfbfb;}
+.cmeWrap .d3DescCase{width:100%;overflow: hidden;padding-top:5px;}
+.cmeWrap .borweBtn { position:absolute; right:-13px; bottom:-49px;}
+
+
+/*의학교육_의학포스터*/
+#modalBox{}
+.modal {}
+.modal .moPopWrap { width:981px; margin:0 auto; background:#fff;}
+.modal .moPopWrap .modalTop { padding:23px 25px 25px; font-size:20px; font-weight:600; text-align:center; color:#fff; background:#0e787c url('/asan/images/popup/bg_top.png') repeat-x left bottom;}
+.modal .moPopWrap .modalCon{ padding:30px 10px; overflow:auto; text-align:center;}
+.modal .moPopWrap .modalBottom { border-top:1px solid #4d4d4d; text-align:right; padding:11px 20px 11px 0;}
+
+/*의학교육_의학포스터 리스트*/
+.cmeWrap .posterListWrap{margin-top:48px;}
+.cmeWrap .posterListWrap .posterWinner{position:relative;width:900px;height:350px;background:url('/asan/images/cme/bgPosterTop.jpg') no-repeat;overflow:hidden;}
+.cmeWrap .posterListWrap .posterWinner .posterLabel{position:absolute;top:0;left:23px;}
+.cmeWrap .posterListWrap .posterWinner .posterImg{float:left;padding:3px 0 0 27px;}
+.cmeWrap .posterListWrap .posterWinner .posterImg img{border:1px solid #ddd;width:237px;height:310px;}
+.cmeWrap .posterListWrap .posterWinner .posterDesc{float:right;width:600px;}
+.cmeWrap .posterListWrap .posterWinner .posterDesc strong.winnerTitle{color:#db330c;font-size:24px;font-weight:600;}
+.cmeWrap .posterListWrap .posterWinner .posterDesc p{padding-bottom:30px;font-size:18px;line-height:24px;border-bottom:1px solid #ccc;}
+.cmeWrap .posterListWrap .posterWinner .posterDesc .winnerUl{padding-top:30px;}
+.cmeWrap .posterListWrap .posterWinner .posterDesc .winnerUl li{padding-bottom:8px;}
+.cmeWrap .posterListWrap .posterWinner .posterDesc .winnerUl li strong{color:#111;}
+.cmeWrap .posterListWrap .posterListUl{padding-left:5px;width:100%;overflow: hidden;}
+.cmeWrap .posterListWrap .posterListUl ul{width:100%; margin-top:-25px;}
+.cmeWrap .posterListWrap .posterListUl ul li{float:left;margin-top:25px;margin-left:11px;width:186px;height:370px;padding:11px 18px 11px 11px;background:url('/asan/images/cme/bgPosterList.gif') no-repeat;}
+.cmeWrap .posterListWrap .posterListUl ul li.firstLeft{margin-left:0;}
+.cmeWrap .posterListWrap .posterListUl ul li .thumb{}
+.cmeWrap .posterListWrap .posterListUl ul li .thumb img{width:187px;height:244px;}
+.cmeWrap .posterListWrap .posterListUl ul li p{padding-top:8px;}
+
+/*의학교육_의학포스터 리스트 20140519*/
+.cmeWrap .posterListWrap.poBest{margin-top:48px;}
+.cmeWrap .posterListWrap.poBest .posterWinner{position:relative;width:900px;height:284px;margin-bottom:20px;padding-top:7px;background:url('/asan/images/cme/bgPosterTop2.png') no-repeat 0 12px;overflow:hidden;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterLabel{position:absolute;top:-3px;left:-11px;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterImg{float:left; margin-top:5px; padding:0px 69px 0 43px;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterImg img{border:1px solid #ddd;width:187px;height:244px;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterDesc{float:left; width:599px;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterDesc strong.winnerTitle a { color:#db330c;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterDesc strong.winnerTitle{display:inline-block; margin-top:-3px; padding-bottom:7px; color:#db330c;font-size:24px;font-weight:600;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterDesc p{padding-bottom:18px;font-size:18px;line-height:24px;border-bottom:1px solid #ccc;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterDesc .winnerUl{padding-top:16px;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterDesc .winnerUl li{padding-bottom:8px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width:100%;}
+.cmeWrap .posterListWrap.poBest .posterWinner .posterDesc .winnerUl li strong{color:#111;}
+.cmeWrap .posterListWrap.poBest .posterListUl{padding-left:5px;width:100%;overflow: hidden;}
+.cmeWrap .posterListWrap.poBest .posterListUl ul{width:100%;}
+.cmeWrap .posterListWrap.poBest .posterListUl ul li{float:left;margin-top:25px;margin-left:11px;width:186px;height:370px;padding:11px 18px 11px 11px;background:url('/asan/images/cme/bgPosterList.gif') no-repeat;}
+.cmeWrap .posterListWrap.poBest .posterListUl ul li.firstLeft{margin-left:0;}
+.cmeWrap .posterListWrap.poBest .posterListUl ul li .thumb{}
+.cmeWrap .posterListWrap.poBest .posterListUl ul li .thumb img{width:187px;height:244px;}
+.cmeWrap .posterListWrap.poBest .posterListUl ul li p{padding-top:8px;}
+
+/* 의학교육>학술행사일정>등록비 */
+.cmePaymentUl{}
+.cmePaymentUl .cmePaymentTitle{color:#333;}
+.cmePaymentUl .prePaymentSpan{padding-left:40px;color:#333;}
+.cmePaymentUl .paymentSpan{padding-left:23px;color:#333;}
+
+/*의학교육-의학포스터 _view*/
+.cmeWrap .viewTypeSec1 > .tbllayout_view thead th { padding:16px 0 11px 30px;}
+.cmeWrap .viewTypeSec1 > .tbllayout_view tbody th { padding:0 0 12px 30px}
+
+.viewTypeSec1 .pageNavi.viewPRE dt { width:60px; padding-left:30px; text-align:left;}
+
+
+/*의학교육-학술행사일정-로그인(firefox)*/
+@-moz-document url-prefix(){
+	.cmeWrap  .perInfo { padding:20px 30px 19px !important;}
+	.cmeWrap  .perInfo .perInputBox { left:0px; }
+	.cmeWrap .writeBoardSec input[type="checkbox"]{ margin:3px 3px 3px 0px;}
+
+}
+
+/* main */
+.cmeMain {padding:50px 0; }
+.cmeMain h2 {height:auto; margin:0; padding:0; font-size:0; line-height:0;}
+.cmeMain .academicEvent {position:relative; }
+.cmeMain .academicEvent h3 {position:relative; z-index:2; width:220px; height:40px; font-weight:600; font-size:15px; color:#fff; text-align:center; line-height:2.7em; background:url('/asan/images/common/bg_tab_arrow.gif') #0e787c no-repeat 50% 100%;}
+.cmeMain .academicEvent a.btnAllEvent {position:absolute; left:220px; top:0; width:218px; height:38px; font-weight:600; font-size:15px; color:#666; text-align:center; line-height:2.7em; border:1px solid #ccc;}
+.cmeMain .academicEvent ul {position:relative; top:-1px; z-index:1; margin-bottom:40px; padding:0 0 1px 0;}
+.cmeMain .academicEvent li {position:relative; float:left; width:239px; height:158px; margin:0 -1px -1px 0; padding:25px 30px; font-size:13px; color:#333; border:1px solid #ddd; }
+.cmeMain .academicEvent li strong {display:block; margin-bottom:12px; font-weight:600; font-size:15px; color:#111; }
+.cmeMain .academicEvent li .text {display:block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 100%;}
+.cmeMain .academicEvent li span.btn {position:absolute;bottom:20px;display:block; padding-top:29px; }
+.cmeMain .academicEvent li span.btn a {margin-right:10px; }
+.cmeMain .academicEvent li.eventBanners {width:290px; height:199px; margin:0; padding:10px 0 0 10px; border:0; }
+.cmeMain .academicEvent li.eventBanners a {display:block; font-size:13px; color:#fff; }
+.cmeMain .academicEvent li.eventBanners a strong {margin:0 0 7px; font-weight:600; font-size:18px; color:#fff; line-height:1em; }
+.cmeMain .academicEvent li.eventBanners a.poster {width:266px; height:80px; padding:20px 0 0 24px; background:url('/asan/images/cme/bg_main_banner01.gif') no-repeat 0 0; }
+.cmeMain .academicEvent li.eventBanners a.library {width:266px; height:75px; padding:25px 0 0 24px; background:url('/asan/images/cme/bg_main_banner02.gif') no-repeat 0 0; }
+.cmeMain h3.title_searchEvent {margin-bottom:20px; font-weight:600; font-size:24px; color:#111; line-height:1em; }
+.cmeMain .mainUpper {overflow:hidden; margin:0 0 41px; }
+.cmeMain .mainUpper .slider {float:left; width:790px; height:236px; }
+.cmeMain .mainUpper .mov {float:right; width:350px; height:206px; padding:30px 30px 0; color:#fff; background:#1e7d98; }
+.cmeMain .mainUpper .mov h3 {height:37px; font-weight:600; font-size:24px; color:#fff; line-height:1em; }
+.cmeMain .mainUpper .mov .thumBox { position:relative; float:left; width:191px; height:107px; margin:0 20px 7px 0;}
+.cmeMain .mainUpper .mov .thumBox span.playBtn { position:absolute; width:36px; height:36px; top:50%; left:50%; margin-top:-18px; margin-left:-18px;}
+.cmeMain .mainUpper .mov .thumBox img{width:191px;height:107px;}
+.cmeMain .mainUpper .mov .thumBox span.playBtn img{width:36px; height:36px;}
+.cmeMain .mainUpper .mov .thumBox .timer { position:absolute; bottom:0; right:0; padding:2px 5px 0px 5px; font-size:10px; color:#fff; background:url('/asan/images/healthinfo/bg_opcBlack.png') 0 0 repeat;}
+.cmeMain .mainUpper .mov strong {display:block; padding:8px 0 15px; }
+.cmeMain .mainUpper .mov strong a{font-size:15px; line-height:1.3em; color:#fff;}
+.cmeMain .mainUpper .mov span.speaker {display:block; font-size:13px; }
+.cmeMain .mainUpper .mov .tags {clear:both; display:block; font-size:13px; padding-left:38px; }
+.cmeMain .mainUpper .mov .tags span {margin-left:-38px; }
+.cmeMain .mainUpper .mov .tags a{color:#fff;}
+.cmeMain .searchEvent {margin-bottom:26px; padding:14px 0 14px 213px; font-size:15px; color:#666; border:1px solid #ddd; background:#f5f5f5; }
+.cmeMain .searchEvent strong {padding-right:14px; }
+.cmeMain .searchEvent input.text {width:344px; height:20px; margin:0 -12px 0 0; vertical-align:top; }
+.cmeMain .searchEvent a.graySmBtn {margin-right:26px; }
+.cmeMain .searchEvent select {height:26px; margin:0; vertical-align:top; width:178px; }
+.cmeIndexCarouselCase{position:relative;width:790px;height:236px;overflow:hidden;background:url('/asan/images/cme/bgIndexCarousel.png') no-repeat;}
+.cmeIndexCarousel{position:relative;width:790px;height:236px;overflow:hidden;}
+.cmeIndexCarousel ul{}
+.cmeIndexCarousel li{position:relative;width:790px;height:236px;overflow:hidden;}
+.cmeIndexCarousel li dl{position:relative;padding:35px 0 0 50px;width:730px;height:200px;}
+.cmeIndexCarousel li dt{display:block;padding-bottom:25px;width:730px; font-size:28px; color:#fff; font-weight: 600;}
+.cmeIndexCarousel li dt a{display:inline-block;max-width:730px;font-size:20px;color:#fff;font-weight:600;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.cmeIndexCarousel li dd{float:left;color:#fff; line-height: 24px;}
+.cmeIndexCarousel li dd.sponsor{padding-right:10px;background:url('/asan/images/cme/bgSponser.gif') no-repeat right 6px;}
+.cmeIndexCarousel li dd.eventDate{padding-left:10px;}
+.cmeIndexCarousel li dd.detailView{position:absolute;left:50px;bottom:36px;}
+.cmeIndexCarousel .flex-control-nav {display:none;}
+.cmeIndexCarouselCase .cmeIndexCarouselControl{position:absolute;bottom:30px;right:36px;}
+.cmeIndexCarouselCase button{margin:0;padding:0;border:0;background:none;}
+.cmeIndexCarouselCase button::-moz-focus-inner{ padding: 0;border: 0}
+
+/* 의학교율 학술행사일정 달력형 */
+.listcon_medical_wrap {overflow:hidden;width:898px;padding:25px 0 26px;border:1px solid #ccc;border-top:none;background:#f5f5f5;}
+.listcon_medical {margin-top:-15px;padding:0 25px;}
+.listcon_medical li {float:left;width:282px;margin-top:21px;}
+.listcon_medical li a {padding-left:8px;line-height:20px;background: url('/asan/images/docinfo/bg_greenIcon.jpg') no-repeat 0 7px;}
+
+/* 서브메인(의학교육) */
+.resultSearch {position:relative;height:36px;}
+.resultSearch:after {content:""; display:block; clear:both;}
+.resultSearch .list {position:absolute;top:0;left:0;width:100%;height:36px;border-bottom:1px solid #ccc;}
+.resultSearch .list li {float:left;width:111px;height:36px;border-right:1px solid #ccc;border-top:1px solid #ccc;}
+.resultSearch .list li a {display:block;height:100%;padding-top:9px;text-align:center;}
+.resultSearch .list li.current {background: url('/asan/images/cme/bg_taboff.gif') no-repeat 50% bottom;}
+.resultSearch .list li.current a {color:#fff;}
+.resultSearch .list li:first-child{border-left:1px solid #ccc;}
+.resultSearch .btn {position:absolute;top:0;right:0;}
+.resultSearch_list {padding:20px 30px;border:1px solid #ccc;border-top:none;background:#f5f5f5;}
+.resultSearch_list .lists:after {content:""; display:block; clear:both;}
+.resultSearch_list .lists li {float:left;width:283px;padding:10px 0;text-align:left;}
+.resultSearch_list .lists li a {padding-left:10px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 50%;}

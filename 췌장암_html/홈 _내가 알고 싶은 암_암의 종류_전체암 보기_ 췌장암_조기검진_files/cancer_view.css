@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+#cancerMenu {
+	margin-bottom: 30px;
+}
+#cancerMenu ul {
+	font-size: 1.14em;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+}
+#cancerMenu ul:nth-child(n+2) {
+	border-top: none;
+}
+#cancerMenu ul li {
+	display:table;
+	float: left;
+	width: auto;
+	height: 56px;
+	padding-left: 25px;
+	color: #646464;
+}
+#cancerMenu ul li.category {
+	width: 124px;
+	color: #333;
+	background-image: url(/images/common/gnb_arr2.png);
+	background-position: center right;
+	background-position: center right 13px;
+	background-repeat: no-repeat;
+	background-color: aliceblue;
+	border-bottom: 0;
+}
+cancerMenu ul:last-child li.category {
+	border-bottom: 1px solid #02a1e3;
+}
+
+#cancerMenu ul li a{display:table-cell; position:relative; vertical-align:middle; line-height:22px;}
+#cancerMenu ul li span{display:table-cell; vertical-align:middle;}
+#cancerMenu ul li.category a{color:white;}
+#cancerMenu ul li a:focus:after{content:'';	position:absolute; top:0; right:0; bottom:0; left:0; border:2px solid #000; border-radius:4px; box-sizing:border-box;}
+#cancerMenu ul li.on a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+#cancerMenu ul li a:hover {
+	text-decoration: underline;
+}
+#cancerMenu ul li.category.no_childs a {
+    color: #333;
+    font-size: 1.03em;
+    font-weight: normal;
+    text-decoration: none;
+}
+/* Mobile & Tablet */
+@media screen and (max-width: 1200px) {
+	#cancerMenu {
+		margin-bottom: 20px;
+		overflow: visible;
+	}
+	#cancerMenu::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	#cancerMenu ul {
+		float:left;
+		margin-bottom:15px;
+	    width: 50%;
+	    position:relative;
+	    box-sizing:border-box;
+	    border:none;
+	    background:none;
+	}
+	#cancerMenu ul li {
+		float:left;
+		position:relative;
+		padding-left:0px;
+		width:50%;
+		height:auto;
+		border:none;
+		border-top: none;
+		box-sizing:border-box;
+	}
+	#cancerMenu ul li::before{
+		content:'';
+		position:absolute;
+		top:18px;
+		left:0px;
+		width:6px;
+		height:1px;
+		background:#999;
+	}
+	#cancerMenu ul li.category {
+		display: block;
+		padding-left:0px;
+		margin-bottom:5px;
+		width:100%;
+		height:auto;
+		border-bottom:1px solid #808080;
+		background: aliceblue;
+	    color:#333;
+	    box-sizing:border-box;
+	}
+	#cancerMenu ul li.category::before{
+		content:'';
+		position:absolute;
+		top:18px;
+		left:0px;
+		width:4px;
+		height:4px;
+		background:#666;
+		border-radius:50%;
+	}
+	#cancerMenu ul li span {
+	    display:block;
+	    padding:10px 15px;
+	    box-sizing:border-box;
+	    line-height:initial;
+    }
+	#cancerMenu ul li a {
+		display:block;
+		padding:10px 15px;
+		width: 100%;
+		box-sizing:border-box;
+		font-size:0.8em;
+		line-height:initial;
+	}
+	#cancerMenu ul li.category a{
+		padding:10px 15px;
+		font-size:initial;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#cancerMenu ul{
+		float:none;
+		margin-bottom:5px;
+		width:auto;
+	}
+	#cancerMenu ul li::before{
+		top:13px;
+	}
+	#cancerMenu ul li a{
+		padding:6px 15px;
+	}
+	
+}

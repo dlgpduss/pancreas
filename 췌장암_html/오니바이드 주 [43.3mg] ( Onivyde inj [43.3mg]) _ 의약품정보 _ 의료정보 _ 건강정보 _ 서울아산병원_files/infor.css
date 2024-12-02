@@ -1,0 +1,633 @@
+@charset "utf-8"; 
+
+/*검사실안내*/
+.rightBox { text-align:right;}
+.tabWresetBox .tabLayout li { min-width:150px;}
+.inforWrap .overColumnBox {}
+.inforWrap .overColumnBox h4.dep1Title { margin-bottom:20px; line-height:1;}
+.inforWrap .overColumnBox h4.dep1Title.interval {margin-bottom:9px;}
+.inforWrap .overColumnBox h4.dep1Title.interval02 {margin-bottom:14px;}
+.inforWrap .overColumnBox .overColumnList li { float:left; vertical-align:middle;}
+.inforWrap .overColumnBox .overColumnList li.rightBox { float:right;}
+.inforWrap .overColumnBox .overColumnList li:after { content:""; display:block; clear:both;}
+.inforWrap .overColumnBtn li { margin-top:5px;}
+.inforWrap .overColumnBtn li .whiteSmBtn { min-width:117px; padding:6px 0;}
+.inforWrap .overColumnBtn li:first-child { margin-top:0;}
+.inforWrap .overColumnBox .tableLayoutSec { margin-bottom:40px;}
+.inforWrap .overColumnBox .tableLayoutSec.interval { margin-bottom:10px;}
+.inforWrap .overColumnBox .tableLayoutSec .tableLayout { margin-top:13px;}
+.inforWrap .overColumnBox .tableLayoutSec .tableLayout thead th { text-align:center;}
+.inforWrap .overColumnBox .tableLayoutSec .tableLayout tbody td { text-align:center;}
+
+/*가정간호안내_신청방법*/
+.inforWrap .overColumnBox .inforImgList { margin-bottom:28px; padding:0px 0 0 58px; overflow:hidden;}
+.inforWrap .overColumnBox .inforImgList li { float:left; }
+.inforWrap .overColumnBox .inforImgList li:first-child { margin-left:0px;}
+.inforWrap .overColumnBox .inforImgList li dl { width:180px; text-align:center;}
+.inforWrap .overColumnBox .inforImgList li dl.img01 { background:url('/asan/images/infor/img_review06.jpg') no-repeat left top;}
+.inforWrap .overColumnBox .inforImgList li dl.img02 { margin-left:122px; background:url('/asan/images/infor/img_review07.jpg') no-repeat left top;}
+.inforWrap .overColumnBox .inforImgList li dl.img03 { width:199px; margin-left:114px; background:url('/asan/images/infor/img_review08.jpg') no-repeat left top;}
+.inforWrap .overColumnBox .inforImgList li dl dt { font-weight:600; font-size:18px; color:#111; padding:195px 0 2px;}
+.inforWrap .overColumnBox .inforImgList li dl dd {color:#444; line-height:24px;}
+.inforWrap .overColumnBox .pointBox { padding-top:10px;}
+.inforWrap .overColumnBox .pointBlocks { font-size:13px; line-height:20px; color:#0e787c;}
+.inforWrap .sinterval {margin-bottom:6px;}
+.inforWrap .columnbox_list {margin-bottom:29px;}
+.inforWrap .columnbox_list > li {padding:0 0 0 10px;background: url("/asan/images/common/icoDep4TitlePoint.gif") no-repeat 0 10px;color:#444;line-height:30px;}
+.inforWrap .columnbox_list > li strong {color:#111;}
+.inforWrap .columnbox_list > li .tbl_tip {margin-top:7px;}
+.inforWrap .columnbox_list > li .tbl_tip li {color:#0e787c;font-size:13px;line-height:19px;}
+.inforWrap .columnbox_list > li .tbl_wrap {margin:9px 0 0 -10px;border-top:2px solid #267376;}
+.inforWrap .columnbox_list > li .tableLayout {border-top:none;}
+.inforWrap .columnbox_list > li .tableLayout td {text-align:center;}
+
+/* 가정간호안내_가정간호란 */
+.inforWrap .reviewBox { padding:0 0 36px 0;}
+.inforWrap .reviewBox .menuLink { color:#0e787c; text-decoration:underline;}
+.inforWrap .reviewBox h4.dep1Title { margin-bottom:20px; line-height:1;}
+.inforWrap .nerReviewWrap { height:278px; position:relative; margin-top:30px; background: url("/asan/images/infor/img_review01.jpg") no-repeat 286px top;}
+.inforWrap .nerReviewWrap .nerReviewText { position:absolute; left:415px; top:107px; font-weight:600; font-size:18px; color:#666;}
+.inforWrap .nerReviewWrap dl { overflow:hidden; }
+.inforWrap .nerReviewWrap dl.text01 { text-align:right; position:absolute; left:29px; top:50px;}
+.inforWrap .nerReviewWrap dl.text02 { position:absolute; left:593px; top:52px;}
+.inforWrap .nerReviewWrap dl.text03 { position:absolute;  left:593px; top:203px;}
+.inforWrap .nerReviewWrap dl dt { padding-bottom:4px; font-size:20px; font-weight:600; }
+.inforWrap .reviewList01 li { float:left; width:260px; padding-top:200px; margin-left:40px; text-align:center;}
+.inforWrap .reviewList01 li.reviewIcon01 { letter-spacing:-1px; margin-left:23px; background: url("/asan/images/infor/img_review02.jpg") no-repeat center top;}
+.inforWrap .reviewList01 li.reviewIcon02 { background: url("/asan/images/infor/img_review03.jpg") no-repeat center top;}
+.inforWrap .reviewList01 li.reviewIcon04 { background: url("/asan/images/infor/img_review05.jpg") no-repeat center top;}
+.inforWrap .reviewTextList01 .reviewLeft { float:left; width:415px; overflow:hidden;}
+.inforWrap .reviewTextList01 .reviewRight { float:left; width:418px; margin-left:57px;}
+.inforWrap .reviewTextList01 .reviewRight li { margin-top:8px;}
+.inforWrap .reviewlist_wrap {overflow:hidden;position:relative;width:427px;min-height:250px;padding-left:472px;}
+.inforWrap .reviewlist_wrap .list > li {padding: 0 0 0 10px; background: url("/asan/images/common/icoDep4TitlePoint.gif") no-repeat 0 11px;color:#111;line-height:30px;}
+.inforWrap .reviewlist_wrap .list > li.first {position:absolute;left:0;}
+.inforWrap .reviewlist_wrap .list > li .inlist {padding-top:2px;}
+.inforWrap .reviewlist_wrap .list > li .inlist li {padding-left: 8px; background: url("/asan/images/ico/icoGreenSmBox.gif") no-repeat 0 11px; color:#444;line-height:24px;}
+
+/*이용안내_편의시설_휴게시설*/
+.inforWrap .inforVisualWrap { position:relative; width:900px; height:396px; overflow:hidden; margin-top:30px;}
+.inforWrap .inforVisualWrap .inforVUL { width:3600px; overflow:hidden;}
+.inforWrap .inforVisualWrap .inforVUL li {  float:left;}
+.inforWrap .visBorBox { position:absolute; left:72px; top:68px; width:208px; height:257px; overflow:hidden; background: url("/asan/images/infor/rest_visual_borBox.jpg") no-repeat left top;}
+.inforWrap .visBorBox .visualTextBox { width: 208px; }
+.inforWrap .visBorBox .visualTextBox > ul { width:832px; position:absolute; left:25px; top:49px; overflow:hidden;}
+.inforWrap .visBorBox .visualTextBox > ul > li { float:left; padding-right:28px;}
+.inforWrap .visualTitle { margin-bottom:10px; font-size:20px; font-weight:600; color:#0e787c;}
+.inforWrap .visBorBox .visualBtnWrap { width:300px; position:absolute; left:24px; bottom:29px; }
+.inforWrap .visBorBox .visualBtnBox { float:left; height:16px; overflow:hidden;}
+.inforWrap .visBorBox .visualBtnBox img { vertical-align:top;}
+.inforWrap .visBorBox .visualBtnBox li { float:left; margin:0px 0 0 3px;  padding-top:3px;}
+.inforWrap .visBorBox .pause { float:left; padding-top:0px !important; margin:0 2px 0 10px !important;}
+.inforWrap .visBorBox .play { float:left; padding-top:0px !important;}
+.inforWrap .visBorBox .visualBtnBox li:first-child { margin-left:0px; }
+
+.inforWrap .rest3Column {margin-top:30px; border-top:2px solid #0e787c; padding:30px 0; overflow:hidden;}
+.inforWrap .rest3Column > div { float:left;   width:300px; }
+.inforWrap .rest3Column h4 { font-size:18px; color:#111; margin-bottom:9px;}
+.inforWrap .rest3Column .restText { letter-spacing:-1px;}
+.inforWrap .rest3Column div.restCo3 { border-right:0px;}
+.inforWrap .rest3Column div .restBorR { padding:0 20px; border-right:1px solid #ddd;}
+.inforWrap .restIndWrap { position:relative; width:260px; overflow:hidden;}
+.inforWrap .restIndWrap .restInd { width:520px;}
+.inforWrap .restIndWrap .restInd li { float:left; }
+.restBgBar { position:absolute; right:0; bottom:0; width:250px; height:27px; text-align:right; padding:3px 10px 0 0 ; background: url("/asan/images/infor/rest_bg.png") no-repeat left top;}
+
+/* 핵*/
+@-moz-document url-prefix(){
+	
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	
+}
+
+
+/* 입원진료안내 */
+/* .inforWrap .processOl { margin-top:30px; min-height:735px; overflow:hidden; background:url('/asan/images/infor/process_bg_01.png') no-repeat left top;}
+.inforWrap .processOl.informBg { margin-top:30px; overflow:hidden; background:url('/asan/images/infor/information_bg_01.png') no-repeat left top;} */
+.inforWrap .processOl { margin-top:30px;}
+.inforWrap .processOl > li { position:relative; width:100%; min-height:154px; overflow:hidden; background:url('/asan/images/infor/bg_rightLine.png') repeat-y left top;}
+.inforWrap .processLeft { width:198px; min-height:154px; float:left; clear:both;}
+.inforWrap .processLeft .pLeftTitle{padding-top:40px;}
+.inforWrap .processOl li .processLeft.gray { background:url('/asan/images/infor/bg_grayCircle.png') no-repeat left top;}
+.inforWrap .processOl li .processLeft.green { background:url('/asan/images/infor/bg_greenCircle.png') no-repeat left top;}
+.inforWrap .processRight { width:700px; min-height:154px; float:left;}
+.inforWrap .processRight > ul { margin-left:35px; padding:50px 0; border-bottom:1px solid #ddd; overflow:hidden;}
+.inforWrap .processRight .arrowGreenbox { overflow:hidden; margin-left:35px; border-bottom:1px solid #ddd;}
+.inforWrap .processRight > ul > li { line-height:24px;}
+.inforWrap .processRight .arrowGreenbox { padding-bottom:40px;}
+.inforWrap .processRight .arrowGreenbox dt { padding:0 0 0 10px; background:url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat left 7px;}
+.inforWrap .processRight .arrowGreenbox dd { padding:0 0 0 10px;}
+.inforWrap .processRight .arrowGreenbox dd.greenDot { margin-left:10px; padding-left:8px; background:url('/asan/images/ico/icoGreenSmBox.gif') no-repeat left 12px;}
+.inforWrap .processOl > li > div .number { display:block; color:#444; font-size:24px;}
+.inforWrap .processOl > li > div .title { display:block; color:#111; font-weight:600; font-size:18px;}
+/* 이용안내, 외래진료안내 진료관련 리스트 */
+.inforWrap .treatment_list_wrap {overflow:hidden;border-top:2px solid #5d5d5d;border-bottom:1px solid #5d5d5d;}
+.inforWrap .treatment_list_wrap.tyee
+.inforWrap .treatment_list {margin-top:-1px;}
+.inforWrap .treatment_list > li {padding:27px 0 26px 219px;border-top:1px solid #ddd;}
+.inforWrap .treatment_list > li span {color:#0e787c;}
+.inforWrap .treatment_list > li .list_tit {margin-bottom:15px;color:#111;font-size:20px;line-height:22px; font-weight: 700;}
+.inforWrap .treatment_list > li .list_tit.interval {margin-bottom:5px;}
+.inforWrap .treatment_list > li .list_text {color:#444;font-size:15px;line-height:24px;}
+.inforWrap .treatment_list > li .inject_list {overflow:hidden;width:100%;margin-top:20px;}
+.inforWrap .treatment_list > li .inject_list dt {clear:both;float:left;width:85px;margin-top:2px;padding-left:10px;background: url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat 0 7px;color:#111;font-weight:600;}
+.inforWrap .treatment_list > li .inject_list dd {float:left;width:580px;color:#444;line-height:24px;}
+.inforWrap .treatment_list > li .medical_exam dt {margin-top:7px;padding-left:10px;background: url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat 0 8px;color:#111;font-weight:600;}
+.inforWrap .treatment_list > li .medical_exam dd {margin-top:4px;padding-left:10px;color:#444;line-height:24px;}
+.inforWrap .treatment_list > li .medical_exam dd .list li {padding-left:8px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 0 10px;}
+.inforWrap .treatment_list > li .medical_exam dd .list li.gap {padding-left:78px;text-indent:-70px;}
+.inforWrap .treatment_list > li .medical_exam dd .list li .imgwrap {padding:25px 0 11px;}
+.inforWrap .treatment_list > li .medical_exam dd.gap {padding-left:86px;text-indent:-70px;background: url('/asan/images/common/icoDep5Title.gif') no-repeat 9px 10px;}
+
+/* 이용안내, 외래진료안내 진료관련 리스트 --- 진료절차초진,재진 */
+.inforWrap .treatment_list.bg_type01 > li {background:url('/asan/images/infor/bg_treatment.gif') no-repeat 83px 0;}
+.inforWrap .treatment_list.bg_type01 > li.ty01 {background-position:83px 0px;}
+.inforWrap .treatment_list.bg_type01 > li.ty02 {background-position:83px -140px;}
+.inforWrap .treatment_list.bg_type01 > li.ty03 {background-position:83px -281px;}
+.inforWrap .treatment_list.bg_type01 > li.ty04 {background-position:83px -428px;}
+.inforWrap .treatment_list.bg_type01 > li.ty05 {background-position:83px -578px;}
+.inforWrap .treatment_list.bg_type01 > li.ty06 {background-position:83px -801px;}
+/* 이용안내, 외래진료안내 진료관련 리스트 --- 진료안내 */
+.inforWrap .treatment_list.bg_type02 > li {background:url('/asan/images/infor/bg_treatment02.gif') no-repeat 73px 0;}
+.inforWrap .treatment_list.bg_type02 > li.ty01 {background-position:73px 0px;}
+.inforWrap .treatment_list.bg_type02 > li.ty02 {background-position:73px -114px;}
+.inforWrap .treatment_list.bg_type02 > li.ty03 {background-position:73px -234px;}
+.inforWrap .treatment_list.bg_type02 > li.ty04 {background-position:73px -471px;}
+.inforWrap .treatment_list.bg_type02 > li.ty05 {background-position:73px -638px;}
+.inforWrap .treatment_list.bg_type02 > li.ty06 {background-position:73px -801px;}
+/* 이용안내, 외래진료안내 진료관련 리스트 --- 입원진료안내 */
+.inforWrap .treatment_list.bg_type03 > li {background:url('/asan/images/infor/bg_treatment03.gif') no-repeat 70px 0;}
+.inforWrap .treatment_list.bg_type03 > li.ty01 {background-position:70px 0px;}
+.inforWrap .treatment_list.bg_type03 > li.ty02 {background-position:70px -161px;}
+.inforWrap .treatment_list.bg_type03 > li.ty03 {background-position:70px -323px;}
+.inforWrap .treatment_list.bg_type03 > li.ty04 {background-position:70px  -731px;}
+.inforWrap .treatment_list.bg_type03 > li.ty05 {background-position:70px -1175px;}
+.inforWrap .treatment_list.bg_type03 > li.ty06 {background-position:70px -1766px;}
+/* 이용안내, 외래진료안내 진료관련 리스트 --- 진료안내 */
+.inforWrap .treatment_list.bg_type04 > li {background:url('/asan/images/infor/bg_treatment04.gif') no-repeat 70px 0;}
+.inforWrap .treatment_list.bg_type04 > li.ty01 {background-position:70px 68px;}
+.inforWrap .treatment_list.bg_type04 > li.ty02 {background-position:70px -124px;}
+.inforWrap .treatment_list.bg_type04 > li.ty03 {background-position:70px -288px;}
+.inforWrap .treatment_list.bg_type04 > li.ty04 {background-position:70px -473px;}
+.inforWrap .treatment_list.bg_type04 > li.ty05 {background-position:70px -642px;}
+.inforWrap .treatment_list.bg_type04 > li.ty06 {background-position:70px -846px;}
+
+/* 이용안내, 외래진료안내 진료관련 리스트 --- 진료안내 */
+.inforWrap .treatment_list.bg_type05 > li {background:url('/asan/images/infor/bg_treatment04.gif') no-repeat 70px 0;}
+.inforWrap .treatment_list.bg_type05 > li.ty01 {background-position:70px 70px;}
+.inforWrap .treatment_list.bg_type05 > li.ty02 {background-position:70px -313px;}
+.inforWrap .treatment_list.bg_type05 > li.ty03 {background-position:70px -483px;}
+.inforWrap .treatment_list.bg_type05 > li.ty04 {background-position:70px -651px;}
+.inforWrap .treatment_list.bg_type05 > li.ty05 {background:url('/asan/images/infor/bg_ty05s.jpg') no-repeat  83px 111px;}
+.inforWrap .treatment_list.bg_type05 > li.ty06 {background-position:70px -866px;}
+.inforWrap .treatment_list.bg_type05 > li.ty07 {background-position:70px -657px;}
+.inforWrap .treatment_list.bg_type05 > li.ty08 {background-position:70px -657px;}
+
+/* 이용안내, 외래진료안내 진료관련 리스트 --- 환자참여 */
+.inforWrap .treatment_list.bg_type06 > li {background:url('/asan/images/infor/bg_treatment05.png') no-repeat 70px 0;}
+.inforWrap .treatment_list.bg_type06 > li.ty01 {background-position:70px 30px;}
+.inforWrap .treatment_list.bg_type06 > li.ty02 {background-position:70px -105px;}
+.inforWrap .treatment_list.bg_type06 > li.ty03 {background-position:70px -290px;}
+.inforWrap .treatment_list.bg_type06 > li.ty04 {background-position:70px -430px;}
+.inforWrap .treatment_list.bg_type06 > li.ty05 {background-position:70px -580px;}
+.inforWrap .treatment_list.bg_type06 > li.ty06 {background-position:70px -735px;}
+.inforWrap .treatment_list.bg_type06 > li.ty07 {background-position:70px -873px;}
+
+.borNone { border-bottom:none !important;}
+.inforWrap .processOl .titleText { width:125px; padding-left:15px; text-align:center;}
+/* .processLastTitle { margin-top:-60px; position:relative; top:-30px; *top:-40px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	.processLastTitle { top:-20px;}
+} */
+
+.inforWrap .step5Wrap { position:relative; overflow:hidden; height:155px; background:url('/asan/images/infor/bg5stepObj.png') 0 0 no-repeat;}
+.inforWrap .step5Wrap ul { overflow:hidden;}
+.inforWrap .step5Wrap ul li { float:left; padding-top:35px; width:115px; margin-right:7px; text-align:center; line-height:24px; color:#111; font-weight:600;}
+.inforWrap .step5Wrap ul li.s2 { color:#fff;}
+.inforWrap .step5Wrap ul li.s3 { padding-top:25px;}
+.inforWrap .step5Wrap ul li.s4 { color:#fff;}
+.inforWrap .step5Wrap ul li.s5 { padding-top:45px;}
+.inforWrap .step5Wrap .abText { position:absolute; right:0; top:132px;}
+
+/* 오시는길 */
+.inforWrap .locationWrap { margin-bottom:24px;}
+.inforWrap .locationWrap.interval { margin-bottom:40px;}
+.inforWrap .locationWrap.interval02 { margin-bottom:24px;}
+.inforWrap .locationWrap > h4 { margin-bottom:15px;}
+.inforWrap .locationWrap h4 .addText { font-size:15px; color:#444; padding-left:10px;}
+.inforWrap .locationWrap .mapArea { margin-bottom:10px; width:898px; height:426px; border:1px solid #ddd; position:relative;}
+.inforWrap .locationWrap .mapInfo { position:relative;}
+.inforWrap .locationWrap .mapInfo a { font-weight:600;}
+.inforWrap .locationWrap .mapInfo .rightBtnWrap { position:absolute; top:0; right:0;}
+.inforWrap .locationWrap .mapInfo .rightBtnWrap > a { padding:8px 9px 6px 9px; margin:0 0 0 5px; min-height:19px; vertical-align:top;}
+.inforWrap .locationWrap .dep2Title { margin-bottom:11px;}
+.inforWrap .locationWrap .ulolLayoutSec { margin-bottom:15px;}
+.inforWrap .locationWrap .ulolLayoutSec .icoGreenBox2 li { background-position:0 center;}
+.inforWrap .locationWrap .ulolLayoutSec .largeHt li { line-height:30px;}
+.inforWrap .locationWrap .ulolLayoutSec .icoGreenBox2 li strong { color:#111;}
+.inforWrap .locationWrap .tabLayout2 { margin-bottom:30px;}
+.inforWrap .locationWrap .tabFull4up { margin-bottom:26px;}
+.inforWrap .locationWrap .mapUseInfo > li { overflow:hidden; padding:25px 0 26px 0; border-top:1px solid #ddd;}
+.inforWrap .locationWrap .mapUseInfo > li:first-child { padding-top:0; border-top:0;}
+.inforWrap .locationWrap .mapUseInfo > li:after { content:''; display:block; clear:both; overflow:hidden;}
+.inforWrap .locationWrap .mapUseInfo > li.last { padding-bottom:0; border-bottom:0 none;}
+.inforWrap .locationWrap .mapUseInfo.liType2 > li { padding-bottom:0px;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType1 dt { float:left; width:108px; font-size:18px; color:#0e787c; margin:-2px 0 0 -2px; font-weight:600;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType1 dd { float:left; width:792px;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType1 dd > ul { margin-top:5px;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType1 dd > ul > li { font-size:13px; line-height:18px; color:#0e787c;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType1 dd.mapImg img { border:1px solid #ddd;}
+
+.inforWrap .locationWrap .mapUseInfo li dl.infoType2 { display:block; clear:both; overflow:hidden;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType2 dt { float:left; width:115px; padding-left:35px; font-size:18px; font-weight:600; margin-bottom:10px;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType2 dd { float:left; width:750px; margin-bottom:10px;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType2 dt.icosub2 { color:#058b40; background:url('/asan/images/infor/ico_subwayLine.gif') 0 3px no-repeat;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType2 dt.icosub5 { color:#674498; background:url('/asan/images/infor/ico_subwayLine.gif') 0 -267px no-repeat;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType2 dt.icosub8 { color:#e84087; background:url('/asan/images/infor/ico_subwayLine.gif') 0 -357px no-repeat;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType2 dt.icosub9 { color:#b2933f; background:url('/asan/images/infor/ico_subwayLine.gif') 0 -447px no-repeat;}
+
+.inforWrap .locationWrap .mapUseInfo li dl.infoType3 { display:block; clear:both; overflow:hidden;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType3 dt { float:left; width:100px; text-align:center; padding:2px 0; background:#009a44; color:#fff; font-size:18px; font-weight:600; margin-right:50px;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType3 dd { float:left; width:750px; padding-top:4px;}
+
+.inforWrap .locationWrap .mapUseInfo li dl.infoType4 { display:block; clear:both; overflow:hidden;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType4 dt { float:left; width:150px; color:#0e787c; font-size:18px; font-weight:600;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType4 dd { float:left; width:750px; line-height:30px;}
+.inforWrap .locationWrap .mapUseInfo li dl.infoType4 dd span.point5 {display:inline-block; padding-left:30px; color:#058b40 !important; font-weight: 600; background:url('/asan/images/infor/ico_subwayLine.gif') 0 4px no-repeat;} /* 2호선 */
+.inforWrap .locationWrap .mapUseInfo li dl.infoType4 dd span.point6 {display:inline-block; color:#058b40 !important; font-weight: 600;} /* 2호선 */
+.inforWrap .locationWrap .mapUseInfo li dl.infoType4 dd span.point7 {display:inline-block; padding-left:30px; color:#ef5320 !important; font-weight: 600; background:url('/asan/images/infor/ico_subwayLine.gif') 0 -86px no-repeat;} /* 3호선 */
+.inforWrap .locationWrap .mapUseInfo li dl.infoType4 dd span.point8 {display:inline-block; padding-left:30px; color:#118dd3 !important; font-weight: 600; background:url('/asan/images/infor/ico_subwayLine.gif') 0 -176px no-repeat;} /* 4호선 */
+.inforWrap .locationWrap .mapUseInfo li dl.infoType4 dd span.point9 {display:inline-block; color:#3281bd !important; font-weight: 600;} /* 2호선 */
+
+.inforWrap .locationWrap .mapUseInfo2 li {display:block; overflow:hidden;}
+.inforWrap .locationWrap .mapUseInfo2 li dl.infoType5 dt { float:left; font-size:18px; color:#0e787c; margin:0 20px 0 0; font-weight:600;}
+.inforWrap .locationWrap .mapUseInfo2 li dl.infoType5 dd { float:left; margin-top:3px;}
+.inforWrap .locationWrap .mapUseInfo2 li dl.infoType5 dd.mapImg {margin-top:10px; }
+
+.inforWrap .locationWrap .mapUseInfo.subway_type li {padding:0;}
+.inforWrap .locationWrap .mapUseInfo.subway_type li dt {margin-bottom:0 !important;}
+
+
+/* 주차안내 */
+
+.parking_subVisual {margin-bottom: 33px;}
+.inforWrap .parkingWrap { margin-bottom:36px;}
+.inforWrap .parkingWrap.mgNone .dep1Title { margin-bottom:0;}
+.inforWrap .parkingWrap .dep1Title { margin-bottom:23px; line-height:1;}
+.inforWrap .parkingWrap .dep1Title.interval {margin-bottom:16px;}
+.inforWrap .parkingWrap .dep2Title { margin-bottom:10px;}
+.inforWrap .parkingWrap .txtInfo { margin-bottom:25px;}
+.inforWrap .parkingWrap .tableLayoutSec { margin-bottom:18px;}
+.inforWrap .parkingWrap .tableLayoutSec .descLayout { margin-bottom:8px;}
+.inforWrap .parkingWrap.visualType .dep2Title { margin-bottom:0;}
+.inforWrap .parkingWrap .parkVisual { position:relative; margin-bottom:15px; text-align:center;}
+.inforWrap .parkingWrap .parkVisual dl dt { margin-bottom:1px; font-size:18px; color:#0e787c; font-weight:600; text-align:center;}
+.inforWrap .parkingWrap .parkVisual dl dd { text-align:center;}
+.inforWrap .parkingWrap .parkVisual.type1 { height:388px; background:url('/asan/images/infor/bg_parking01.png') center 65px no-repeat;}
+.inforWrap .parkingWrap .parkVisual.type1 dl { position:absolute; top:320px; width:176px;}
+.inforWrap .parkingWrap .parkVisual.type1 dl.obj1 { left:110px;}
+.inforWrap .parkingWrap .parkVisual.type1 dl.obj2 { left:355px; width:194px;}
+.inforWrap .parkingWrap .parkVisual.type1 dl.obj3 { left:615px;}
+.inforWrap .parkingWrap .parkVisual.type2 { height:398px; background:url('/asan/images/infor/bg_parking02.png') center 43px no-repeat;}
+.inforWrap .parkingWrap .parkVisual.type2 dl { position:absolute; top:305px;}
+.inforWrap .parkingWrap .parkVisual.type2 dl.obj1 { left:104px; width:190px;}
+.inforWrap .parkingWrap .parkVisual.type2 dl.obj2 { left:340px; width:218px;}
+.inforWrap .parkingWrap .parkVisual.type2 dl.obj3 { left:605px; width:200px;}
+
+.inforWrap .parkingWrap .parkVisual.type3 { height:360px; background:url('/asan/images/infor/img_parking02.jpg') center 68px no-repeat;}
+.inforWrap .parkingWrap .parkVisual.type3 dl { position:absolute; top:263px; width:180px;}
+.inforWrap .parkingWrap .parkVisual.type3 dl.obj1 { left:110px;}
+.inforWrap .parkingWrap .parkVisual.type3 dl.obj2 { left:355px; width:200px;}
+.inforWrap .parkingWrap .parkVisual.type3 dl.obj3 { left:615px;}
+
+.inforWrap .parkingWrap .parkVisual.type4 { height:333px; background:url('/asan/images/infor/img_parking03.jpg') center 44px no-repeat;}
+.inforWrap .parkingWrap .parkVisual.type4 dl { position:absolute; top:237px; }
+.inforWrap .parkingWrap .parkVisual.type4 dl.obj1 { left:101px; width:220px;}
+.inforWrap .parkingWrap .parkVisual.type4 dl.obj2 { left:340px; width:220px;}
+.inforWrap .parkingWrap .parkVisual.type4 dl.obj3 { left:605px; width:220px}
+.inforWrap .parkingWrap .tableLayoutSec.park { margin-bottom:16px;}
+.inforWrap .parkingWrap .tableLayoutSec.park  .tableLayout thead th span{ padding:13px 0 13px;}
+.inforWrap .parkingWrap .tableLayoutSec.park  .tableLayout tbody td { padding:11px 0;}
+
+/*주요터미널*/
+.inforWrap .locationWrap .mapUseInfo.subway_type > li { border-top:0px;}
+
+/* 둘러보기 */
+.inforWrap .around label { font-weight:600;}
+.inforWrap .around select.first { margin-left:20px; width:127px;}
+.inforWrap .around select.seconds { margin-right:5px; width:207px;}
+.inforWrap .aroundWrap { width:100%; overflow:hidden; margin-bottom:40px;}
+.inforWrap .aroundWrap .imgWrap p { margin-bottom:10px;}
+.inforWrap .aroundWrap .imgWrap p span { font-weight:600;}
+.inforWrap .aroundWrap .imgWrap .imgBox { height:303px; background:#666;}
+.inforWrap .aroundWrap .infoList strong.title { display:block; margin-bottom:15px; font-size:24px; font-weight:normal; line-height:1;}
+.inforWrap .aroundWrap .infoList strong.title span { font-weight:600;}
+.inforWrap .aroundWrap .infoList .listBox { overflow-x:hidden; overflow-y:scroll; height:125px; border:1px solid #ddd;}
+.inforWrap .aroundWrap .infoList .listBox .ulolLayoutSec { margin:10px 12px 0 30px;}
+.inforWrap .aroundWrap .infoList .listBox .ulolLayoutSec ul li { float:left; width:270px; line-height:29px; border-bottom:1px solid #ddd; background-position:0 center;}
+.inforWrap .aroundWrap .infoList .listBox .ulolLayoutSec ul li a:hover { color:#0e787c;}
+.inforWrap .aroundWrap2 .positionTitle { padding:15px 0 14px 52px; border:1px solid #ddd; border-bottom:0 none; background:url('/asan/images/infor/ico_mappoint2.gif') 24px 15px no-repeat;}
+.inforWrap .aroundWrap2 .positionBox { height:427px; background:#666;}
+
+/*병원안내_편의시설_식당가*/
+.inforWrap .listTypeSec1.sumYes .leftArea {overflow:hidden; float:left; width:335px; height:293px; margin-right:30px;}
+.inforWrap .listTypeSec1.sumYes .leftArea ul {position:relative; width:100%; padding-top:236px; height:56px;}
+.inforWrap .listTypeSec1.sumYes .leftArea ul li {float:left; margin-left:1px; position:static; width:83px; height:56px;}
+.inforWrap .listTypeSec1.sumYes .leftArea ul li:first-child {margin-left:0;}
+.inforWrap .listTypeSec1.sumYes .leftArea ul li>img {display:none;}
+.inforWrap .listTypeSec1.sumYes .leftArea ul li>img:first-child {position:absolute; top:0; left:0; display:block;}
+.inforWrap .listTypeSec1.sumYes .leftArea ul li a {position:relative; top:auto; left:auto;}
+
+.inforWrap .listTypeSec1.sumNone .leftArea ul li { height:226px ;}
+.inforWrap .listTypeSec1.sumNone .leftArea > ul > li > img { border:1px solid #ddd;}
+.inforWrap .listTypeSec1.sumNone .leftArea { float:left; width:335px; height:226px; margin-right:30px;}
+
+.inforWrap .listTypeSec1 .rightArea .title { display:block; padding:4px 0 11px 0; min-height:18px; font-size:18px; font-weight:600; color:#111;}
+.inforWrap .listTypeSec1 .rightArea ul li { margin-bottom:6px; padding-left:6px;}
+.inforWrap .listTypeSec1 .rightArea .whiteSmBtn { margin-top:9px;}
+.inforWrap .listTypeSec1 .rightArea .textPLeft1 { display:inline-block; padding-left:69px;}
+.inforWrap .listTypeSec1 .rightArea .textPLeft2 { display:inline-block; padding-left:112px;}
+.inforWrap .listTypeSec1 .rightArea .textPLeft3 { display:inline-block; padding-left:40px;}
+
+/* 전화번호안내 */
+.inforWrap .telWrap { text-align:center;}
+.inforWrap .telWrap .telTitle1 { font-weight:600; font-size:24px; color:#111;}
+.inforWrap .telWrap .telNumber { margin-bottom:25px; font-size:55px; font-weight:600; color:#308387; line-height:1;}
+.inforWrap .telWrap .telNumber .subDesc { font-size:30px;}
+.inforWrap .telWrap .telInfo1 { overflow:hidden; padding:30px 29px 25px 30px; text-align:left; border:1px solid #ddd; border-bottom:0 none;}
+.inforWrap .telWrap .telInfo1 h4 { margin-bottom:8px; font-weight:600; font-size:24px; color:#111; line-height:1;}
+.inforWrap .telWrap .telInfo1 dl { float:left; margin-top:25px; width:209px; height:150px; border-left:1px solid #ddd;}
+.inforWrap .telWrap .telInfo1 dl.first { border-left:0 none;}
+.inforWrap .telWrap .telInfo1 dl dt { margin-bottom:12px; height:50px; text-align:center;}
+.inforWrap .telWrap .telInfo1 dl dd { text-align:center; line-height:23px;}
+.inforWrap .telWrap .telInfo1 dl dd.title { font-weight:600; color:#0e787c;}
+.inforWrap .telWrap .telInfo1 dl dd span.innerWrite { display:block; margin-left:13px;}
+.inforWrap .telWrap .telInfo2 { padding:30px 0; min-height:50px; border:1px solid #ddd; background:#f5f5f5 url('/asan/images/common/bg_bar05.gif') center 20px no-repeat; ;}
+.inforWrap .telWrap .telInfo2 dl { float:left; padding-left:62px; width:180px; height:50px; background:url('/asan/images/infor/ico_tel.png') 0 0 no-repeat;}
+.inforWrap .telWrap .telInfo2 dl dt { margin-bottom:8px; font-size:18px; color:#0e787c; font-weight:600; text-align:left; line-height:1;}
+.inforWrap .telWrap .telInfo2 dl dd { font-size:24px; color:#111; font-weight:600; text-align:left; line-height:1;}
+.inforWrap .telWrap .telInfo2 dl.tel1 { margin-left:113px;}
+.inforWrap .telWrap .telInfo2 dl.tel2 { margin-left:207px;}
+
+/*전화번호안내_20140521*/
+.inforWrap .inforTelWrap .inforTelBox { position:relative; width:900px; height:450px; margin-top:0; background:url('/asan/images/infor/bg_telBox.jpg') no-repeat left top;}
+.inforWrap .inforTelWrap .inforTelCen { position:absolute; left:96px; top:181px; text-align:center; font-weight:600}
+
+.inforWrap .inforTelWrap .inforTelBox ul {width:210px;}
+.inforWrap .inforTelWrap .telLnum { display:inline-block; font-size:22px; font-weight:600; color:#fff; height:40px; line-height:40px; vertical-align:middle;}
+.inforWrap .inforTelWrap .telLtext { display:inline-block; padding:0 0 0 24px; font-weight:600; height:36px; line-height:36px; vertical-align:middle;}
+.inforWrap .inforTelWrap .telSnum { display:inline-block; font-weight:600; color:#fff; height:24px; line-height:24px; vertical-align:middle;}
+.inforWrap .inforTelWrap .telStext { display:inline-block; padding:0 0 0 15px; height:24px; line-height:24px; vertical-align:middle;}
+.inforWrap .inforTelWrap .inforTelBox ol li {height:30px;}
+
+.inforWrap .inforTelWrap .inforTelBox .telNum1 { position:absolute; left:430px; top:33px;}
+.inforWrap .inforTelWrap .inforTelBox .telNum1 ol { position:absolute; width:210px; left:219px; top:5px;}
+.inforWrap .inforTelWrap .inforTelBox .telNum2 { position:absolute; left:430px; top:147px;}
+.inforWrap .inforTelWrap .inforTelBox .telNum2 ol { position:absolute; width:210px; left:219px; top:5px;}
+.inforWrap .inforTelWrap .inforTelBox .telNum3 { position:absolute; left:430px; top:291px;}
+.inforWrap .inforTelWrap .inforTelBox .telNum3 ol { position:absolute; width:210px; left:219px; top:5px;}
+.inforWrap .inforTelWrap .inforTelBox .telNum0 { position:absolute; left:430px; top:375px;}
+
+.inforWrap .inforTelWrap div.rsvInfo { width:868px; height:58px; border:1px solid #ddd; background:#f5f5f5; margin-top:20px; padding-left:20px; line-height:60px;}
+.inforWrap .inforTelWrap div.rsvInfo dt {float:left; width:230px; font-size:18px; font-weight:600; color:#0e787c;}
+.inforWrap .inforTelWrap div.rsvInfo dd {float:left; padding-right:40px;}
+.inforWrap .inforTelWrap div.rsvInfo dd.last {padding-right:0 !important;}
+.inforWrap .inforTelWrap div.rsvInfo dd strong {display:inline-block; padding-left:9px; background:url('/asan/images/common/bul_grayDot2x2.jpg') no-repeat 0 50%;}
+
+/* 진료과 안내 */
+.inforWrap .depmtInfoWrap .dep1Title { margin-bottom:15px; line-height:1;}
+.inforWrap .depmtInfoWrap .desc { margin-bottom:35px;}
+.inforWrap .depmtInfoWrap .tableLayoutSec { margin-bottom:40px;}
+.inforWrap .depmtInfoWrap .processInfo { background:url('/asan/images/infor/img_departmentInfo_01.jpg') 35px 16px no-repeat;}
+.inforWrap .depmtInfoWrap .processInfoText{ padding:43px 0 16px 470px;}
+.inforWrap .depmtInfoWrap .processInfoText dt { font-size:20px; color:#111; font-weight:600;}
+.inforWrap .depmtInfoWrap .processInfo dl dt span { font-size:15px;}
+.inforWrap .depmtInfoWrap .processInfo dl dd { padding:0 0 7px 5px; background:url('/asan/images/common/icoDep5Title.gif') left 9px no-repeat;}
+.inforWrap .depmtInfoWrap .processInfo dl dd.backImgNone { background:none; padding:0 0 12px 0; }
+
+/* .inforWrap .depmtInfoWrap .processInfo { position:relative; margin-bottom:50px; height:410px; background:url('/asan/images/infor/bg_departmentInfo01.png') 218px 9px no-repeat;}
+.inforWrap .depmtInfoWrap .processInfo dl { position:absolute;}
+.inforWrap .depmtInfoWrap .processInfo dl dt { width:133px; text-align:center; font-size:24px; color:#111; font-weight:600; line-height:30px;}
+.inforWrap .depmtInfoWrap .processInfo dl dt span { font-size:18px;}
+.inforWrap .depmtInfoWrap .processInfo dl > dd { line-height:24px;}
+.inforWrap .depmtInfoWrap .processInfo dl.ps1 { top:80px; left:343px;}
+.inforWrap .depmtInfoWrap .processInfo dl.ps1 dt { float:left;}
+.inforWrap .depmtInfoWrap .processInfo dl.ps1 dd { float:left; margin-left:40px;}
+.inforWrap .depmtInfoWrap .processInfo dl.ps2 { top:240px; left:0;}
+.inforWrap .depmtInfoWrap .processInfo dl.ps2 dt { position:absolute; left:239px; top:50px;}
+.inforWrap .depmtInfoWrap .processInfo dl.ps3 { top:232px; left:443px;}
+.inforWrap .depmtInfoWrap .processInfo dl.ps3 dt { position:absolute; left:0; top:65px;}
+.inforWrap .depmtInfoWrap .processInfo dl.ps3 dd { float:left; margin-left:168px;}
+.inforWrap .depmtInfoWrap .processInfo dl > dd ul { margin-top:8px;}
+.inforWrap .depmtInfoWrap .processInfo dl > dd ul li { line-height:24px;}
+.inforWrap .depmtInfoWrap .processInfo dl > dd ul li:first-child { margin-bottom:5px;}*/
+
+/* 진료예약 
+.inforWrap .careInfoWrap { position:relative; width:100%; overflow:hidden;}
+.inforWrap .careInfoWrap > p { margin-bottom:18px;}
+.inforWrap .careInfoWrap .care3Type { margin-bottom:40px; border-top:2px solid #0e787c; height:260px; background:url('/asan/images/infor/bgCareInfo.gif') 0 0 no-repeat;}
+.inforWrap .careInfoWrap .care3Type div { float:left; width:260px; padding:30px 20px 0 20px;}
+.inforWrap .careInfoWrap .care3Type div > h4 { margin-bottom:20px; font-size:24px; font-weight:600; color:#0e787c; line-height:1;}
+.inforWrap .careInfoWrap .care3Type div > p { margin-bottom: 20px;}
+.inforWrap .careInfoWrap .centerText { margin-bottom:20px; text-align:center; line-height:30px; font-size:20px; font-weight:600;}*/
+
+/* 진료예약 */
+.inforWrap .careInfoWrap { position:relative; width:100%; overflow:hidden;}
+.inforWrap .careInfoWrap .care3Type {  height:251px; margin-bottom:20px; border-top:2px solid #0e787c; border-right:1px solid #ddd; border-bottom:1px solid #ddd; border-left:1px solid #ddd;  }
+.inforWrap .careInfoWrap .care3Type div {  float:left; width:199px; margin-top:20px; padding:0px 30px 0 69px; height:211px; border-left:1px solid #ddd; }
+.inforWrap .careInfoWrap .care3Type div h4 { font-size:18px; margin-bottom:2px; font-weight: 600;}
+.inforWrap .careInfoWrap .care3Type div.cont1 { border-left:0px;  background:url('/asan/images/infor/bg_careInfo_01.png') 20px top no-repeat;}
+.inforWrap .careInfoWrap .care3Type div.cont2 { padding-left:70px; background:url('/asan/images/infor/bg_careInfo_02.png') 20px top no-repeat;}
+.inforWrap .careInfoWrap .care3Type div.cont3 { letter-spacing:-1px; background:url('/asan/images/infor/bg_careInfo_03.png') 22px top no-repeat;}
+.inforWrap .careInfoWrap .care3Type div .btn { margin-top:15px;}
+.inforWrap .careInfoWrap .care4Type { min-height:430px; margin-bottom:20px; border-top:2px solid #0e787c; border-right:1px solid #ddd; border-bottom:1px solid #ddd; border-left:1px solid #ddd;  }
+.inforWrap .careInfoWrap .care4Type div {  float:left; width:349px; padding:20px 30px 30px 69px; border-left:1px solid #ddd; border-bottom:1px solid #ddd;}
+.inforWrap .careInfoWrap .care4Type div h4 { font-size:18px; margin-bottom:2px; font-weight: 700;}
+.inforWrap .careInfoWrap .care4Type div.cont1 { border-left:0px; padding-bottom:25px; background:url('/asan/images/infor/bg_careInfo_01.png') 20px 20px no-repeat;}
+.inforWrap .careInfoWrap .care4Type div.cont2 { padding:20px 30px 25px 70px; background:url('/asan/images/infor/bg_careInfo_03.png') 20px 20px no-repeat;}
+.inforWrap .careInfoWrap .care4Type div.cont3 { border-left:0px; border-bottom:0px; background:url('/asan/images/infor/bg_careInfo_02.png') 22px 20px no-repeat;}
+.inforWrap .careInfoWrap .care4Type div.cont4 { border-bottom:0px; background:url('/asan/images/infor/bg_careInfo_05.png') 22px 20px no-repeat;}
+.inforWrap .careInfoWrap .care4Type div.rsvInfo { width:318px; height:78px; border:1px solid #ddd; background:#f5f5f5; margin-top:10px; padding:10px 15px 0 15px;}
+.inforWrap .careInfoWrap .care4Type div.rsvInfo dt {float:left; width:120px; height:60px; margin-top:10px; font-weight:600; color:#0e787c;}
+.inforWrap .careInfoWrap .care4Type div.rsvInfo dd {float:left;}
+.inforWrap .careInfoWrap .care4Type div.rsvInfo dd strong {display:inline-block; width:78px; padding:0 0 0 9px; background:url('/asan/images/common/bul_grayDot2x2.jpg') no-repeat 0 50%;}
+.inforWrap .careInfoWrap .care4Type div.rsvInfo p {font-size:13px; line-hight:24px; margin-top:4px;}
+.inforWrap .careInfoWrap .care4Type div .btn { margin-top:15px; width:140px; text-align:center;}
+.inforWrap .careInfoWrap .callInquiry .callText { height:40px; font-size:20px; color:#111; padding-left:50px;  background:url('/asan/images/infor/bg_careInfo_04.png') left top no-repeat;}
+.inforWrap .careInfoWrap .callInquiry .callText strong { display:inline-block; margin-top:6px;}
+.inforWrap .careInfoWrap .callInquiry .callText span { float:right; padding-top:9px;  font-size:15px; color:#666;}
+.inforWrap .careInfoWrap .callIconWrap { margin-top:20px; border-top:1px solid #ddd; }
+.inforWrap .careInfoWrap .callIconBox { margin-top:30px;}
+.inforWrap .careInfoWrap .callIconBox div { float:left; text-align:center; height:38px; font-weight:600; padding:140px 0 5px; border-left:1px solid #ddd; }
+.inforWrap .careInfoWrap .callIconBox div.callIcon1 { width:225px; border-left:0px; background:url('/asan/images/infor/bg_callIconBox_01.png') center top no-repeat;}
+.inforWrap .careInfoWrap .callIconBox div.callIcon2 { width:225px; background:url('/asan/images/infor/bg_callIconBox_02.png') center top no-repeat;}
+.inforWrap .careInfoWrap .callIconBox div.callIcon3 { width:225px; background:url('/asan/images/infor/bg_callIconBox_03.png') center top no-repeat;}
+.inforWrap .careInfoWrap .callIconBox div.callIcon4 { width:222px; background:url('/asan/images/infor/bg_callIconBox_04.png') center top no-repeat;}
+
+.inforWrap .careInfoWrap .callIconBox div.callIcon5 { width:225px; border-left:0px; background:url('/asan/images/infor/bg_callIconBox_04.png') center top no-repeat;}
+.inforWrap .careInfoWrap .callIconBox div.callIcon6 { width:225px; background:url('/asan/images/infor/bg_callIconBox_03.png') center top no-repeat;}
+.inforWrap .careInfoWrap .callIconBox div.callIcon7 { width:225px; background:url('/asan/images/infor/bg_callIconBox_05.png') center top no-repeat;}
+.inforWrap .careInfoWrap .callIconBox div.callIcon8 { width:222px; background:url('/asan/images/infor/bg_callIconBox_06.png') center top no-repeat;}
+
+/* 진료절차 */
+.inforWrap .processWrap { margin-top:30px;}
+.inforWrap .processWrap .dep1Title,
+.inforWrap .processWrap .dep2Title { margin-bottom:20px; line-height:1;}
+.inforWrap .processWrap .dep2Title.interval {margin-bottom:12px;}
+.inforWrap .processWrap .desc { margin-bottom:16px;}
+.inforWrap .processWrap .process01 { position:relative; margin-bottom:50px; height:154px; background:url('/asan/images/infor/bg_process01.png') 122px 0 no-repeat;}
+.inforWrap .processWrap .process01 ol { position:absolute; top:43px; left:136px;}
+.inforWrap .processWrap .process01 ol li { float:left; margin-left:32px; width:127px; font-size:18px; font-weight:600; text-align:center; line-height:24px; color:#111;}
+.inforWrap .processWrap .process01 ol li:first-child { margin-left:0;}
+.inforWrap .processWrap .process01 ol li span { display:inline-block; font-size:24px; color:#444; font-weight:normal;}
+.inforWrap .processWrap .tableLayoutSec,
+.inforWrap .processWrap .ulolLayoutSec.type1 { margin-bottom:40px;}
+.inforWrap .processWrap .ulolLayoutSec.type1 ul li { overflow:hidden;}
+.inforWrap .processWrap .ulolLayoutSec.type1 ul li:first-child { margin-bottom:20px;}
+.inforWrap .processWrap .ulolLayoutSec.type1 ul li:after { content:""; display:block; clear:both;}
+.inforWrap .processWrap .ulolLayoutSec.type1 ul li > span { display:block; float:left; padding-top:50px; width:127px; font-size:18px; font-weight:600;}
+.inforWrap .processWrap .ulolLayoutSec.type1 ul li > .step3 { float:left; width:378px; height:117px; background:url('/asan/images/infor/bg_process02.gif') 0 0 no-repeat;}
+.inforWrap .processWrap .ulolLayoutSec.type1 ul li > .step3 > ol > li { padding-top:35px; float:left; width:115px; margin-right:8px; text-align:center; font-weight:600; color:#111; line-height:24px;}
+.inforWrap .processWrap .ulolLayoutSec.type1 ul li > .step3 > ol > li.s2 { color:#fff;}
+.inforWrap .processWrap .ulolLayoutSec.type2 ul li { margin-bottom:5px;}
+.inforWrap .processWrap .ulolLayoutSec.type2 ul li > span { padding-right:10px; font-size:18px; font-weight:600;}
+.inforWrap .processOl.step2 { height:879px; background:url('/asan/images/infor/bg_process03.png') 0 0 no-repeat;}
+.inforWrap .processOl .processLeft .textBox { width:155px; text-align:center;}
+.inforWrap .processOl .processLeft .textBox .number,
+.inforWrap .processOl .processLeft .textBox .title { padding-left:0;}
+.inforWrap .processOl .processRight .floatBox { padding-bottom:12px;}
+.inforWrap .processOl .processRight .floatBox dl dt { float:left; margin-bottom:4px; width:130px; font-weight:600;}
+.inforWrap .processOl .processRight .floatBox dl dd { float:left; margin-bottom:4px; width:515px; line-height:24px;}
+.inforWrap .processWrap .process02 { position:relative; margin-bottom:28px; height:200px; background:url('/asan/images/infor/bg_process04.png') 127px 0 no-repeat;}
+.inforWrap .processWrap .process02 ol { position:absolute; top:60px; left:145px;}
+.inforWrap .processWrap .process02 ol li { float:left; margin-left:42px; width:165px; text-align:center; font-size:20px; color:#111; font-weight:600; line-height:28px;}
+.inforWrap .processWrap .process02 ol li:first-child { margin-left:0;}
+.inforWrap .processWrap .process02 ol li span { display:block; margin-bottom:8px; font-size:18px; font-weight:normal; color:#444; line-height:1;}
+.inforWrap .processWrap .lineBox { padding-bottom:25px; line-height:24px; border-bottom:1px solid #ddd;}
+/* 이용안내 - 외래진료안내 - 진료절차 - 접수 // 예약을 하고 오신경우 당일진료 관련 */
+.inforWrap .steplist_today {margin-bottom:35px;padding-top:10px;}
+.inforWrap .steplist_today li {overflow:hidden;width:100%;}
+.inforWrap .steplist_today li:first-child {margin-bottom:20px;}
+.inforWrap .steplist_today li .list dt {float:left;padding:30px 11px 0 0;color:#0e787c;font-size:18px;font-weight:600;line-height:20px;}
+.inforWrap .steplist_today li .list dd {float:left;font-size:0;line-height:0;}
+
+/* 선택진료 */
+.inforWrap .choiceWrap .dep1Title { margin-bottom:15px; line-height:1;}
+.inforWrap .choiceWrap .desc { margin-bottom:35px; line-height:24px;}
+
+/* 응급증상 */
+.emergency {margin-bottom:15px;}
+
+
+/* 이용안내 메인 */
+.inforMainWrapCase{position:relative;width:1198px;height:899px;border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.inforMainArticle0{position:absolute;top:0;left:0;padding:39px 0 0 30px;width:270px;height:191px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;background:url('/asan/images/infor/bgMainArticle0.png') no-repeat right bottom;}
+.inforMainArticle1{position:absolute;top:230px;left:0;padding:40px 0 0 28px;width:272px;height:189px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;background:url('/asan/images/infor/bgMainArticle1.png') no-repeat right bottom;}
+.inforMainArticle2{position:absolute;top:460px;left:0;padding:40px 0 0 30px;width:270px;height:189px;border-right:1px solid #ddd;border-bottom:1px solid #ddd;background:url('/asan/images/infor/bgMainArticle2.png') no-repeat right bottom;}
+.inforMainArticle3{position:absolute;top:0px;right:0;padding:40px 0 0 30px;width:270px;height:189px;border-left:1px solid #ddd;border-bottom:1px solid #ddd;background:url('/asan/images/infor/bgMainArticle3.png') no-repeat right bottom;}
+.inforMainArticle4{position:absolute;top:230px;right:0;padding:40px 0 0 30px;width:270px;height:189px;border-left:1px solid #ddd;border-bottom:1px solid #ddd;background:url('/asan/images/infor/bgMainArticle4.png') no-repeat right bottom;}
+.inforMainArticle5{position:absolute;top:460px;right:0;padding:40px 0 0 28px;width:272px;height:189px;border-left:1px solid #ddd;border-bottom:1px solid #ddd;}
+.inforMainArticleMember{position:absolute;top:0;left:301px;width:596px;height:689px;border-bottom:1px solid #ddd;background:url('/asan/images/infor/bgMainArticleMember.jpg') no-repeat left bottom;}
+.inforMainArticleMap{position:absolute;top:690px;left:0;padding:41px 0 0 29px;width:1169px;height:168px;border-bottom:1px solid #ddd;background:url('/asan/images/infor/bgMainArticleMap.jpg') no-repeat left bottom;}
+.inforMainWrapCase h2{margin:0;padding:0;list-style:none;font-size:24px;color:#111;}
+.inforMainArticle0 p{padding-top:12px;}
+.inforMainArticle1 p{padding-top:12px;}
+.inforMainArticle2 p{padding-top:12px;}
+.inforMainArticle3 p{padding-top:12px;}
+.inforMainArticle4 p{padding-top:12px;}
+.inforMainArticle5 .phoneNumber{padding:15px 0 0 0;line-height:1;}
+.inforMainArticle5 .phoneNumber strong{font-size:40px;color:#0e787c;}
+.inforMainArticle5 .heartPhoneNumber{padding:8px 0 0 4px;}
+.inforMainArticle5 .heartPhoneNumber span{color:#0e787c;font-weight:600;}
+.inforMainArticle5 .cancerPhoneNumber{padding:25px 0 0 4px;}
+.inforMainArticle5 .cancerPhoneNumber span{color:#0e787c;font-weight:600;}
+.inforMainArticle5 .childPhoneNumber{padding:10px 0 0 4px;}
+.inforMainArticle5 .childPhoneNumber span{color:#0e787c;font-weight:600;}
+
+/* 마우스오버 활성화 */
+.inforMainArticle .box {display:none; position:absolute; background:#499c9f; z-index:500;}
+.inforMainArticle .box.t {top:0; left:-1px; right:-1px; height:4px;}
+.inforMainArticle .box.b {bottom:-1px; left:-1px; right:-1px; height:4px;}
+.inforMainArticle .box.l {left:-1px; top:0; bottom:0; width:4px;}
+.inforMainArticle .box.r {right:-1px; top:0; bottom:-1px; width:4px;}
+.inforMainArticle.active {background-color:white;}
+.inforMainArticle.active .box {display:block;}
+
+.inforMainArticle0 {}
+.inforMainArticle1 {}
+.inforMainArticle2 .box.t {top:-2px;}
+.inforMainArticle3 {}
+.inforMainArticle4 .box.t {top:-1px;}
+
+.inforMainArticleMember .inforMem{position:absolute;top:70px;left:50px;}
+.inforMainArticleMember .inforMem a.greenMdBtn{font-weight:600;}
+.inforMainArticleMember .inforMem h3{position:absolute;top:0;left:0;cursor:pointer;}
+.inforMainArticleMember .inforMem p{padding-top:65px;height:76px;font-size:13px;}
+.inforMainArticleMember .inforMem0On{}
+.inforMainArticleMember .inforMem0On h3.inforH3Mem0{font-size:36px;font-weight:600;color:#111;width:208px;background:url('/asan/images/infor/bgInforIndexLine.gif') no-repeat right 25px;}
+.inforMainArticleMember .inforMem0On h3.inforH3Mem1{left:239px;padding-top:24px;height:54px;width:58px;font-size:15px;background:url('/asan/images/infor/bgInforIndexLine.gif') no-repeat right 25px;}
+.inforMainArticleMember .inforMem0On h3.inforH3Mem2{left:327px;padding-top:24px;height:54px;font-size:15px;}
+.inforMainArticleMember .inforMem0On .inforPMem0{display:block;}
+.inforMainArticleMember .inforMem0On .inforBtnMem0{display:block;}
+.inforMainArticleMember .inforMem0On .inforPMem1{display:none;}
+.inforMainArticleMember .inforMem0On .inforBtnMem1{display:none;}
+.inforMainArticleMember .inforMem0On .inforPMem2{display:none;}
+.inforMainArticleMember .inforMem0On .inforBtnMem2{display:none;}
+.inforMainArticleMember .inforMem1On{}
+.inforMainArticleMember .inforMem1On h3.inforH3Mem0{padding-top:24px;height:54px;width:103px;font-size:15px;background:url('/asan/images/infor/bgInforIndexLine.gif') no-repeat right 25px;}
+.inforMainArticleMember .inforMem1On h3.inforH3Mem1{left:134px;font-size:36px;font-weight:600;color:#111;width:94px;background:url('/asan/images/infor/bgInforIndexLine.gif') no-repeat right 25px;}
+.inforMainArticleMember .inforMem1On h3.inforH3Mem2{left:259px;padding-top:24px;height:54px;font-size:15px;}
+.inforMainArticleMember .inforMem1On .inforPMem0{display:none;}
+.inforMainArticleMember .inforMem1On .inforBtnMem0{display:none;}
+.inforMainArticleMember .inforMem1On .inforPMem1{display:block;}
+.inforMainArticleMember .inforMem1On .inforBtnMem1{display:block;}
+.inforMainArticleMember .inforMem1On .inforPMem2{display:none;}
+.inforMainArticleMember .inforMem1On .inforBtnMem2{display:none;}
+.inforMainArticleMember .inforMem2On{}
+.inforMainArticleMember .inforMem2On h3.inforH3Mem0{padding-top:24px;height:54px;width:103px;font-size:15px;background:url('/asan/images/infor/bgInforIndexLine.gif') no-repeat right 25px;}
+.inforMainArticleMember .inforMem2On h3.inforH3Mem1{left:141px;padding-top:24px;height:54px;width:63px;font-size:15px;background:url('/asan/images/infor/bgInforIndexLine.gif') no-repeat right 25px;}
+.inforMainArticleMember .inforMem2On h3.inforH3Mem2{left:235px;font-size:36px;font-weight:600;color:#111;}
+.inforMainArticleMember .inforMem2On .inforPMem0{display:none;}
+.inforMainArticleMember .inforMem2On .inforBtnMem0{display:none;}
+.inforMainArticleMember .inforMem2On .inforPMem1{display:none;}
+.inforMainArticleMember .inforMem2On .inforBtnMem1{display:none;}
+.inforMainArticleMember .inforMem2On .inforPMem2{display:block;}
+.inforMainArticleMember .inforMem2On .inforBtnMem2{display:block;}
+.inforMainArticleMap .mapDesc{}
+.inforMainArticleMap .mapDesc p.add{padding-top:5px;font-size:15px;color:#666;}
+.inforMainArticleMap .mapDesc p.add strong{font-size:18px;color:#444;}
+.inforMainArticleMap .mapDesc dl{padding-top:5px;width:385px;overflow:hidden;}
+.inforMainArticleMap .mapDesc dl dt{float:left;padding-top:2px;width:80px;font-size:15px;font-weight:600;color:#0e787c;}
+.inforMainArticleMap .mapDesc dl dd{float:left;padding-top:2px;width:300px;font-size:15px;font-weight:600;color:#444;}
+.inforMainArticleMap .btnList{position:absolute;top:20px;right:20px;width:450px;height:180px;}
+.inforMainArticleMap .btnList  li{position:absolute;top:0;left:0;width:210px;height:50px;}
+.inforMainArticleMap .btnList  li a{display:block;border:1px solid #ddd;font-weight:600;}
+.inforMainArticleMap .btnList  li.mapBtn0{top:0;left:0;}
+.inforMainArticleMap .btnList  li.mapBtn0 a{padding:14px 0 0 53px;width:155px;height:34px;background:url('/asan/images/infor/icoIndexMap0.gif') no-repeat;}
+.inforMainArticleMap .btnList  li.mapBtn1{top:60px;left:0;}
+.inforMainArticleMap .btnList  li.mapBtn1 a{padding:14px 0 0 53px;width:155px;height:34px;background:url('/asan/images/infor/icoIndexMap1.gif') no-repeat;}
+.inforMainArticleMap .btnList  li.mapBtn2{top:120px;left:0;}
+.inforMainArticleMap .btnList  li.mapBtn2 a{padding:7px 0 0 56px;width:152px;height:41px;font-size:13px;background:url('/asan/images/infor/icoIndexMap2.gif') no-repeat;}
+.inforMainArticleMap .btnList  li.mapBtn3{top:0;left:240px;}
+.inforMainArticleMap .btnList  li.mapBtn3 a{padding:14px 0 0 72px;width:136px;height:34px;background:url('/asan/images/infor/icoIndexMap3.gif') no-repeat;}
+.inforMainArticleMap .btnList  li.mapBtn4{top:60px;left:240px;}
+.inforMainArticleMap .btnList  li.mapBtn4 a{padding:14px 0 0 92px;width:116px;height:34px;background:url('/asan/images/infor/icoIndexMap4.gif') no-repeat;}
+.inforMainArticleMap .btnList  li.mapBtn5{top:120px;left:240px;}
+.inforMainArticleMap .btnList  li.mapBtn5 a{padding:14px 0 0 81px;width:127px;height:34px;background:url('/asan/images/infor/icoIndexMap5.gif') no-repeat;}
+
+/* 이용안내,검사실안내 테이블 라인문제 - 상단라인 */
+.tblwrap_boxline {margin-top:13px;border-top:2px solid #0e787c;}
+.tblwrap_boxline table {border-top:none !important;margin-top:0 !important;}
+
+
+/* 이용안내 | 외래진료안내 | 진료전차 | 예약안내 - 테이블내,외 영역 */
+.tbllistwrap_ligap li {padding:10px 0 10px 130px;text-align:left;}
+.tbllistwrap_ligap02 li {padding:10px 0 10px 48px;text-align:left;}
+.tbllistwrap_txt {color:#0e787c;font-size:13px;text-align:right;}
+.tblist_pres li {margin-bottom:5px;padding-left: 8px;background: url('/asan/images/ico/icoGreenSmBox.gif') no-repeat 0 10px;}
+/* 이용안내 | 외래진료안내 | 진료전차 | 예약안내 - 이미지 리스트부분들 페이지내 공통사용 */
+.process_imglist {overflow:hidden;width:100%;margin:5px 0 30px;}
+.process_imglist li {float:left;font-size:0;line-height:0;}
+.process_imglist.gap01 {margin:-30px 0 30px !important;}

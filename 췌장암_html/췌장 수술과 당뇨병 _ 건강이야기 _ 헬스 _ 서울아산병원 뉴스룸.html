@@ -1,0 +1,772 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0133)https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&utm_campaign=wwwamcseoulkr&utm_source=web&utm_medium=popup&utm_content=search -->
+<html lang="ko" xml:lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="description" content="발빠른 소식, 건강한 컨텐츠! 서울아산병원 뉴스룸입니다.">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="meta_og_url" property="og:url" content="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search">
+<meta id="meta_og_title" property="og:title" content="췌장 수술과 당뇨병 | 건강이야기 | 헬스 | 서울아산병원 뉴스룸">
+<meta id="meta_og_type" property="og:type" content="website">
+<meta id="meta_og_image" property="og:image" content="https://news.amc.seoul.kr/news/file/imageView.do?fileId=F000000055033_OwqyZw">
+<meta id="meta_og_description" property="og:description" content="췌장 수술과 당뇨병 | 건강이야기 | 헬스 | 서울아산병원 뉴스룸">
+
+<title> 췌장 수술과 당뇨병 | 건강이야기 | 헬스 | 서울아산병원 뉴스룸</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<link href="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/reset.css" type="text/css" rel="stylesheet">
+<link href="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/layout.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/swiper.css">
+<script async="" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/analytics.js"></script><script type="text/javascript" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/swiper.js"></script>
+<script type="text/javascript" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/swiper.min.js"></script>
+<link href="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/scrollbar.min.css" rel="stylesheet">
+<!-- Swiper JS -->
+<script src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/jquery-ui-1.10.4.custom.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	var aaa = $('#cucucu').val();
+	var bbb = 'https://news.amc.seoul.kr/news/file/imageView.do?fileId='+aaa;    	
+	
+	
+	 $("#meta_og_url").attr("content", document.URL); 
+	 $("#meta_og_title").attr("content", document.title); 
+	 //$("#meta_og_image").attr("content", bbb); 
+	 $("#meta_og_description").attr("content", document.title); 
+
+});
+function clickLike(code,cntId){
+	var datas = {
+			code : code
+		,	cntId : cntId
+	};
+	$.ajax("/news/con/sympathyClick.do", {
+		type : 'POST',
+		data : datas,
+		dataType : "json",
+		timeout : 10000,
+		cache : false,
+		success : function(data) {
+			if( data.result == 'Y' ){
+				
+				if(data.code == 1){
+					  var likeNumElement = document.querySelector('.ico01 .likeNum');
+				      var currentNum = parseInt(likeNumElement.textContent);
+				      likeNumElement.textContent = currentNum + 1;
+				}
+			if(data.code == 2){
+				 var likeNumElement = document.querySelector('.ico02 .likeNum');
+			      var currentNum = parseInt(likeNumElement.textContent);
+			      likeNumElement.textContent = currentNum + 1;		
+							}
+			if(data.code == 3){
+				 var likeNumElement = document.querySelector('.ico03 .likeNum');
+			      var currentNum = parseInt(likeNumElement.textContent);
+			      likeNumElement.textContent = currentNum + 1;
+			}
+			if(data.code == 4){
+				 var likeNumElement = document.querySelector('.ico04 .likeNum');
+			      var currentNum = parseInt(likeNumElement.textContent);
+			      likeNumElement.textContent = currentNum + 1;
+			}
+			if(data.code == 5){
+				 var likeNumElement = document.querySelector('.ico05 .likeNum');
+			      var currentNum = parseInt(likeNumElement.textContent);
+			      likeNumElement.textContent = currentNum + 1;
+			}
+			}
+		},
+		error : function(request, status) {
+			alert("일시적인 오류가 발생했습니다.\n잠시 후에 다시 시도해주세요.");
+			duplicateFlag = false;
+		}
+
+	});
+	 return false;
+}
+
+</script>
+
+</head>
+	
+<body style="">
+<div class="wrap">
+  
+  
+  
+
+    <script type="text/javascript">
+
+    var searchGb = "out"; 
+    
+    var searchGb2 = "out"; 
+    
+      $(document).ready(function () {
+           	  
+    	 searchGb = "out";
+    	  
+    	  // 마우스가 영역에 들어오면 실행 (mouseover와 비슷)
+//         $('#menuArea').mouseenter(function () {
+//         	 $('#depthArea').show();
+//         });
+    	  
+        $('.menuClass').mouseenter(function () {
+       		 $('#depthArea').show();
+        });
+        
+        $('#depthArea').mouseleave(function () {
+        	 $('#depthArea').hide();
+       	 
+        });
+        
+    	  
+//         // 마우스가 영역에 들어오면 실행 (mouseover와 비슷)
+//         $('#menuArea').mouseleave(function () {
+        	 
+//         	  $('#depthArea').mouseleave(function () {
+//         		$('#depthArea').hide();
+//         	  });
+        	  
+//         });
+        
+        $('#engBtn').mouseenter(function () {
+       		 $('#depthArea').hide();
+       });
+        
+        $('#topArea').mouseenter(function () {
+      		 $('#depthArea').hide();
+      });
+        
+        $('#searchBtn').mouseenter(function () {
+          	 $('#depthArea').hide();
+        });
+        
+        $('#logoBtn').mouseenter(function () {
+         	 $('#depthArea').hide();
+        });
+      
+       
+      });
+      
+      
+      function makeSearch() {
+    	  
+    	  if(searchGb == "out"){
+    		  
+    		  searchGb = "in";
+    		  
+    		  $("#topKwd").attr("src", "/news/images/news/searchClose.png");
+    		  $('#searchArea').show();
+    		  $('#topKeyword').focus();
+    		  
+    	  }else{
+    		  
+    		  searchGb = "out";
+    		  
+    		  $("#topKwd").attr("src", "/news/images/news/search.png");
+    		  $('#searchArea').hide();
+    	  }
+    	  	
+    	}
+      
+      
+      
+      function makeSearch2() {
+    	  
+    	  
+    	  //화면의 높이와 너비를 구한다.
+
+  	      var maskHeight = $(document).height();  
+
+  	      var maskWidth = $(window).width();  
+  
+  	      
+    	  if(searchGb2 == "out"){
+    		  
+    		  searchGb2 = "in";
+    		  
+    		  $("#topKwd2").attr("src", "/news/images/news/searchClose.png");
+    		      		  
+      	      $('#mask').css({'width':maskWidth,'height':maskHeight});  
+      	      $('#mask').show();
+      	      $('#searchArea').show();
+      	      
+      	      $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
+      	         e.preventDefault();
+      	      });
+      	    
+    	  }else{
+    		  
+    		  searchGb2 = "out";
+    		  
+    		  $("#topKwd2").attr("src", "/news/images/news/MvGnb.png");
+    		  $('#searchArea').hide();
+    		  $('#mask').hide();
+    	  }
+    	  	
+    	}
+      
+      
+        
+		function toSearch(pageIndex, searchType) {
+            
+			var a = $('#topKeyword').val();
+			
+			a = a.trim();
+			b = a.length;
+						
+			if(b < 2){
+				alert('2글자 이상 입력하세요.');
+				return;
+			}
+			
+			$('#keyword').val(encodeURI(a, "UTF-8"));
+			$('#pageIndex').val(pageIndex);
+			$('#searchType').val(searchType);
+			$('#searchForm').attr("action", "/news/con/search.do").submit();
+
+		}
+		
+		
+		function toSearchDetail(pageIndex, searchType) {
+            
+			var a = $('#keyword').val();
+			
+			a = a.trim();
+			b = a.length;
+						
+			if(b < 2){
+				alert('2글자 이상 입력하세요.');
+				return;
+			}
+			
+			$('#keyword').val(a);
+			$('#pageIndex').val(pageIndex);
+			$('#searchType').val(searchType);
+			$('#searchForm').attr("action", "/news/con/search.do").submit();
+
+		}
+      
+      
+		function onDown(){
+
+	        // 엔터키의 코드는 13입니다.
+			if(event.keyCode == 13){
+				toSearch('1', 'S');
+				return;
+			}
+		}
+
+		function fnSearch(pageIndex){
+
+			$('#pageIndex').val(pageIndex);
+			$('#searchForm').attr("action", "/news/con/search.do").submit();
+			
+		}
+      
+    </script>
+  
+	  <form id="searchForm" action="https://news.amc.seoul.kr/news/con/search.do" method="get">
+	                    <input id="pageIndex" name="pageIndex" type="hidden" value="1"><input id="searchType" name="searchType" type="hidden" value=""><input id="keyword" name="keyword" type="hidden" value="">
+	  </form> 
+  
+    <div id="mask"></div><!-- 모바일 백그라운드 -->
+	<div class="headerArea">
+		
+		
+		<div class="topArea" id="topArea"></div>
+		
+		<div class="gnbArea" id="gnbArea">
+			<a class="topLogo" id="logoBtn" href="https://news.amc.seoul.kr/news/main.do"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/topLogo.png" alt="서울아산병원 뉴스룸"></a>
+			<ul class="gnb" id="menuArea">
+				<li><a class="menuClass" href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43001">뉴스</a></li>
+				<li><a class="menuClass" href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43002">헬스</a></li>
+				<li><a class="menuClass" href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003">피플</a></li>
+				<li><a class="menuClass" href="https://news.amc.seoul.kr/news/con/list.do?pressChk=Y">프레스센터</a></li>
+			</ul>
+			<a class="globalChange" id="engBtn" href="https://news-en.amc.seoul.kr/news/eng/main.do" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;GNB&#39;, &#39;CLICK&#39;, &#39;GNB-영문사이트 바로가기&#39;);">ENG</a>
+			<a class="gnbSearch" id="searchBtn" href="javascript:makeSearch();"><img id="topKwd" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/search.png" alt="검색"></a>
+			<a class="MvGnb" id="searchBtn" href="javascript:makeSearch2();"><img id="topKwd2" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/MvGnb.png" alt="모바일 메뉴"></a>
+		</div>
+		<!-- S : 2뎁스 메뉴 -->
+    <div class="depthArea" id="depthArea">
+      <ul class="depth2 w1200">
+        <li><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43001&amp;prMenuTwo=T43001001">의료</a><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43001&amp;prMenuTwo=T43001002">행사</a></li>
+        <li><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43002&amp;prMenuTwo=T43002001">건강이야기</a><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43002&amp;prMenuTwo=T43002002">연구이야기</a></li>
+        <li><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003&amp;prMenuTwo=T43003001">환자 이야기</a><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003&amp;prMenuTwo=T43003002">아산인 이야기</a><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003&amp;prMenuTwo=T43003006">동정</a><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003&amp;prMenuTwo=T43003005">뉴스룸 칼럼</a></li>
+        <li><a href="https://news.amc.seoul.kr/news/con/list.do?pressChk=Y">보도자료</a><a href="https://news.amc.seoul.kr/news/con/amcInfo.do">병원 소개</a><a href="https://news.amc.seoul.kr/news/magazine/magazineList.do">정기간행물</a></li>
+      </ul>
+    </div>
+    <!-- //E : 2뎁스 메뉴 -->
+    <!-- S : 통합 검색  -->
+	<div class="searchArea" id="searchArea">
+      <p><span><input id="topKeyword" type="text" onkeydown="javascript:onDown();" placeholder="검색어를 입력해주세요." value="" maxlength="30" style="ime-mode:active;"><a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" onclick="javascript:toSearch(&#39;1&#39;, &#39;S&#39;);"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/search_w.png" alt="검색"></a></span></p>
+      <ul class="MvMenu" id="">
+        <li>
+          <dl>
+            <dt><a class="menuClass" href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43001">뉴스</a></dt>
+            <dd><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43001&amp;prMenuTwo=T43001001">의료</a></dd>
+            <dd><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43001&amp;prMenuTwo=T43001002">행사</a></dd>
+          </dl>	
+        </li>
+        <li>
+          <dl>
+            <dt><a class="menuClass" href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43002">헬스</a></dt>
+            <dd><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43002&amp;prMenuTwo=T43002001">건강이야기</a></dd>
+            <dd><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43002&amp;prMenuTwo=T43002002">연구이야기</a></dd>
+          </dl>	
+        </li>
+        <li>
+          <dl>
+            <dt><a class="menuClass" href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003">피플</a></dt>
+            <dd><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003&amp;prMenuTwo=T43003001">환자 이야기</a></dd>
+            <dd><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003&amp;prMenuTwo=T43003002">아산인 이야기</a></dd>
+            <dd><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003&amp;prMenuTwo=T43003006">동정</a></dd>
+            <dd><a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43003&amp;prMenuTwo=T43003005">뉴스룸 칼럼</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt><a class="menuClass" href="https://news.amc.seoul.kr/news/con/list.do?pressChk=Y">프레스센터</a></dt>
+            <dd><a href="https://news.amc.seoul.kr/news/con/list.do?pressChk=Y">보도자료</a></dd>
+            <dd><a href="https://news.amc.seoul.kr/news/con/amcInfo.do">병원 소개</a></dd>
+            <dd><a href="https://news.amc.seoul.kr/news/magazine/magazineList.do">정기간행물</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+		<!-- //E : 통합 검색 -->
+	</div>
+	
+  <div class="contArea w1200">
+		
+		
+  
+  
+  <script src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/kakao.js"></script>
+  
+    <script type="text/javascript">
+
+    Kakao.init('229dd33ad5e0c6d62ea1d7303380c506');
+    
+    var openYn = 'N';
+    
+    $(document).ready(function () {
+           	      	
+    	$('#shareBox').hide();
+       
+    });
+        
+    
+    // 카카오톡 공유하기
+    function sendKakaoTalk()
+    {
+    	
+    	var cucucu = $('#cucucu').val();
+    	var imgUrl = 'https://news.amc.seoul.kr/news/file/imageView.do?fileId='+cucucu;
+    	
+    	Kakao.Link.sendDefault({
+    	      objectType: 'feed',
+    	      content: {
+    	        title: document.title,
+    	        description: '서울아산병원 뉴스룸 공유입니다',
+    	        imageUrl: imgUrl,
+    	        imageWidth: 300, 
+    	        imageHeight: 200,
+    	        link: {
+    	          mobileWebUrl: document.URL,
+    	          webUrl: document.URL,
+    	        },
+    	      },
+    	      buttons: [
+    	        {
+    	          title: '서울아산병원 뉴스룸 바로가기',
+    	          link: {
+    	            mobileWebUrl: 'https://news.amc.seoul.kr',
+    	            webUrl: 'https://news.amc.seoul.kr',
+    	          },
+    	        },
+    	      ],
+    	      // 카카오톡 미설치 시 카카오톡 설치 경로이동
+    	      installTalk: true,
+    	    })
+    	    
+    	    ga('send', 'event', '공통-SNS', 'CLICK', '카카오:' + document.title);
+    }
+    
+    
+    function asan_print(cntId){
+
+    		ga('send', 'event', '공통-SNS', 'CLICK', '출력:' + document.title);
+    	
+    		var width = 700;
+    		var height = 759;
+    		var left = (window.screen.width - width) / 2;
+    		var top = (window.screen.height - height) / 2;
+
+    		var windowFeatures = 'width=' + width + ', height=' + height + ', left=' + left +', top=' + top;
+    		var win = window.open("/news/con/print.do?cntId=" + cntId, "Detail", windowFeatures);
+    		win.focus();
+
+    }
+
+    
+    function shareOpen(){
+	
+    	if(openYn == 'N'){
+    		$('#shareBox').show();
+    		openYn = 'Y';
+    	}else{
+    		$('#shareBox').hide();
+    		openYn = 'N';
+    	}
+    	
+    }
+    
+    
+    function closeOpen(){
+
+    	$('#shareBox').hide();
+    	openYn = 'N';
+
+    }
+    
+
+    function fnSnsTwitter() {
+
+    	ga('send', 'event', '공통-SNS', 'CLICK', '트위터:' + document.title);
+
+    	window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(document.title) + "&url=" + encodeURIComponent(document.URL));
+
+    }
+
+    function fnSnsFacebook() {
+
+    	ga('send', 'event', '공통-SNS', 'CLICK', '페이스북:' + document.title);
+
+    	window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(document.URL));
+
+    }
+    
+    function fnSnsLine() {
+
+    	ga('send', 'event', '공통-SNS', 'CLICK', '라인:' + document.title);
+    	
+    	window.open("http://line.me/R/msg/text/?" + encodeURIComponent(document.title) + " " + encodeURIComponent(document.URL));
+    
+    }
+    
+    
+    function fnCopy() {
+    	
+    	ga('send', 'event', '공통-SNS', 'CLICK', 'URL복사:' + document.title);
+    	
+    	copyToClipboard(document.URL);
+    	alert(document.URL + ' 복사되었습니다.');
+    	
+    }
+      
+    function copyToClipboard(val) {
+	  	  var t = document.createElement("textarea");
+	  	  document.body.appendChild(t);
+	  	  t.value = val;
+	  	  t.select();
+	  	  document.execCommand('copy');
+	  	  document.body.removeChild(t);
+	  }
+    
+    
+    
+    </script>
+          
+   
+        
+	<!-- S : 콘텐츠 상세 상단 -->
+		<div class="contViewTit">
+			<span class="cate">
+			<a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43002">헬스</a> &gt; <a href="https://news.amc.seoul.kr/news/con/list.do?prMenuOne=T43002&amp;prMenuTwo=T43002001">건강이야기</a>
+			
+			</span>
+			췌장 수술과 당뇨병
+			<span class="data">
+			2017.12.04</span>
+			
+			<div class="icon">
+				<a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" onclick="asan_print(&#39;7708&#39;); return false;"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/print.png" alt="인쇄하기"></a>
+				<a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" onclick="shareOpen(); return false;"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/share.png" alt="공유하기"></a>
+				<!-- S : 콘텐츠 공유하기 팝업  -->
+				<div id="shareBox" class="shareBox" style="display:none">
+					<p class="shareBoxTit">공유하기<a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" onclick="closeOpen(); return false;"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/close.png" alt="닫기"></a></p>
+					<ul class="snsIcon">
+						<li><a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" onclick="sendKakaoTalk(); return false;" title="카카오톡 공유하기" target="_blank"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/kakao.png" alt="카카오톡 공유하기"><br>카카오톡</a></li>
+						<li><a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" onclick="fnSnsLine(); return false;" title="라인 공유하기" target="_blank"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/line.png" alt="라인 공유하기"><br>라인</a></li>
+						<li><a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" onclick="fnSnsFacebook(); return false;" title="페이스북 공유하기"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/facebook.png" alt="페이스북 공유하기"><br>페이스북</a></li>
+						<li><a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" onclick="fnSnsTwitter(); return false;" title="트위터 공유하기"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/twitter.png" alt="트위터 공유하기"><br>트위터</a></li>
+						<li><a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" onclick="fnCopy(); return false;" title="URL 복사"><img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/url.png" alt="URL 복사"><br>URL 복사</a></li>
+					</ul>
+				</div>
+				<!-- E : 콘텐츠 공유하기 팝업  -->
+			</div>
+		</div>
+		<!-- E : 콘텐츠 상세 상단 -->
+		<input type="hidden" id="cucucu" value="F000000055033_OwqyZw">
+		
+		<div class="editArea w1200">
+			<p style="text-align: center;"><img alt="" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/_췌장수술.jpg" style="width: 500px; height: 366px;"></p>
+
+<p>&nbsp;</p>
+
+<p>췌장은 내분비 및 외분비 기능을 담당하는 장기입니다. 외분비 기능으로는 대표적으로 지방을 분해하는 효소를 분비하여 소화에 도움을 주는 역할을 합니다.</p>
+
+<p>&nbsp;</p>
+
+<p>그리고 내분비 기능으로는 인슐린과 글루카곤이라고하는 호르몬을 분비하여 혈당을 조절해주는 역할을 합니다. 췌장수술후의 당뇨병은 이 내분비 기능의 저하 즉, 인슐린분비 양의 절대적인 감소에 의해 발생한다고 볼 수 있습니다.</p>
+
+<p><br>
+최근 췌장암을 비롯하여 다양한 질환으로 췌장절제수술을 받는 환자분이 늘어나면서 췌장수술후 당뇨병에 대한 관심이 많아지고 그에 대한 연구도 활발히 진행되고 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>결론부터 말씀드리자면, 췌장수술후 당뇨병발생의 정확한 예측은 불가능하지만 위험요인으로 수술의 방법, 절제되는 췌장의 부피, 비만도, 고령을 들 수 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align: center;"><img alt="" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/_췌장절제2.png" style="width: 500px; height: 415px;"></p>
+
+<p>&nbsp;</p>
+
+<p>췌장수술의 대표적인 두가지로 췌두부의 질환에 대한 췌두십이지장 절제술, 췌미부의 질환에 대한 췌미부절제술을 들 수 있습니다. 췌두십이지장 절제술은 췌장의 약 40-50%를 절제하는 수술이며, 췌미부절제술은 질환의 종류 및 위치에 따라 절제되는 부피가 다양하지만 최대 50-60%까지 절제하는 수술 방법입니다.</p>
+
+<p>&nbsp;</p>
+
+<p>두 수술 모두 췌장의 약 50%를 절제하는 수술이지만, 인슐린을 분비하는 세포가 췌미부에 더 많이 분포하고 있기 때문에 췌미부 수술의 경우 당뇨병의 발생율이 좀더 높다고 보고되고 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>반면, 일부 연구에서 췌두십이지장 절제술의 경우 췌장을 절제함에도 불구하고 기존 당뇨병 환자의 인슐린 저항성 및 분비 능력이 약 40%이상 호전될 수 있다고 보고하고 있습니다. 이는 췌두십이지장 절제술의 수술 기법이 비만 환자에서 시행하는 비만 수술의 구조와 비슷하기 때문일 것이라 분석하고 있습니다.</p>
+
+<p>&nbsp;</p>
+
+<p>이와 같이 췌장 수술 후 당뇨병은 모든 사람에게 발생하는 것은 아니며, 당뇨병의 발생에 대한 예측은 개인에 따른 차이가 크고 경과에 따라 다양한 변화를 보이기 때문에 전문가에 의한 지속적인 검진 및 관리가 가장 중요하다 할 수 있겠습니다.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+      
+      <div class="likeArea">
+        <p>보다 건강한 콘텐츠 제작을 위해 이 콘텐츠에 대한 여러분의 생각을 말씀해 주세요.</p>
+        <ul class="likeList">
+          <li> <a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" class="ico01" onclick="return clickLike(&#39;1&#39;,&#39;7708&#39;);"> <span class="likeTxt">유용해요</span>
+           <span class="likeNum">0</span> </a> </li>
+          <li> <a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" class="ico02" onclick="return clickLike(&#39;2&#39;,&#39;7708&#39;);"> <span class="likeTxt">추천해요</span> 
+            <span class="likeNum">0</span> </a> </li>
+          <li> <a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" class="ico03" onclick="return clickLike(&#39;3&#39;,&#39;7708&#39;);"> <span class="likeTxt">좋아요</span> 
+           <span class="likeNum">0</span> </a> </li>
+          <li> <a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" class="ico04" onclick="return clickLike(&#39;4&#39;,&#39;7708&#39;);"> <span class="likeTxt">공감해요</span> 
+            <span class="likeNum">0</span> </a> </li>
+          <li> <a href="https://news.amc.seoul.kr/news/con/detail.do?cntId=7708&amp;utm_campaign=wwwamcseoulkr&amp;utm_source=web&amp;utm_medium=popup&amp;utm_content=search#" class="ico05" onclick="return clickLike(&#39;5&#39;,&#39;7708&#39;);"> <span class="likeTxt">후속강추</span> 
+            <span class="likeNum">0</span> </a> </li>
+        </ul>
+        
+      </div>
+		</div> 
+		
+		
+		<!-- S : SNS 바로가기 아이콘 -->
+			
+		
+		<!-- E : SNS 바로가기 아이콘 -->
+		
+		
+		
+		
+		
+		
+		<p class="btnArea" style="50px 0"><a class="blueBtn" href="javascript:history.go(-1)">뒤로가기</a></p>
+		
+		 
+	</div>
+	
+	<!-- S : 연관콘텐츠 / 관련 의료진 없을 경우 -->
+  		
+  <!-- E : 연관콘텐츠 -->
+  
+  <!-- S : 관련 의료진, 연관콘텐츠 모두 있을 경우 -->
+	<div class="connectCont">
+    <div class="w1200">
+      <div class="linkhArea">
+        <div class="linkBox">
+        
+               
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    var swiper = new Swiper('.doctor-swiper', {
+      spaceBetween: 0, // 슬라이드 사이 여백
+      slidesPerView: 1, // 한 슬라이드에 보여줄 갯수
+      loop : true, // 슬라이드 반복 여부
+      loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+      autoplay: {     //자동슬라이드 (false-비활성화)
+        delay: 4000, // 시간 설정
+        disableOnInteraction: false, // false-스와이프 후 자동 재생
+      },
+      navigation: {
+        nextEl: '.doctor-swiper-button-next',
+        prevEl: '.doctor-swiper-button-prev',
+      },
+      direction: getDirection(),
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 350 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
+  
+  <script>
+    var swiper = new Swiper('.relate-swiper', {
+      spaceBetween: 30, // 슬라이드 사이 여백
+      slidesPerView: 2, // 한 슬라이드에 보여줄 갯수
+      loop : true, // 슬라이드 반복 여부
+      loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+      autoplay: {     //자동슬라이드 (false-비활성화)
+        delay: 4000, // 시간 설정
+        disableOnInteraction: false, // false-스와이프 후 자동 재생
+      },
+      navigation: {
+        nextEl: '.relate-swiper-button-next',
+        prevEl: '.relate-swiper-button-prev',
+      },
+      
+      breakpoints:{
+        250:{
+          slidesPerView: 1,
+        },
+        750:{
+          slidesPerView: 2,
+        },
+      },
+      
+      direction: getDirection(),
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 350 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
+	
+  
+
+
+  <div class="footerArea">
+		<div class="w1200">
+			<img src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/footerLogo.png" alt="서울아산병원 뉴스룸">
+			<p class="footer">
+				05505 서울특별시 송파구 올림픽로 43길 88 서울아산병원<br>TEL 1688-7575 / <a style="color: #fff" href="mailto:newsroom@amc.seoul.kr">newsroom@amc.seoul.kr</a>
+			</p>
+      <p class="linkMenu">
+				<a href="https://www.amc.seoul.kr/asan/footer/personalInfo.do" style="color:#ff7802;" target="_blank">개인정보처리방침</a>
+				<span class="linkLine">|</span>
+				<a href="https://news.amc.seoul.kr/news/con/policy.do">뉴스룸 운영정책</a>
+			</p>
+			<div class="familySite">
+				<select id="family02" class="select" onchange="openInNewTab(this)">
+            <option value="0">재단 및 재단산하병원</option>
+            <option value="http://www.asanfoundation.or.kr/af/">아산사회복지재단</option>
+          <option value="http://www.amc.seoul.kr">서울아산병원</option>  
+					<option value="http://www.gnah.co.kr">강릉아산병원</option>
+            <option value="http://www.asankeumkang.co.kr">금강아산병원</option>
+            <option value="http://www.bsh.or.kr">보성아산병원</option>
+            <option value="http://www.brh.or.kr">보령아산병원</option>
+            <option value="http://www.ydh.or.kr">영덕아산병원</option>
+            <option value="http://www.jeh.or.kr">정읍아산병원</option>
+            <option value="http://www.hch.or.kr">홍천아산병원</option>
+        </select>
+<!--        <a class="openBtn" href="#bottom" id="fm02mv">바로가기</a>-->
+			</div>
+		</div>
+  </div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53195438-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="./췌장 수술과 당뇨병 _ 건강이야기 _ 헬스 _ 서울아산병원 뉴스룸_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ETGC072430');
+</script>
+
+
+
+<script type="text/javascript">
+
+	$(function(){
+	$("a#fm02mv").click(function (){
+
+		var url = $("#family02 option:selected").val();
+		if (url != 0) {
+
+			window.open(url, "_blank");
+		}
+
+	});
+	});
+	
+	function openInNewTab(selectElement) {
+        var url = selectElement.value;
+        if (url != "0") {
+            window.open(url, "_blank");
+        }
+    }
+
+</script>
+
+
+
+<span itemscope="" itemtype="http://schema.org/Organization">
+	<link itemprop="url" href="https://news.amc.seoul.kr/">
+	<a itemprop="sameAs" href="https://blog.naver.com/amc_seoul"></a> 
+	<a itemprop="sameAs" href="https://post.naver.com/amc_seoul"></a> 
+	<a itemprop="sameAs" href="https://www.facebook.com/AMC.SEOUL"></a> 
+	<a itemprop="sameAs" href="https://www.instagram.com/amc_seoul"></a>
+	<a itemprop="sameAs" href="https://www.youtube.com/user/AsanMedicalCenter"></a>
+	<a itemprop="sameAs" href="https://twitter.com/AMC_SEOUL"></a>    
+</span>
+	
+</div>
+
+</body></html>

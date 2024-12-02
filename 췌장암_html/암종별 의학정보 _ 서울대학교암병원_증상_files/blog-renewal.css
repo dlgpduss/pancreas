@@ -1,0 +1,1907 @@
+/* sticky 적용 */
+#wrap {
+    overflow: unset;
+}
+
+#wrap:has(#content) {
+    padding-top: 180px;
+}
+
+#wrap:has(#content.memJoinContent),
+#wrap:has(#content.findContent),
+#wrap:has(#content.dorContent) {
+    padding-top: 0;
+}
+
+#wrap:has(#content.rsvCheckup) {
+    padding-top: 180px;
+}
+
+#wrap:has(.contUtilMenuWrap):has(#content) {
+    padding-top: 264px;
+}
+
+#wrap:has(.mainContent #content) {
+    padding-top: 117px;
+}
+
+#wrap:has(#content.blogContent) {
+    padding-top: 0;
+}
+
+#wrap:has(#content.mainIntroContent) {
+    padding-top: 80px;
+}
+
+#wrap:has(#content.careContent) {
+    padding-top: 0;
+}
+
+.contUtilMenuWrap {
+    margin-top: 0;
+}
+
+.contHeadingWrap {
+    margin-top: 0;
+}
+
+#wrap #content {
+    margin-top: 0;
+}
+
+#wrap #content.replaceUtilMenu {
+    margin-top: -48px;
+}
+
+#wrap #content.careContent {
+    margin-top: -50px;
+}
+
+#link_image {
+    display: none;
+}
+
+/* html:has(#content.blogContent) {
+    scroll-behavior: smooth;
+} */
+
+#blogContent{
+	scroll-behavior: smooth;
+}
+.blogContent p + p {
+    margin: 0;
+}
+
+.doctorSchedule.new-doctorSchedule {
+    letter-spacing: 0;
+}
+.doctorSchedule.new-doctorSchedule p {
+    margin-top: 0;
+    padding-left: 0;
+    line-height: normal;
+    min-height: unset;
+}
+.doctorSchedule.new-doctorSchedule button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.doctorSchedule.new-doctorSchedule li {
+    padding-top: 40px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce {
+    display: flex;
+    column-gap: 16px;
+    overflow: visible;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .imgWrap {
+    flex-shrink: 0;
+    width: 146px;
+    height: 195px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .imgWrap > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .imgWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .descWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    float: unset;
+}
+
+.doctorSchedule.new-doctorSchedule .medDeptWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDeptWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 16px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-badge {
+    padding: 4px 16px;
+    border-radius: 9999px;
+    background: #3FB8F3;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-badge p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: unset;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-sns-list {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-sns-list li {
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-sns-list li .doctorDept-sns-item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-sns-list li .doctorDept-sns-item .doctorDept-sns-icon {
+    width: 24px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-sns-list li .doctorDept-sns-item .doctorDept-sns-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-sns-list li .blogUrlLink-wrap {
+    position: relative;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-sns-list li .blogUrlLink {
+    position: absolute;
+    top: calc(100% + 16px);
+    bottom: unset;
+    left: 0;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorDept-sns-list li .blogUrlLink li + li {
+    margin-top: 4px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .doctorNameWrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 8px;
+    padding-top: 20px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .doctorNameWrap strong {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .descWrap .doctor-concentration-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    width: 100%;
+    padding-top: 12px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .descWrap .doctor-concentration-wrap p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .descWrap .doctor-concentration-wrap p:first-child {
+    color: #2763BA;
+    font-weight: 600;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .btnWrap {
+    width: auto;
+    margin-top: 0;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .btnWrap .doctor-view-button {
+    border: 1px solid #CCC;
+    background: #fff;
+    padding: 10px 28px;
+    margin: 0;
+    height: auto;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorIntroduce .btnWrap .doctor-view-button p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 34px;
+}
+
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap li {
+    padding: 0;
+    border: 0;
+}
+
+/* 240718 수정[s] */
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list {
+    display: flex;
+    column-gap: 0;
+}
+
+/* .doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list .doctorSchedule-tab-button {
+    display: flex;
+    padding: 10px 28px;
+    border-radius: 0px;
+    background-color: #87C8E8;
+    border: 1px solid transparent;
+} */
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list .doctorSchedule-tab-button {
+    position: relative;
+    display: flex;
+    padding: 10px 28px;
+    border: 1px solid #CCC;
+    border-right-width: 0;
+    border-radius: 0px;
+    background-color: #fff;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list .doctorSchedule-tab-button.active {
+    background-color: #2763BA;
+    border-color: #2763BA;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list > li:last-child .doctorSchedule-tab-button {
+    border-right-width: 1px;
+}
+
+/* .doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list .doctorSchedule-tab-button .doctorSchedule-tab-button-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+} */
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list .doctorSchedule-tab-button .doctorSchedule-tab-button-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list .doctorSchedule-tab-button .doctorSchedule-tab-button-text strong {
+    color: #2763BA;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list .doctorSchedule-tab-button.active .doctorSchedule-tab-button-text,
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-tab-button-list .doctorSchedule-tab-button.active .doctorSchedule-tab-button-text strong {
+    color: #fff;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-table-legend-list {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-table-legend-list .doctorSchedule-table-legend-item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-table-legend-list .doctorSchedule-table-legend-item .doctorSchedule-table-legend-icon {
+    width: 14px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-button-wrap .doctorSchedule-table-legend-list .doctorSchedule-table-legend-item .doctorSchedule-table-legend-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap {
+    display: flex;
+    width: 100%;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content {
+    display: none;
+    padding: 0;
+    border-bottom: 0;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content.active {
+    display: block;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01.disabled {
+    position: relative;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01.disabled .disabled-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01.disabled .disabled-content .disabled-text {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table {
+    margin-top: 0;
+    border-top: 2px solid #000;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table caption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table thead th {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 16px 12px;
+    height: 24px
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table tbody th {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 16px 12px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table td {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 24px;
+    height: 24px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table th.text-left {
+    text-align: left;
+}
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table th.cancerUpTr {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table .option-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+}
+
+/* 240718 수정[e] */
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table .option-wrap .option-button-01 {
+    padding: 6px 24px;
+    border-radius: 9999px;
+    background: #2763BA;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table .option-wrap .option-button-01 > p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table .option-wrap .option-button-02 {
+    padding: 6px 24px;
+    border-radius: 9999px;
+    background: #87C8E8;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table .option-wrap .option-button-02 > p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .tableType01 table .table-icon {
+    display: inline-block;
+    width: 14px;
+}
+
+.doctorSchedule.new-doctorSchedule .doctorSchedule-tab-content-wrap .doctorSchedule-tab-content .table-sub-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 12px;
+}
+
+.blogDoctor.new-blogDoctor {
+    display: flex;
+    align-items: center;
+    min-height: 612px;
+    background-color: #F2F5FA;
+    letter-spacing: 0;
+}
+
+.blogDoctor.new-blogDoctor > .inner {
+    position: relative;
+    align-items: center;
+    min-height: 612px;
+    display: flex;
+}
+
+.blogDoctor.new-blogDoctor .doctorSlide {
+    float: unset;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo {
+    float: unset;
+    width: 608px;
+    padding-top: 0;
+}
+
+/* xh: qa 수정 [s] */
+.blogDoctor.new-blogDoctor .doctorInfo .doctorInfoTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .doctorInfoTop .snsWrap {
+    position: relative;
+    top: 16px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .doctorInfoTop .snsWrap .utilMenu {
+    display: flex;
+    margin: 0;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .doctorInfoTop .snsWrap a {
+    display: flex;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .doctorInfoTop .snsWrap .sns-icon-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .doctorInfoTop .snsWrap .sns-icon-wrap svg {
+    width: 20px;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .doctorInfoTop .snsWrap .blogUrlLink {
+    position: absolute;
+    right: 0;
+    left: unset;
+    top: 40px;
+}
+
+/* xh: qa 수정 [e] */
+
+.blogDoctor.new-blogDoctor .doctorInfo .name strong {
+    color: #333;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .name span {
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 12px;
+}
+
+.blogDoctor.new-blogDoctor .clinicWrap {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 36px;
+    margin-bottom: 0;
+}
+
+.blogDoctor.new-blogDoctor .clinicWrap li {
+    margin-right: 0;
+}
+
+.blogDoctor.new-blogDoctor .clinicWrap li a {
+    padding: 6px 24px;
+    height: auto;
+    background-color: #87C8E8;
+    border-radius: 9999px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.blogDoctor.new-blogDoctor .clinicWrap li.current a {
+    background-color: #2763BA;
+}
+
+.blogDoctor.new-blogDoctor .clinicWrap li a:before, 
+.blogDoctor.new-blogDoctor .clinicWrap li a > .b {
+    content: none;
+}
+
+.blogDoctor.new-blogDoctor .blogLinkWrap {
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.blogDoctor.new-blogDoctor .blogLinkWrap a.current, 
+.blogDoctor.new-blogDoctor .blogLinkWrap .current a {
+    color: #2763BA;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blogDoctor.new-blogDoctor .doctor-concentration-wrap {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 12px;
+    margin-top: 8px;
+}
+
+.blogDoctor.new-blogDoctor .doctor-concentration-wrap > strong {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    flex-shrink: 0;
+}
+
+.blogDoctor.new-blogDoctor .doctor-concentration-wrap > p {
+    color:#333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule {
+    margin-top: 36px;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule > div {
+    margin-bottom: 0;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule p {
+    margin-top: 0;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule-table-legend-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule-table-legend-list .blogSchedule-table-legend-item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule-table-legend-list .blogSchedule-table-legend-item .blogSchedule-table-legend-icon {
+    width: 14px;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule-table-legend-list .blogSchedule-table-legend-item .blogSchedule-table-legend-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule table {
+    margin-top: 16px;
+    border-top: 2px solid #333;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule table th, 
+.blogDoctor.new-blogDoctor .blogSchedule table td {
+    border: 1px solid #CCC;
+    height: 48px;
+    background-color: #fff;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule thead th {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #F5F5F5;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule tbody th {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #F5F5F5;
+}
+
+.blogDoctor.new-blogDoctor .blogSchedule table .table-icon {
+    display: inline-block;
+    width: 14px;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-top: 28px;
+    overflow: visible;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap [class*=btnType] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: unset !important;
+    width: 235px;
+    height: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    letter-spacing: 0;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap .btnType01 {
+    background-color: #3FB8F3;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap .btnType02 {
+    background-color: #2763BA;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap .custom-tooltip-button {
+    position: relative;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap .custom-tooltip-button .custom-tooltip-wrapper {
+    position: absolute;
+    cursor: default;
+    bottom: calc(100% + 8px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 340px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #E8F6FC;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 12px 0px rgba(21, 54, 101, 0.15);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s linear, opacity 0.4s ease;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap .custom-tooltip-button:hover .custom-tooltip-wrapper {
+    visibility: visible;
+    opacity: 1;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap .custom-tooltip-button .custom-tooltip-wrapper::before {
+    content: '';
+    position: absolute;
+    top: calc(100% - 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='19' fill='none'%3E%3Cpath fill='%23E8F6FD' d='M12.732 18c-.77 1.333-2.694 1.333-3.464 0L.608 3C-.162 1.667.8 0 2.34 0h17.32c1.54 0 2.502 1.667 1.732 3l-8.66 15Z'/%3E%3C/svg%3E");
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap .custom-tooltip-button .custom-tooltip-wrapper strong {
+    color: #2763BA;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.blogDoctor.new-blogDoctor .doctorInfo .btnWrap .custom-tooltip-button .custom-tooltip-wrapper p {
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    word-break: break-all;
+}
+
+#content.blogContent {
+    padding-right: 0;
+}
+
+.blogCont-wrap.new-blogCont-wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 32px;
+    width: 1100px;
+    padding-top: 48px;
+    margin: 0 auto;
+}
+
+.blogCont-wrap.new-blogCont-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 186px;
+    transform: translateX(50%);
+    height: calc(100% + 100px);
+    width: 1px;
+    background-color: #CCC;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list {
+    width: 100%;
+    margin: 0;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #CCC;
+    width: 100%;
+    scroll-margin: 81px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item:first-child {
+    padding-top: 0;
+    scroll-margin: 120px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content {
+    width: 100%;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-subtitle {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 32px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-button-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-button-wrap .blogCont-item-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 50px;
+    border: 1px solid #2763BA;
+    background: #FFF;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-button-wrap .blogCont-item-button .blogCont-item-button-text {
+    color: #2763BA;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-history-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-history-list .blogCont-history-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 32px;
+    width: 100%;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-history-list .blogCont-history-item .blogCont-history-date {
+    flex-shrink: 0;
+    width: 145px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-history-list .blogCont-history-item .blogCont-history-content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 4px;
+    width: 100%;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-history-list .blogCont-history-item .blogCont-history-content-wrap .blogCont-history-content {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-table {
+    margin-top: 32px;
+    border-collapse: collapse;
+    border: 1px solid #CCC;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-table .blogCont-table-link {
+    cursor: pointer;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-table td {
+    border: 1px solid #CCC;
+    text-align: center;
+    height: 36px;
+    vertical-align: middle;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-table td.title {
+    white-space: normal;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-column-wrap {
+    margin-top: 32px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-column-wrap .boardInfo {
+    margin-bottom: 32px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-column-wrap .boxList {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 8px;
+    overflow: visible;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-column-wrap .boxList .item {
+    width: 100%;
+    height: 100%;
+    float: unset;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-column-wrap .boxList .item .item-thumbnail {
+    width: 100%;
+    background-image: url(https://www.snuh.org/asset/img/default_250x140.jpg);
+    background-color: #fff;
+    aspect-ratio: 313/203;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-column-wrap .boxList .item .item-content {
+    margin: 20px 16px;
+    max-height: 187px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-column-wrap .boxList .item .item-content .item-category {
+    color: #2763BA;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-column-wrap .boxList .item .item-content .item-title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 8px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogCont-list .blogCont-item .blogCont-item-content .blogCont-column-wrap .boxList .item .item-content .item-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    color: #CCC;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 16px;
+}
+/* xh: view 목록 추가 [s] */
+.healthList .item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.healthList .item:nth-child(4n) {
+    margin: 0 20px 20px 0;
+}
+
+.blogCont-item .healthList {
+    margin-top: 20px;
+}
+
+.blogCont-item .bookWrap {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    padding: 16px 0;
+    margin-top: 20px;
+    float: unset;
+}
+
+.blogCont-item .bookWrap li {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+    float: unset;
+    width: calc(50% - 10px);
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.blogCont-item .bookWrap li .book {
+    float: unset;
+    flex-shrink: 0;
+    margin-right: 0;
+}
+
+.blogCont-item .bookWrap li .bookInfo {
+    width: auto;
+    flex-grow: 1;
+    padding-right: 0;
+}
+
+.blogCont-item .bookWrap li .bookInfo em {
+    display: block;
+    margin-top: 0;
+    font-size: 20px;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+/* xh: view 목록 추가 [e] */
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew {
+    position: sticky;
+    top: 180px;
+    border: 0;
+    background-color: transparent;
+    width: 190px;
+    flex-shrink: 0;
+    z-index: 1;
+    margin-top: 52px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin: 0;
+    width: 100%;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul li {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: unset;
+    height: auto;
+    margin: 0;
+    line-height: 0;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul li::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    border-radius: 999px;
+    background: #CCC;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul li.current::before {
+    background: #3FB8F3;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #CCC;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul li.current::after {
+    background: #3FB8F3;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #CCC;
+    border-radius: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul li.current a {
+    border-color: #3FB8F3;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul li a p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+.blogCont-wrap.new-blogCont-wrap .blogMenuNew ul li.current a p {
+    color: #2763BA;
+    font-weight: 700;
+}
+
+.layerWrap.new-layerWrap {
+    margin-left: 0 !important;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 831px;
+}
+
+.layerWrap.new-layerWrap h1 {
+    padding: 18px 80px 18px 30px;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 0;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #2763BA;
+}
+
+.layerWrap.new-layerWrap h1 strong {
+    font-weight: 700;
+}
+
+.layerWrap.new-layerWrap .layerContent {
+    padding: 32px 32px 40px 32px;
+    max-height: unset;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule {
+    height: auto;
+    display: flex;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule > div {
+    float: unset;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #D6DEEA;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule > div:last-child {
+    border-left: 0;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .calendarWrap {
+    padding: 20px 32px 20px 28px;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .ui-datepicker-header {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .ui-datepicker-header .ui-datepicker-prev {
+    position: absolute;
+    width: 9px;
+    height: 11px;
+    left: -12px;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    background: transparent;
+    padding: 8px;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .ui-datepicker-header .ui-datepicker-prev::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 11px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='11' fill='none'%3E%3Cpath fill='%23333' d='M0 5.5 9 .304v10.392L0 5.5Z'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .ui-datepicker-header .ui-datepicker-next {
+    position: absolute;
+    width: 9px;
+    height: 11px;
+    right: -12px;
+    top: 50%;
+    transform: translate(100%, -50%) rotate(180deg);
+    background: transparent;
+    padding: 8px;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .ui-datepicker-header .ui-datepicker-next::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 11px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='11' fill='none'%3E%3Cpath fill='%23333' d='M0 5.5 9 .304v10.392L0 5.5Z'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .ui-datepicker-title {
+    margin: 0;
+    padding: 6px 8px;
+    color: #333;
+    font-size: 22px;
+    line-height: normal;
+    height: auto;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .ui-datepicker-title > span {
+    font-weight: 500;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 0;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table thead,
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tbody {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tbody {
+    min-height: 256px;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr th, 
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td,
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr th a,
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    width: 28px;
+    height: 26px;
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr th a[class*=schedul],
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td a[class*=schedul] {
+    border-radius: 4px;
+    border: 1.5px solid #2763BA;
+    background-image: none;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr th a[class*=schedul],
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td a[class*=schedul] {
+    border-radius: 4px;
+    border: 1.5px solid #2763BA;
+    background-image: none;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr th a.ui-state-active,
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td a.ui-state-active {
+    color: #fff;
+    background: #2763BA;
+}
+
+/* 비활성화 */
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td.ui-datepicker-other-month,
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td.ui-datepicker-other-month > a {
+    color: #B3B3B3;
+}
+
+/* 주말 */
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td.ui-datepicker-week-end,
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td.ui-datepicker-week-end > a {
+    color: #0FA6F0;
+}
+
+/* 비활성화 주말 */
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td.ui-datepicker-other-month.ui-datepicker-week-end,
+.layerWrap.new-layerWrap.rsvLayer .calendarWrap table tr td.ui-datepicker-other-month.ui-datepicker-week-end > a {
+    color: #A1D4ED;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .time {
+    padding: 22px 18px;
+    font-size: 0;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .time strong {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .time .feFoRadio {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-radius: 4px;
+    border: 1px solid #D6DEEA;
+    width: 58px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .time .feFoRadio.checked {
+    border-color: #2763BA;
+    background-color: #2763BA;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .time .feFoRadio:nth-child(-n+7) {
+    margin-top: 0;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .time .feFoRadio:nth-child(5n + 2) {
+    margin-right: 0;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .time .feFoRadio > span {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.layerWrap.new-layerWrap.rsvLayer .rsvSchedule .time .feFoRadio.checked > span {
+    color: #fff;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt {
+    background-color: #fff;
+    margin-top: 32px;
+    padding: 32px 0 0;
+    border-top: 1px solid #D6DEEA;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 100%;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-label-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-label-wrap .rsvConfirm-form-label {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-label-wrap .rsvConfirm-form-label strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-label-wrap .rsvConfirm-form-count-wrap {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-input-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-input-wrap textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #D6DEEA;
+    resize: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    min-height: 160px;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-input-wrap textarea:focus {
+    border-color: #333;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-input-wrap textarea::placeholder {
+    color: #CCC;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-content-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #D6DEEA;
+    box-sizing: border-box;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-content-wrap .rsvConfirm-form-content-item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 16px;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-content-wrap .rsvConfirm-form-content-item .rsvConfirm-form-content-label-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 140px;
+    height: 32px;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-content-wrap .rsvConfirm-form-content-item .rsvConfirm-form-content-label-wrap .rsvConfirm-form-content-label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #2763BA;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-content-wrap .rsvConfirm-form-content-item .rsvConfirm-form-content-text,
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-content-wrap .rsvConfirm-form-content-item .rsvConfirm-form-content-text > span {
+    margin: 0;
+    color: #333;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-content-wrap.simple-content {
+    row-gap: 20px;
+    text-align: left;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-content-wrap.simple-content > h5 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.layerWrap.new-layerWrap .rsvConfirmTxt .rsvConfirm-wrap .rsvConfirm-form-field .rsvConfirm-form-content-wrap.simple-content > p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.layerWrap.new-layerWrap .btnWrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.layerWrap.new-layerWrap .btnType03 {
+    position: relative;
+    top: unset;
+    right: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    width: 264px;
+    margin: 0;
+    padding: 12px 40px;
+    background-color: #3FB8F3;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.resConfirmList.new-resConfirmList li {
+    padding: 40px 0;
+    overflow: visible;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap {
+    position: relative;
+    display: flex;
+    column-gap: 16px;
+    width: 100%;
+    float: unset;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .imgWrap {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 146px;
+    height: 195px;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .imgWrap a {
+    display: flex;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .imgWrap img {
+    width: 100%;
+    height: auto;
+    float: unset;
+    margin: 0;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap {
+    flex-grow: 1;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .doctorDeptWrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 12px;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .doctorDeptWrap .doctorDept-badge {
+    padding: 4px 16px;
+    border-radius: 9999px;
+    background: #3FB8F3;   
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .doctorDeptWrap .doctorDept-badge p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    min-height: unset;
+    margin: 0;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .doctorDeptWrap .doctorNameWrap {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .doctorDeptWrap .doctorNameWrap strong {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .reservationInfoList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .reservationInfoList .reservationInfoItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 12px;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .reservationInfoList .reservationInfoItem > strong {
+    flex-shrink: 0;
+    width: 82px;
+    color: #2763BA;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .reservationInfoList .reservationInfoItem p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .reservationInfoList .reservationInfoItem .reservationInfoBtnWrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 16px;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .reservationInfoList .reservationInfoItem .reservationInfoBtnWrap .btnType03 {
+    display: flex;
+    align-items: center;
+    height: auto;
+    letter-spacing: normal;
+    padding: 4px 4px 4px 12px;
+    background-color: #2763BA;
+    border: 0;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .reservationInfoList .reservationInfoItem .reservationInfoBtnWrap .btnType03 > span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .reservationInfoList .reservationInfoItem .reservationInfoBtnWrap .btnType03 > span::after {
+    content: none;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .reservationInfoList .reservationInfoItem .reservationInfoBtnWrap .btnType03 .btnIconWrap {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    margin: 0;
+    height: 100%;
+    pointer-events: none;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap * {
+    pointer-events: auto;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .custom-tooltip-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    height: 43px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0;
+    padding: 8px 16px;
+}
+
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .custom-tooltip-button > p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .custom-tooltip-button .custom-tooltip-wrapper {
+    position: absolute;
+    cursor: default;
+    bottom: calc(100% + 11px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 340px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #E8F6FC;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 12px 0px rgba(21, 54, 101, 0.15);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s linear, opacity 0.4s ease;
+    z-index: 2;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .custom-tooltip-button:hover .custom-tooltip-wrapper {
+    visibility: visible;
+    opacity: 1;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .custom-tooltip-button .custom-tooltip-wrapper::before {
+    content: '';
+    position: absolute;
+    top: calc(100% - 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='19' fill='none'%3E%3Cpath fill='%23E8F6FD' d='M12.732 18c-.77 1.333-2.694 1.333-3.464 0L.608 3C-.162 1.667.8 0 2.34 0h17.32c1.54 0 2.502 1.667 1.732 3l-8.66 15Z'/%3E%3C/svg%3E");
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .custom-tooltip-button .custom-tooltip-wrapper strong {
+    color: #2763BA;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .custom-tooltip-button .custom-tooltip-wrapper p {
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    word-break: break-all;
+    margin: 0;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .resChangeBtn {
+    position: relative;
+    bottom: unset;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .resChangeBtn .btnType01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    height: 43px;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0;
+    padding: 8px 16px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .resChangeBtn .btnType05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    height: 43px;
+    box-sizing: border-box;
+    position: relative;
+    border: 0;
+    background: #87C8E8;
+    margin: 0;
+    padding: 8px 16px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.boxVtical .boxTit {
+    margin: 0 25px 25px 0;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .custom-tooltip-button .custom-tooltip-wrapper {
+    top: calc(100% + 11px);
+    bottom: unset;
+}
+
+.resConfirmList.new-resConfirmList .reservationInfoWrap .descWrap .btnWrap .custom-tooltip-button .custom-tooltip-wrapper::before {
+    top: unset;
+    bottom: calc(100% - 3px);
+    transform: translateX(-50%) rotate(180deg);
+}

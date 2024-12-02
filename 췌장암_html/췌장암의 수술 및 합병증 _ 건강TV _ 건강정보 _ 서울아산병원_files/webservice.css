@@ -1,0 +1,266 @@
+@charset "utf-8";
+.webserviceWrap .agreementSec { position:relative; margin-bottom:38px;padding:30px 40px; width:818px; height:210px; border:1px solid #ddd;background:url('/asan/images/webservice/bgAgreement.gif') no-repeat right 80%;}
+.webserviceWrap .agreementSec h4{color:#111;font-size:24px;font-weight:600;line-height:1;}
+.webserviceWrap .agreementSec p {padding:3px 0 4px 0;}
+.webserviceWrap .agreementSec .agreeDownload {width:100%;overflow:hidden;padding-top:5px;}
+.webserviceWrap .agreementSec .agreeDownload * { vertical-align:middle;}
+.webserviceWrap .agreementSec .agreeDownload li {  padding: 5px 0 10px 13px; line-height:1.2; background:url('/asan/images/ico/icoGreenSmBox.gif') no-repeat left 18px;}
+.webserviceWrap .agreementSec .agreeDownload li strong {color: #0e787c !important; font-weight:600; padding-right:5px;}
+.webserviceWrap .agreementSec .agreeDownload li span { font-weight:normal; padding:0 3px 0 20px; padding: 0 3px 0 0px; width: 320px; display: inline-block;}
+.webserviceWrap .agreementSec .agreeDownload li a { display:inline-block; padding:6px 10px; background:#0e787c; font-size:12px; color:#fff; font-weight:400;}
+.webserviceWrap .dupProcessSec {position:relative;}
+.webserviceWrap .dupProcessSec .dep1Title { margin-bottom:30px; line-height:1;}
+.webserviceWrap .dupProcessSec .dep2Title { margin-bottom:18px; line-height:1;}
+.webserviceWrap .dupProcessSec .dep3Sec { margin-bottom:36px;}
+.webserviceWrap .dupProcessSec .in-blk li, .webserviceWrap .dupProcessSec .block li {display:block; vertical-align: middle; height:32px; line-height: 32px;}
+.webserviceWrap .dupProcessSec li.box {display:inline-block; float: left; width:175px;}
+.webserviceWrap .dupProcessSec li.clear {clear:both;}
+.webserviceWrap .dupProcessSec li.first {width:100%; font-weight: 600;}
+.webserviceWrap .dupProcessSec li .radi {vertical-align: -2px !important;}
+.webserviceWrap .dupProcessSec li .chec {vertical-align: -3px !important;}
+
+.webserviceWrap .dupProcessSec .dep3Sec .calendar_box {overflow:hidden; display:inline-block;position:relative;width:160px;height:25px; vertical-align:middle; line-height:25px; background: url('/asan/images/reservation/bg_calendar02.gif') no-repeat 0 0;text-align:left;}
+.webserviceWrap .dupProcessSec .dep3Sec .calendar_box .txt {display:block;margin-left:10px; margin-top:2px; padding-top:3px; width:175px;border:none;font-size:13px; line-height:17px;}
+.webserviceWrap .dupProcessSec .dep3Sec .calendar_box .calendarbox_wrap {position:absolute;right:0;top:0;}
+.webserviceWrap .dupProcessSec .dep3Sec .calendarbox {position:absolute;top:0;left:-241px;overflow:hidden;width:275px;background: url('/asan/images/common/calendarbox.png') no-repeat 0 0;}
+.webserviceWrap .dupProcessSec .dep3Sec .graySmBtn {margin-left:10px;}
+.webserviceWrap .dupProcessSec .dep3Sec .stit {margin:3px 10px 0 0;vertical-align:-1px;}
+
+.webserviceWrap .dupProcessSec .descLayout { margin-top:15px; font-size:13px;}
+
+.webserviceWrap .dupProcessSec .codeSec {width:100%; height:120px; line-height:120px; border-top:2px solid #0e787c; border-bottom:1px solid #0e787c; text-align: center; background:#f5f5f5; color:#0e787c; font-weight:600; font-size:18px;}
+
+.webserviceWrap .insuranceSec {position:relative; padding: 18px 30px 20px; border: 1px solid #ddd; background:#f5f5f5;}
+.webserviceWrap .insuranceSec li { padding:3px 0 2px 10px; background:url('/asan/images/common/icoDep4TitlePoint.gif') no-repeat left 10px !important;}
+.webserviceWrap .insuranceSec a.greenMdBtn {position:absolute; top:40px; right:30px; padding:30px 20px !important; font-size:15px !important; font-weight: 600;}
+
+.webserviceWrap .insListTypeSec {}
+.webserviceWrap .insListTypeSec .tableLayout { border-top:2px solid #0e787c; border-bottom:1px solid #0e787c;}
+.webserviceWrap .insListTypeSec .tableLayout th { height:49px; vertical-align:middle; font-weight:600; text-align:center; color:#0e787c; background:#f5f5f5;}
+.webserviceWrap .insListTypeSec .tableLayout th span { display:block; width:100%; background:url('/asan/images/common/bg_bar04.gif') right center no-repeat;}
+.webserviceWrap .insListTypeSec .tableLayout th span.bgNone { background:none;}
+.webserviceWrap .insListTypeSec .tableLayout td { padding:15px 0 15px 0; min-height:20px; text-align:center; vertical-align:middle; border-top:1px solid #ddd;}
+.webserviceWrap .insListTypeSec .tableLayout td a { font-weight: 600;}
+
+
+.webserviceWrap .agreementSec2 { position:relative; margin-bottom:38px;padding:30px 40px; width:758px; height:210px; border:1px solid #ddd;background:url('/asan/images/webservice/bgAgreement.gif') no-repeat right 80%;}
+.webserviceWrap .agreementSec2 h4{color:#111;font-size:24px;font-weight:600;line-height:1;}
+.webserviceWrap .agreementSec2 p {padding:3px 0 4px 0;}
+.webserviceWrap .agreementSec2 .agreeDownload {width:100%;overflow:hidden;padding-top:5px;}
+.webserviceWrap .agreementSec2 .agreeDownload * { vertical-align:middle;}
+.webserviceWrap .agreementSec2 .agreeDownload li { padding:5px 0 10px 13px; line-height:1.2; background:url('/asan/images/ico/icoGreenSmBox.gif') no-repeat left 18px;}
+.webserviceWrap .agreementSec2 .agreeDownload li strong {color: #0e787c !important; font-weight:600; padding-right:5px;}
+.webserviceWrap .agreementSec2 .agreeDownload li span { font-weight:normal; padding:0 3px 0 20px; padding: 0 3px 0 0px; width: 320px; display: inline-block;}
+.webserviceWrap .agreementSec2 .agreeDownload li a { display:inline-block; padding:6px 10px; background:#0e787c; font-size:12px; color:#fff; font-weight:600;}
+
+
+
+.webserviceWrap .dupProcessBox3up { position:relative; width:898px; border:1px solid #ddd; background:url('/asan/images/webservice/bgProcess3up.gif') no-repeat; overflow:hidden;}
+.webserviceWrap .dupProcessBox3up .step1 { float:left; width:300px;}
+.webserviceWrap .dupProcessBox3up .step2 { float:left; width:297px;}
+.webserviceWrap .dupProcessBox3up .step3 { float:left; width:299px;}
+.webserviceWrap .dupProcessBox3up .step1 .dupCont { border-left:0;}
+.webserviceWrap .dupProcessBox3up .step3 .dupStepTit strong { color:#fff;}
+.webserviceWrap .dupProcessBox2up { position:relative; width:898px; border:1px solid #ddd; background:url('/asan/images/webservice/bgProcess2up.gif') no-repeat; overflow:hidden;}
+.webserviceWrap .dupProcessBox2up .step1 { float:left; width:448px;}
+.webserviceWrap .dupProcessBox2up .step2 { float:left; width:448px;}
+.webserviceWrap .dupProcessBox2up .step1 .dupCont { border-left:0;}
+.webserviceWrap .dupProcessBox2up .step2 .dupStepTit strong { color:#fff;}
+.webserviceWrap .dupProcessBox4up { position:relative; width:898px; border:1px solid #ddd; background:url('/asan/images/webservice/bgProcess4up.gif') no-repeat; overflow:hidden;}
+.webserviceWrap .dupProcessBox4up .step1 { float:left; width:224px;}
+.webserviceWrap .dupProcessBox4up .step2 { float:left; width:235px;}
+.webserviceWrap .dupProcessBox4up .step3 { float:left; width:225px;}
+.webserviceWrap .dupProcessBox4up .step4 { float:left; width:214px;}
+.webserviceWrap .dupProcessBox4up .step1 .dupCont { border-left:0;}
+.webserviceWrap .dupProcessBox4up .step4 .dupStepTit strong { color:#fff;}
+.webserviceWrap .dupBtn { padding-top:15px;}
+.webserviceWrap .f_black { color:#0e787c;}
+.webserviceWrap .smFont { font-size:13px;}
+
+.webserviceWrap .stepListSec { border-top:2px solid #5d5d5d; overflow:hidden; width:100%;}
+.webserviceWrap .stepListSec ol li .dupStepTit { padding-top:20px; height:68px; line-height:24px;}
+.webserviceWrap .stepListSec ol li .dupStepTit.icon1 { background:url('/asan/images/webservice/icoType1.png') 94px 22px no-repeat;}
+.webserviceWrap .stepListSec ol li .dupStepTit.icon2 { background:url('/asan/images/webservice/icoType2.png') 53px 26px no-repeat;}
+.webserviceWrap .stepListSec ol li .dupStepTit.icon3 { background:url('/asan/images/webservice/icoType3.png') 66px 26px no-repeat;}
+.webserviceWrap .stepListSec ol li .dupStepTit.icon4 { background:url('/asan/images/webservice/icoType4.png') 53px 16px no-repeat;}
+.webserviceWrap .stepListSec ol li .dupStepTit.icon5 { background:url('/asan/images/webservice/icoType5.png') 25px 17px no-repeat;}
+.webserviceWrap .stepListSec ol li .dupStepTit.icon6 { background:url('/asan/images/webservice/icoType6.png') 67px 19px no-repeat;}
+.webserviceWrap .stepListSec ol li .dupStepTit.icon7 { background:url('/asan/images/webservice/icoType3.png') 110px 26px no-repeat;}
+.webserviceWrap .stepListSec ol li .dupStepTit.icon9 { background:url('/asan/images/webservice/icoType9.png') 25px 25px no-repeat;}
+.webserviceWrap .stepListSec ol li .dupCont { padding-top:14px;}
+.webserviceWrap .stepListSec  .dupComment { width:100%;overflow:hidden;font-size:13px;}
+.webserviceWrap .stepListSec  .dupComment .line2{padding-left:12px;text-indent:-12px;}
+.webserviceWrap .stepListSec ol li .dupStepOl{width:100%;overflow:hidden;}
+.webserviceWrap .stepListSec ol li .dupStepOl strong { color:#0e787c;font-weight:normal;}
+.webserviceWrap .stepListSec ol li .dupStepOl li{line-height:24px;}
+.webserviceWrap .stepListSec ol li .dupStepOl .line2{padding-left:17px;text-indent:-17px;}
+.webserviceWrap .stepListSec ol.box2up { overflow:hidden; background:url('/asan/images/webservice/bgStep2up2.gif') no-repeat;}
+.webserviceWrap .stepListSec ol.box2up li { float:left; width:450px;}
+.webserviceWrap .stepListSec ol.box2up li.step1 .dupStepTit { padding-left:180px;}
+.webserviceWrap .stepListSec ol.box2up li.step2 .dupStepTit { padding-left:180px;}
+
+.webserviceWrap .stepListSec ol.box3up { overflow:hidden; background:url('/asan/images/webservice/bgStep3up2.gif') no-repeat;}
+.webserviceWrap .stepListSec ol.box3up li { float:left; width:300px;}
+.webserviceWrap .stepListSec ol.box3up li.step1 .dupStepTit { padding-left:120px;}
+.webserviceWrap .stepListSec ol.box3up li.step2 .dupStepTit { padding-left:90px;}
+.webserviceWrap .stepListSec ol.box3up li.step3 .dupStepTit { padding-left:125px;}
+.webserviceWrap .stepListSec ol.box3up li.step2 .dupCont { padding-left:0;}
+.webserviceWrap .stepListSec ol.box3up li.step3 .dupCont { padding-left:0;}
+
+.webserviceWrap .stepListSec ol.box4up { overflow:hidden; background:url('/asan/images/webservice/bgStep4up2.gif') no-repeat;}
+.webserviceWrap .stepListSec ol.box4up li .dupStepTit{padding-top:13px;height:88px;}
+.webserviceWrap .stepListSec ol.box4up>li { float:left; width:225px;}
+.webserviceWrap .stepListSec ol.box4up li.step1 .dupStepTit{padding-left:87px;}
+.webserviceWrap .stepListSec ol.box4up li.step2{width:235px;}
+.webserviceWrap .stepListSec ol.box4up li.step2 .dupStepTit{padding-left:72px;}
+.webserviceWrap .stepListSec ol.box4up li.step3 .dupStepTit{padding-left:86px;}
+.webserviceWrap .stepListSec ol.box4up li.step4{width:215px}
+.webserviceWrap .stepListSec ol.box4up li.step4 .dupStepTit{padding-left:84px;}
+.webserviceWrap .stepListSec ol.box4up li .dupStepTit.icon2 { background:url('/asan/images/webservice/icoType2.png') 34px 20px no-repeat;}
+.webserviceWrap .stepListSec ol.box4up li .dupStepTit.icon3 { background:url('/asan/images/webservice/icoType3.png') 32px 20px no-repeat;}
+.webserviceWrap .stepListSec ol li .dupCont{}
+.webserviceWrap .stepListSec ol li .dupCont span.textArrow{padding-right:15px;background:url('/asan/images/webservice/bgTextArrow.gif') no-repeat right center;}
+/* 증명서아이콘 */
+.webserviceWrap .stepListSec.stepListSecCert ol.box3up li.step1 .dupStepTit{padding-left:123px;}
+.webserviceWrap .stepListSec.stepListSecCert ol.box3up li.step2 .dupStepTit{padding-left:96px;}
+.webserviceWrap .stepListSec.stepListSecCert ol.box3up li.step3 .dupStepTit{padding-left:108px;}
+.webserviceWrap .stepListSec.stepListSecCert ol li .dupStepTit.icon2{background:url('/asan/images/webservice/icoType2.png') 71px 27px no-repeat;}
+.webserviceWrap .stepListSec.stepListSecCert ol li .dupStepTit.icon3{background:url('/asan/images/webservice/icoType3.png') 43px 25px no-repeat;}
+.webserviceWrap .stepListSec.stepListSecCert ol li .dupStepTit.icon7{background:url('/asan/images/webservice/icoType7.png') 63px 25px no-repeat;}
+/* 위변조문서확인 */
+.webserviceWrap .stepListSec.stepListSecForgery ol.box3up li.step1 .dupStepTit{padding-left:93px;}
+.webserviceWrap .stepListSec.stepListSecForgery ol.box3up li.step2 .dupStepTit{padding-left:131px;}
+.webserviceWrap .stepListSec.stepListSecForgery ol.box3up li.step3 .dupStepTit{padding-left:134px;}
+.webserviceWrap .stepListSec.stepListSecForgery ol li .dupStepTit.icon2{background:url('/asan/images/webservice/icoType2.png') 39px 27px no-repeat;}
+.webserviceWrap .stepListSec.stepListSecForgery ol li .dupStepTit.icon8{background:url('/asan/images/webservice/icoType8.png') 72px 25px no-repeat;}
+.webserviceWrap .stepListSec.stepListSecForgery ol li .dupStepTit.icon9{background:url('/asan/images/webservice/icoType9.png') 72px 25px no-repeat;}
+.webserviceWrap .stepListSec.stepListSecForgery{padding-bottom:15px;border-bottom:1px solid #ccc;}
+
+
+
+/* 중간진료비결제 */
+.webserviceWrap .payMentSec .processSec { height:154px; background:url('/asan/images/webservice/bgPayment01.png') center top no-repeat;}
+.webserviceWrap .payMentSec .processSec ol li { float:left; width:128px; padding-top:40px; margin-left:31px; text-align:center; font-weight:600; font-size:18px; color:#111; line-height:24px;}
+.webserviceWrap .payMentSec .processSec ol li:first-child { margin-left:56px;}
+.webserviceWrap .payMentSec .processSec ol li span { font-size:24px; color:#333; font-weight:normal;}
+.webserviceWrap .payMentSec .cancleInfoSec { padding:23px 0 28px 179px; background:#f5f5f5 url('/asan/images/webservice/bgPayCancle.png') 91px 40px no-repeat; border:1px solid #ddd;}
+.webserviceWrap .payMentSec .boxTit { display:block; margin-bottom:5px; font-size:18px; font-weight:600;}
+.webserviceWrap .payMentSec .whiteBox { overflow:hidden; padding:23px 30px; border:1px solid #ddd;}
+.webserviceWrap .payMentSec .whiteBox > div > ul > li { margin-bottom:3px;}
+.webserviceWrap .payMentSec .whiteBox .halfCont { position:relative; float:left; margin-left:30px; width:388px; height:234px;}
+.webserviceWrap .payMentSec .whiteBox .halfCont:first-child { margin-left:0; padding-right:30px; border-right:1px solid #ddd;}
+.webserviceWrap .payMentSec .whiteBox .halfCont .btnArea { position:absolute; bottom:0; left:0; width:388px; text-align:center;}
+.webserviceWrap .payMentSec .greenContBox { padding:28px 0; text-align:center; font-size:18px; font-weight:600; color:#111; border:2px solid #0e787c;}
+.webserviceWrap .payMentSec .greenContBox .price { font-size:24px; color:#0e787c;}
+.webserviceWrap .payMentSec .dateSearch { overflow:hidden; margin-bottom:10px;}
+.webserviceWrap .payMentSec .dateSearch h5 { float:left; font-size:18px; font-weight:600; color:#111;}
+.webserviceWrap .payMentSec .dateSearch .dateBtn { float:left; margin-left:20px;}
+
+.webserviceWrap .perInfo { border:1px solid #ddd; padding:15px 30px 17px 30px; background:#f5f5f5;}
+.webserviceWrap .perInfo .whiteBox { margin-bottom:6px; border:1px solid #ddd; padding:16px 20px 24px 20px; height:90px; overflow-y:scroll; background:#fff;}
+.webserviceWrap .perInfo .pointIcon { display:block; padding-left:8px; background:url('/asan/images/ico/icoGreenSmBox.gif') no-repeat left 10px;}
+
+/* 홈페이지이용문의 */
+.webserviceWrap .useQnaSec { margin-bottom:40px;}
+.webserviceWrap .useQnaSec p { position:relative; margin-bottom:15px; line-height:24px;}
+.webserviceWrap .useQnaSec p a.greenMdBtn2 { position:absolute; right:0; top:5px;}
+.webserviceWrap .useQnaSec .agreeWrap { padding:18px 30px; border:1px solid #ddd; background:#f5f5f5;}
+.webserviceWrap .useQnaSec .agreeWrap strong { display:block; margin-bottom:15px; font-size:18px; font-weight:600; color:#111;}
+.webserviceWrap .useQnaSec .agreeWrap .agreeCont { margin-bottom:5px; padding:15px 20px 25px 20px; height:100px; overflow-y:scroll; border:1px solid #ddd; background:#fff;}
+.webserviceWrap .useQnaSec .agreeWrap .agreeCont ul { margin:7px 0;}
+.webserviceWrap .useQnaSec .agreeWrap .agreeCont ul li { padding-left:13px; background:url('/asan/images/common/bul_softgrayDot2x2.jpg') 6px center no-repeat;}
+
+/* 콘텐츠제공안내 */
+.webserviceWrap .conInqSec { margin-bottom:40px;}
+
+.webserviceWrap .conInqSec .process_imglist {overflow:hidden;width:100%;margin:0 !important;}
+.webserviceWrap .conInqSec .process_imglist li {float:left;font-size:0;line-height:0;}
+.webserviceWrap .conInqSec .process_imglist.gap01 {margin:-30px 0 30px !important;}
+
+.webserviceWrap .conInqSec .overColumnBtn li { margin-top:5px;}
+.webserviceWrap .conInqSec .overColumnBtn li .whiteSmBtn { min-width:110px; padding:6px 0;}
+.webserviceWrap .conInqSec .overColumnBtn li:first-child { margin-top:0;}
+
+.webserviceWrap .conInqSec p { position:relative; margin-bottom:15px; line-height:24px;}
+.webserviceWrap .conInqSec p.copyrightInfoSec {padding: 23px 0 28px 179px; background: #f5f5f5 url(/asan/images/webservice/bgCopyright.png) 55px 40px no-repeat; border: 1px solid #ddd;}
+.webserviceWrap .conInqSec p a.greenMdBtn2 { position:absolute; right:0; top:5px;}
+.webserviceWrap .conInqSec .agreeWrap { padding:18px 30px; border:1px solid #ddd; background:#f5f5f5;}
+.webserviceWrap .conInqSec .agreeWrap strong { display:block; margin-bottom:15px; font-size:18px; font-weight:600; color:#111;}
+.webserviceWrap .conInqSec .agreeWrap .agreeCont { margin-bottom:5px; padding:15px 20px 25px 20px; height:100px; overflow-y:scroll; border:1px solid #ddd; background:#fff;}
+.webserviceWrap .conInqSec .agreeWrap .agreeCont ul { margin:7px 0;}
+.webserviceWrap .conInqSec .agreeWrap .agreeCont ul li { padding-left:13px; background:url('/asan/images/common/bul_softgrayDot2x2.jpg') 6px center no-repeat;}
+
+/* 고객의소리 > 정보 */
+.webserviceWrap .supportP { padding:0 0 41px 237px; border-bottom:1px solid #ccc; background:url('/asan/images/webservice/ico_webserviceSupport.gif') 0 6px no-repeat;}
+.webserviceWrap .btmVideoTxt { margin-top:-5px; padding-bottom:36px; border-bottom:1px solid #ccc;}
+.webserviceWrap .supportP p { margin-top:-5px; line-height:24px; letter-spacing:-1px;}
+.webserviceWrap .supportP p.pnt { color:#111;}
+.webserviceWrap .supportInfo { padding:40px 0; width:100%; overflow:hidden;}
+.webserviceWrap .supportInfo .dep2Title { padding-bottom:15px;}
+.webserviceWrap .supportInfo .tubeSec { float:left; width:622px; height:379px;}
+.webserviceWrap .supportInfo .descSec { float:right; width:246px; height:350px; background:#fbfbfb; border:1px solid #ccc; overflow:auto;}
+.webserviceWrap .supportInfo .descSec .descText { padding:25px; font-size:15px;}
+
+
+/* 증명서 2014.05.21 */
+.webserviceWrap .certificateSec { position:relative;}
+.webserviceWrap .brSec { margin-top:29px; padding-top:23px; border-top:1px solid #ccc;}
+.webserviceWrap .certificateSec .certifiOrderBtn { position:absolute; bottom:0; right:0;}
+.webserviceWrap .certificateSec .cardTip { margin-top:8px; padding:23px 0 29px 30px; border:1px solid #ccc;}
+.webserviceWrap .certificateSec .downLoadBox { margin-top:20px; padding:18px 0 18px 21px; background:#f5f5f5; border:1px solid #ccc;}
+.webserviceWrap .certificateSec .downLoadBox ul { min-width:1px;}
+.webserviceWrap .certificateSec .downLoadBox ul li { float:left;}
+.webserviceWrap .certificateSec .downLoadBox ul li:first-child { background:none; margin-right:53px;}
+.webserviceWrap .certificateSec .downLoadBox ul:after { display:block; content:""; clear:both;}
+.webserviceWrap .certificateSec .txtBtnBox { margin-top:25px;}
+.webserviceWrap .certificateSec .txtBtnBox .btnBox { margin-top:19px;}
+.webserviceWrap .certificateSec .onlineCerBox { margin:-29px 0 16px 0; text-align:right;}
+.webserviceWrap .certificateSec .onlineCerBox span.txt { display:block; margin-top:4px;}
+
+/* main */
+.webserviceWrap.main {padding:70px 0 30px;}
+.webserviceWrap.main .floatL {float:left; }
+.webserviceWrap.main .floatR {float:right; }
+.webserviceWrap.main .upper {overflow:hidden; width:1200px; height:306px; margin:0 auto; background:url('/asan/images/webservice/bg_main.jpg') no-repeat 0 0;}
+.webserviceWrap.main .upper h2 {font-size:32px; line-height:1.2em; }
+.webserviceWrap.main .upper strong {display:block; padding:13px 0 22px; font-size:18px; color:#333; line-height:1.2em; }
+.webserviceWrap.main .upper p {margin-bottom:15px; font-size:15px; color:#333; line-height:1.6em;}
+.webserviceWrap.main .upper a span {font-weight:600; font-size:15px;}
+.webserviceWrap.main .upper ul {width:298px; margin-bottom:15px; }
+.webserviceWrap.main .upper li {overflow:hidden; padding:0 0 10px 7px; font-weight:600; font-size:18px; color:#333; text-align:right; background:url('/asan/images/common/bul_greenDot2x2.jpg') no-repeat 0 17px;}
+.webserviceWrap.main .upper li span.txt {float:left;}
+.webserviceWrap.main .upper a.greenMdBtn {margin:0 0 0 5px; padding:9px;}
+.webserviceWrap.main .lawer {border-top:1px solid #ddd; }
+.webserviceWrap.main .lawer .inner {overflow:hidden; width:1200px; margin:0 auto; }
+.webserviceWrap.main .lawer .wrap_title {margin-left:20px; }
+.webserviceWrap.main .box_certificate {width:540px; height:185px; margin-bottom:40px; padding:30px; color:#fff; background:url('/asan/images/webservice/bg_certificate.jpg') #0e787c no-repeat 0 0;}
+.webserviceWrap.main .box_certificate h2 {margin-bottom:15px; line-height:1.1em;}
+.webserviceWrap.main .box_certificate p {margin-bottom:30px; line-height:1.6em;}
+.webserviceWrap.main .box_certificate a {margin:0 10px 0 0; padding:10px 9px; font-weight:600; font-size:15px; border:0 none;}
+.webserviceWrap.main .wrap_title {overflow:hidden; width:580px; margin-bottom:18px; }
+.webserviceWrap.main .wrap_title h2 {float:left; font-size:24px; color:#111; line-height:1em; }
+.webserviceWrap.main .wrap_title a.btn_more {margin:2px 0 0; float:right; font-weight:normal; font-size:13px; color:#db330c; }
+.webserviceWrap.main ul.list_praise {width:580px; border-top:1px solid #ddd; }
+.webserviceWrap.main ul.list_praise li {overflow:hidden; height:45px; padding:0 0 0 9px; line-height:3em; border-bottom:1px solid #ddd; background:url('/asan/images/common/bul_grayDot2x2.jpg') no-repeat 0 50%;}
+.webserviceWrap.main ul.list_praise li a {display:block; float:left; max-width:495px;}
+.webserviceWrap.main ul.list_praise li span {float:right; font-size:13px; }
+.webserviceWrap.main .box_pay {width:540px; height:185px; margin-bottom:40px; padding:30px; color:#fff; background:url('/asan/images/webservice/bg_pay.jpg') #666 no-repeat 0 0;}
+.webserviceWrap.main .box_pay h2 {margin-bottom:15px; line-height:1.1em;}
+.webserviceWrap.main .box_pay p {margin-bottom:30px; line-height:1.6em;}
+.webserviceWrap.main .box_pay a {margin:0 10px 0 0; padding:10px 9px; font-weight:600; font-size:15px; border:0 none;}
+.webserviceWrap.main .wrapService {overflow:hidden; width:580px; margin:0 0 0 20px; }
+.webserviceWrap.main .boxCs {float:left; width:240px; height:205px; padding:23px 0 0 28px; font-size:13px; line-height:1.4em; border:1px solid #ddd; background:url('/asan/images/webservice/bg_cs.jpg') no-repeat 0 0;}
+.webserviceWrap.main .boxCs h3 {padding:0 0 8px; font-size:18px; color:#0e787c; line-height:1em; }
+.webserviceWrap.main .boxCs strong {display:block; padding:0 0 10px; font-size:30px; color:#0e787c; line-height:1em; }
+.webserviceWrap.main .boxCs p {margin-bottom:21px; }
+.webserviceWrap.main .boxCs a.greenMdBtn {padding:10px 9px; font-weight:600; font-size:15px; border:0 none; }
+.webserviceWrap.main .boxFaq {float:right; width:270px; height:230px; color:#fff; text-align:center; border:1px solid #ddd; background:url('/asan/images/webservice/bg_faq.jpg') no-repeat 0 0;}
+.webserviceWrap.main .boxFaq h3 {padding:95px 0 15px; font-size:24px; line-height:1.1em;} 
+
+
+/* 칭찬코너 백그라운드 */
+.bgtype_compliment {background: url('/asan/images/webservice/bg_compliment.jpg') no-repeat 0 10px !important;}
+
+/* 홈페이지 이용문의 질문하기 */
+.hpQnaSec {position:relative; margin-top:30px; padding:20px 30px; border:1px solid #ddd; background:#f5f5f5; line-height:24px;}
+.hpQnaSec a {position:absolute; top:25px; right:30px; }

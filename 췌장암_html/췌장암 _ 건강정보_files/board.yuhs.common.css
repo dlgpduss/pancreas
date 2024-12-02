@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* 
+게시판커스텀 css  @jsbeak
+ */
+.board .deleted, .board .deleted * { text-decoration: line-through !important; color: #999999 !important;}
+.adm-chk input[type=checkbox] , span.article-chk input[type=checkbox] { width: 20px; height: 20px;position: initial; opacity: initial; }
+
+div.write-btn-wrap { margin-top: 30px; text-align: right;}
+
+
+
+.bn-write-common01 .b-file-box.type03 .b-input[name="wr-file-name"] {   width: calc(100% - 110px) !important; }
+.bn-write-common01 .b-con-box input[type=checkbox] + label {display: inline-block; width: 230px;}
+
+.bn-write-common01 .b-input.type03 { width: calc(100% - 110px) !important; }
+.bn-write-common01 button.jw-btn-search {     display: inline-block; padding: 9px 0 9px;min-width: 100px;   border: 1px solid #ccc;background-color: #ebebeb;font-weight: 400;font-size: 16px;color: #5c5c5c;text-align: center;cursor: pointer;box-sizing: border-box;vertical-align: middle; }
